@@ -16,7 +16,7 @@ parser = argparse.ArgumentParser(description=\
     example use: \n \
         python llama_2_prefix_tune.py --model_path /home/user/models/llama-2-7b --save_path /home/user/models/llama-2-7b-prefix-tuned --max_length 30 --num_virtual_tokens 30 --batch_size 6 --epochs 30 --lr 0.03 --dataset_path /home/adrianw/datasets/tuning_pairs.json"
     )
-# Required positional argument
+# Required arguments
 parser.add_argument('--model_path', type=str, required=True,
                     help='path to the model and tokenizer (huggingface format)')
 
@@ -48,8 +48,8 @@ def main(**kwargs):
     peft_config = PrefixTuningConfig(task_type=TaskType.CAUSAL_LM, num_virtual_tokens=kwargs["num_virtual_tokens"])
     
     text_column = "question"
-    label_column = "combined"
-    expected_fields_column = "expected_fields"
+    label_column = "expected_fields"
+
     max_length = kwargs['max_length']
     lr = kwargs['lr']
     num_epochs = kwargs['epochs']
@@ -63,11 +63,11 @@ def main(**kwargs):
         def get_successful(all_data):
             successful=[]
             for obj in all_data:
-                if type(obj[expected_fields_column]) == list:
-                    obj[expected_fields_column] = str(obj[expected_fields_column])
-                if obj["success"] == True:
-                    obj[label_column] = f"{obj['table']}({obj[expected_fields_column]})"
+                if type(obj[label_column]) == list:
+                    obj[label_column] = str(obj[label_column])
+                if obj["quality"] == "1" or obj["quality"] == "2":
                     successful.append(obj)
+            return successful
                     
         if ".csv" in kwargs['dataset_path']:
             with open(kwargs['dataset_path'], "r") as f:
