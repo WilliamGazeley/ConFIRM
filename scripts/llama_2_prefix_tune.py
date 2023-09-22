@@ -14,26 +14,26 @@ import argparse
 parser = argparse.ArgumentParser(description=\
     "llama 2 prefix tuning script for ConFIRM using peft,\n \
     example use: \n \
-        python llama_2_prefix_tune.py --model_path /home/user/models/llama-2-7b --save_path /home/user/models/llama-2-7b-prefix-tuned --num_virtual_tokens 30 --batch_size 6 --epochs 30 --lr 0.03 --dataset_path /home/adrianw/datasets/tuning_pairs.json"
+        python llama_2_prefix_tune.py --model_path /home/user/models/llama-2-7b --save_path /home/user/models/llama-2-7b-prefix-tuned --max_length 30 --num_virtual_tokens 30 --batch_size 6 --epochs 30 --lr 0.03 --dataset_path /home/adrianw/datasets/tuning_pairs.json"
     )
 # Required positional argument
-parser.add_argument('--model_path', type=str,
+parser.add_argument('--model_path', type=str, required=True,
                     help='path to the model and tokenizer (huggingface format)')
 
-parser.add_argument('--save_path', type=str,
+parser.add_argument('--save_path', type=str, required=True,
                     help='save path of the tuned model (peft)')
 
-parser.add_argument('--num_virtual_tokens', type=int,
+parser.add_argument('--num_virtual_tokens', type=int, required=True,
                     help='number of virtual token to be used as prefix')
-parser.add_argument('--batch_size', type=int,
+parser.add_argument('--batch_size', type=int, required=True,
                     help='batch size of the training')
-parser.add_argument('--max_length', type=int,
+parser.add_argument('--max_length', type=int, required=True,
                     help='Max number of tokens generated, range in [0, 2048], higher max length will result in higher memory requirement')
-parser.add_argument('--epochs', type=int,
+parser.add_argument('--epochs', type=int, required=True,
                     help='Number of epochs')
-parser.add_argument('--lr', type=float,
+parser.add_argument('--lr', type=float, required=True,
                     help='Learning rate')
-parser.add_argument('--dataset_path', type=str,
+parser.add_argument('--dataset_path', type=str, required=True,
                     help='dataset path, should point to a file with json format containing a list of object data.')
 parser.add_argument('--use_hf_data', 
                     help='whether to use custom dataset. If set, dataset_path will automatically point to a hf dataset repository')
@@ -47,27 +47,26 @@ def main(**kwargs):
     
     peft_config = PrefixTuningConfig(task_type=TaskType.CAUSAL_LM, num_virtual_tokens=kwargs["num_virtual_tokens"])
     
-    text_column = "prompt"
+    text_column = "question"
     label_column = "combined"
+    expected_fields_column = "expected_fields"
     max_length = kwargs['max_length']
     lr = kwargs['lr']
-    num_epochs = kwargs['num_epochs']
+    num_epochs = kwargs['epochs']
     batch_size = kwargs['batch_size']
     
     if kwargs.get("use_hf_data"):
         dataset = load_dataset(kwargs['dataset_path'])
-        
-        
         
     else:
         # dataset from from local path
         def get_successful(all_data):
             successful=[]
             for obj in all_data:
-                if type(obj["fields"]) == list:
-                    obj["fields"] = str(obj["fields"])
+                if type(obj[expected_fields_column]) == list:
+                    obj[expected_fields_column] = str(obj[expected_fields_column])
                 if obj["success"] == True:
-                    obj[label_column] = f"{obj['table']}({obj['fields']})"
+                    obj[label_column] = f"{obj['table']}({obj[expected_fields_column]})"
                     successful.append(obj)
                     
         if ".csv" in kwargs['dataset_path']:
@@ -261,4 +260,6 @@ def main(**kwargs):
     ckpt = f"{kwargs['save_path']}/adapter_model.bin"
 
 if __name__=="__main__":
-    main()
+    
+    args = parser.parse_args()
+    main(**vars(args))
