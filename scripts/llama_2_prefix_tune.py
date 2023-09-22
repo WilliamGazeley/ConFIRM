@@ -6,6 +6,7 @@ from torch.utils.data import DataLoader
 from transformers import default_data_collator, get_linear_schedule_with_warmup
 from tqdm import tqdm
 import json
+import csv
 import os
 import argparse
 
@@ -56,20 +57,34 @@ def main(**kwargs):
     if kwargs.get("use_hf_data"):
         dataset = load_dataset(kwargs['dataset_path'])
         
+        
+        
     else:
-        with open(kwargs['dataset_path'], "r") as f:
-            qa_pairs = json.load(f)
+        # dataset from from local path
+        def get_successful(all_data):
+            successful=[]
+            for obj in all_data:
+                if type(obj["fields"]) == list:
+                    obj["fields"] = str(obj["fields"])
+                if obj["success"] == True:
+                    obj[label_column] = f"{obj['table']}({obj['fields']})"
+                    successful.append(obj)
+                    
+        if ".csv" in kwargs['dataset_path']:
+            with open(kwargs['dataset_path'], "r") as f:
+                csv_reader = csv.DictReader(f)
+                successful = get_successful(csv_reader)
 
-        successful=[]
-        for obj in qa_pairs:
-            if type(obj["fields"]) == list:
-                obj["fields"] = str(obj["fields"])
-            if obj["success"] == True:
-                obj[label_column] = f"{obj['table']}({obj['fields']})"
-                successful.append(obj)
-
+        elif ".json" in kwargs['dataset_path']:
+            with open(kwargs['dataset_path'], "r") as f:
+                qa_pairs = json.load(f)
+                successful = get_successful(qa_pairs)
+        else:
+            raise ValueError("unsupported dataset file format.")
 
         dataset = Dataset.from_list(successful)
+    
+    # TODO: change to a separate test data set
     dataset = dataset.train_test_split(test_size=0.1)
     
     print(dataset)
