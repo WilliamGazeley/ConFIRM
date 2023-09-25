@@ -1,5 +1,5 @@
 from transformers import LlamaForCausalLM, LlamaTokenizer, LlamaForSequenceClassification
-from peft import get_peft_config, get_peft_model, PrefixTuningConfig, TaskType, PeftType
+from peft import get_peft_config, get_peft_model, PrefixTuningConfig, TaskType, PeftType, LoraConfig
 import torch
 from datasets import load_dataset, Dataset
 from torch.utils.data import DataLoader
@@ -23,8 +23,12 @@ parser.add_argument('--model_path', type=str, required=True,
 parser.add_argument('--save_path', type=str, required=True,
                     help='save path of the tuned model (peft)')
 
-parser.add_argument('--num_virtual_tokens', type=int, required=True,
-                    help='number of virtual token to be used as prefix')
+parser.add_argument('--r', type=int, required=True,
+                    help='Lora attention dimension')
+parser.add_argument('--lora_dropout', type=float, required=True,
+                    help='The alpha parameter for Lora scaling')
+parser.add_argument('--lora_alpha', type=int, required=True,
+                    help='Max number of tokens generated, range in [0, 2048], higher max length will result in higher memory requirement')
 parser.add_argument('--batch_size', type=int, required=True,
                     help='batch size of the training')
 parser.add_argument('--max_length', type=int, required=True,
@@ -44,8 +48,17 @@ def main(**kwargs):
     
     device = "cuda"
     model_name_or_path = kwargs["model_path"]
-    
-    peft_config = PrefixTuningConfig(task_type=TaskType.CAUSAL_LM, num_virtual_tokens=kwargs["num_virtual_tokens"])
+    target_modules = ["q_proj", "v_proj"]
+    bias= "none"
+    peft_config = LoraConfig(
+        task_type=TaskType.CAUSAL_LM, 
+        inference_mode=False, 
+        r=kwargs["r"], 
+        lora_alpha=kwargs["lora_alpha"], 
+        lora_dropout=kwargs["lora_dropout"],
+        target_modules=target_modules,
+        bias=bias
+    )
     
     text_column = "question"
     label_column = "expected_fields"
@@ -93,9 +106,13 @@ def main(**kwargs):
 
     # data preprocessing
     tokenizer = LlamaTokenizer.from_pretrained(model_name_or_path)
-    if tokenizer.pad_token_id is None:
-        tokenizer.pad_token_id = tokenizer.eos_token_id
-
+    tokenizer.add_special_tokens(
+        {
+            "pad_token": "<PAD>",
+        }
+    )
+    # if tokenizer.pad_token_id is None:
+    #     tokenizer.pad_token_id = tokenizer.eos_token_id
 
     def preprocess_function(examples):
         batch_size = len(examples[text_column])
