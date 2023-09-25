@@ -65,7 +65,14 @@ def main(**kwargs):
             for obj in all_data:
                 if type(obj[label_column]) == list:
                     obj[label_column] = str(obj[label_column])
-                if obj["quality"] == "1" or obj["quality"] == "2":
+                    
+                # handling for old dataset with quality column
+                if "quality" in obj:
+                    if obj["quality"] == "1" or obj["quality"] == "2":
+                        successful.append(obj)
+                        
+                # new dataset without quality column
+                else:
                     successful.append(obj)
             return successful
                     
@@ -93,6 +100,8 @@ def main(**kwargs):
 
     # data preprocessing
     tokenizer = LlamaTokenizer.from_pretrained(model_name_or_path)
+    
+    # llama does not have pad token
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token_id = tokenizer.eos_token_id
 
