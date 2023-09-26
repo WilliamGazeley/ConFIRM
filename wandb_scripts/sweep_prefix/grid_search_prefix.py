@@ -21,7 +21,7 @@ metric = {
 sweep_config['metric'] = metric
 
 parameters_dict = {
-    'num_virtual_token': {
+    'num_virtual_tokens': {
         'values': [20, 30, 40]
         },
     'batch_size': {
