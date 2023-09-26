@@ -236,7 +236,7 @@ def main(**kwargs):
     with torch.no_grad():
         inputs = {k: v.to(device) for k, v in inputs.items()}
         outputs = model.generate(
-            input_ids=inputs["input_ids"], attention_mask=inputs["attention_mask"], max_new_tokens=kwargs['max_length'], eos_token_id=3
+            input_ids=inputs["input_ids"], attention_mask=inputs["attention_mask"], max_new_tokens=kwargs['max_length'], eos_token_id=2
         )
         print(outputs)
         print(tokenizer.batch_decode(outputs.detach().cpu().numpy(), skip_special_tokens=True))

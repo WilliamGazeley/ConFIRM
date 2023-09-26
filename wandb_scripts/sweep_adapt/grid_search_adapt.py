@@ -1,5 +1,5 @@
 from transformers import LlamaForCausalLM, LlamaTokenizer
-from peft import get_peft_model, PrefixTuningConfig, TaskType, PeftType
+from peft import get_peft_model, PrefixTuningConfig, TaskType, AdaptionPromptConfig
 import torch
 from datasets import load_dataset, Dataset
 from torch.utils.data import DataLoader
@@ -21,7 +21,10 @@ metric = {
 sweep_config['metric'] = metric
 
 parameters_dict = {
-    'num_virtual_tokens': {
+    'adapter_len': {
+        'values': [5, 10, 15]
+        },
+    'adapter_layers': {
         'values': [20, 30, 40]
         },
     'batch_size': {
@@ -55,12 +58,15 @@ sweep_id = wandb.sweep(sweep_config, project="llama-2-7b-peft")
 def train(config=None):
     with wandb.init(config=config):
         config=wandb.config
-        peft_model_id = f"prefix_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_nvt{config.num_virtual_tokens}"
+        peft_model_id = f"adapt_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_nvt{config.num_virtual_tokens}"
         print(peft_model_id)
         model_name_or_path = config.model_path
 
-        peft_config = PrefixTuningConfig(task_type=TaskType.CAUSAL_LM, num_virtual_tokens=config.num_virtual_tokens)
-
+        peft_config = AdaptionPromptConfig(
+            task_type=TaskType.CAUSAL_LM,
+            adapter_layers=config.adapter_layers,
+            adapter_len=config.adapter_len,
+        )
         text_column = "question"
         label_column = "expected_fields"
 
