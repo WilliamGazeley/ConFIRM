@@ -1,4 +1,4 @@
-python llama_2_lora_tune.py \
+python llama_2_adapter_tune.py \
  --model_path /home/adrianw/hf \
  --save_path /home/adrianw/tuned \
  --adapter_len 10 \
