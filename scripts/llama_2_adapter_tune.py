@@ -1,5 +1,5 @@
 from transformers import LlamaForCausalLM, LlamaTokenizer, LlamaForSequenceClassification
-from peft import get_peft_config, get_peft_model, PrefixTuningConfig, TaskType, PeftType
+from peft import get_peft_config, get_peft_model, PrefixTuningConfig, TaskType, PeftType, LoraConfig, AdaptionPromptConfig
 import torch
 from datasets import load_dataset, Dataset
 from torch.utils.data import DataLoader
@@ -23,8 +23,10 @@ parser.add_argument('--model_path', type=str, required=True,
 parser.add_argument('--save_path', type=str, required=True,
                     help='save path of the tuned model (peft)')
 
-parser.add_argument('--num_virtual_tokens', type=int, required=True,
-                    help='number of virtual token to be used as prefix')
+parser.add_argument('--adapter_len', type=int, required=True,
+                    help='Number of adapter tokens to insert')
+parser.add_argument('--adapter_layers', type=float, required=True,
+                    help='Number of adapter layers (from the top)')
 parser.add_argument('--batch_size', type=int, required=True,
                     help='batch size of the training')
 parser.add_argument('--max_length', type=int, required=True,
@@ -44,8 +46,13 @@ def main(**kwargs):
     
     device = "cuda"
     model_name_or_path = kwargs["model_path"]
-    
-    peft_config = PrefixTuningConfig(task_type=TaskType.CAUSAL_LM, num_virtual_tokens=kwargs["num_virtual_tokens"])
+    target_modules = ["q_proj", "v_proj"]
+    bias= "none"
+    peft_config = AdaptionPromptConfig(
+        task_type=TaskType.CAUSAL_LM,
+        adapter_layers=kwargs["adapter_layers"],
+        adapter_len=kwargs["adapter_len"],
+    )
     
     text_column = "question"
     label_column = "expected_fields"
@@ -105,7 +112,6 @@ def main(**kwargs):
     if tokenizer.pad_token_id is None:
         tokenizer.pad_token_id = tokenizer.eos_token_id
 
-
     def preprocess_function(examples):
         batch_size = len(examples[text_column])
         inputs = [f"{text_column} : {x} Label : " for x in examples[text_column]]
@@ -155,7 +161,7 @@ def main(**kwargs):
     )
     eval_dataloader = DataLoader(eval_dataset, collate_fn=default_data_collator, batch_size=batch_size, pin_memory=True)
 
-    
+
     # creating model
     model = LlamaForCausalLM.from_pretrained(model_name_or_path)
     model = get_peft_model(model, peft_config)
@@ -218,9 +224,7 @@ def main(**kwargs):
     inputs = tokenizer(f'{text_column} : {dataset["test"][i][text_column]} Label : ', return_tensors="pt")
     print(dataset["test"][i][text_column])
     print(inputs)
-    print(f"saving model to {kwargs['save_path']}")
-    model.save_pretrained(kwargs['save_path'])
-    print("saved")
+
     with torch.no_grad():
         inputs = {k: v.to(device) for k, v in inputs.items()}
         outputs = model.generate(
@@ -234,6 +238,7 @@ def main(**kwargs):
     model.save_pretrained(kwargs['save_path'])
     print("saved")
 
+    ckpt = f"{kwargs['save_path']}/adapter_model.bin"
 
 if __name__=="__main__":
     

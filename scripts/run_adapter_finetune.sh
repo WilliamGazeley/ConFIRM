@@ -1,9 +1,8 @@
 python llama_2_lora_tune.py \
  --model_path /home/adrianw/hf \
  --save_path /home/adrianw/tuned \
- --r 8 \
- --lora_dropout 0.05 \
- --lora_alpha 32 \
+ --adapter_len 10 \
+ --adapter_layers 30 \
  --batch_size 8 \
  --epochs 50 \
  --lr 0.0003 \
