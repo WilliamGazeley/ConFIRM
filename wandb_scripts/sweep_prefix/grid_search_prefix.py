@@ -10,6 +10,7 @@ import csv
 import wandb
 
 sweep_config = {
+    'name': 'prefix_sweep',
     'method': 'random'
     }
 
