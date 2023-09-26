@@ -46,8 +46,6 @@ def main(**kwargs):
     
     device = "cuda"
     model_name_or_path = kwargs["model_path"]
-    target_modules = ["q_proj", "v_proj"]
-    bias= "none"
     peft_config = AdaptionPromptConfig(
         task_type=TaskType.CAUSAL_LM,
         adapter_layers=kwargs["adapter_layers"],

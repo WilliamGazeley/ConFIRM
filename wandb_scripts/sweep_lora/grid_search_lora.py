@@ -1,5 +1,5 @@
 from transformers import LlamaForCausalLM, LlamaTokenizer
-from peft import get_peft_model, PrefixTuningConfig, TaskType, PeftType
+from peft import get_peft_model, LoraConfig, TaskType, PeftType
 import torch
 from datasets import load_dataset, Dataset
 from torch.utils.data import DataLoader
@@ -21,12 +21,18 @@ metric = {
 sweep_config['metric'] = metric
 
 parameters_dict = {
-    'num_virtual_tokens': {
-        'values': [20, 30, 40]
-        },
+    'r': {
+        'values': [6, 8, 10]
+    },
+    'lora_dropout': {
+        'values': [0.01, 0.05, 0.1]
+    },
+    'lora_alpha': {
+        'values': [26, 32, 38]
+    },
     'batch_size': {
         'values': [4, 6, 8]
-        },
+    },
     # 'epochs': {
     #     'values': [30, 40, 50, 60]
     #     },
@@ -42,7 +48,9 @@ parameters_dict.update(
         'max_length': {'value': 128},
         'model_path': {'value': '/home/adrianw/hf'},
         'save_path': {'value': '/home/adrianw/tuned'},
-        'dataset_path': {'value': '/home/adrianw/ConFIRM/datasets/mixed/ConFIRM_QAset_559n_mixed_train.csv'}
+        'dataset_path': {'value': '/home/adrianw/ConFIRM/datasets/mixed/ConFIRM_QAset_559n_mixed_train.csv'},
+        'target_modules': {'value': ["q_proj", "v_proj"]},
+        'bias': {'value': "none"}
     }
 )
 device = "cuda"
@@ -55,12 +63,19 @@ sweep_id = wandb.sweep(sweep_config, project="llama-2-7b-peft")
 def train(config=None):
     with wandb.init(config=config):
         config=wandb.config
-        peft_model_id = f"prefix_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_nvt{config.num_virtual_tokens}"
+        peft_model_id = f"lora_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_nvt{config.num_virtual_tokens}"
         print(peft_model_id)
         model_name_or_path = config.model_path
 
-        peft_config = PrefixTuningConfig(task_type=TaskType.CAUSAL_LM, num_virtual_tokens=config.num_virtual_tokens)
-
+        peft_config = LoraConfig(
+            task_type=TaskType.CAUSAL_LM, 
+            inference_mode=False, 
+            r=config.r, 
+            lora_alpha=config.lora_alpha, 
+            lora_dropout=config.lora_dropout,
+            target_modules=config.target_modules,
+            bias=config.bias
+        )
         text_column = "question"
         label_column = "expected_fields"
 
