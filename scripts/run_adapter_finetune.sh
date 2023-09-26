@@ -6,5 +6,5 @@ python llama_2_lora_tune.py \
  --batch_size 8 \
  --epochs 50 \
  --lr 0.0003 \
- --max_length 64 \
+ --max_length 128 \
  --dataset_path /home/adrianw/ConFIRM/datasets/mixed/ConFIRM_QAset_559n_mixed_train.csv
