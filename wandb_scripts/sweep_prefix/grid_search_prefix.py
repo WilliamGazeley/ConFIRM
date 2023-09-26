@@ -27,7 +27,6 @@ parameters_dict = {
     'batch_size': {
         'values': [4, 6, 8]
         },
-    # uncomment to start a real sweep
     # 'epochs': {
     #     'values': [30, 40, 50, 60]
     #     },
@@ -39,7 +38,7 @@ parameters_dict = {
 parameters_dict.update(
     {
         # comment epochs to start a real sweep
-        'epochs': {'value': 1},
+        'epochs': {'value': 70},
         'max_length': {'value': 128},
         'model_path': {'value': '/home/adrianw/hf'},
         'save_path': {'value': '/home/adrianw/tuned'},
@@ -55,12 +54,12 @@ sweep_id = wandb.sweep(sweep_config, project="testing-ground")
 def train(config=None):
     with wandb.init(config=config):
         config=wandb.config
-        peft_model_id = f"prefix_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_nvt{config.num_virtual_token}"
+        peft_model_id = f"prefix_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_nvt{config.num_virtual_tokens}"
         print(peft_model_id)
         device = "cuda"
         model_name_or_path = config.model_path
 
-        peft_config = PrefixTuningConfig(task_type=TaskType.CAUSAL_LM, num_virtual_tokens=config["num_virtual_tokens"])
+        peft_config = PrefixTuningConfig(task_type=TaskType.CAUSAL_LM, num_virtual_tokens=config.num_virtual_tokens)
 
         text_column = "question"
         label_column = "expected_fields"
@@ -255,4 +254,4 @@ def train(config=None):
         print("saved")
 
 if __name__ == "__main__":
-    wandb.agent(sweep_id, train, count=3)
+    wandb.agent(sweep_id, train, count=12)
