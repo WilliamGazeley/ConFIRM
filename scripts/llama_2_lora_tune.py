@@ -159,7 +159,7 @@ def main(**kwargs):
     )
 
     train_dataset = processed_datasets["train"]
-    eval_dataset = processed_datasets["train"]
+    eval_dataset = processed_datasets["test"]
 
 
     train_dataloader = DataLoader(
@@ -168,40 +168,6 @@ def main(**kwargs):
     eval_dataloader = DataLoader(eval_dataset, collate_fn=default_data_collator, batch_size=batch_size, pin_memory=True)
 
 
-    def test_preprocess_function(examples):
-        batch_size = len(examples[text_column])
-        inputs = [f"{text_column} : {x} Label : " for x in examples[text_column]]
-        model_inputs = tokenizer(inputs)
-        # print(model_inputs)
-        for i in range(batch_size):
-            sample_input_ids = model_inputs["input_ids"][i]
-            model_inputs["input_ids"][i] = [tokenizer.pad_token_id] * (
-                max_length - len(sample_input_ids)
-            ) + sample_input_ids
-            model_inputs["attention_mask"][i] = [0] * (max_length - len(sample_input_ids)) + model_inputs[
-                "attention_mask"
-            ][i]
-            model_inputs["input_ids"][i] = torch.tensor(model_inputs["input_ids"][i][:max_length])
-            model_inputs["attention_mask"][i] = torch.tensor(model_inputs["attention_mask"][i][:max_length])
-        return model_inputs
-
-
-    test_dataset = dataset["test"].map(
-        test_preprocess_function,
-        batched=True,
-        num_proc=1,
-        remove_columns=dataset["train"].column_names,
-        load_from_cache_file=False,
-        desc="Running tokenizer on dataset",
-    )
-
-    test_dataloader = DataLoader(test_dataset, collate_fn=default_data_collator, batch_size=batch_size, pin_memory=True)
-
-    # next(iter(test_dataloader))
-    # next(iter(train_dataloader))
-    # len(test_dataloader)
-
-    next(iter(test_dataloader))
     # creating model
     model = LlamaForCausalLM.from_pretrained(model_name_or_path)
     model = get_peft_model(model, peft_config)
@@ -264,11 +230,13 @@ def main(**kwargs):
     inputs = tokenizer(f'{text_column} : {dataset["test"][i][text_column]} Label : ', return_tensors="pt")
     print(dataset["test"][i][text_column])
     print(inputs)
-
+    print(f"saving model to {kwargs['save_path']}")
+    model.save_pretrained(kwargs['save_path'])
+    print("saved")
     with torch.no_grad():
         inputs = {k: v.to(device) for k, v in inputs.items()}
         outputs = model.generate(
-            input_ids=inputs["input_ids"], attention_mask=inputs["attention_mask"], max_new_tokens=10, eos_token_id=3
+            input_ids=inputs["input_ids"], attention_mask=inputs["attention_mask"], max_new_tokens=kwargs['max_length'], eos_token_id=3
         )
         print(outputs)
         print(tokenizer.batch_decode(outputs.detach().cpu().numpy(), skip_special_tokens=True))
@@ -277,8 +245,6 @@ def main(**kwargs):
     print(f"saving model to {kwargs['save_path']}")
     model.save_pretrained(kwargs['save_path'])
     print("saved")
-
-    ckpt = f"{kwargs['save_path']}/adapter_model.bin"
 
 if __name__=="__main__":
     
