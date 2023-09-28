@@ -12,9 +12,7 @@ import argparse
 
 # Instantiate the parser
 parser = argparse.ArgumentParser(description=\
-    "llama 2 prefix tuning script for ConFIRM using peft,\n \
-    example use: \n \
-        python llama_2_prefix_tune.py --model_path /home/user/models/llama-2-7b --save_path /home/user/models/llama-2-7b-prefix-tuned --max_length 30 --num_virtual_tokens 30 --batch_size 6 --epochs 30 --lr 0.03 --dataset_path /home/adrianw/datasets/tuning_pairs.json"
+    "llama 2 prefix tuning script for ConFIRM using peft" \
     )
 # Required arguments
 parser.add_argument('--model_path', type=str, required=True,
