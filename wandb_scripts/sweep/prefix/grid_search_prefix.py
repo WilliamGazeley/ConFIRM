@@ -12,7 +12,7 @@ import os
 
 sweep_config = {
     'name': 'prefix_sweep_bayesian',
-    'method': 'bayesian'
+    'method': 'bayes'
     }
 
 metric = {

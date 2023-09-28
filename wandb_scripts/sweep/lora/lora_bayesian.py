@@ -12,7 +12,7 @@ import os
 
 sweep_config = {
     'name': 'lora_sweep_bayesians',
-    'method': 'bayesian'
+    'method': 'bayes'
     }
 
 metric = {

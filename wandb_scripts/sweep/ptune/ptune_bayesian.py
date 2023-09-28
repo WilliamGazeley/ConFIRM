@@ -12,7 +12,7 @@ import wandb
 
 sweep_config = {
     'name': 'ptune_sweep_bayesian',
-    'method': 'bayesian'
+    'method': 'bayes'
     }
 
 metric = {
