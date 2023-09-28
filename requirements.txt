@@ -1,0 +1,9 @@
+langchain==0.0.292
+llama_index==0.8.28
+openai==0.28.0
+pandas==2.1.0
+protobuf==3.20.3
+setuptools==67.6.0
+vertexai==0.0.1
+google-api-python-client==2.86.0
+google-cloud-aiplatform==1.31.0
