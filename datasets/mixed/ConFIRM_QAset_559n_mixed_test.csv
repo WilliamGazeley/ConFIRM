@@ -1,0 +1,1792 @@
+﻿prompts,question,expected_fields
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Chevron
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company.
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+Question: What's the difference between Chevron's non-operating interest income and research and development?
+
+Information:
+Tesla
+gdp_price_index - GDP (AR), BEA - Bureau of Economic Analysis, U.S. Department of Commerce Quarterly Current prices, SA United States, Price Index, Personal Consumption Expenditure, Overall, Total, SA, Index, 2012 = 100Index that is based on the linking (chaining) of indexes to create a time series. Annual chain-type Fisher indices are used in BEA‚Äôs national income and product accounts (NIPAs) whereby Fisher ideal price indices are calculated using the weights of adjacent years. Those annual changes are then multiplied (chained) together, forming the chain-type index time series.,stock_data.
+Price - The latest trade price, settlement value or closing value. Assume this is the current price.
+Question: Does GDP have an affect on Tesla stock price?
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What is the most expensive stock?
+
+Information:
+Verizon
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+Question: ",How much does Verizon spend on research and development?,['stock_data.research_and_development']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+Question: Which company pays a higher dividend yield, Apple or Tesla?
+
+Information:
+stock_data.price_intraday_low - The datatype returns the price low values. This is the lowest price achieved on the trading day.
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+Question: Which company has a lower operating expense, Tesla or Nvidia?
+
+Information:
+Nvidia
+total_liabilities - TOTAL LIABILITIES represent all short and long term obligations expected to be satisfied by the company.
+Question: How has Nvidia's debt changed over time?
+
+Information:
+UnitedHealth
+stock_data.date_ex_dividend - This represents the ex-dividend date associated with a cash income dividend payment. The data displayed is based upon the dividend whose PAYMENT DATE is most recent to the user's request date.
+Question: ",When is the ex-dividend date for UnitedHealth's most recent dividend payment?,['stock_data.date_ex_dividend']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.turnover_by_volume - This is the daily turnover by volume.
+stock_data.company_name - COMPANY NAME represents the legal name of the company as reported in the 10-K for U.S. companies and the annual report for non-U.S. companies.
+Question: Which company has the highest daily turnover by volume?
+
+Information:
+Tesla
+Turnover by Volume - This is the daily turnover by volume.
+Question: Question: Is it easy to buy or sell Tesla stock?
+
+Information:
+unemployment_rate - UNEMPLOYMENT RATE, Bureau of Labor Statistics, U.S. Department of Labor Monthly SAUnited States, Unemployed, Rate, Total, SAThe Current Population Survey (CPS; household survey) provides information on the labor force, employment, and unemployment. It is a sample survey of about 60,000 eligible households conducted by the U.S. Census Bureau for the U.S. Bureau of Labor Statistics (BLS). The reference period is generally the calendar week that contains the 12th day of the month. The sample is selected to reflect the entire civilian noninstitutional population. Based on responses to a series of questions on work and job search activities, each person 16 years and over in a sample household is classified as employed, unemployed, or not in the labor force. The unemployment rate is the number unemployed as a percent of the labor force. The labor force participation rate is the labor force as a percent of the population, and the employment-population ratio is the employed as a percent of the population. More methodological explanation can be found on web page: www.bls.gov/
+Question: What is the latest of the unemployment rate?
+
+Information:
+UnitedHealth
+stock_data.eps_12m_trailing - Earnings per share for the past 12 months, based on published accounts of net income.
+Question: ",What's the trailing twelve months earnings per share for UnitedHealth?,['stock_data.eps_12m_trailing']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Apple
+Inventories Days Held - Inventories Days Held is equal to 365 / (Cost of Goods Sold (excl Depreciation) / (Average of Last Yearâ€™s and Current Yearâ€™s Inventories ).
+Question: How long does it take for Apple to sell out its inventory?
+
+Information:
+Apple
+stock_data.operating_income - OPERATING INCOME represents the difference between sales and total operating expenses
+Question: Which company has higher operating income, Alphabet or Apple?
+
+Information:
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+Question: Which company pays a higher dividend yield, Apple or Tesla?
+
+Information:
+Philip Morris
+stock_data.inventories_days_held - Inventories Days Held is equal to 365 / (Cost of Goods Sold (excl Depreciation) / (Average of Last Yearâ€™s and Current Yearâ€™s Inventories ) .
+Question: ",How long does it take for Philip Morris to sell out its inventory?,['stock_data.inventories_days_held']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Apple
+stock_data.operating_income - OPERATING INCOME represents the difference between sales and total operating expenses,
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company. 
+Question: Is Apple's income mostly from its main business or from other investments?
+
+Information:
+Tesla
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+stock_data.total_liabilities - TOTAL LIABILITIES represent all short and long term obligations expected to be satisfied by the company.
+Question: Does Tesla have more assets or liabilities?
+
+Information:
+Home Depot
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+Question: Is Home Depot's total assets increasing or decreasing?
+
+Information:
+Berkshire Hathaway
+stock_data.price - The latest trade price, settlement value or closing value. Assume this is the current price.
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+Question: ",What is Berkshire Hathaway's current stock price divided by its total operating expenses?,"['stock_data.price', 'stock_data.operating_expenses_total']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Amazon
+stock_data.eps_12m_forward - 12 Forward Month Earnings per Share based on projections of a company's earnings (net income) over the next twelve months
+Question: What is the forward 12-month EPS for Amazon?
+
+Information:
+dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+stock_data.common_shares_outstanding - COMMON SHARES OUTSTANDING represent the number of shares outstanding at the company's year end. It is the difference between issued shares and treasury shares.
+Question: What's the dividend yield of the company with the most outstanding shares?
+
+Information:
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+stock_data.price_to_book_value - This ratio measures a company's market price in relation to its book value. Price To Book Value Per Share is calculated by dividing the companyâ€™s latest closing Price by its Book Value per share. Book Value per share is calculated by dividing Total Equity by Current Total Shares Outstanding.
+Question: What's the R&D expense of the company with the highest price to book value?
+
+Information:
+Walmart
+stock_data.inventories_days_held - Inventories Days Held is equal to 365 / (Cost of Goods Sold (excl Depreciation) / (Average of Last Yearâ€™s and Current Yearâ€™s Inventories ) .
+Question: ",How many days does Walmart typically hold its inventories?,['stock_data.inventories_days_held']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.net_interest_income - NET INTEREST INCOME represents the difference between the total interest income and total interest expense of the bank.
+Question: Is the bank profitable?
+
+Information:
+Tesla
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+stock_data.market_capitalization - Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency.
+Question: Which company spends more on R&D relative to their market cap, Nvidia or Tesla?
+
+Information:
+s&pcomp- STANDARD & POORS 500 COMPOSITE -stock market benchmark index
+Question: How is the stock market doing?
+
+Information:
+Nvidia
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+Question: ",What is the total cost of operations for Nvidia?,['stock_data.operating_expenses_total']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+stock_data.date_ex_dividend - This represents the ex-dividend date associated with a cash income dividend payment. The data displayed is based upon the dividend whose PAYMENT DATE is most recent to the user's request date.
+Question: What is the relationship between a company's net sales or revenues and its dividend payment?
+
+Information:
+Chevron
+leading_index -THE CONFERENCE BOARD LEADING ECONOMIC INDICATORS INDEX, The Conference Board Monthly SA . United States, Leading Index, Total, SA, Index, 2016 = 100. The composite indexes are the key elements in an analytic system designed to signal peaks and troughs in the business cycle. Historically, the cyclical turning points in the leading index have occurred before those in aggregate economic activity. The leading index is the composite average of the following indicators: 1. Average weekly hours, manufacturing; 2. Average weekly initial claims for unemployment insurance; 3. Manufacturers' new orders, consumer goods and materials; 4. Vendor performance, slower deliveries diffusion index; 5. Manufacturers' new orders, nondefense capital goods; 6. Building permits, new private housing units; 7. Stock prices, 500 common stocks; 8. Money supply, M2; 9. Interest rate spread, 10-year Treasury bonds less federal funds; and 10. Index of consumer expectations.
+Net Sales Or Revenues- NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: Do economic leading indicators have any effect on Chevron revenues?
+
+Information:
+dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+stock_data.common_shares_outstanding - COMMON SHARES OUTSTANDING represent the number of shares outstanding at the company's year end. It is the difference between issued shares and treasury shares.
+Question: What's the dividend yield of the company with the most outstanding shares?
+
+Information:
+Walmart
+stock_data.market_capitalization - Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency.
+stock_data.cogs - Cost Of Goods Sold represents the direct costs incurred in producing or acquiring the goods that a company sells to generate revenue. COGS includes expenses directly associated with the production or purchase of goods, such as the cost of raw materials, direct labor, and manufacturing overhead.
+Question: ",What is the relationship between Walmart's market cap and cost of goods sold?,"['stock_data.market_capitalization', 'stock_data.cogs']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Nvidia
+Net Sales Or Revenues- NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: Is Nvidia's sales increasing or decreasing?
+
+Information:
+stock_data.price_intraday_high - The datatype returns the price high values. This is the highest price achieved on the trading day.
+Question: Which company had the biggest intraday high price increase yesterday?
+
+Information:
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+Question: What is included in operating expenses
+
+Information:
+Costco
+stock_data.price_intraday_high - This is the highest price achieved on the trading day.
+stock_data.inventories_days_held - Inventories Days Held is equal to 365 / (Cost of Goods Sold (excl Depreciation) / (Average of Last Year‚Äôs and Current Year‚Äôs Inventories ) .
+Question: ",How does Costco's inventory days held compare to its highest intraday price?,"['stock_data.price_intraday_high', 'stock_data.inventories_days_held']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+stock_data.operating_income - OPERATING INCOME represents the difference between sales and total operating expenses
+Question: Is there a company that spends more on operating expenses than it makes in operating income?
+
+Information:
+stock_data.selling_general_and_administrative_expenses - SELLING, GENERAL & ADMINISTRATIVE EXPENSES represents expenses not directly attributable to the production process but relating to selling, general and administrative functions.
+Question: Are administrative costs increasing?
+
+Information:
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+stock_data.price_to_book_value - This ratio measures a company's market price in relation to its book value. Price To Book Value Per Share is calculated by dividing the company‚Äôs latest closing Price by its Book Value per share. Book Value per share is calculated by dividing Total Equity by Current Total Shares Outstanding.
+Question: What's the R&D expense of the company with the highest price to book value?
+
+Information:
+IBM
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+Question: ",What is IBM's operating expense?,['stock_data.operating_expenses_total']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Apple
+total_assets- TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets,
+nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company.
+Question: How does Apple's total assets and interest income its financial performance?
+
+Information:
+Chevron
+leading_index -THE CONFERENCE BOARD LEADING ECONOMIC INDICATORS INDEX, The Conference Board Monthly SA . United States, Leading Index, Total, SA, Index, 2016 = 100. The composite indexes are the key elements in an analytic system designed to signal peaks and troughs in the business cycle. Historically, the cyclical turning points in the leading index have occurred before those in aggregate economic activity. The leading index is the composite average of the following indicators: 1. Average weekly hours, manufacturing; 2. Average weekly initial claims for unemployment insurance; 3. Manufacturers' new orders, consumer goods and materials; 4. Vendor performance, slower deliveries diffusion index; 5. Manufacturers' new orders, nondefense capital goods; 6. Building permits, new private housing units; 7. Stock prices, 500 common stocks; 8. Money supply, M2; 9. Interest rate spread, 10-year Treasury bonds less federal funds; and 10. Index of consumer expectations.
+Net Sales Or Revenues- NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: Do economic leading indicators have any effect on Chevron revenues?
+
+Information:
+Nvidia
+operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+Question: What types of expenses included in Nvidia's financial statements?
+
+Information:
+AMD
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company. 
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+Question: ",Does AMD generate any non-operating interest income and what are its total operating expenses?,"['stock_data.nonoperating_interest_income', 'stock_data.operating_expenses_total']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+Question: Does dividend yield have negative correlation with total assets?
+
+Information:
+stock_data.general_industry_classification - This item represents the company's general industry classification: Energy, Materials, Industrials, Consumer Discretionary, Consumer Staples, Health Care, Financials, Information Technology, Communication Services, Utilities, and Real Estate.
+
+Question: What industry does Broadcom belong to?
+
+Information:
+Apple
+market_capitalization -Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency.
+total_liabilities - TOTAL LIABILITIES represent all short and long term obligations expected to be satisfied by the company.
+Question: Does Apple have too much debt compared to its market value?
+
+Information:
+Mastercard
+stock_data.total_liabilities - TOTAL LIABILITIES represent all short and long term obligations expected to be satisfied by the company.
+stock_data.employees - EMPLOYEES represent the number of both full and part time employees of the company.
+Question: ",How many employees does Mastercard have and what are their total liabilities?,"['stock_data.total_liabilities', 'stock_data.employees']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+Question: What is the R&D spend for the company with the highest dividend yield?
+
+Information:
+Apple
+Inventories Days Held - Inventories Days Held is equal to 365 / (Cost of Goods Sold (excl Depreciation) / (Average of Last Yearâ€™s and Current Yearâ€™s Inventories ).
+Question: How long does it take for Apple to sell out its inventory?
+
+Information:
+stock_data.long_term_debt - LONG TERM DEBT represents all interest bearing financial obligations, excluding amounts due within one year. It is shown net of premium or discount.
+stock_data.sector - Sector classification - this datatype returns the Datastream sector classification name, for example, â€˜Breweriesâ€™.
+Question: Which company in the Healthcare sector has the most long term debt?
+
+Information:
+Merck
+stock_data.date_ex_dividend - This represents the ex-dividend date associated with a cash income dividend payment. The data displayed is based upon the dividend whose PAYMENT DATE is most recent to the user's request date.
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+Question: ","What is the most recent ex-dividend date for Merck, and what is the dividend yield for the company?","['stock_data.date_ex_dividend', 'stock_data.dividend_yield']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Tesla
+Operating Income - OPERATING INCOME represents the difference between sales and total operating expenses.
+Question: Is Tesla profitable or still operating at a loss?
+
+Information:
+stock_data.price_intraday_low - The datatype returns the price low values. This is the lowest price achieved on the trading day.
+stock_data.sector - Sector classification - this datatype returns the Datastream sector classification name, for example, â€˜Breweriesâ€™.
+Question: In which sector did stocks have the lowest intraday price?
+
+Information:
+Tesla
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+stock_data.total_liabilities - TOTAL LIABILITIES represent all short and long term obligations expected to be satisfied by the company.
+Question: Does Tesla have more assets or liabilities?
+
+Information:
+AMD
+stock_data.price_intraday_low - This is the lowest price achieved on the trading day.
+Question: ",What was the lowest price of AMD stocks on the trading day?,['stock_data.price_intraday_low']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+stock_data.total_return_index - A return index is available for individual equities. This shows a theoretical growth in value of a share holding over a specified period, assuming that dividends are re-invested to purchase additional units of an equity or unit trust at the closing price applicable on the ex-dividend date.
+Question: What is the relationship between net sales and total return index?
+
+Information:
+Nvidia
+operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+Question: What types of expenses included in Nvidia's financial statements?
+
+Information:
+Amazon
+stock_data.eps_12m_forward - 12 Forward Month Earnings per Share based on projections of a company's earnings (net income) over the next twelve months
+Question: What is the forward 12-month EPS for Amazon?
+
+Information:
+Pfizer
+stock_data.eps_12m_trailing - Earnings per share for the past 12 months, based on published accounts of net income.
+stock_data.total_return_index - A return index is available for individual equities. This shows a theoretical growth in value of a share holding over a specified period, assuming that dividends are re-invested to purchase additional units of an equity or unit trust at the closing price applicable on the ex-dividend date.
+Question: ",How does Pfizer's total return index compare to its 12-month trailing EPS?,"['stock_data.eps_12m_trailing', 'stock_data.total_return_index']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Apple
+Inventories Days Held - Inventories Days Held is equal to 365 / (Cost of Goods Sold (excl Depreciation) / (Average of Last Yearâ€™s and Current Yearâ€™s Inventories ).
+Question: How much inventory does Apple hold?
+
+Information:
+Nvidia
+price_intraday_high - This is the highest price achieved on the trading day.
+price - The latest trade price, settlement value or closing value. Assume this is the current price.
+Question: What was the highest price of Nvidia today and how does it compare with the current price?
+
+Information:
+Amazon
+stock_data.eps_12m_forward - 12 Forward Month Earnings per Share based on projections of a company's earnings (net income) over the next twelve months
+Question: What is the forward 12-month EPS for Amazon?
+
+Information:
+Microsoft
+stock_data.date_ex_dividend - This represents the ex-dividend date associated with a cash income dividend payment. The data displayed is based upon the dividend whose PAYMENT DATE is most recent to the user's request date.
+stock_data.enterprise_value - ENTERPRISE VALUE(EV) = Market Capitalization at fiscal year end date + Preferred Stock + Minority Interest + Total Debt minus Cash.
+Question: ",When is Microsoft's ex-dividend date and what is its enterprise value?,"['stock_data.date_ex_dividend', 'stock_data.enterprise_value']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Chevron
+stock_data.operating_income - OPERATING INCOME represents the difference between sales and total operating expenses
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company.
+Question: How does Chevron's operating income compare to its non-operating interest income?
+
+Information:
+Chevron
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+stock_data.general_industry_classification - This item represents the company's general industry classification: Energy, Materials, Industrials, Consumer Discretionary, Consumer Staples, Health Care, Financials, Information Technology, Communication Services, Utilities, and Real Estate.
+Question: How does Chevron's total assets compare to other companies in the autos sector?
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What is the price of gold?
+
+Information:
+Pfizer
+stock_data.price_earnings_ratio - This is the price divided by the earnings rate per share at the required date.
+stock_data.book_value_per_share - BOOK VALUE PER SHARE represents the book value (common equity )at the end of the last calendar quarter for U.S. corporations.
+Question: ",How does Pfizer's price-earnings ratio compare to its book value per share?,"['stock_data.price_earnings_ratio', 'stock_data.book_value_per_share']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Nvidia
+operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+Question: What types of expenses included in Nvidia's financial statements?
+
+Information:
+stock_data.turnover_by_volume - This is the daily turnover by volume.
+Question: What is the most actively traded stock?
+
+Information:
+Chevron
+Operating Income - OPERATING INCOME represents the difference between sales and total operating expenses
+Question: How profitable is Chevron?
+
+Information:
+Salesforce
+stock_data.eps_12m_trailing - Earnings per share for the past 12 months, based on published accounts of net income.
+Question: ",What's Salesforce's earnings per share?,['stock_data.eps_12m_trailing']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+stock_data.general_industry_classification - This item represents the company's general industry classification: Energy, Materials, Industrials, Consumer Discretionary, Consumer Staples, Health Care, Financials, Information Technology, Communication Services, Utilities, and Real Estate.
+Question: Which industry has the highest operating expenses?
+
+Information:
+Chevron
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+stock_data.general_industry_classification - This item represents the company's general industry classification: Energy, Materials, Industrials, Consumer Discretionary, Consumer Staples, Health Care, Financials, Information Technology, Communication Services, Utilities, and Real Estate.
+Question: How does Chevron's total assets compare to other companies in the autos sector?
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What is the latest stock price for TSLA?
+
+Information:
+Mastercard
+stock_data.total_shareholders_equity - TOTAL SHAREHOLDERSâ€™ EQUITY represents the sum of Preferred Stock and Common Shareholdersâ€™ Equity.
+Question: ",How does Mastercard's total shareholders' equity compare to other companies in the financial sector?,['stock_data.total_shareholders_equity']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Apple
+current_assets_total - CURRENT ASSETS - TOTAL represents cash and other assets that are reasonably expected to be realized in cash, sold or consumed within one year or one operating cycle.Generally, it is the sum of cash and equivalents, receivables, inventories, prepaid expenses and other current assets,
+current__liabilities_total - CURRENT LIABILITIES - TOTAL represent debt or other obligations that the company expects to satisfy within one year.
+Question: Is Apple's current financial position strong or weak?
+
+Information:
+stock_data.eps - Earnings per share for the last financial year, based on published accounts. Data is either provided by Worldscope.
+stock_data.sector - Sector classification - this datatype returns the Datastream sector classification name, for example, â€˜Breweriesâ€™.
+Question: What sectors have the highest EPS?
+
+Information:
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+Question: Which company has more assets, Chevron or Tesla?
+
+Information:
+Mastercard
+stock_data.cogs - Cost Of Goods Sold represents the direct costs incurred in producing or acquiring the goods that a company sells to generate revenue. COGS includes expenses directly associated with the production or purchase of goods, such as the cost of raw materials, direct labor, and manufacturing overhead.
+stock_data.market_capitalization - Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency.
+Question: ",What is Mastercard's market capitalization and how does it compare to its cost of goods sold?,"['stock_data.cogs', 'stock_data.market_capitalization']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+Question: What is included in operating expenses
+
+Information:
+Microsoft
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: What is the total revenue of Microsoft?
+
+Information:
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+Question: Which company has more assets, Chevron or Tesla?
+
+Information:
+Verizon
+stock_data.common_shares_outstanding - COMMON SHARES OUTSTANDING represent the number of shares outstanding at the company's year end. It is the difference between issued shares and treasury shares.
+Question: ",How many common shares are outstanding for Verizon at the end of the year?,['stock_data.common_shares_outstanding']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What is the price of gold?
+
+Information:
+Alphabet
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: What company has higher net sales or revenue, Alphabet or Apple?
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What is the range for external_data?
+
+Information:
+Nvidia
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: ",How does Nvidia's net sales or revenue compare to its competitors in the technology industry?,['stock_data.net_sales_or_revenues']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Tesla
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+stock_data.market_capitalization - Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency.
+Question: Which company spends more on R&D relative to their market cap, Nvidia or Tesla?
+
+Information:
+stock_data.price_intraday_high - This is the highest price achieved on the trading day.
+stock_data.cogs - Cost Of Goods Sold represents the direct costs incurred in producing or acquiring the goods that a company sells to generate revenue. COGS includes expenses directly associated with the production or purchase of goods, such as the cost of raw materials, direct labor, and manufacturing overhead.
+Question: Is there a relationship between a company's cost of goods sold and its stock price?
+
+Information:
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+stock_data.date_ex_dividend - This represents the ex-dividend date associated with a cash income dividend payment. The data displayed is based upon the dividend whose PAYMENT DATE is most recent to the user's request date.
+Question: What is the relationship between a company's net sales or revenues and its dividend payment?
+
+Information:
+Tesla
+stock_data.current_assets_total - CURRENT ASSETS - TOTAL represents cash and other assets that are reasonably expected to be realized in cash, sold or consumed within one year or one operating cycle.Generally, it is the sum of cash and equivalents, receivables, inventories, prepaid expenses and other current assets.
+stock_data.selling_general_and_administrative_expenses - SELLING, GENERAL & ADMINISTRATIVE EXPENSES (SG&A) represents expenses not directly attributable to the production process but relating to selling, general and administrative functions.
+Question: ","Does Tesla have a higher proportion of current assets relative to its selling, general, and administrative expenses compared to other companies in the same industry?","['stock_data.current_assets_total', 'stock_data.selling_general_and_administrative_expenses']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+stock_data.price_earnings_ratio - This is the price divided by the earnings rate per share at the required date.
+Question: What is the P/E ratio of the company with the highest sales?
+
+Information:
+Nvidia
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: What percentage of Nvidia's revenue is spent on operating expenses?
+
+Information:
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+Question: Does dividend yield have negative correlation with total assets?
+
+Information:
+McDonald
+stock_data.long_term_debt - LONG TERM DEBT represents all interest bearing financial obligations, excluding amounts due within one year. It is shown net of premium or discount.
+Question: ",How much long-term debt does McDonald's have?,['stock_data.long_term_debt']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.price_intraday_high - This is the highest price achieved on the trading day.
+stock_data.cogs - Cost Of Goods Sold represents the direct costs incurred in producing or acquiring the goods that a company sells to generate revenue. COGS includes expenses directly associated with the production or purchase of goods, such as the cost of raw materials, direct labor, and manufacturing overhead.
+Question: Is there a relationship between a company's cost of goods sold and its stock price?
+
+Information:
+unemployment_rate - UNEMPLOYMENT RATE, Bureau of Labor Statistics, U.S. Department of Labor Monthly SAUnited States, Unemployed, Rate, Total, SAThe Current Population Survey (CPS; household survey) provides information on the labor force, employment, and unemployment. It is a sample survey of about 60,000 eligible households conducted by the U.S. Census Bureau for the U.S. Bureau of Labor Statistics (BLS). The reference period is generally the calendar week that contains the 12th day of the month. The sample is selected to reflect the entire civilian noninstitutional population. Based on responses to a series of questions on work and job search activities, each person 16 years and over in a sample household is classified as employed, unemployed, or not in the labor force. The unemployment rate is the number unemployed as a percent of the labor force. The labor force participation rate is the labor force as a percent of the population, and the employment-population ratio is the employed as a percent of the population. More methodological explanation can be found on web page: www.bls.gov/
+Question: What is the latest of the unemployment rate?
+
+Information:
+dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+Question: What is the R&D spend for the company with the highest dividend yield?
+
+Information:
+T-Mobile US
+stock_data.current__liabilities_total - CURRENT LIABILITIES - TOTAL represent debt or other obligations that the company expects to satisfy within one year.
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: ",What are the current liabilities for T-Mobile US and what are their net sales or revenues?,"['stock_data.current__liabilities_total', 'stock_data.net_sales_or_revenues']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.eps - Earnings per share for the last financial year, based on published accounts. Data is either provided by Worldscope.
+stock_data.sector - Sector classification - this datatype returns the Datastream sector classification name, for example, ‚ÄòBreweries‚Äô.
+Question: What sectors have the highest EPS?
+
+Information:
+Tesla
+stock_data.price_intraday_high - The datatype returns the price high values. This is the highest price achieved on the trading day.
+stock_data.price - The latest trade price, settlement value or closing value. Assume this is the current price.
+Question: What is the difference between the highest price and current price of Tesla?
+
+Information:
+Nvidia
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: What percentage of Nvidia's revenue is spent on operating expenses?
+
+Information:
+Bank of America
+stock_data.total_return_index - A return index is available for individual equities. This shows a theoretical growth in value of a share holding over a specified period, assuming that dividends are re-invested to purchase additional units of an equity or unit trust at the closing price applicable on the ex-dividend date.
+Question: ",What is the total return index of Bank of America?,['stock_data.total_return_index']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Chevron
+stock_data.selling_general_and_administrative_expenses - SELLING, GENERAL & ADMINISTRATIVE EXPENSES represents expenses not directly attributable to the production process but relating to selling, general and administrative functions.
+
+Question: stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.How do Chevron's SG&A expenses compare to their total assets?
+
+Information:
+Tesla
+Inventories Days Held - Inventories Days Held is equal to 365 / (Cost of Goods Sold (excl Depreciation) / (Average of Last Yearâ€™s and Current Yearâ€™s Inventories ).
+Question: How efficiently does Tesla manage its inventory??
+
+Information:
+Microsoft
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: What is the total revenue of Microsoft?
+
+Information:
+Adobe
+stock_data.total_return_index - A return index is available for individual equities. This shows a theoretical growth in value of a share holding over a specified period, assuming that dividends are re-invested to purchase additional units of an equity or unit trust at the closing price applicable on the ex-dividend date.
+stock_data.selling_general_and_administrative_expenses - SELLING, GENERAL & ADMINISTRATIVE EXPENSES (SG&A) represents expenses not directly attributable to the production process but relating to selling, general and administrative functions.
+Question: ",How do Adobe's SG&A expenses affect the total return index of its shares?,"['stock_data.total_return_index', 'stock_data.selling_general_and_administrative_expenses']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+General Electric
+stock_data.selling_general_and_administrative_expenses - SELLING, GENERAL & ADMINISTRATIVE EXPENSES (SG&A) represents expenses not directly attributable to the production process but relating to selling, general and administrative functions.
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company.
+Question: Does General Electric's non-operating interest income cover SG&A expenses?
+
+Information:
+Intuit
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+stock_data.market_capitalization - Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency.
+Question: How much is Intuit's market value relative to its total assets?
+
+Information:
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+stock_data.operating_income - OPERATING INCOME represents the difference between sales and total operating expenses
+Question: Is there a company that spends more on operating expenses than it makes in operating income?
+
+Information:
+Netflix
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company. 
+Question: ",Does Netflix earn more from interest bearing investments than from its core business?,['stock_data.nonoperating_interest_income']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Chevron
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company.
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+Question: What's the difference between Chevron's non-operating interest income and research and development?
+
+Information:
+Chevron
+stock_data.price - The latest trade price, settlement value or closing value. Assume this is the current price,
+book_value_per_share - BOOK VALUE PER SHARE represents the book value (common equity )at the end of the last calendar quarter for U.S. corporations.
+Question: Is Chevron's currently trading higher or lower than its book value per share?
+
+Information:
+Apple
+total_assets- TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets,
+nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company.
+Question: How does Apple's total assets and interest income its financial performance?
+
+Information:
+Chevron
+stock_data.current_assets_total - CURRENT ASSETS - TOTAL represents cash and other assets that are reasonably expected to be realized in cash, sold or consumed within one year or one operating cycle.Generally, it is the sum of cash and equivalents, receivables, inventories, prepaid expenses and other current assets.
+Question: ",What does Chevron's current assets total include?,['stock_data.current_assets_total']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Tesla
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+stock_data.market_capitalization - Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency.
+Question: Which company spends more on R&D relative to their market cap, Nvidia or Tesla?
+
+Information:
+stock_data.turnover_by_volume - This is the daily turnover by volume.
+Question: Which stocks have the highest daily trading volume?
+
+Information:
+Apple
+market_capitalization - Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency,
+net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: How is Apple's market cap compare to its revenues?
+
+Information:
+Netflix
+stock_data.total_liabilities - TOTAL LIABILITIES represent all short and long term obligations expected to be satisfied by the company.
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: ",Does Netflix have more liabilities or net sales/revenues?,"['stock_data.total_liabilities', 'stock_data.net_sales_or_revenues']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Nvidia
+eps_12m_forward - 12 Forward Month Earnings per Share based on projections of a company's earnings (net income) over the next twelve months,
+eps_12m_trailing - Earnings per share for the past 12 months, based on published accounts of net income.
+Question: How does Nvidia future earnings look compared to last year's?
+
+Information:
+dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+stock_data.common_shares_outstanding - COMMON SHARES OUTSTANDING represent the number of shares outstanding at the company's year end. It is the difference between issued shares and treasury shares.
+Question: What's the dividend yield of the company with the most outstanding shares?
+
+Information:
+Apple
+stock_data.operating_income - OPERATING INCOME represents the difference between sales and total operating expenses,
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company. 
+Question: Is Apple's income mostly from its main business or from other investments?
+
+Information:
+Comcast
+stock_data.total_return_index - A return index is available for individual equities. This shows a theoretical growth in value of a share holding over a specified period, assuming that dividends are re-invested to purchase additional units of an equity or unit trust at the closing price applicable on the ex-dividend date.
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company. 
+Question: ",How much of Comcast's total return is from interest income not related to its main business?,"['stock_data.total_return_index', 'stock_data.nonoperating_interest_income']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+stock_data.general_industry_classification - This item represents the company's general industry classification: Energy, Materials, Industrials, Consumer Discretionary, Consumer Staples, Health Care, Financials, Information Technology, Communication Services, Utilities, and Real Estate.
+Question: Which industry has the highest operating expenses?
+
+Information:
+Apple
+total_assets- TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets,
+nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company.
+Question: How does Apple's total assets and interest income its financial performance?
+
+Information:
+Pepsico
+
+Question: stock_data.inventories_days_held - Inventories Days Held is equal to 365 / (Cost of Goods Sold (excl Depreciation) / (Average of Last Year‚Äôs and Current Year‚Äôs Inventories ) .
+stock_data.company_name - COMPANY NAME represents the legal name of the company as reported in the 10-K for U.S. companies and the annual report for non-U.S. companies.Which company has higher inventory days held, Coca-Cola or PepsiCo?
+
+Information:
+Mastercard
+stock_data.price_intraday_low - This is the lowest price achieved on the trading day.
+stock_data.common_shares_outstanding - COMMON SHARES OUTSTANDING represent the number of shares outstanding at the company's year end. It is the difference between issued shares and treasury shares.
+Question: ",What was Mastercard's lowest intraday price on the day their shares outstanding were at their highest?,"['stock_data.price_intraday_low', 'stock_data.common_shares_outstanding']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.price_intraday_low - The datatype returns the price low values. This is the lowest price achieved on the trading day.
+stock_data.sector - Sector classification - this datatype returns the Datastream sector classification name, for example, ‚ÄòBreweries‚Äô.
+Question: In which sector did stocks have the lowest intraday price?
+
+Information:
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+Question: Which company has more assets, Chevron or Tesla?
+
+Information:
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+stock_data.eps_12m_trailing - Earnings per share for the past 12 months, based on published accounts of net income.
+Question: Which companies spends more on research and development relative to their earnings per share?
+
+Information:
+T-Mobile US
+stock_data.current_assets_total - CURRENT ASSETS - TOTAL represents cash and other assets that are reasonably expected to be realized in cash, sold or consumed within one year or one operating cycle.Generally, it is the sum of cash and equivalents, receivables, inventories, prepaid expenses and other current assets.
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+Question: ","Which company has a higher dividend yield and more current assets, T-Mobile US or another company?","['stock_data.current_assets_total', 'stock_data.dividend_yield']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Alphabet
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: What company has higher net sales or revenue, Alphabet or Apple?
+
+Information:
+stock_data.price_intraday_low - The datatype returns the price low values. This is the lowest price achieved on the trading day.
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+Question: Which company has a lower operating expense, Tesla or Nvidia?
+
+Information:
+Johnson & Johnson
+stock_data.total_return_index - A return index is available for individual equities. This shows a theoretical growth in value of a share holding over a specified period, assuming that dividends are re-invested to purchase additional units of an equity or unit trust at the closing price applicable on the ex-dividend date.
+Question: How has Johnson & Johnson's stock performed over the last 5 years?
+
+Information:
+General Electric
+stock_data.operating_income - OPERATING INCOME represents the difference between sales and total operating expenses
+Question: ",What is General Electric's operating income?,['stock_data.operating_income']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.turnover_by_volume - This is the daily turnover by volume.
+Question: Which stocks have the highest daily trading volume?
+
+Information:
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+Question: Which company pays the highest dividend?
+
+Information:
+Proctor & Gamble
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+
+Question: stock_data.total_return_index - A return index is available for individual equities. This shows a theoretical growth in value of a share holding over a specified period, assuming that dividends are re-invested to purchase additional units of an equity or unit trust at the closing price applicable on the ex-dividend date.How much would an investment in Proctor & Gamble 5 years ago be worth today, assuming all dividends were reinvested?
+
+Information:
+Coca-Cola
+stock_data.ticker_symbol - TICKER SYMBOL represents a symbol used to identify the company on the stock exchanges where it is listed.
+stock_data.operating_income - OPERATING INCOME represents the difference between sales and total operating expenses
+Question: ",Which company has the ticker symbol KO and what is its operating income?,"['stock_data.ticker_symbol', 'stock_data.operating_income']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+Question: Which company has more assets, Chevron or Tesla?
+
+Information:
+Chevron
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company.
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+Question: What's the difference between Chevron's non-operating interest income and research and development?
+
+Information:
+stock_data.price - The latest trade price, settlement value or closing value. Assume this is the current price
+.stock_data.sector - Sector classification - this datatype returns the Datastream sector classification name, for example, â€˜Breweriesâ€™.
+Question: Which sectors are outperforming the market today?
+
+Information:
+Proctor & Gamble
+stock_data.employees - EMPLOYEES represent the number of both full and part time employees of the company.
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+Question: ",How many employees does Proctor & Gamble have and how much do they spend on research and development?,"['stock_data.employees', 'stock_data.research_and_development']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Chevron
+stock_data.selling_general_and_administrative_expenses - SELLING, GENERAL & ADMINISTRATIVE EXPENSES represents expenses not directly attributable to the production process but relating to selling, general and administrative functions.
+
+Question: stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.How do Chevron's SG&A expenses compare to their total assets?
+
+Information:
+stock_data.volume_weighted_average_price - Volume Weighted Average Price (VWAP) is calculated by dividing the total volume of shares traded for a stock on a particular day, into the total value of shares traded for the stock on that day. VWAP = Sum of (Volume * Price) / Sum of Volume . In the  formula, 'sum' refers to the aggregate of the day's transactions on the primary exchange
+stock_data.sector - Sector classification - this datatype returns the Datastream sector classification name, for example, â€˜Breweriesâ€™
+Question: Which sectors have the highest volume weighted average price?
+
+Information:
+Amazon
+stock_data.eps_12m_forward - 12 Forward Month Earnings per Share based on projections of a company's earnings (net income) over the next twelve months
+Question: What is the forward 12-month EPS for Amazon?
+
+Information:
+Walt Disney
+stock_data.ticker_symbol - TICKER SYMBOL represents a symbol used to identify the company on the stock exchanges where it is listed.
+stock_data.current_assets_total - CURRENT ASSETS - TOTAL represents cash and other assets that are reasonably expected to be realized in cash, sold or consumed within one year or one operating cycle.Generally, it is the sum of cash and equivalents, receivables, inventories, prepaid expenses and other current assets.
+Question: ",What is the ticker symbol for Walt Disney and what is their total current assets?,"['stock_data.ticker_symbol', 'stock_data.current_assets_total']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Apple
+Inventories Days Held - Inventories Days Held is equal to 365 / (Cost of Goods Sold (excl Depreciation) / (Average of Last Year‚Äôs and Current Year‚Äôs Inventories ).
+Question: How long does it take for Apple to sell out its inventory?
+
+Information:
+stock_data.price_intraday_high - This is the highest price achieved on the trading day.
+stock_data.cogs - Cost Of Goods Sold represents the direct costs incurred in producing or acquiring the goods that a company sells to generate revenue. COGS includes expenses directly associated with the production or purchase of goods, such as the cost of raw materials, direct labor, and manufacturing overhead.
+Question: Is there a relationship between a company's cost of goods sold and its stock price?
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What's the latest news about Nvidia?
+
+Information:
+Adobe
+stock_data.price_earnings_ratio - This is the price divided by the earnings rate per share at the required date.
+Question: ",What is the P/E ratio of Adobe?,['stock_data.price_earnings_ratio']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.price_intraday_high - This is the highest price achieved on the trading day.
+stock_data.cogs - Cost Of Goods Sold represents the direct costs incurred in producing or acquiring the goods that a company sells to generate revenue. COGS includes expenses directly associated with the production or purchase of goods, such as the cost of raw materials, direct labor, and manufacturing overhead.
+Question: Is there a relationship between a company's cost of goods sold and its stock price?
+
+Information:
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+Question: Which company pays a higher dividend yield, Apple or Tesla?
+
+Information:
+Tesla
+general_industry_classification - General Industry Classification Standard (GICS) represents the company's general industry classification: Energy, Materials, Industrials, Consumer Discretionary, Consumer Staples, Health Care, Financials, Information Technology, Communication Services, Utilities, and Real Estate.
+Question: What industry is Tesla in?
+
+Information:
+Apple
+stock_data.employees - EMPLOYEES represent the number of both full and part time employees of the company.
+stock_data.book_value_per_share - BOOK VALUE PER SHARE represents the book value (common equity )at the end of the last calendar quarter for U.S. corporations.
+Question: ","Which company has more employees relative to its book value per share, Apple or Tesla?","['stock_data.employees', 'stock_data.book_value_per_share']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.volume_weighted_average_price - Volume Weighted Average Price (VWAP) is calculated by dividing the total volume of shares traded for a stock on a particular day, into the total value of shares traded for the stock on that day. VWAP = Sum of (Volume * Price) / Sum of Volume . In the  formula, 'sum' refers to the aggregate of the day's transactions on the primary exchange
+stock_data.sector - Sector classification - this datatype returns the Datastream sector classification name, for example, ‚ÄòBreweries‚Äô
+Question: Which sectors have the highest volume weighted average price?
+
+Information:
+stock_data.long_term_debt - LONG TERM DEBT represents all interest bearing financial obligations, excluding amounts due within one year. It is shown net of premium or discount.
+stock_data.sector - Sector classification - this datatype returns the Datastream sector classification name, for example, ‚ÄòBreweries‚Äô.
+Question: Which company in the Healthcare sector has the most long term debt?
+
+Information:
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+stock_data.company_name - COMPANY NAME represents the legal name of the company as reported in the 10-K for U.S. companies.
+Question: What is the company name and net sales?
+
+Information:
+Merck
+stock_data.price - The latest trade price, settlement value or closing value. Assume this is the current price.
+stock_data.total_shareholders_equity - TOTAL SHAREHOLDERS‚Äô EQUITY represents the sum of Preferred Stock and Common Shareholders‚Äô Equity.
+Question: ","What is the current price of Merck, and what is the total shareholder's equity?","['stock_data.price', 'stock_data.total_shareholders_equity']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+Question: Does dividend yield have negative correlation with total assets?
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What is the most expensive stock?
+
+Information:
+Apple
+Inventories Days Held - Inventories Days Held is equal to 365 / (Cost of Goods Sold (excl Depreciation) / (Average of Last Year‚Äôs and Current Year‚Äôs Inventories ).
+Question: How much inventory does Apple hold?
+
+Information:
+Microsoft
+stock_data.total_return_index - A return index is available for individual equities. This shows a theoretical growth in value of a share holding over a specified period, assuming that dividends are re-invested to purchase additional units of an equity or unit trust at the closing price applicable on the ex-dividend date.
+Question: ",What was Microsoft's total return index 5 years ago?,['stock_data.total_return_index']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Chevron
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company.
+Question: What is Chevron's dividend yield compared to its non-operating interest income?
+
+Information:
+Chevron
+stock_data.price_intraday_low - The datatype returns the price low values. This is the lowest price achieved on the trading day.
+stock_data.price_intraday_high - The datatype returns the price high values. This is the highest price achieved on the trading day.
+Question: What was the range in Chevron's stock price today?
+
+Information:
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+Question: Which company pays a higher dividend yield, Apple or Tesla?
+
+Information:
+Chevron
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company. 
+Question: ",Does Chevron generate any income from interest bearing investments unrelated to its operating activities?,['stock_data.nonoperating_interest_income']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What's the latest news about Nvidia?
+
+Information:
+Apple
+total_assets- TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets,
+nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company.
+Question: How does Apple's total assets and interest income its financial performance?
+
+Information:
+Tesla
+gdp_price_index - GDP (AR), BEA - Bureau of Economic Analysis, U.S. Department of Commerce Quarterly Current prices, SA United States, Price Index, Personal Consumption Expenditure, Overall, Total, SA, Index, 2012 = 100Index that is based on the linking (chaining) of indexes to create a time series. Annual chain-type Fisher indices are used in BEAâ€™s national income and product accounts (NIPAs) whereby Fisher ideal price indices are calculated using the weights of adjacent years. Those annual changes are then multiplied (chained) together, forming the chain-type index time series.,stock_data.
+Price - The latest trade price, settlement value or closing value. Assume this is the current price.
+Question: Does GDP have an affect on Tesla stock price?
+
+Information:
+Oracle
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company. 
+stock_data.company_name - COMPANY NAME represents the legal name of the company as reported in the 10-K for U.S. companies.
+Question: ",What is the non-operating interest income of Oracle and what is the legal name of the company?,"['stock_data.nonoperating_interest_income', 'stock_data.company_name']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What is the P/E ratio for external_data?
+
+Information:
+Apple
+total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+total_liabilities - TOTAL LIABILITIES represent all short and long term obligations expected to be satisfied by the company.
+Question: What is Apple's Debt to Assets ratio?
+
+Information:
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+Question: Which company pays a higher dividend yield, Apple or Tesla?
+
+Information:
+Walmart
+stock_data.enterprise_value - ENTERPRISE VALUE(EV) = Market Capitalization at fiscal year end date + Preferred Stock + Minority Interest + Total Debt minus Cash.
+Question: ",What's Walmart's EV?,['stock_data.enterprise_value']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Chevron
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+stock_data.general_industry_classification - This item represents the company's general industry classification: Energy, Materials, Industrials, Consumer Discretionary, Consumer Staples, Health Care, Financials, Information Technology, Communication Services, Utilities, and Real Estate.
+Question: How does Chevron's total assets compare to other companies in the autos sector?
+
+Information:
+stock_data.price_intraday_high - The datatype returns the price high values. This is the highest price achieved on the trading day.
+Question: Which company had the biggest intraday high price increase yesterday?
+
+Information:
+Nvidia
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: What percentage of Nvidia's revenue is spent on operating expenses?
+
+Information:
+Mastercard
+stock_data.eps_12m_trailing - Earnings per share for the past 12 months, based on published accounts of net income.
+stock_data.total_liabilities - TOTAL LIABILITIES represent all short and long term obligations expected to be satisfied by the company.
+Question: ",How does Mastercard's earnings per share compare to its total liabilities?,"['stock_data.eps_12m_trailing', 'stock_data.total_liabilities']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Nvidia
+total_liabilities - TOTAL LIABILITIES represent all short and long term obligations expected to be satisfied by the company.
+Question: How has Nvidia's debt changed over time?
+
+Information:
+dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+Question: What is the R&D spend for the company with the highest dividend yield?
+
+Information:
+Nvidia
+Net Sales Or Revenues- NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: Is Nvidia's sales increasing or decreasing?
+
+Information:
+General Electric
+stock_data.general_industry_classification - General Industry Classification Standard (GICS) represents the company's general industry classification: Energy, Materials, Industrials, Consumer Discretionary, Consumer Staples, Health Care, Financials, Information Technology, Communication Services, Utilities, and Real Estate.
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: ",In which industry does General Electric operate and what are its net sales or revenues?,"['stock_data.general_industry_classification', 'stock_data.net_sales_or_revenues']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Proctor & Gamble
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+
+Question: stock_data.total_return_index - A return index is available for individual equities. This shows a theoretical growth in value of a share holding over a specified period, assuming that dividends are re-invested to purchase additional units of an equity or unit trust at the closing price applicable on the ex-dividend date.How much would an investment in Proctor & Gamble 5 years ago be worth today, assuming all dividends were reinvested?
+
+Information:
+unemployment_rate - UNEMPLOYMENT RATE, Bureau of Labor Statistics, U.S. Department of Labor Monthly SA. United States, Unemployed, Rate, Total, SA. The Current Population Survey (CPS; household survey) provides information on the labor force, employment, and unemployment. It is a sample survey of about 60,000 eligible households conducted by the U.S. Census Bureau for the U.S. Bureau of Labor Statistics (BLS). The reference period is generally the calendar week that contains the 12th day of the month. The sample is selected to reflect the entire civilian noninstitutional population. Based on responses to a series of questions on work and job search activities, each person 16 years and over in a sample household is classified as employed, unemployed, or not in the labor force. The unemployment rate is the number unemployed as a percent of the labor force. The labor force participation rate is the labor force as a percent of the population, and the employment-population ratio is the employed as a percent of the population.
+Question: How is the jobs market in the US?
+
+Information:
+General Electric
+stock_data.selling_general_and_administrative_expenses - SELLING, GENERAL & ADMINISTRATIVE EXPENSES (SG&A) represents expenses not directly attributable to the production process but relating to selling, general and administrative functions.
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company.
+Question: Does General Electric's non-operating interest income cover SG&A expenses?
+
+Information:
+Cisco
+stock_data.net_interest_income - NET INTEREST INCOME represents the difference between the total interest income and total interest expense of the bank.
+stock_data.price_intraday_high - This is the highest price achieved on the trading day.
+Question: ",What was Cisco's highest intraday stock price on days when it had positive net interest income?,"['stock_data.net_interest_income', 'stock_data.price_intraday_high']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Tesla
+ebitda - EARNINGS BEFORE INTEREST, TAXES, DEPRECIATION & AMORTIZATION (EBITDA) represent the earnings of a company before interest expense, income taxes and depreciation. It is calculated by taking the pre-tax income and adding back interest expense on debt and depreciation, depletion and amortization and subtracting interest capitalized.
+enterprise_value - ENTERPRISE VALUE(EV) = Market Capitalization at fiscal year end date + Preferred Stock + Minority Interest + Total Debt minus Cash.
+Question: What is Tesla's EV to EBITDA ratio?
+
+Information:
+Nvidia
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: What percentage of Nvidia's revenue is spent on operating expenses?
+
+Information:
+stock_data.general_industry_classification - This item represents the company's general industry classification: Energy, Materials, Industrials, Consumer Discretionary, Consumer Staples, Health Care, Financials, Information Technology, Communication Services, Utilities, and Real Estate.
+
+Question: What industry does Broadcom belong to?
+
+Information:
+Proctor & Gamble
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+stock_data.ebitda - EARNINGS BEFORE INTEREST, TAXES, DEPRECIATION & AMORTIZATION (EBITDA) represent the earnings of a company before interest expense, income taxes and depreciation. It is calculated by taking the pre-tax income and adding back interest expense on debt and depreciation, depletion and amortization and subtracting interest capitalized.
+Question: ",How much of Proctor & Gamble's EBITDA is spent on R&D?,"['stock_data.research_and_development', 'stock_data.ebitda']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Tesla
+ebitda - EARNINGS BEFORE INTEREST, TAXES, DEPRECIATION & AMORTIZATION (EBITDA) represent the earnings of a company before interest expense, income taxes and depreciation. It is calculated by taking the pre-tax income and adding back interest expense on debt and depreciation, depletion and amortization and subtracting interest capitalized.
+enterprise_value - ENTERPRISE VALUE(EV) = Market Capitalization at fiscal year end date + Preferred Stock + Minority Interest + Total Debt minus Cash.
+Question: What is Tesla's EV to EBITDA ratio?
+
+Information:
+Nvidia
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: What percentage of Nvidia's revenue is spent on operating expenses?
+
+Information:
+Tesla
+stock_data.market_capitalization - Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency.
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+Question: How much does it cost to buy all of Tesla's outstanding shares?
+
+Information:
+UnitedHealth
+stock_data.market_capitalization - Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency.
+stock_data.long_term_debt - LONG TERM DEBT represents all interest bearing financial obligations, excluding amounts due within one year. It is shown net of premium or discount.
+Question: ",How much is UnitedHealth's market cap compared to its long term debt?,"['stock_data.market_capitalization', 'stock_data.long_term_debt']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Nvidia
+price_intraday_high - This is the highest price achieved on the trading day.
+price - The latest trade price, settlement value or closing value. Assume this is the current price.
+Question: What was the highest price of Nvidia today and how does it compare with the current price?
+
+Information:
+Tesla
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+stock_data.market_capitalization - Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency.
+Question: Which company spends more on R&D relative to their market cap, Nvidia or Tesla?
+
+Information:
+unemployment_rate - UNEMPLOYMENT RATE, Bureau of Labor Statistics, U.S. Department of Labor Monthly SAUnited States, Unemployed, Rate, Total, SAThe Current Population Survey (CPS; household survey) provides information on the labor force, employment, and unemployment. It is a sample survey of about 60,000 eligible households conducted by the U.S. Census Bureau for the U.S. Bureau of Labor Statistics (BLS). The reference period is generally the calendar week that contains the 12th day of the month. The sample is selected to reflect the entire civilian noninstitutional population. Based on responses to a series of questions on work and job search activities, each person 16 years and over in a sample household is classified as employed, unemployed, or not in the labor force. The unemployment rate is the number unemployed as a percent of the labor force. The labor force participation rate is the labor force as a percent of the population, and the employment-population ratio is the employed as a percent of the population. More methodological explanation can be found on web page: www.bls.gov/
+Question: What is the latest of the unemployment rate?
+
+Information:
+Home Depot
+stock_data.book_value_per_share - BOOK VALUE PER SHARE represents the book value (common equity )at the end of the last calendar quarter for U.S. corporations.
+Question: ",What is the book value per share of Home Depot?,['stock_data.book_value_per_share']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What's the latest on the stock market?
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What is the latest stock price for TSLA?
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What is the external data for this company?
+
+Information:
+JPMorgan Chase
+stock_data.total_shareholders_equity - TOTAL SHAREHOLDERS‚Äô EQUITY represents the sum of Preferred Stock and Common Shareholders‚Äô Equity.
+stock_data.employees - EMPLOYEES represent the number of both full and part time employees of the company.
+Question: ",How many employees does JPMorgan have and what is the total shareholder's equity?,"['stock_data.total_shareholders_equity', 'stock_data.employees']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Chevron
+stock_data.total_liabilities - TOTAL LIABILITIES represent all short and long term obligations expected to be satisfied by the company.
+stock_data.market_capitalization - Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency.
+Question: How does Chevron's market value compare to its total liabilities?
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What is the P/E ratio for external_data?
+
+Information:
+Tesla
+operating_income - OPERATING INCOME represents the difference between sales and total operating expenses,
+current__liabilities_total - CURRENT LIABILITIES - TOTAL represent debt or other obligations that the company expects to satisfy within one year.
+Question: Does Tesla generate enough income to cover its current liabilities?
+
+Information:
+Home Depot
+stock_data.long_term_debt - LONG TERM DEBT represents all interest bearing financial obligations, excluding amounts due within one year. It is shown net of premium or discount.
+Question: ",What is the amount of Home Depot's long-term debt?,['stock_data.long_term_debt']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Apple
+current_assets_total - CURRENT ASSETS - TOTAL represents cash and other assets that are reasonably expected to be realized in cash, sold or consumed within one year or one operating cycle.Generally, it is the sum of cash and equivalents, receivables, inventories, prepaid expenses and other current assets,
+current__liabilities_total - CURRENT LIABILITIES - TOTAL represent debt or other obligations that the company expects to satisfy within one year.
+Question: Is Apple's current financial position strong or weak?
+
+Information:
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+stock_data.price_earnings_ratio - This is the price divided by the earnings rate per share at the required date.
+Question: What is the P/E ratio of the company with the highest sales?
+
+Information:
+Alphabet
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: What company has higher net sales or revenue, Alphabet or Apple?
+
+Information:
+Intuit
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+Question: ",What does Intuit's operating expenses total represent?,['stock_data.operating_expenses_total']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.general_industry_classification - This item represents the company's general industry classification: Energy, Materials, Industrials, Consumer Discretionary, Consumer Staples, Health Care, Financials, Information Technology, Communication Services, Utilities, and Real Estate.
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+Question: Which industry has the company with the highest total assets?
+
+Information:
+Chevron
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company.
+Question: What is Chevron's dividend yield compared to its non-operating interest income?
+
+Information:
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+Question: Does dividend yield have negative correlation with total assets?
+
+Information:
+Comcast
+stock_data.operating_income - OPERATING INCOME represents the difference between sales and total operating expenses
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+Question: ",Is Comcast's operating income higher than its total assets?,"['stock_data.operating_income', 'stock_data.total_assets']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What external data is available?
+
+Information:
+Tesla
+gdp_price_index - GDP (AR), BEA - Bureau of Economic Analysis, U.S. Department of Commerce Quarterly Current prices, SA United States, Price Index, Personal Consumption Expenditure, Overall, Total, SA, Index, 2012 = 100Index that is based on the linking (chaining) of indexes to create a time series. Annual chain-type Fisher indices are used in BEAâ€™s national income and product accounts (NIPAs) whereby Fisher ideal price indices are calculated using the weights of adjacent years. Those annual changes are then multiplied (chained) together, forming the chain-type index time series.,stock_data.
+Price - The latest trade price, settlement value or closing value. Assume this is the current price.
+Question: Does GDP have an affect on Tesla stock price?
+
+Information:
+Chevron
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+stock_data.general_industry_classification - This item represents the company's general industry classification: Energy, Materials, Industrials, Consumer Discretionary, Consumer Staples, Health Care, Financials, Information Technology, Communication Services, Utilities, and Real Estate.
+Question: How does Chevron's total assets compare to other companies in the autos sector?
+
+Information:
+Mastercard
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company. 
+Question: ",What is the source of Mastercard's non-operating interest income?,['stock_data.nonoperating_interest_income']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Chevron
+research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+Question: Question: Does Chevron allocate funds for research and development?
+
+Information:
+stock_data.turnover_by_volume - This is the daily turnover by volume.
+stock_data.total_liabilities - TOTAL LIABILITIES represent all short and long term obligations expected to be satisfied by the company.
+Question: Is there a correlation between a company's total liabilities and daily trading volume?
+
+Information:
+Nvidia
+sp5eint - S&P General Industry Classification Information Technology Sector Index,
+price - The latest trade price, settlement value or closing value. Assume this is the current price.
+Question: How has Nvidia stock done compared to the overall IT sector?
+
+Information:
+AMD
+stock_data.net_interest_income - NET INTEREST INCOME represents the difference between the total interest income and total interest expense of the bank.
+Question: ",Does AMD have positive net interest income?,['stock_data.net_interest_income']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What is the latest news on Tesla?
+
+Information:
+Chevron
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company.
+Question: What is Chevron's dividend yield compared to its non-operating interest income?
+
+Information:
+Tesla
+ebitda - EARNINGS BEFORE INTEREST, TAXES, DEPRECIATION & AMORTIZATION (EBITDA) represent the earnings of a company before interest expense, income taxes and depreciation. It is calculated by taking the pre-tax income and adding back interest expense on debt and depreciation, depletion and amortization and subtracting interest capitalized.
+enterprise_value - ENTERPRISE VALUE(EV) = Market Capitalization at fiscal year end date + Preferred Stock + Minority Interest + Total Debt minus Cash.
+Question: What is Tesla's EV to EBITDA ratio?
+
+Information:
+Walmart
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+stock_data.selling_general_and_administrative_expenses - SELLING, GENERAL & ADMINISTRATIVE EXPENSES (SG&A) represents expenses not directly attributable to the production process but relating to selling, general and administrative functions.
+Question: ","What is Walmart's dividend yield compared to its selling, general, and administrative expenses?","['stock_data.dividend_yield', 'stock_data.selling_general_and_administrative_expenses']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+Question: Which company pays a higher dividend yield, Apple or Tesla?
+
+Information:
+cpi- CPI - ALL URBAN SAMPLE: ALL ITEMS, Bureau of Labor Statistics, U.S. Department of Labor Monthly Price index, not SA. United States, All Urban Consumers, United States City Average, Consumer Prices, All Items, Index, 1982-1984 = 100. The Consumer Price Index (CPI) is a measure of the average change over time in the prices of consumer items - goods and services that people buy for day-to-day living. The quantity and quality of these items are kept essentially unchanged between major revisions so that only price changes will be measured. All taxes directly associated with the purchase and use of items are included in the index. The CPI is a complex construct that combines economic theory with sampling and other statistical techniques and uses data from several surveys to produce a timely and precise measure of average price change for the consumption sector of the American economy. The U.S. Bureau of Labor Statistics publishes a new set of relative importances of components in the consumer price index in December of each year.
+Question: Question: Is the price of everything going higher?
+
+Information:
+Proctor & Gamble
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+
+Question: stock_data.total_return_index - A return index is available for individual equities. This shows a theoretical growth in value of a share holding over a specified period, assuming that dividends are re-invested to purchase additional units of an equity or unit trust at the closing price applicable on the ex-dividend date.How much would an investment in Proctor & Gamble 5 years ago be worth today, assuming all dividends were reinvested?
+
+Information:
+Bank of America
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+Question: ",What is the total amount of expenses incurred by Bank of America for its operations?,['stock_data.operating_expenses_total']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+Question: Which company pays the highest dividend?
+
+Information:
+stock_data.eps - Earnings per share for the last financial year, based on published accounts. Data is either provided by Worldscope.
+stock_data.sector - Sector classification - this datatype returns the Datastream sector classification name, for example, ‚ÄòBreweries‚Äô.
+Question: What sectors have the highest EPS?
+
+Information:
+Tesla
+ebitda - EARNINGS BEFORE INTEREST, TAXES, DEPRECIATION & AMORTIZATION (EBITDA) represent the earnings of a company before interest expense, income taxes and depreciation. It is calculated by taking the pre-tax income and adding back interest expense on debt and depreciation, depletion and amortization and subtracting interest capitalized.
+enterprise_value - ENTERPRISE VALUE(EV) = Market Capitalization at fiscal year end date + Preferred Stock + Minority Interest + Total Debt minus Cash.
+Question: What is Tesla's EV to EBITDA ratio?
+
+Information:
+Philip Morris
+stock_data.cogs - Cost Of Goods Sold represents the direct costs incurred in producing or acquiring the goods that a company sells to generate revenue. COGS includes expenses directly associated with the production or purchase of goods, such as the cost of raw materials, direct labor, and manufacturing overhead.
+Question: ",What percentage of Philip Morris' revenue comes from COGS?,['stock_data.cogs']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Nvidia
+price_intraday_high - This is the highest price achieved on the trading day.
+price - The latest trade price, settlement value or closing value. Assume this is the current price.
+Question: What was the highest price of Nvidia today and how does it compare with the current price?
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What's the latest on the stock market?
+
+Information:
+Apple
+stock_data.operating_income - OPERATING INCOME represents the difference between sales and total operating expenses
+Question: Which company has higher operating income, Alphabet or Apple?
+
+Information:
+Cisco
+stock_data.current__liabilities_total - CURRENT LIABILITIES - TOTAL represent debt or other obligations that the company expects to satisfy within one year.
+stock_data.ticker_symbol - TICKER SYMBOL represents a symbol used to identify the company on the stock exchanges where it is listed.
+Question: ",What is Cisco's ticker symbol and how much are its current liabilities?,"['stock_data.current__liabilities_total', 'stock_data.ticker_symbol']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What is the most expensive stock?
+
+Information:
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+stock_data.operating_income - OPERATING INCOME represents the difference between sales and total operating expenses
+Question: Is there a company that spends more on operating expenses than it makes in operating income?
+
+Information:
+stock_data.price_intraday_low - The datatype returns the price low values. This is the lowest price achieved on the trading day.
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+Question: Which company has a lower operating expense, Tesla or Nvidia?
+
+Information:
+Proctor & Gamble
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+Question: ",Does Proctor & Gamble allocate a significant amount of funds to research and development?,['stock_data.research_and_development']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.general_industry_classification - This item represents the company's general industry classification: Energy, Materials, Industrials, Consumer Discretionary, Consumer Staples, Health Care, Financials, Information Technology, Communication Services, Utilities, and Real Estate.
+
+Question: What industry does Broadcom belong to?
+
+Information:
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+Question: Which company pays the highest dividend?
+
+Information:
+stock_data.total_return_index - A return index is available for individual equities and unit trusts. This shows a theoretical growth in value of a share holding over a specified period, assuming that dividends are re-invested to purchase additional units of an equity or unit trust at the closing price applicable on the ex-dividend date.
+stock_data.general_industry_classification - This item represents the company's general industry classification: Energy, Materials, Industrials, Consumer Discretionary, Consumer Staples, Health Care, Financials, Information Technology, Communication Services, Utilities, and Real Estate.
+Question: Which sectors outperformed the Utilities sector in 2022?
+
+Information:
+Apple
+stock_data.current_assets_total - CURRENT ASSETS - TOTAL represents cash and other assets that are reasonably expected to be realized in cash, sold or consumed within one year or one operating cycle.Generally, it is the sum of cash and equivalents, receivables, inventories, prepaid expenses and other current assets.
+stock_data.eps_12m_trailing - Earnings per share for the past 12 months, based on published accounts of net income.
+Question: ","Which company has a higher EPS, Apple or Broadcom?","['stock_data.current_assets_total', 'stock_data.eps_12m_trailing']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+stock_data.eps_12m_trailing - Earnings per share for the past 12 months, based on published accounts of net income.
+Question: Which companies spends more on research and development relative to their earnings per share?
+
+Information:
+stock_data.price_intraday_high - The datatype returns the price high values. This is the highest price achieved on the trading day.
+Question: Which company had the biggest intraday high price increase yesterday?
+
+Information:
+Tesla
+ebitda - EARNINGS BEFORE INTEREST, TAXES, DEPRECIATION & AMORTIZATION (EBITDA) represent the earnings of a company before interest expense, income taxes and depreciation. It is calculated by taking the pre-tax income and adding back interest expense on debt and depreciation, depletion and amortization and subtracting interest capitalized.
+enterprise_value - ENTERPRISE VALUE(EV) = Market Capitalization at fiscal year end date + Preferred Stock + Minority Interest + Total Debt minus Cash.
+Question: What is Tesla's EV to EBITDA ratio?
+
+Information:
+Cisco
+stock_data.date_ex_dividend - This represents the ex-dividend date associated with a cash income dividend payment. The data displayed is based upon the dividend whose PAYMENT DATE is most recent to the user's request date.
+stock_data.current__liabilities_total - CURRENT LIABILITIES - TOTAL represent debt or other obligations that the company expects to satisfy within one year.
+Question: ",What was Cisco's current liabilities on the ex-dividend date of its most recent dividend payment?,"['stock_data.date_ex_dividend', 'stock_data.current__liabilities_total']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Nvidia
+operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+Question: What types of expenses included in Nvidia's financial statements?
+
+Information:
+Apple
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+stock_data.market_capitalization - Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency.
+Question: How much is Apple's market value relative to its total assets?
+
+Information:
+Microsoft
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: What is the total revenue of Microsoft?
+
+Information:
+Chevron
+stock_data.date_ex_dividend - This represents the ex-dividend date associated with a cash income dividend payment. The data displayed is based upon the dividend whose PAYMENT DATE is most recent to the user's request date.
+stock_data.employees - EMPLOYEES represent the number of both full and part time employees of the company.
+Question: ",How many employees does Chevron have as of the most recent dividend payment date?,"['stock_data.date_ex_dividend', 'stock_data.employees']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What is the latest news on Tesla?
+
+Information:
+Tesla
+Operating Income - OPERATING INCOME represents the difference between sales and total operating expenses
+Question: Is Tesla profitable or still operating at a loss?
+
+Information:
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+Question: Which company pays the highest dividend?
+
+Information:
+Amazon
+stock_data.common_shares_outstanding - COMMON SHARES OUTSTANDING represent the number of shares outstanding at the company's year end. It is the difference between issued shares and treasury shares.
+Question: ",How many common shares does Amazon have outstanding?,['stock_data.common_shares_outstanding']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Chevron
+stock_data.operating_income - OPERATING INCOME represents the difference between sales and total operating expenses
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company.
+Question: How does Chevron's operating income compare to its non-operating interest income?
+
+Information:
+Chevron
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company.
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+Question: What's the difference between Chevron's non-operating interest income and research and development?
+
+Information:
+Apple
+market_capitalization -Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency.
+total_liabilities - TOTAL LIABILITIES represent all short and long term obligations expected to be satisfied by the company.
+Question: Does Apple have too much debt compared to its market value?
+
+Information:
+Tesla
+stock_data.eps_12m_forward - 12 Forward Month Earnings per Share based on projections of a company's earnings (net income) over the next twelve months
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+Question: ",What is the relationship between Tesla's EPS and R&D?,"['stock_data.eps_12m_forward', 'stock_data.research_and_development']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+stock_data.operating_income - OPERATING INCOME represents the difference between sales and total operating expenses
+Question: Is there a company that spends more on operating expenses than it makes in operating income?
+
+Information:
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+stock_data.price_earnings_ratio - This is the price divided by the earnings rate per share at the required date.
+Question: What is the P/E ratio of the company with the highest sales?
+
+Information:
+Nvidia
+operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+Question: What types of expenses included in Nvidia's financial statements?
+
+Information:
+UnitedHealth
+stock_data.price_intraday_low - This is the lowest price achieved on the trading day.
+stock_data.price - The latest trade price, settlement value or closing value. Assume this is the current price.
+Question: ",What is the difference between the lowest price and the current price of UnitedHealth's stock?,"['stock_data.price_intraday_low', 'stock_data.price']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.net_interest_income - NET INTEREST INCOME represents the difference between the total interest income and total interest expense of the bank.
+Question: Is the bank profitable?
+
+Information:
+stock_data.total_shareholders_equity - TOTAL SHAREHOLDERSâ€™ EQUITY represents the sum of Preferred Stock and Common Shareholdersâ€™ Equity.
+Question: Which companies have the most shareholders' equity?
+
+Information:
+Tesla
+Turnover by Volume - This is the daily turnover by volume.
+Question: Question: Is it easy to buy or sell Tesla stock?
+
+Information:
+Walt Disney
+stock_data.ticker_symbol - TICKER SYMBOL represents a symbol used to identify the company on the stock exchanges where it is listed.
+Question: ",What is the ticker symbol for Walt Disney on the stock exchanges?,['stock_data.ticker_symbol']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.net_interest_income - NET INTEREST INCOME represents the difference between the total interest income and total interest expense of the bank.
+Question: Is the bank profitable?
+
+Information:
+stock_data.volume_weighted_average_price - Volume Weighted Average Price (VWAP) is calculated by dividing the total volume of shares traded for a stock on a particular day, into the total value of shares traded for the stock on that day. VWAP = Sum of (Volume * Price) / Sum of Volume . In the  formula, 'sum' refers to the aggregate of the day's transactions on the primary exchange
+stock_data.sector - Sector classification - this datatype returns the Datastream sector classification name, for example, â€˜Breweriesâ€™
+Question: Which sectors have the highest volume weighted average price?
+
+Information:
+Nvidia
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: What percentage of Nvidia's revenue is spent on operating expenses?
+
+Information:
+Proctor & Gamble
+stock_data.total_liabilities - TOTAL LIABILITIES represent all short and long term obligations expected to be satisfied by the company.
+stock_data.selling_general_and_administrative_expenses - SELLING, GENERAL & ADMINISTRATIVE EXPENSES (SG&A) represents expenses not directly attributable to the production process but relating to selling, general and administrative functions.
+Question: ","How much of Proctor & Gamble's total liabilities are attributed to selling, general, and administrative expenses?","['stock_data.total_liabilities', 'stock_data.selling_general_and_administrative_expenses']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.net_sales_or_revenues - NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+stock_data.company_name - COMPANY NAME represents the legal name of the company as reported in the 10-K for U.S. companies.
+Question: What is the company name and net sales?
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What external data is available?
+
+Information:
+Tesla
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+stock_data.total_liabilities - TOTAL LIABILITIES represent all short and long term obligations expected to be satisfied by the company.
+Question: Does Tesla have more assets or liabilities?
+
+Information:
+Intel
+stock_data.employees - EMPLOYEES represent the number of both full and part time employees of the company.
+stock_data.enterprise_value - ENTERPRISE VALUE(EV) = Market Capitalization at fiscal year end date + Preferred Stock + Minority Interest + Total Debt minus Cash.
+Question: ",How many employees does Intel have and what is their enterprise value?,"['stock_data.employees', 'stock_data.enterprise_value']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Chevron
+stock_data.selling_general_and_administrative_expenses - SELLING, GENERAL & ADMINISTRATIVE EXPENSES represents expenses not directly attributable to the production process but relating to selling, general and administrative functions.
+
+Question: stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.How do Chevron's SG&A expenses compare to their total assets?
+
+Information:
+stock_data.general_industry_classification - This item represents the company's general industry classification: Energy, Materials, Industrials, Consumer Discretionary, Consumer Staples, Health Care, Financials, Information Technology, Communication Services, Utilities, and Real Estate.
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+Question: Which industry has the company with the highest total assets?
+
+Information:
+stock_data.total_shareholders_equity - TOTAL SHAREHOLDERS‚Äô EQUITY represents the sum of Preferred Stock and Common Shareholders‚Äô Equity.
+Question: Which companies have the most shareholders' equity?
+
+Information:
+Netflix
+stock_data.price_intraday_low - This is the lowest price achieved on the trading day.
+stock_data.cogs - Cost Of Goods Sold represents the direct costs incurred in producing or acquiring the goods that a company sells to generate revenue. COGS includes expenses directly associated with the production or purchase of goods, such as the cost of raw materials, direct labor, and manufacturing overhead.
+Question: ",What was Netflix's lowest intraday price on the day with the highest COGS?,"['stock_data.price_intraday_low', 'stock_data.cogs']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.dividend_yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+Question: Which company pays the highest dividend?
+
+Information:
+Chevron
+stock_data.total_liabilities - TOTAL LIABILITIES represent all short and long term obligations expected to be satisfied by the company.
+stock_data.market_capitalization - Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency.
+Question: How does Chevron's market value compare to its total liabilities?
+
+Information:
+stock_data.turnover_by_volume - This is the daily turnover by volume.
+Question: What is the most actively traded stock?
+
+Information:
+Microsoft
+stock_data.selling_general_and_administrative_expenses - SELLING, GENERAL & ADMINISTRATIVE EXPENSES (SG&A) represents expenses not directly attributable to the production process but relating to selling, general and administrative functions.
+stock_data.book_value_per_share - BOOK VALUE PER SHARE represents the book value (common equity )at the end of the last calendar quarter for U.S. corporations.
+Question: ","What is Microsoft's book value per share and how does it compare to its selling, general, and administrative expenses?","['stock_data.selling_general_and_administrative_expenses', 'stock_data.book_value_per_share']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Nvidia
+Net Sales Or Revenues- NET SALES OR REVENUES represent gross sales and other operating revenue less discounts, returns and allowances.
+Question: Is Nvidia's sales increasing or decreasing?
+
+Information:
+stock_data.price_intraday_high - This is the highest price achieved on the trading day.
+stock_data.cogs - Cost Of Goods Sold represents the direct costs incurred in producing or acquiring the goods that a company sells to generate revenue. COGS includes expenses directly associated with the production or purchase of goods, such as the cost of raw materials, direct labor, and manufacturing overhead.
+Question: Is there a relationship between a company's cost of goods sold and its stock price?
+
+Information:
+Apple
+current_assets_total - CURRENT ASSETS - TOTAL represents cash and other assets that are reasonably expected to be realized in cash, sold or consumed within one year or one operating cycle.Generally, it is the sum of cash and equivalents, receivables, inventories, prepaid expenses and other current assets,
+current__liabilities_total - CURRENT LIABILITIES - TOTAL represent debt or other obligations that the company expects to satisfy within one year.
+Question: Is Apple's current financial position strong or weak?
+
+Information:
+Johnson & Johnson
+stock_data.eps_12m_forward - 12 Forward Month Earnings per Share based on projections of a company's earnings (net income) over the next twelve months
+stock_data.book_value_per_share - BOOK VALUE PER SHARE represents the book value (common equity )at the end of the last calendar quarter for U.S. corporations.
+Question: ",Is Johnson & Johnson's projected earnings per share higher or lower than its book value per share?,"['stock_data.eps_12m_forward', 'stock_data.book_value_per_share']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.price - The latest trade price, settlement value or closing value. Assume this is the current price
+.stock_data.sector - Sector classification - this datatype returns the Datastream sector classification name, for example, â€˜Breweriesâ€™.
+Question: Which sectors are outperforming the market today?
+
+Information:
+stock_data.volume_weighted_average_price - Volume Weighted Average Price (VWAP) is calculated by dividing the total volume of shares traded for a stock on a particular day, into the total value of shares traded for the stock on that day. VWAP = Sum of (Volume * Price) / Sum of Volume . In the  formula, 'sum' refers to the aggregate of the day's transactions on the primary exchange
+stock_data.sector - Sector classification - this datatype returns the Datastream sector classification name, for example, â€˜Breweriesâ€™
+Question: Which sectors have the highest volume weighted average price?
+
+Information:
+Chevron
+stock_data.p - The latest trade price, settlement value or closing value. Assume this is the current price.
+Question: What is the difference between Chevron's current stock price and its one year low?
+
+Information:
+Coca-Cola
+stock_data.cogs - Cost Of Goods Sold represents the direct costs incurred in producing or acquiring the goods that a company sells to generate revenue. COGS includes expenses directly associated with the production or purchase of goods, such as the cost of raw materials, direct labor, and manufacturing overhead.
+Question: ",What expenses are included in Coca-Cola's Cost Of Goods Sold (COGS)?,['stock_data.cogs']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Tesla
+Inventories Days Held - Inventories Days Held is equal to 365 / (Cost of Goods Sold (excl Depreciation) / (Average of Last Yearâ€™s and Current Yearâ€™s Inventories ).
+Question: How efficiently does Tesla manage its inventory??
+
+Information:
+Chevron
+date_ex_dividend- This represents the ex-dividend date associated with a cash income dividend payment. The data displayed is based upon the dividend whose PAYMENT DATE is most recent to the user's request date.
+Question: Question: When does Chevron pay a dividend?
+
+Information:
+stock_data.sector - Sector classification - this datatype returns the Datastream sector classification name, for example, â€˜Breweriesâ€™.
+Question: What sectors does the stock market consist of?
+
+Information:
+Boeing
+stock_data.operating_income - OPERATING INCOME represents the difference between sales and total operating expenses
+Question: ",How profitable is Boeing?,['stock_data.operating_income']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Tesla
+eps_12m_forward - 12 Forward Month Earnings per Share based on projections of a company's earnings (net income) over the next twelve months,
+News - The news data is a data warehouse where we store all news scraped from Reutuers. Each news item has keywords and date.
+Question: What are the major factors influencing Tesla's earnings at the moment?
+
+Information:
+Amazon
+stock_data.eps_12m_forward - 12 Forward Month Earnings per Share based on projections of a company's earnings (net income) over the next twelve months
+Question: What is the forward 12-month EPS for Amazon?
+
+Information:
+Tesla
+general_industry_classification - General Industry Classification Standard (GICS) represents the company's general industry classification: Energy, Materials, Industrials, Consumer Discretionary, Consumer Staples, Health Care, Financials, Information Technology, Communication Services, Utilities, and Real Estate.
+Question: What industry is Tesla in?
+
+Information:
+Apple
+stock_data.price_intraday_high - This is the highest price achieved on the trading day.
+stock_data.date_ex_dividend - This represents the ex-dividend date associated with a cash income dividend payment. The data displayed is based upon the dividend whose PAYMENT DATE is most recent to the user's request date.
+Question: ",What was the highest price Apple stock achieved during the trading day and when is the ex-dividend date for the most recent cash income dividend payment?,"['stock_data.price_intraday_high', 'stock_data.date_ex_dividend']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.operating_expenses_total - OPERATING EXPENSES - TOTAL represents the sum of all expenses related to operations.
+stock_data.operating_income - OPERATING INCOME represents the difference between sales and total operating expenses
+Question: Is there a company that spends more on operating expenses than it makes in operating income?
+
+Information:
+Apple
+market_capitalization -Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency.
+total_liabilities - TOTAL LIABILITIES represent all short and long term obligations expected to be satisfied by the company.
+Question: Does Apple have too much debt compared to its market value?
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What is the latest stock price for TSLA?
+
+Information:
+Boeing
+stock_data.market_capitalization - Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency.
+Question: ",What is the current market value of Boeing?,['stock_data.market_capitalization']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+stock_data.general_industry_classification - This item represents the company's general industry classification: Energy, Materials, Industrials, Consumer Discretionary, Consumer Staples, Health Care, Financials, Information Technology, Communication Services, Utilities, and Real Estate.
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+Question: Which industry has the company with the highest total assets?
+
+Information:
+Tesla
+gdp_price_index - GDP (AR), BEA - Bureau of Economic Analysis, U.S. Department of Commerce Quarterly Current prices, SA United States, Price Index, Personal Consumption Expenditure, Overall, Total, SA, Index, 2012 = 100Index that is based on the linking (chaining) of indexes to create a time series. Annual chain-type Fisher indices are used in BEA‚Äôs national income and product accounts (NIPAs) whereby Fisher ideal price indices are calculated using the weights of adjacent years. Those annual changes are then multiplied (chained) together, forming the chain-type index time series.,stock_data.
+Price - The latest trade price, settlement value or closing value. Assume this is the current price.
+Question: Does GDP have an affect on Tesla stock price?
+
+Information:
+external_data - Returns stock/finance related information you would NOT expect to find in refinitive or reuters.
+Question: What's the latest news about Nvidia?
+
+Information:
+McDonald
+stock_data.eps_12m_forward - 12 Forward Month Earnings per Share based on projections of a company's earnings (net income) over the next twelve months
+Question: ",What is the forward 12 month EPS for McDonald's?,['stock_data.eps_12m_forward']
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Nvidia
+eps_12m_forward - 12 Forward Month Earnings per Share based on projections of a company's earnings (net income) over the next twelve months,
+eps_12m_trailing - Earnings per share for the past 12 months, based on published accounts of net income.
+Question: How does Nvidia future earnings look compared to last year's?
+
+Information:
+Tesla
+eps_12m_forward - 12 Forward Month Earnings per Share based on projections of a company's earnings (net income) over the next twelve months,
+News - The news data is a data warehouse where we store all news scraped from Reutuers. Each news item has keywords and date.
+Question: What are the major factors influencing Tesla's earnings at the moment?
+
+Information:
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+stock_data.eps_12m_trailing - Earnings per share for the past 12 months, based on published accounts of net income.
+Question: Which companies spends more on research and development relative to their earnings per share?
+
+Information:
+General Electric
+stock_data.employees - EMPLOYEES represent the number of both full and part time employees of the company.
+stock_data.common_shares_outstanding - COMMON SHARES OUTSTANDING represent the number of shares outstanding at the company's year end. It is the difference between issued shares and treasury shares.
+Question: ",How many employees does General Electric have per outstanding share?,"['stock_data.employees', 'stock_data.common_shares_outstanding']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Nvidia
+Dividend Yield - The dividend yield expresses the dividend per share as a percentage of the share price. The underlying dividend is calculated according to the same principles as datatype DPSC (Dividend per share, current rate) in that it is based on an anticipated annual dividend and excludes special or once-off dividends. Dividend yield is calculated on gross dividends (including tax credits) where available.
+Question: Does Nvidia pay a dividend?
+
+Information:
+stock_data.price_intraday_high - The datatype returns the price high values. This is the highest price achieved on the trading day.
+Question: Which company had the biggest intraday high price increase yesterday?
+
+Information:
+stock_data.turnover_by_volume - This is the daily turnover by volume.
+Question: What is the most actively traded stock?
+
+Information:
+Costco
+stock_data.long_term_debt - LONG TERM DEBT represents all interest bearing financial obligations, excluding amounts due within one year. It is shown net of premium or discount.
+stock_data.research_and_development - RESEARCH AND DEVELOPMENT EXPENSE represents all direct and indirect costs related to the creation and development of new processes, techniques, applications and products with commercial possibilities.
+Question: ",Does Costco spend more on R&D or long term debt?,"['stock_data.long_term_debt', 'stock_data.research_and_development']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+General Electric
+stock_data.selling_general_and_administrative_expenses - SELLING, GENERAL & ADMINISTRATIVE EXPENSES (SG&A) represents expenses not directly attributable to the production process but relating to selling, general and administrative functions.
+stock_data.nonoperating_interest_income - NON-OPERATING INTEREST INCOME represents income generated from interest bearing investments not related to the operating activities of the company.
+Question: Does General Electric's non-operating interest income cover SG&A expenses?
+
+Information:
+Apple
+stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.
+stock_data.market_capitalization - Market Capitalization or Market Value is the share price multiplied by the number of ordinary shares in issue. The amount in issue is updated whenever new tranches of stock are issued or after a capital change. Market cap is displayed in millions of units of local currency.
+Question: How much is Apple's market value relative to its total assets?
+
+Information:
+Chevron
+date_ex_dividend- This represents the ex-dividend date associated with a cash income dividend payment. The data displayed is based upon the dividend whose PAYMENT DATE is most recent to the user's request date.
+Question: Question: When does Chevron pay a dividend?
+
+Information:
+Philip Morris
+stock_data.inventories_days_held - Inventories Days Held is equal to 365 / (Cost of Goods Sold (excl Depreciation) / (Average of Last Yearâ€™s and Current Yearâ€™s Inventories ) .
+stock_data.price - The latest trade price, settlement value or closing value. Assume this is the current price.
+Question: ",How many days does Philip Morris hold its inventories based on the current price and the cost of goods sold?,"['stock_data.inventories_days_held', 'stock_data.price']"
+"You are a everyday investor who is member of the general public not a professional investor. Generate a question that can be answered by and only by the following information. Use informal conversational tone. You MUST NOT include names of the available.
+
+Information:
+Apple
+current_assets_total - CURRENT ASSETS - TOTAL represents cash and other assets that are reasonably expected to be realized in cash, sold or consumed within one year or one operating cycle.Generally, it is the sum of cash and equivalents, receivables, inventories, prepaid expenses and other current assets,
+current__liabilities_total - CURRENT LIABILITIES - TOTAL represent debt or other obligations that the company expects to satisfy within one year.
+Question: Is Apple's current financial position strong or weak?
+
+Information:
+Chevron
+stock_data.selling_general_and_administrative_expenses - SELLING, GENERAL & ADMINISTRATIVE EXPENSES represents expenses not directly attributable to the production process but relating to selling, general and administrative functions.
+
+Question: stock_data.total_assets - TOTAL ASSETS represent the sum of total current assets, long term receivables, investment in unconsolidated subsidiaries, other investments, net property plant and equipment and other assets.How do Chevron's SG&A expenses compare to their total assets?
+
+Information:
+Chevron
+stock_data.price_intraday_low - The datatype returns the price low values. This is the lowest price achieved on the trading day.
+stock_data.price_intraday_high - The datatype returns the price high values. This is the highest price achieved on the trading day.
+Question: What was the range in Chevron's stock price today?
+
+Information:
+Visa
+stock_data.enterprise_value - ENTERPRISE VALUE(EV) = Market Capitalization at fiscal year end date + Preferred Stock + Minority Interest + Total Debt minus Cash.
+stock_data.inventories_days_held - Inventories Days Held is equal to 365 / (Cost of Goods Sold (excl Depreciation) / (Average of Last Yearâ€™s and Current Yearâ€™s Inventories ) .
+Question: ",How does Visa's enterprise value compare to the number of days it holds inventories?,"['stock_data.enterprise_value', 'stock_data.inventories_days_held']"
