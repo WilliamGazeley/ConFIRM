@@ -1,7 +1,7 @@
 import pandas as pd
 from langchain.chat_models import ChatOpenAI
 from lora_confirm.rephrase import ocean # This is the rephrase function itself
-from lora_confirm.rephrase.ocean import get_pseudo_reference
+from lora_confirm.rephrase.ocean import get_pseudo_reference, PERSONALITIES
 
 def test_pseudo_reference():
     """Original example given in paper seems to be wrong, so we can't test against it."""
@@ -21,3 +21,9 @@ def test_rephrase():
     assert len(df2) == 1, f"Expected 1 question, got {len(df2)}"
     assert df2['question'][0] == df['question'][0], "Expected question to be unchanged"
     assert df2['rephrase'][0] != df['question'][0], "Expected rephrase to be different from question"
+
+def test_all_personalities_present():
+    df = pd.read_csv("datasets/personage-nlg/personage-nlg-train.csv")
+    present_personalities = set(df['personality'].unique())
+    assert set(PERSONALITIES) == present_personalities, \
+        f"Missing personalities: {set(PERSONALITIES) - present_personalities}"
