@@ -6,9 +6,14 @@ kubeflow_token_*
 
 # Raw Data
 **/*.jsonl
+**.*/*.zip
+datasets/personage-nlg/*
 
 # SQLite files
 **.db
+
+# Models
+BLEURT-20/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
