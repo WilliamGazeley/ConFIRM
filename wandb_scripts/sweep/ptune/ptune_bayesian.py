@@ -11,8 +11,8 @@ import os
 import wandb
 
 sweep_config = {
-    'name': 'ptune_sweep',
-    'method': 'random'
+    'name': 'ptune_sweep_bayesian',
+    'method': 'bayesian'
     }
 
 metric = {
@@ -22,28 +22,26 @@ metric = {
 
 sweep_config['metric'] = metric
 
+# when encoder_hidden_size >= 256 and batch_size >= 6 : OOM in GPU
 parameters_dict = {
     'num_virtual_tokens': {
-        'values': [20, 30, 40]
+        'values': [15, 30, 60]
         },
     'encoder_hidden_size': {
-        'values': [64, 128, 256]
+        'values': [32, 64, 128]
         },
     'batch_size': {
-        'values': [4, 6, 8]
+        'values': [3, 6, 12]
         },
-    # 'epochs': {
-    #     'values': [30, 40, 50, 60]
-    #     },
     'lr': {
-        'values': [3e-1, 1e-1, 3e-2, 1e-2, 3e-3, 1e-3, 3e-4, 1e-4]
+        'values': [3e-2, 1e-2, 3e-3, 1e-3, 3e-4, 1e-4]
     }
 }
 
 parameters_dict.update(
     {
         # comment epochs to start a real sweep
-        'epochs': {'value': 50},
+        'epochs': {'value': 30},
         'max_length': {'value': 128},
         'model_path': {'value': os.environ.get('MODEL_PATH')},
         'save_path': {'value': os.environ.get('SAVE_PATH')},
@@ -263,4 +261,4 @@ def train(config=None):
         print("saved")
 
 if __name__ == "__main__":
-    wandb.agent(sweep_id, train, count=20)
+    wandb.agent(sweep_id, train, count=10)

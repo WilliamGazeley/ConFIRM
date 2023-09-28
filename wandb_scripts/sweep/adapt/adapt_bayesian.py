@@ -1,18 +1,18 @@
 from transformers import LlamaForCausalLM, LlamaTokenizer
-from peft import get_peft_model, PrefixTuningConfig, TaskType, PeftType
+from peft import get_peft_model, PrefixTuningConfig, TaskType, AdaptionPromptConfig
 import torch
 from datasets import load_dataset, Dataset
 from torch.utils.data import DataLoader
 from transformers import default_data_collator, get_linear_schedule_with_warmup
 from tqdm import tqdm
+import os
 import json
 import csv
 import wandb
-import os
 
 sweep_config = {
-    'name': 'prefix_sweep',
-    'method': 'random'
+    'name': 'adapt_sweep_bayesian',
+    'method': 'bayesian'
     }
 
 metric = {
@@ -22,18 +22,19 @@ metric = {
 
 sweep_config['metric'] = metric
 
+# model adapter = 32 : adapter_layers must be =< 32
 parameters_dict = {
-    'num_virtual_tokens': {
-        'values': [20, 30, 40]
+    'adapter_len': {
+        'values': [5, 10, 20]
+        },
+    'adapter_layers': {
+        'values': [8, 16, 32]
         },
     'batch_size': {
-        'values': [4, 6, 8]
+        'values': [4, 8, 16]
         },
-    # 'epochs': {
-    #     'values': [30, 40, 50, 60]
-    #     },
     'lr': {
-        'values': [3e-1, 1e-1, 3e-2, 1e-2, 3e-3, 1e-3, 3e-4, 1e-4]
+        'values': [3e-2, 1e-2, 3e-3, 1e-3, 3e-4, 1e-4]
     }
 }
 
@@ -57,12 +58,15 @@ sweep_id = wandb.sweep(sweep_config, project="llama-2-7b-peft")
 def train(config=None):
     with wandb.init(config=config):
         config=wandb.config
-        peft_model_id = f"prefix_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_nvt{config.num_virtual_tokens}"
+        peft_model_id = f"adapt_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_alen{config.adapter_len}_alay{config.adapter_layers}"
         print(peft_model_id)
         model_name_or_path = config.model_path
 
-        peft_config = PrefixTuningConfig(task_type=TaskType.CAUSAL_LM, num_virtual_tokens=config.num_virtual_tokens)
-
+        peft_config = AdaptionPromptConfig(
+            task_type=TaskType.CAUSAL_LM,
+            adapter_layers=config.adapter_layers,
+            adapter_len=config.adapter_len,
+        )
         text_column = "question"
         label_column = "expected_fields"
 
@@ -256,4 +260,4 @@ def train(config=None):
         print("saved")
 
 if __name__ == "__main__":
-    wandb.agent(sweep_id, train, count=20)
+    wandb.agent(sweep_id, train, count=10)

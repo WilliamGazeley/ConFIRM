@@ -1,5 +1,5 @@
 from transformers import LlamaForCausalLM, LlamaTokenizer
-from peft import get_peft_model, LoraConfig, TaskType, PeftType
+from peft import get_peft_model, PrefixTuningConfig, TaskType, PeftType
 import torch
 from datasets import load_dataset, Dataset
 from torch.utils.data import DataLoader
@@ -11,8 +11,8 @@ import wandb
 import os
 
 sweep_config = {
-    'name': 'lora_sweep',
-    'method': 'random'
+    'name': 'prefix_sweep_bayesian',
+    'method': 'bayesian'
     }
 
 metric = {
@@ -23,23 +23,14 @@ metric = {
 sweep_config['metric'] = metric
 
 parameters_dict = {
-    'r': {
-        'values': [6, 8, 10]
-    },
-    'lora_dropout': {
-        'values': [0.01, 0.05, 0.1]
-    },
-    'lora_alpha': {
-        'values': [26, 32, 38]
-    },
+    'num_virtual_tokens': {
+        'values': [15, 30, 60]
+        },
     'batch_size': {
-        'values': [4, 6, 8]
-    },
-    # 'epochs': {
-    #     'values': [30, 40, 50, 60]
-    #     },
+        'values': [4, 8, 16]
+        },
     'lr': {
-        'values': [3e-1, 1e-1, 3e-2, 1e-2, 3e-3, 1e-3, 3e-4, 1e-4]
+        'values': [3e-2, 1e-2, 3e-3, 1e-3, 3e-4, 1e-4]
     }
 }
 
@@ -51,11 +42,9 @@ parameters_dict.update(
         'model_path': {'value': os.environ.get('MODEL_PATH')},
         'save_path': {'value': os.environ.get('SAVE_PATH')},
         'dataset_path': {'value': os.environ.get('DS_PATH')}
-        'target_modules': {'value': ["q_proj", "v_proj"]},
-        'bias': {'value': "none"}
     }
 )
-device = "cuda"
+device = "cuda:1"
 
 sweep_config['parameters'] = parameters_dict
 
@@ -65,19 +54,12 @@ sweep_id = wandb.sweep(sweep_config, project="llama-2-7b-peft")
 def train(config=None):
     with wandb.init(config=config):
         config=wandb.config
-        peft_model_id = f"lora_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_dp{config.lora_dropout}_al{config.lora_alpha}_r{config.r}"
+        peft_model_id = f"prefix_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_nvt{config.num_virtual_tokens}"
         print(peft_model_id)
         model_name_or_path = config.model_path
 
-        peft_config = LoraConfig(
-            task_type=TaskType.CAUSAL_LM, 
-            inference_mode=False, 
-            r=config.r, 
-            lora_alpha=config.lora_alpha, 
-            lora_dropout=config.lora_dropout,
-            target_modules=config.target_modules,
-            bias=config.bias
-        )
+        peft_config = PrefixTuningConfig(task_type=TaskType.CAUSAL_LM, num_virtual_tokens=config.num_virtual_tokens)
+
         text_column = "question"
         label_column = "expected_fields"
 
@@ -271,4 +253,4 @@ def train(config=None):
         print("saved")
 
 if __name__ == "__main__":
-    wandb.agent(sweep_id, train, count=20)
+    wandb.agent(sweep_id, train, count=10)
