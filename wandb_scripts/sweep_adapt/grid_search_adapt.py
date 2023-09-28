@@ -5,6 +5,7 @@ from datasets import load_dataset, Dataset
 from torch.utils.data import DataLoader
 from transformers import default_data_collator, get_linear_schedule_with_warmup
 from tqdm import tqdm
+import os
 import json
 import csv
 import wandb
@@ -15,7 +16,7 @@ sweep_config = {
     }
 
 metric = {
-    'name': 'eval_loss',
+    'name': 'eval_epoch_loss',
     'goal': 'minimize'   
     }
 
@@ -44,9 +45,9 @@ parameters_dict.update(
         # comment epochs to start a real sweep
         'epochs': {'value': 50},
         'max_length': {'value': 128},
-        'model_path': {'value': '/home/adrianw/hf'},
-        'save_path': {'value': '/home/adrianw/tuned'},
-        'dataset_path': {'value': '/home/adrianw/ConFIRM/datasets/mixed/ConFIRM_QAset_559n_mixed_train.csv'}
+        'model_path': {'value': os.environ.get('MODEL_PATH')},
+        'save_path': {'value': os.environ.get('SAVE_PATH')},
+        'dataset_path': {'value': os.environ.get('DS_PATH')}
     }
 )
 device = "cuda"
