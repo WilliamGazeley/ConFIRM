@@ -193,7 +193,6 @@ def train(config=None):
 
         # training and evaluation
         model = model.to(device)
-        model.register
         for epoch in range(num_epochs):
             model.train()
             total_loss = 0
