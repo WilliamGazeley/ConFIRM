@@ -1,18 +1,18 @@
 from transformers import LlamaForCausalLM, LlamaTokenizer
-from peft import get_peft_model, TaskType, AdaptionPromptConfig
+from peft import get_peft_model, PromptEncoderConfig, TaskType, PeftType
 import torch
 from datasets import load_dataset, Dataset
 from torch.utils.data import DataLoader
 from transformers import default_data_collator, get_linear_schedule_with_warmup
 from tqdm import tqdm
-import os
 import json
 import csv
+import os
 import wandb
 
 sweep_config = {
-    'name': 'adapt_sweep_bayesian',
-    'method': 'bayes'
+    'name': 'ptune_train',
+    'method': 'grid'
     }
 
 metric = {
@@ -22,30 +22,29 @@ metric = {
 
 sweep_config['metric'] = metric
 
-# model adapter = 32 : adapter_layers must be =< 32
+# when encoder_hidden_size >= 256 and batch_size >= 6 : OOM in GPU
 parameters_dict = {
-    'adapter_len': {
-        'values': [5, 10, 20]
-        },
-    'adapter_layers': {
-        'values': [8, 16, 32]
-        },
-    'batch_size': {
-        'values': [4, 6, 8]
-        },
-    'lr': {
-        'values': [3e-2, 1e-2, 3e-3, 1e-3, 3e-4, 1e-4]
+    'dataset_path': {
+        'values': [
+            "datasets/ocean/ocean_rephrased_validated_descriptive_110n_train.csv",
+            "datasets/ocean/ocean_rephrased_validated_descriptive_220n_train.csv",
+            "datasets/ocean/ocean_rephrased_validated_descriptive_550n_train.csv",
+            "datasets/ocean/ocean_rephrased_validated_descriptive_1650n_train.csv",
+            "datasets/ocean/ocean_rephrased_validated_descriptive_3300n_train.csv",
+        ]
     }
 }
 
 parameters_dict.update(
     {
-        # comment epochs to start a real sweep
-        'epochs': {'value': 30},
+        'lr': {'value': 3e-3},
+        'batch_size': {'value': 3},
+        'encoder_hidden_size': {'value': 64},
+        'num_virtual_tokens': {'value': 15},
+        'epochs': {'value': 50},
         'max_length': {'value': 128},
         'model_path': {'value': os.environ.get('MODEL_PATH')},
         'save_path': {'value': os.environ.get('SAVE_PATH')},
-        'dataset_path': {'value': os.environ.get('DS_PATH')}
     }
 )
 device = "cuda"
@@ -58,15 +57,16 @@ sweep_id = wandb.sweep(sweep_config, project="llama-2-7b-peft")
 def train(config=None):
     with wandb.init(config=config):
         config=wandb.config
-        peft_model_id = f"adapt_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_alen{config.adapter_len}_alay{config.adapter_layers}"
+        peft_model_id = f"ocean_ptune_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_nvt{config.num_virtual_tokens}_ehs{config.encoder_hidden_size}"
         print(peft_model_id)
         model_name_or_path = config.model_path
 
-        peft_config = AdaptionPromptConfig(
-            task_type=TaskType.CAUSAL_LM,
-            adapter_layers=config.adapter_layers,
-            adapter_len=config.adapter_len,
+        peft_config = PromptEncoderConfig(
+            task_type=TaskType.CAUSAL_LM, 
+            num_virtual_tokens=config.num_virtual_tokens,
+            encoder_hidden_size=config.encoder_hidden_size
         )
+
         text_column = "question"
         label_column = "expected_fields"
 
@@ -112,7 +112,7 @@ def train(config=None):
 
         # TODO: change to a separate test data set
         dataset = dataset.train_test_split(test_size=0.1)
-
+        train_size = len(dataset['train'])
         print(dataset)
 
         # data preprocessing
@@ -193,7 +193,7 @@ def train(config=None):
 
         # training and evaluation
         model = model.to(device)
-        model.register
+
         for epoch in range(num_epochs):
             model.train()
             total_loss = 0
@@ -233,6 +233,10 @@ def train(config=None):
                 "eval_ppl": eval_ppl,
                 "eval_epoch_loss": eval_epoch_loss
             })
+            save_path = f"{config.save_path}/{peft_model_id}_{train_size}n_ep{epoch}"
+            print(f"saving model to {save_path}")
+            model.save_pretrained(save_path)
+            print("saved")
             print(f"{epoch=}: {train_ppl=} {train_epoch_loss=} {eval_ppl=} {eval_epoch_loss=}")
 
 
@@ -243,11 +247,6 @@ def train(config=None):
         print(dataset["test"][i][text_column])
         print(inputs)
         
-        
-        save_path = f"{config.save_path}/{peft_model_id}"
-        print(f"saving model to {save_path}")
-        model.save_pretrained(save_path)
-        print("saved")
         
         with torch.no_grad():
             inputs = {k: v.to(device) for k, v in inputs.items()}
@@ -260,4 +259,4 @@ def train(config=None):
         print("saved")
 
 if __name__ == "__main__":
-    wandb.agent(sweep_id, train, count=10)
+    wandb.agent(sweep_id, train)

@@ -31,7 +31,7 @@ parameters_dict = {
         'values': [32, 64, 128]
         },
     'batch_size': {
-        'values': [3, 6, 12]
+        'values': [4, 6, 8]
         },
     'lr': {
         'values': [3e-2, 1e-2, 3e-3, 1e-3, 3e-4, 1e-4]

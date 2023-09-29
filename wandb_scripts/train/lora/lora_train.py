@@ -1,5 +1,5 @@
 from transformers import LlamaForCausalLM, LlamaTokenizer
-from peft import get_peft_model, PrefixTuningConfig, TaskType, PeftType
+from peft import get_peft_model, LoraConfig, TaskType, PeftType
 import torch
 from datasets import load_dataset, Dataset
 from torch.utils.data import DataLoader
@@ -11,8 +11,8 @@ import wandb
 import os
 
 sweep_config = {
-    'name': 'prefix_sweep_bayesian',
-    'method': 'bayes'
+    'name': 'lora_train',
+    'method': 'grid'
     }
 
 metric = {
@@ -23,28 +23,33 @@ metric = {
 sweep_config['metric'] = metric
 
 parameters_dict = {
-    'num_virtual_tokens': {
-        'values': [15, 30, 60]
-        },
-    'batch_size': {
-        'values': [4, 8, 16]
-        },
-    'lr': {
-        'values': [3e-2, 1e-2, 3e-3, 1e-3, 3e-4, 1e-4]
+    'dataset_path': {
+        'values': [
+            "datasets/ocean/ocean_rephrased_validated_descriptive_110n_train.csv",
+            "datasets/ocean/ocean_rephrased_validated_descriptive_220n_train.csv",
+            "datasets/ocean/ocean_rephrased_validated_descriptive_550n_train.csv",
+            "datasets/ocean/ocean_rephrased_validated_descriptive_1650n_train.csv",
+            "datasets/ocean/ocean_rephrased_validated_descriptive_3300n_train.csv",
+        ]
     }
 }
 
 parameters_dict.update(
     {
-        # comment epochs to start a real sweep
+        'lr': {'value': 3e-4},
+        'r': {'value': 4},
+        'lora_dropout': {'value': 1e-3},
+        'lora_alpha': {'value': 64},
+        'batch_size': {'value': 8},
         'epochs': {'value': 50},
         'max_length': {'value': 128},
         'model_path': {'value': os.environ.get('MODEL_PATH')},
         'save_path': {'value': os.environ.get('SAVE_PATH')},
-        'dataset_path': {'value': os.environ.get('DS_PATH')}
+        'target_modules': {'value': ["q_proj", "v_proj"]},
+        'bias': {'value': "none"}
     }
 )
-device = "cuda:1"
+device = "cuda:0"
 
 sweep_config['parameters'] = parameters_dict
 
@@ -54,12 +59,19 @@ sweep_id = wandb.sweep(sweep_config, project="llama-2-7b-peft")
 def train(config=None):
     with wandb.init(config=config):
         config=wandb.config
-        peft_model_id = f"prefix_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_nvt{config.num_virtual_tokens}"
+        peft_model_id = f"ocean_lora_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_dp{config.lora_dropout}_al{config.lora_alpha}_r{config.r}"
         print(peft_model_id)
         model_name_or_path = config.model_path
 
-        peft_config = PrefixTuningConfig(task_type=TaskType.CAUSAL_LM, num_virtual_tokens=config.num_virtual_tokens)
-
+        peft_config = LoraConfig(
+            task_type=TaskType.CAUSAL_LM, 
+            inference_mode=False, 
+            r=config.r, 
+            lora_alpha=config.lora_alpha, 
+            lora_dropout=config.lora_dropout,
+            target_modules=config.target_modules,
+            bias=config.bias
+        )
         text_column = "question"
         label_column = "expected_fields"
 
@@ -103,9 +115,8 @@ def train(config=None):
 
             dataset = Dataset.from_list(successful)
 
-        # TODO: change to a separate test data set
         dataset = dataset.train_test_split(test_size=0.1)
-
+        train_size = len(dataset['train'])
         print(dataset)
 
         # data preprocessing
@@ -226,6 +237,10 @@ def train(config=None):
                 "eval_ppl": eval_ppl,
                 "eval_epoch_loss": eval_epoch_loss
             })
+            save_path = f"{config.save_path}/{peft_model_id}_{train_size}n_ep{epoch}"
+            print(f"saving model to {save_path}")
+            model.save_pretrained(save_path)
+            print("saved")
             print(f"{epoch=}: {train_ppl=} {train_epoch_loss=} {eval_ppl=} {eval_epoch_loss=}")
 
 
@@ -236,12 +251,7 @@ def train(config=None):
         print(dataset["test"][i][text_column])
         print(inputs)
         
-        
-        save_path = f"{config.save_path}/{peft_model_id}"
-        print(f"saving model to {save_path}")
-        model.save_pretrained(save_path)
-        print("saved")
-        
+
         with torch.no_grad():
             inputs = {k: v.to(device) for k, v in inputs.items()}
             outputs = model.generate(
@@ -250,7 +260,5 @@ def train(config=None):
             print(outputs)
             print(tokenizer.batch_decode(outputs.detach().cpu().numpy(), skip_special_tokens=True))
 
-        print("saved")
-
 if __name__ == "__main__":
-    wandb.agent(sweep_id, train, count=10)
+    wandb.agent(sweep_id, train)
