@@ -26,11 +26,11 @@ sweep_config['metric'] = metric
 parameters_dict = {
     'dataset_path': {
         'values': [
-            "datasets/ocean/ocean_rephrased_validated_descriptive_110n_train.csv",
-            "datasets/ocean/ocean_rephrased_validated_descriptive_220n_train.csv",
-            "datasets/ocean/ocean_rephrased_validated_descriptive_550n_train.csv",
-            "datasets/ocean/ocean_rephrased_validated_descriptive_1650n_train.csv",
-            "datasets/ocean/ocean_rephrased_validated_descriptive_3300n_train.csv",
+            "datasets/ocean/masked/ocean_rephrased_validated_masked_110n_train.csv",
+            "datasets/ocean/masked/ocean_rephrased_validated_masked_220n_train.csv",
+            "datasets/ocean/masked/ocean_rephrased_validated_masked_550n_train.csv",
+            "datasets/ocean/masked/ocean_rephrased_validated_masked_1650n_train.csv",
+            "datasets/ocean/masked/ocean_rephrased_validated_masked_3300n_train.csv",
         ]
     }
 }
@@ -58,7 +58,7 @@ sweep_id = wandb.sweep(sweep_config, project="llama-2-7b-peft")
 def train(config=None):
     with wandb.init(config=config):
         config=wandb.config
-        peft_model_id = f"ocean_adapt_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_alen{config.adapter_len}_alay{config.adapter_layers}"
+        peft_model_id = f"ocean_masked_adapt_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_alen{config.adapter_len}_alay{config.adapter_layers}"
         print(peft_model_id)
         model_name_or_path = config.model_path
 
