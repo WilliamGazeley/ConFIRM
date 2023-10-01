@@ -11,7 +11,7 @@ import csv
 import wandb
 
 sweep_config = {
-    'name': 'adapt_train',
+    'name': 'adapt_masked_train',
     'method': 'grid'
     }
 
