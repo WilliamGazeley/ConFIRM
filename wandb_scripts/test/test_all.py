@@ -118,14 +118,12 @@ def test(config=None):
         model_id = testing_targets[config.method][config.training_size]
         model_name = model_id.split("tuned")[1]
         model_path = config.peft_model_path_prefix + model_name
-        config = PeftConfig.from_pretrained(model_path)
-        
         
         text_column = "question"
         label_column = "expected_fields"
         
+        successful=[]
         def get_successful(all_data):
-            successful=[]
             for obj in all_data:
                 if type(obj[label_column]) == list:
                     obj[label_column] = str(obj[label_column])
@@ -155,8 +153,10 @@ def test(config=None):
 
         testset = Dataset.from_list(successful)
         
-        model = LlamaForCausalLM.from_pretrained(config.llama_model_path)
         tokenizer = LlamaTokenizer.from_pretrained(config.llama_model_path)
+        
+        model = LlamaForCausalLM.from_pretrained(config.llama_model_path)
+        model = PeftModel.from_pretrained(model, model_path)
         model = model.to(device)
         model.eval()
 
@@ -167,8 +167,13 @@ def test(config=None):
             
                 input_text = f"{test_obj[text_column]} Label : "
                 inputs = tokenizer(input_text, return_tensors="pt")
-
-                outputs = model.generate(input_ids=inputs["input_ids"], max_new_tokens=128)
+                inputs = {k: v.to(device) for k, v in inputs.items()}
+                outputs = model.generate(
+                    input_ids=inputs["input_ids"], 
+                    attention_mask=inputs["attention_mask"],
+                    max_new_tokens=128,
+                    eos_token_id=2
+                )
                 output_text = tokenizer.batch_decode(outputs.detach().cpu().numpy(), skip_special_tokens=True)[0]
 
                 test_result = success_function_single(output_text.replace(input_text, '').strip(), test_obj[label_column])
