@@ -60,7 +60,7 @@ parameters_dict = {
     "training_size": {"values": ["99", "198", "495", "1485", "2970"]},
     'peft_model_path_prefix': {'value': os.environ.get('SAVE_PATH')},
     'llama_model_path': {'value': os.environ.get('MODEL_PATH')},
-    "testset_path": {"value": "datasets/ocean/descriptive/ocean_rephrased_validated_masked_1000n_test.csv"}
+    "testset_path": {"value": "datasets/ocean/masked/ocean_rephrased_validated_masked_1000n_test.csv"}
 }
 
 device = "cuda"
