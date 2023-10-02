@@ -15,38 +15,37 @@ import wandb
 
 testing_targets = {
     "adapt" : {
-        "99" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_99n_ep27",
-        "198" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_198n_ep20",
-        "495" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_495n_ep25",
-        "1485" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_1485n_ep32",
-        "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_2970n_ep33",
+        "99" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_99n_ep6",
+        "198" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_198n_ep14",
+        "495" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_495n_ep10",
+        "1485" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_1485n_ep21",
+        "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_2970n_ep38",
     },
     "lora" : {
-        "99" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_99n_ep4",
-        "198" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_198n_ep4",
-        "495" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_495n_ep14",
-        "1485" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_1485n_ep1",
-        "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_2970n_ep26",
+        "99" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_99n_ep4",
+        "198" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_198n_ep4",
+        "495" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_495n_ep6",
+        "1485" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_1485n_ep12",
+        "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_2970n_ep24",
     },
     "prefix" : {
-        "99" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_99n_ep12",
-        "198" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_198n_ep29",
-        "495" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_495n_ep25",
-        "1485" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_1485n_ep29",
-        # "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_2970n_ep23",
-        "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_2970n_ep30",
+        "99" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_prefix_b4_e50_lr0.001_maxl128_nvt30_99n_ep12",
+        "198" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_prefix_b4_e50_lr0.001_maxl128_nvt30_198n_ep15",
+        "495" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_prefix_b4_e50_lr0.001_maxl128_nvt30_495n_ep9",
+        "1485" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_prefix_b4_e50_lr0.001_maxl128_nvt30_1485n_ep16",
+        "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_prefix_b4_e50_lr0.001_maxl128_nvt30_2970n_ep19",
     },
     "ptune" : {
-        "99" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_99n_ep9",
-        "198" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_198n_ep14",
-        "495" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_495n_ep14",
-        "1485" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_1485n_ep34",
-        "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_2970n_ep9",
+        "99" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_99n_ep10",
+        "198" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_198n_ep15",
+        "495" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_495n_ep10",
+        "1485" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_1485n_ep21",
+        "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_2970n_ep34",
     }
 }
 
 sweep_config = {
-    'name': 'model_testing',
+    'name': 'model_testing_masked',
     'method': 'grid'
 }
 
@@ -61,7 +60,7 @@ parameters_dict = {
     "training_size": {"values": ["99", "198", "495", "1485", "2970"]},
     'peft_model_path_prefix': {'value': os.environ.get('SAVE_PATH')},
     'llama_model_path': {'value': os.environ.get('MODEL_PATH')},
-    "testset_path": {"value": "datasets/ocean/descriptive/ocean_rephrased_validated_descriptive_1000n_test.csv"}
+    "testset_path": {"value": "datasets/ocean/descriptive/ocean_rephrased_validated_masked_1000n_test.csv"}
 }
 
 device = "cuda"
@@ -205,6 +204,10 @@ def test(config=None):
             "accuracy": t / (t + f),
             "avg_jscore": total_score / len(test_results)
         })
+        # clean up
+        del tokenizer
+        del model
+        torch.cuda.empty_cache()
         
 if __name__ == "__main__":
     wandb.agent(sweep_id, test)
