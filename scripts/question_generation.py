@@ -34,8 +34,9 @@ parser.add_argument('--openai_api_key', type=str, required=False,
                     default='None',
                     help='OpenAI API KEY. It is required if you use the model provided by OpenAI.')
 
-parser.add_argument('--company_name', type=str, nargs='+', required=True,
-                    help='company names to generate questions. Input with space separated')
+parser.add_argument('--company_name', type=str, required=False,
+                    default='None',
+                    help='company names to generate questions. Input with semicolon separated')
 
 parser.add_argument('--fields', type=str, nargs='+',
                     help='fields to generate questions. ONLY "all", "external" and "stock" are available now. Select one or more from them. Input with space separated')
@@ -49,6 +50,8 @@ def main(**kwargs):
         Ref: https://cloud.google.com/vertex-ai/docs/start/cloud-environment
     """
     companies = kwargs['company_name']
+    companies = companies.split(';')
+    companies = [x.strip() for x in companies]
     n = kwargs['n']
     save_path = kwargs['save_path']
     for field in kwargs['fields']:
