@@ -2,8 +2,8 @@ peft==0.5.0
 torch==2.0.1
 tqdm==4.66.1
 transformers==4.33.2
-senetencepiece
-datasets
+sentencepiece==0.1.99
+datasets==2.14.5
 langchain==0.0.292
 llama_index==0.8.28
 openai==0.28.0
