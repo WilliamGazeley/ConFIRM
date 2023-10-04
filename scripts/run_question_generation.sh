@@ -1,4 +1,4 @@
-python scripts/q_gen.py \
+python scripts/question_generation.py \
  --company_name Apple Tesla \
  --save_path $SAVE_PATH \
  --n 5 \
