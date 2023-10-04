@@ -20,9 +20,9 @@ parser = argparse.ArgumentParser(description=\
 # Required arguments
 
 parser.add_argument('--question_path', type=str, required=True,
-                    help='Path of the question to be repahse')
+                    help='Path to the question to be repahse. csv file is required. i.e.: ./datsets/ConFIRM_QAset.csv')
 parser.add_argument('--save_path', type=str, required=True,
-                    help='save path of the rephased question generated')
+                    help='save path of the rephased question generated.')
 parser.add_argument('--rephase_llm', type=str, required=True,
                     help='LLM used to rephase the question. i.e.: "gpt-3.5-turbo-instruct", "chat-openai".')
 parser.add_argument('--openai_api_key', type=str, required=False,

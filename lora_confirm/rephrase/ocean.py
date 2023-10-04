@@ -60,7 +60,7 @@ def ocean(llm: BaseLLM, df: pd.DataFrame, column: str = 'question', n=10,
         elif 'llms' in llm.lc_namespace:
             resp = llm.invoke(prompt)
         else:
-            raise NotImplementedError("Only ChatOpenAI and OpenAI are supported")
+            raise NotImplementedError("LLM is not supported yet.")
         # Remove the last occurence of "}."
         resp = re.sub(r"}(\.|\s)*$", '', resp)
         rephrases.append(resp)
