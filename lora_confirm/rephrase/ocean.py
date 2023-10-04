@@ -9,7 +9,9 @@ import pandas as pd
 from random import choice
 from typing import List, Literal
 from langchain.llms import BaseLLM
-
+from langchain.chat_models import ChatOpenAI
+from langchain.llms import OpenAI
+import warnings
 PERSONALITIES = [
     "AGREEABLE",
     "DISAGREEABLE",
@@ -30,6 +32,7 @@ def ocean(llm: BaseLLM, df: pd.DataFrame, column: str = 'question', n=10,
     Uses the OCEAN personality model to perform text-to-text generation.
     NOTE: This requires the PERSONAGE dataset, which can be downloaded from
           https://nlds.soe.ucsc.edu/stylistic-variation-nlg.
+          Extract the file and put the folder "personage-nlg" under "/datasets"
 
     ref: https://arxiv.org/pdf/2302.03848
 
@@ -51,7 +54,16 @@ def ocean(llm: BaseLLM, df: pd.DataFrame, column: str = 'question', n=10,
             personality=samples.sample(n=1).iloc[0]['personality'],
             ref="")
         prompt = prompt[:-2] # Remove the last occurence of "}."
-        rephrases.append(llm.invoke(prompt).content)
+        if 'chat_models' in llm.lc_namespace:
+            resp = llm.invoke(prompt).content
+            warnings.warn("Use chat models may not get satisfied rephasing results.", UserWarning)
+        elif 'llms' in llm.lc_namespace:
+            resp = llm.invoke(prompt)
+        else:
+            raise NotImplementedError("LLM is not supported yet.")
+        # Remove the last occurence of "}."
+        resp = re.sub(r"}(\.|\s)*$", '', resp)
+        rephrases.append(resp)
     df['rephrase'] = rephrases
     return df
 

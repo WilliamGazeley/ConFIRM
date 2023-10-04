@@ -80,6 +80,7 @@ def seeded(
     """
     assert all([len(x) == 2 for x in prompt_samples]), \
         "prompt_samples must be a list of tuples of length 2"
+    assert k_samples <= len(prompt_samples), f"Seeding samples should be larger than {k_samples}. Add more examples in seeds file."
     if save_path and not save_path.endswith('.csv'):
         raise ValueError("save_path must be a .csv")
     # To avoid branching the prompt building code below, modify the subjects
