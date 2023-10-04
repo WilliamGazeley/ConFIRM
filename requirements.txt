@@ -13,3 +13,4 @@ setuptools==67.6.0
 vertexai==0.0.1
 google-api-python-client==2.86.0
 google-cloud-aiplatform==1.31.0
+rouge_score==0.1.2
