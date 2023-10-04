@@ -55,9 +55,9 @@ def ocean(llm: BaseLLM, df: pd.DataFrame, column: str = 'question', n=10,
             ref="")
         prompt = prompt[:-2] # Remove the last occurence of "}."
         if 'chat_models' in llm.lc_namespace:
-            resp = llm.invoke(prompt, n=n).content
+            resp = llm.invoke(prompt).content
             warnings.warn("Use chat models may not get satisfied rephasing results.", UserWarning)
-        elif isinstance(llm, OpenAI):
+        elif 'llms' in llm.lc_namespace:
             resp = llm.invoke(prompt)
         else:
             raise NotImplementedError("Only ChatOpenAI and OpenAI are supported")

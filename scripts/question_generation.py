@@ -30,6 +30,10 @@ parser.add_argument('--google_credential_path', type=str, required=False,
                     default="gcp-service-account.json",
                     help='Path to the gcp-service-account.json. It is required if you use the palm model')
 
+parser.add_argument('--openai_api_key', type=str, required=False,
+                    default='None',
+                    help='OpenAI API KEY. It is required if you use the model provided by OpenAI.')
+
 parser.add_argument('--company_name', type=str, nargs='+', required=True,
                     help='company names to generate questions. Input with space separated')
 
@@ -56,6 +60,9 @@ def main(**kwargs):
     if kwargs['llm'] == 'palm':
         assert os.path.exists(kwargs['google_credential_path']), f"Invalid google credential path {kwargs['google_credential_path']}"
         credentials, project_id = google.auth.load_credentials_from_file(kwargs['google_credential_path'])
+    elif kwargs['llm'] == 'gpt':
+        assert kwargs['openai_api_key'] != 'None', "OpenAI API KEY is required if you use the model provided by OpenAI."
+        os.environ['OPENAI_API_KEY'] = kwargs['openai_api_key']
     # Self-instruct used 0.7 temperature    
     llm = ChatOpenAI(temperature=0.7) if kwargs['llm'] == 'gpt' else ChatVertexAI(temperature=0.7)
     

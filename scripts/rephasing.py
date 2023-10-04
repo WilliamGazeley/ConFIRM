@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 import argparse
-from langchain.chat_models import ChatOpenAI
+from langchain.chat_models import ChatVertexAI, ChatOpenAI
 import re
 import glob
 import pandas as pd
@@ -24,20 +24,35 @@ parser.add_argument('--question_path', type=str, required=True,
 parser.add_argument('--save_path', type=str, required=True,
                     help='save path of the rephased question generated')
 parser.add_argument('--rephase_llm', type=str, required=True,
-                    help='LLM used to rephase the question. Only "gpt-3.5-turbo-instruct" and "chat-openai" are supported now.')
+                    help='LLM used to rephase the question. i.e.: "gpt-3.5-turbo-instruct", "chat-openai".')
+parser.add_argument('--openai_api_key', type=str, required=False,
+                    default='None',
+                    help='OpenAI API KEY. It is required if you use the model provided by OpenAI.')
+parser.add_argument('--google_credential_path', type=str, required=False,
+                    default="gcp-service-account.json",
+                    help='Path to the gcp-service-account.json. It is required if you use the palm model')
 
 
 def main(**kwargs):
     """Rephase the questions.
     
-    """
-    assert kwargs['rephase_llm'] in ["gpt-3.5-turbo-instruct", "chat-openai"], "Only gpt-3.5-turbo-instruct and chat-openai are available now."        
-        
+    """     
     if kwargs['rephase_llm'] == "gpt-3.5-turbo-instruct":
+        assert kwargs['openai_api_key'] != 'None', "OpenAI API KEY is required if you use the model provided by OpenAI."
+        os.environ['OPENAI_API_KEY'] = kwargs['openai_api_key']
         llm = OpenAI(model='gpt-3.5-turbo-instruct') 
     elif kwargs['rephase_llm'] == "chat-openai":
+        assert kwargs['openai_api_key'] != 'None', "OpenAI API KEY is required if you use the model provided by OpenAI."
+        os.environ['OPENAI_API_KEY'] = kwargs['openai_api_key']
         warnings.warn("Use 'gpt-3.5-turbo-instruct' as rephase llm to get better rephase performance.", UserWarning)
         llm = ChatOpenAI()
+    elif kwargs['rephase_llm'] == "palm":
+        import google.auth
+        assert os.path.exists(kwargs['google_credential_path']), f"Invalid google credential path {kwargs['google_credential_path']}"
+        credentials, project_id = google.auth.load_credentials_from_file(kwargs['google_credential_path'])
+        llm = ChatVertexAI()
+    else:
+        raise NotImplementedError("Only gpt-3.5-turbo-instruct and chat-openai are available now.")
      
     assert os.path.exists(kwargs['question_path']), f"Invalid question data path {kwargs['question_path']}"  
     df = pd.read_csv(kwargs['question_path'])
