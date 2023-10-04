@@ -18,7 +18,7 @@ parser = argparse.ArgumentParser(description=\
 # Required arguments
 
 parser.add_argument('--save_path', type=str, required=True,
-                    help='Save path for the question generated')
+                    help='Save path for the question generated. i.e.: ./datsets/')
 
 parser.add_argument('--n', type=int, required=True,
                     help='Number of questions to be generated')

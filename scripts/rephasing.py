@@ -22,7 +22,7 @@ parser = argparse.ArgumentParser(description=\
 parser.add_argument('--question_path', type=str, required=True,
                     help='Path to the question to be repahse. csv file is required. i.e.: ./datsets/ConFIRM_QAset.csv')
 parser.add_argument('--save_path', type=str, required=True,
-                    help='save path of the rephased question generated.')
+                    help='save path of the rephased question generated. i.e.: ./datsets/')
 parser.add_argument('--rephase_llm', type=str, required=True,
                     help='LLM used to rephase the question. i.e.: "gpt-3.5-turbo-instruct", "chat-openai".')
 parser.add_argument('--openai_api_key', type=str, required=False,
@@ -76,7 +76,7 @@ def main(**kwargs):
     # Start the outer loop from the highest batch number + 1
     start_batch = highest_batch_num + 1
 
-    for i in range(start_batch, 6): # 5x the current dataset
+    for i in range(start_batch, 6): # 6x the current dataset
         # Break the dataset into batches of 50 questions (checkpointing)
         for j in range(0, len(df), 50):
             batch = df.iloc[j:j+50]
