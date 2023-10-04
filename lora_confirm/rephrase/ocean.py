@@ -11,6 +11,7 @@ from typing import List, Literal
 from langchain.llms import BaseLLM
 from langchain.chat_models import ChatOpenAI
 from langchain.llms import OpenAI
+import warnings
 PERSONALITIES = [
     "AGREEABLE",
     "DISAGREEABLE",
@@ -53,9 +54,9 @@ def ocean(llm: BaseLLM, df: pd.DataFrame, column: str = 'question', n=10,
             personality=samples.sample(n=1).iloc[0]['personality'],
             ref="")
         prompt = prompt[:-2] # Remove the last occurence of "}."
-        
-        if isinstance(llm, ChatOpenAI):
+        if 'chat_models' in llm.lc_namespace:
             resp = llm.invoke(prompt, n=n).content
+            warnings.warn("Use chat models may not get satisfied rephasing results.", UserWarning)
         elif isinstance(llm, OpenAI):
             resp = llm.invoke(prompt)
         else:

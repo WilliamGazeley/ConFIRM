@@ -27,6 +27,7 @@ parser.add_argument('--llm', type=str, required=True,
                     help='LLM to generate questions. ONLY "gpt" and "palm" are available now. Select one from them.')
 
 parser.add_argument('--google_credential_path', type=str, required=False,
+                    default="gcp-service-account.json",
                     help='Path to the gcp-service-account.json. It is required if you use the palm model')
 
 parser.add_argument('--company_name', type=str, nargs='+', required=True,
