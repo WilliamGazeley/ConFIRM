@@ -1,0 +1,1001 @@
+question,expected_fields
+"What's the buzz about Apple on Twitter, you know, friend?.",['external_data_source']
+Can you provide me with the earnings per share for Bank of America over the last 12 months?.,['stock_data.eps_trailing_12_month']
+"I'm not sure, but I think it might be communication services or industrials. Which one do you think performed better last month?.","['market_data.Industrials', 'market_data.Communications_services']"
+"I’m guessing that the federal funds target rate affect the communications services sector, does it?","['economic_indicators.fed_funds_rate', 'market_data.Communications_services']"
+Could you tell me about the total liabilities of Comcast?.,"['stock_data.liabilities_total', 'stock_data.company_name']"
+what is the relationship between the ISM Nonmanufacturing Survey Index and the Consumer Price Index?.,"['economic_indicators.cpi', 'economic_indicators.ism_non_mfg']"
+Can you tell me what Pfizer's damn operating income is?.,['stock_data.operating_income']
+Could you explain the contrast between the S&P 500 Consumer Discretionary Sector Index and the S&P 500 Health Care Sector Index?.,"['market_data.Consumer_Disc', 'market_data.Health_Care']"
+"Oh God yeah, I don't know. Which one has a higher CPI? Mmhm... I'm not sure..","['economic_indicators.cpi', 'market_data.Communications_services']"
+"Uh, I don't really know the exact number, but I know Costco is worth a lot of money in terms of market capitalization. Sorry, I can't be more specific.",['stock_data.market_capitalization']
+"Oh gosh, I really don't know. Err... can you tell me the latest news article about Walt Disney?",['news_data_source']
+Can you tell me the difference in value between the S&P Energy index and the S&P Information Technology index?.,"['market_data.IT', 'market_data.Energy']"
+Which company between Philip Morris and Altria has a lower intraday low price and higher non-operating interest income?.,"['stock_data.price_intraday_low', 'stock_data.interest_income_not_banks']"
+"In the year 2020, which company was more frequently mentioned in the news, Apple or Tesla?.",['news_data_source']
+I'm curious about people's opinions on Tesla. Can you check social media for me and see what people are saying?.,['external_data_source']
+Could you tell me about any recent news articles that have been released regarding Coca-Cola?.,['news_data_source']
+Could you tell me about the daily trading volume for S&P Energy? Thank you..,['market_data.Energy']
+"Let's see, you want to know about Exxon Mobil? Right, ok, I think you're asking if they spend more on R&D than their total assets, am I correct?.","['stock_data.research_and_development', 'stock_data.assets_total']"
+"Oh God I mean, do you seriously expect me to know the percentage of Nike's money spent on R&D? Get out of here.","['stock_data.long_term_debt', 'stock_data.research_and_development']"
+"Oh gosh, I have no idea. What is the amount of money Walt Disney made in sales?.",['stock_data.sales_or_revenues']
+"Gosh, I don't know. Um... Can you tell me how Walt Disney has been doing financially in the past year? Like, what are their assets and earnings per share?","['stock_data.eps_trailing_12_month', 'stock_data.assets_short_term']"
+"Did the ISM manufacturing index and the S&P 500 move in the same direction today, you know?.","['economic_indicators.ism_mfg', 'market_data.S&P500']"
+Can you tell me more about the S&P General Industry Classification Energy Sector Index and how it relates to the current unemployment rate?.,"['market_data.Energy', 'economic_indicators.unemployment_rate']"
+How well has Merck been doing in terms of earnings per share over the last year?.,['stock_data.eps_trailing_12_month']
+"Umm... not sure, would you? Which company, Philip Morris or Altria, has lower intraday low price and higher non-operating interest income?","['stock_data.price_intraday_low', 'stock_data.interest_income_not_banks']"
+Could you tell me about Amazon's EBITDA and the number of common shares currently available?.,"['stock_data.ebitda', 'stock_data.common_shares_outstanding']"
+"Tell me, how does the consumer discretionary sector actually do compared to GDP?.","['economic_indicators.gdp', 'market_data.Consumer_Disc']"
+"Umm yeah, I am not sure. So what is the ticker symbol and general industry classification for Home Depot and what’s their ticker symbol?","['stock_data.general_industry_classification', 'stock_data.ticker_symbol']"
+What's the latest news about Chevron?,['news_data_source']
+Can you explain the difference between the forward 12-month and trailing 12-month earnings per share for Coca-Cola?.,"['stock_data.eps_forward_12_month', 'stock_data.eps_trailing_12_month']"
+Can you even tell me what the heck the current ISM Purchasing Managers Index is for the United States manufacturing sector? I bet you can't..,['economic_indicators.ism_mfg']
+Can you tell me how Home Depot stacks up against other companies when it comes to managing their inventory?,['stock_data.inventories_days_held']
+"Hey, have you heard any recent buzz about General Electric? Like, what kind of news articles have been floating around about them in the past month?.",['news_data_source']
+"I am sorry, I do not know the specific date, but I can tell you that T-Mobile US pays a quarterly dividend and the last one was on September 28th 2021, okay?.",['stock_data.date_ex_dividend']
+"I don't know, I mean, what's up with Apple lately?",['news_data_source']
+"Which sector has a bigger index value, mate, is it Utilities or Industrials?","['market_data.Utilities', 'market_data.Industrials']"
+"Can we talk about something related to the US? Alright, let's discuss how the GDP of the United States can impact inflation.","['economic_indicators.gdp', 'economic_indicators.cpi']"
+Is Costco's market value higher or lower than Apple's market value?.,['stock_data.market_capitalization']
+"Seriously, who cares about Costco's R&D spending on some random day when their stock was at its highest? Like, what relevance does that have?.","['stock_data.price_intraday_high', 'stock_data.research_and_development']"
+Do you want me to answer that? I am not sure but the latest news about Chevron is..,['news_data_source']
+"I don't know, sorry. How many people work for Chevron on the most recent date that they paid out dividends?.","['stock_data.date_ex_dividend', 'stock_data.employees']"
+"Oh God, I don't even know why you're asking about the correlation between the fed funds rate and the real estate sector. It's probably not important.","['economic_indicators.fed_funds_rate', 'market_data.Real_Estate']"
+"Oh man, I have no clue. Do you know how much money McDonald's makes?.",['stock_data.sales_or_revenues']
+"Come on, it's not that hard. Just tell me the non-operating interest income of Oracle and the legal name of the damn company..","['stock_data.interest_income_not_banks', 'stock_data.company_name']"
+"Oh God, I don't believe in rumors, but some people are saying that there might be some big mergers or acquisitions happening in the finance industry soon.",['external_data_source']
+"Oh my God, why are you even asking about Amazon's stock stuff? I'm pretty sure it's not relevant and I don't know the answer.","['stock_data.inventories_days_held', 'stock_data.price_intraday_high']"
+"I see you are interested in the energy sector. Well, let's consider the impact of the unemployment rate on its performance, shall we?.","['economic_indicators.unemployment_rate', 'market_data.Energy']"
+"You're asking about the relationship between the federal funds target rate and the communications services sector? I understand, the federal funds target rate can have an impact on the performance of companies in the communications services industry. Does that answer your question?.","['economic_indicators.fed_funds_rate', 'market_data.Communications_services']"
+"So, in the past month, which company had more news coverage, Bank of America or JPMorgan Chase?.",['news_data_source']
+Can you tell me about the GDP and what it is based on?.,['economic_indicators.personal_consumption_expenditure']
+I see you're interested in AMD. Can you tell me when their ex-dividend date for their cash income dividend payment is and how much long-term debt they have?.,"['stock_data.date_ex_dividend', 'stock_data.long_term_debt']"
+Is it common knowledge that Proctor & Gamble devotes a large portion of its budget to research and development?.,['stock_data.research_and_development']
+"How well does Microsoft handle its inventory in relation to its total assets, you know?","['stock_data.assets_total', 'stock_data.inventories_days_held']"
+Which sector do you think has a higher index value between Utilities and Industrials?.,"['market_data.Utilities', 'market_data.Industrials']"
+"Oh gosh yeah, I don't know buddy. What business sector does T-Mobile US operate in?.",['stock_data.general_industry_classification']
+"Hey friend, can you tell me how the Utilities and Energy sectors did yesterday? I'm really curious, you know..","['market_data.Utilities', 'market_data.Energy']"
+"I mean, come on, is Johnson & Johnson's SG&A actually increasing or decreasing? I can't believe we're even asking this..",['stock_data.operating_expense_sg&a']
+"I am not sure really... Mmhm... I think there are articles about the Bank of America, but I am not sure which ones exactly..",['news_data_source']
+"I wonder, which company has been mentioned more in news articles over the past month, Bank of America or JPMorgan Chase?",['news_data_source']
+"Can you give me some of the latest news about Apple in the past week, maybe the top three?.",['news_data_source']
+"Oh God, I don't know. Let me think. Is Tesla putting more money into research and development expenses compared to their cost of goods sold?","['stock_data.cogs', 'stock_data.research_and_development']"
+"Umm yeah, I am not sure... What's the connection between the ISM manufacturing index and the S&P industrials sector index?","['economic_indicators.ism_mfg', 'market_data.Industrials']"
+Could you tell me the amount of debt that Microsoft has?,['stock_data.liabilities_total']
+What is the P/E ratio for Adobe?.,['stock_data.ratio_pe']
+Can you tell me the top 5 updates about Apple?.,['news_data_source']
+"Can you tell me about any potential mergers or acquisitions that may be happening in the near future, based on insider information or rumors?.",['external_data_source']
+"Honestly, I don't know, but I bet the Materials sector in the S&P index is probably outperforming the Communications Services sector.","['market_data.Materials', 'market_data.Communications_services']"
+I'm curious about the impact of the 10-year US Treasury Government Bond yield on the Real Estate sector?,"['market_data.Real_Estate', 'economic_indicators.10Y_ust_yield']"
+"Which index had a better performance yesterday, the Real Estate Sector or the Industrials Sector?.","['market_data.Real_Estate', 'market_data.Industrials']"
+"Between Reuters and BBC, which one has more news coverage on Coca-Cola?",['news_data_source']
+"Hey mate, can you tell me when is the next ex-dividend date for Bank of America?.",['stock_data.date_ex_dividend']
+"Could you tell me how many employees Mastercard has? Also, how does that compare to their current assets?.","['stock_data.employees', 'stock_data.assets_short_term']"
+"I have no idea, man. How do you think the communications sector stacks up against the 10 year treasury bond?.","['market_data.Communications_services', 'economic_indicators.10Y_ust_yield']"
+"Oh God, I don't know. Is it Utilities or Industrials that have a higher index value?.","['market_data.Utilities', 'market_data.Industrials']"
+"Yo, was it Consumer Discretionary or Consumer Staples that crushed it in 2022 in the S&P sector index?.","['market_data.Consumer_Disc', 'market_data.Consumer_Staples']"
+What's Salesforce's earnings per share?,['stock_data.eps_trailing_12_month']
+"Oh God, I am not sure. How do non-operating interest income and number of employees affect financial performance for Walmart?.","['stock_data.interest_income_not_banks', 'stock_data.employees']"
+Can you tell me which company has a greater amount of non-operating interest income?,['stock_data.interest_income_not_banks']
+"Hey friend, can you explain the difference between Bank of America's SG&A expenses and book value per share? I'm curious, you know!.","['stock_data.operating_expense_sg&a', 'stock_data.bps_book_value_per_share']"
+"Oh God I don't know. Like, how much money does Mastercard make for each share compared to how much they owe?.","['stock_data.eps_trailing_12_month', 'stock_data.liabilities_total']"
+"I'm not sure, but i think you wanted to know about EBITDA and its significance for a company like Costco? Is it right?.",['stock_data.ebitda']
+"Hey mate, can you tell me the current unemployment rate in the US? .","['economic_indicators.unemployment_rate', 'market_data.IT']"
+"I am not sure, but does Nike have a higher total shareholders' equity than its operating income?.","['stock_data.operating_income', 'stock_data.shareholders_equity']"
+"Can you tell me about the daily return of the S&P Industrials, friend?",['market_data.Industrials']
+Can you provide information on the correlation between the Real Estate sector index and the overall Gross Domestic Product (GDP) of the United States?.,"['economic_indicators.gdp', 'market_data.Real_Estate']"
+"I am not really sure, but I think there might be some correlation between the S&P 500 Financials Sector Index and the Leading Economic Indicator.","['economic_indicators.conf_board_leading_indicators', 'market_data.Financials']"
+"I don't know, I mean, I don't really care about the stock market, but if you really want to know, I guess one of those sectors did better yesterday..","['market_data.IT', 'market_data.Materials']"
+"So mate, you know, what all does CPI include and measure in its calculations?.",['economic_indicators.cpi']
+Can you tell me if the ISM manufacturing index went up or down last month?.,"['economic_indicators.unemployment_rate', 'economic_indicators.ism_mfg']"
+How does IBM's SG&A expenses compare to the number of days they hold inventory?.,"['stock_data.inventories_days_held', 'stock_data.operating_expense_sg&a']"
+What the hell is the current CPI for all urban areas?.,['economic_indicators.cpi']
+"Ok, so we want to know the difference between PepsiCo's current assets and their book value per share, right?","['stock_data.bps_book_value_per_share', 'stock_data.assets_short_term']"
+Can you explain to me the discrepancy between General Electric's operating income and EPS in the last 12 months?,"['stock_data.operating_income', 'stock_data.eps_trailing_12_month']"
+What news articles have been published about Bank of America?,['news_data_source']
+"Hey mate, how does the consumer discretionary sector do compared to GDP, you know?.","['economic_indicators.gdp', 'market_data.Consumer_Disc']"
+Can you believe that Home Depot has more debt than its cost of goods sold? How irresponsible..,"['stock_data.liabilities_total', 'stock_data.cogs']"
+Could you tell me what is the R&D spend for AMD as a percentage of their cost of goods sold?,"['stock_data.cogs', 'stock_data.research_and_development']"
+What are the top 5 articles or stories about Apple that are currently being talked about?,['news_data_source']
+"Can you please tell me, what is the damn value of IBM stock right now? Also, what is the total amount of shareholders' equity?.","['stock_data.price_close', 'stock_data.shareholders_equity']"
+ Can you tell me what is the revenue of Nvidia?.,['stock_data.sales_or_revenues']
+"Uh, I don't know. Visa's enterprise value, like, compares to the number of days it holds inventories... yeah.","['stock_data.enterprise_value', 'stock_data.inventories_days_held']"
+What is the enterprise value of Walmart and how many of its common shares are currently outstanding?.,"['stock_data.common_shares_outstanding', 'stock_data.enterprise_value']"
+Do you know the current assets of Oracle and how much they are worth?.,['stock_data.assets_short_term']
+"I see. So, what is the recent performance of the communications services sector?.",['market_data.Communications_services']
+"So, what's new with PepsiCo? Can you tell me about the latest news articles related to the company?.",['news_data_source']
+Can you tell me the GDP of the United States?.,['economic_indicators.gdp']
+"I'm sorry, I cannot provide information about recent news articles on Costco. My abilities are limited to finding and providing information about restaurants and food establishments. Is there something specific you would like to know about a restaurant or food establishment?.",['news_data_source']
+"Let's take a look at the S&P sectors. Which one had a better performance yesterday, information technology or materials?","['market_data.IT', 'market_data.Materials']"
+"Can you believe it, on the days when the stock reached its intraday high, Cisco's P/E ratio was so damn low like it was just ridiculous. Like, what the heck?","['stock_data.price_intraday_high', 'stock_data.ratio_pe']"
+Can you tell me the dividend yield of Intuit compared to its total assets?.,"['stock_data.assets_total', 'stock_data.dividend_yield']"
+"Does T-Mobile US make money from investments that are not part of its main operations, you know mate? Also, on average, how many days does T-Mobile US hold its inventory?","['stock_data.interest_income_not_banks', 'stock_data.inventories_days_held']"
+"What's the value of Intuit's market compared to its total assets, you know?.","['stock_data.assets_total', 'stock_data.market_capitalization']"
+"Hey, have you heard about the Consumer Price Index (CPI) in the United States? Has it changed recently, mate?",['economic_indicators.cpi']
+Could you tell me about the Oracle investment returns over the past 5 years?.,['stock_data.total_return']
+Can you tell me the daily return of the S&P General Industry Classification Utilities Sector Index?,['market_data.Utilities']
+Let's take a look at the performance of the communications services sector. How has it been doing lately?.,['market_data.Communications_services']
+"Like, how is the financial sector doing in the S&P 500 index?.","['economic_indicators.industrial_production', 'market_data.Financials']"
+what the daily return of the S&P Industrials is?,['market_data.Industrials']
+Can you tell me the enterprise value of McDonald's?,['stock_data.enterprise_value']
+Can you bother to tell me what the heck the CPI even measures and tries to calculate?.,['economic_indicators.cpi']
+Can you tell me about the non-operating interest income for Walt Disney?.,['stock_data.interest_income_not_banks']
+"Can you tell me about the value of the telecommunications sector? Right, okay, so what exactly was the value of this sector?.",['market_data.Communications_services']
+"Have you heard any recent news about Costco, my friend?.",['news_data_source']
+Have you heard any recent updates about Tesla?,['news_data_source']
+it's about McDonald's and something about their R&D spending and current assets? ,"['stock_data.research_and_development', 'stock_data.assets_short_term']"
+Why the hell do you even care about the daily return of the S&P Industrials?,['market_data.Industrials']
+"Just wondering, what is the recent price of the COMMUNICATIONS SERVICES SECTOR Index? I mean, I thought everybody knew that..",['market_data.Communications_services']
+"Come on, you should know the latest news on Apple by now.",['news_data_source']
+"Does the calculation of the GDP include the health care sector, mate?","['market_data.Health_Care', 'economic_indicators.personal_consumption_expenditure']"
+"Oh gosh, I don't know. Maybe you can search for it on Google? Sorry, I am not sure about the ticker or current liabilities for Proctor & Gamble.","['stock_data.ticker_symbol', 'stock_data.liabilities_short_term']"
+Oh gosh I don't know. Could you tell me about the connection between the ISM Nonmanufacturing Survey Index and GDP?.,"['economic_indicators.gdp', 'economic_indicators.ism_non_mfg']"
+"Do you have any idea about what percentage of Philip Morris' revenue is generated from COGS, mate?.",['stock_data.cogs']
+"Oh God, I don't know. Has there been any recent updates on Tesla?",['news_data_source']
+"So, like, how did the Utilities and Energy sectors do, like, yesterday?.","['market_data.Utilities', 'market_data.Energy']"
+Could you please tell me the latest ISM Non-Manufacturing Index? Thank you..,['economic_indicators.ism_non_mfg']
+Let's look into Home Depot's current stock value. Do you think it is overvalued or undervalued based on its price-earnings ratio?.,['stock_data.ratio_pe']
+"Hey buddy, which sector do you think has been doing better, Industrials or Information Technology?.","['market_data.Industrials', 'market_data.IT']"
+"Hey mate, how's the economy doing based on the USA 10-year Government Benchmark bond yield and the total index of industrial production?","['economic_indicators.10Y_ust_yield', 'economic_indicators.industrial_production']"
+"Yo, what's the deal with the Consumer Price Index for all urban items this month? Has it gone up or down?",['economic_indicators.cpi']
+"I'm not sure, but perhaps we can find out which company is getting the most media attention today?.",['news_data_source']
+Do you know how much Pfizer's current liabilities exceed their shareholder's equity? I'm curious to find out..,"['stock_data.liabilities_short_term', 'stock_data.shareholders_equity']"
+"Um, can you tell me like, how much of Intel's liabilities are COGS? I mean like, percentage wise, you know?.","['stock_data.liabilities_short_term', 'stock_data.cogs']"
+"Hey, have you checked out what people are saying about Apple on Twitter?",['external_data_source']
+Is General Electric making a profit on their interest income compared to their interest expenses?.,['stock_data.interest_income']
+"I don't know about you, but I'm pretty sure that Walmart has a ton of employees and a massive amount of current liabilities. I mean, it's Walmart.","['stock_data.employees', 'stock_data.liabilities_short_term']"
+"Which sector had a better performance last year, the financials or the real estate sector, buddy?.","['market_data.Financials', 'market_data.Real_Estate']"
+Can you tell me how the net sales and earnings per share are related for McDonald's?,"['stock_data.sales_or_revenues', 'stock_data.eps_forward_12_month']"
+Could you help me find some recent blog posts that talk about the future possibilities of a certain company in the technology industry?.,['external_data_source']
+I am not sure. Mmhm... What is the total return over the past 5 years for investing in Oracle? .,['stock_data.total_return']
+Can you tell me the lowest price of Berkshire Hathaway's stock today?.,['stock_data.price_intraday_low']
+"I don't know, but like, what is the deal with JNJ's price to earning ratio and the cost of goods sold? Can someone explain that to me?.","['stock_data.ratio_pe', 'stock_data.cogs']"
+"Oh God, I don't know. How many common shares does Microsoft have?.",['stock_data.common_shares_outstanding']
+Can someone tell me the amount of long term debt Merck has and also its net sales or revenues? I don't have all day..,"['stock_data.sales_or_revenues', 'stock_data.long_term_debt']"
+"Can you tell me how the healthcare sector compares to the GDP, mate?.","['market_data.Health_Care', 'economic_indicators.gdp']"
+In what ways has consumer confidence shifted in the last year?,['economic_indicators.consumer_confidence']
+"Can you tell me the number of people working at UnitedHealth and their net interest income, you know pal?.","['stock_data.employees', 'stock_data.interest_income']"
+"Oh God I am not sure, err... I don't know. What is the amount of time that Boeing holds onto their inventories for?.",['stock_data.inventories_days_held']
+"I am not sure, sorry. What costs make up Johnson & Johnson's Cost Of Goods Sold and Research and Development?","['stock_data.cogs', 'stock_data.research_and_development']"
+Can you tell me about Coca-Cola's number of employees and the lowest stock price it had during the day?,"['stock_data.employees', 'stock_data.price_intraday_low']"
+What are the current assets of Philip Morris?.,['stock_data.assets_short_term']
+Err... I am not sure. Mmhm... What is the classification for Communications Services in the S&P General Industry Classification?.,"['market_data.Communications_services', 'external_data_source']"
+Could you provide me with the enterprise value of Berkshire Hathaway?.,['stock_data.enterprise_value']
+Can you tell me about the performance of Intuit's total return index in the past year?,['stock_data.total_return']
+"How does the change in Industrial Production compare to the change in CPI, you know?.","['economic_indicators.cpi', 'economic_indicators.industrial_production']"
+Could you tell me about JPMorgan Chase's enterprise value calculation? What components are involved in it?.,['stock_data.enterprise_value']
+Let’s see what the net sales of Walt Disney is,['stock_data.sales_or_revenues']
+"I mean, seriously, does anyone even know how the unemployment rate in the real estate sector compares to the overall unemployment rate? I doubt it.","['economic_indicators.unemployment_rate', 'market_data.Real_Estate']"
+Could you tell me more about the impact of the ISM Purchasing Managers Index (MFG Survey) on the Information Technology sector?,"['economic_indicators.ism_mfg', 'market_data.IT']"
+Can you tell me what sector Home Depot is in and its current stock price?,"['stock_data.price_close', 'stock_data.general_industry_classification']"
+I am wondering about the potential relationship between the ISM non-manufacturing index and the performance of the communications services sector?,"['economic_indicators.ism_non_mfg', 'market_data.Communications_services']"
+"In 2020, which sector had a stronger performance, Materials or Consumer Staples?.","['market_data.Materials', 'market_data.Consumer_Staples']"
+Could you tell me the top 3 news about Apple that happened in the last week?.,['news_data_source']
+Can you tell me about the performance of the Industrials sector in relation to changes in the USA 10-year Government Benchmark bond yield?,"['market_data.Industrials', 'economic_indicators.10Y_ust_yield']"
+"Hey mate, is the stock market benchmark index on the rise or decline right now?",['market_data.S&P500']
+"Does anyone even know how much long-term debt McDonald's has? It's crazy, like nobody knows.",['stock_data.long_term_debt']
+What's the name of the company that Johnson & Johnson uses?.,['stock_data.company_name']
+"Hey, do you think there's a link between the S&P Real Estate Sector Index and the Conference Board Leading Economic Indicators Index?","['market_data.Real_Estate', 'economic_indicators.conf_board_leading_indicators']"
+"I was looking at some information on Apple, and I noticed that their dividend yield and inventory days held are related. Would you like to discuss that?.","['stock_data.inventories_days_held', 'stock_data.dividend_yield']"
+"Can you tell me about the financials of Adobe? Specifically, I am interested in their total liabilities compared to their earnings per share, if you can find that information, please?.","['stock_data.liabilities_total', 'stock_data.eps_trailing_12_month']"
+"I see, you're wondering about Netflix. Well, they have a lot of employees, and their latest stock price is quite high, you see?.","['stock_data.price_close', 'stock_data.employees']"
+Could you help me find out how much money Johnson & Johnson makes from selling products and other business operations?.,['stock_data.sales_or_revenues']
+You want to know about recent news articles for Costco?,['news_data_source']
+"Hey, mate! Can you tell me what's the average time T-Mobile US holds its inventory for, you know?.",['stock_data.inventories_days_held']
+"Let's look into the direct costs that Nike has to pay for producing or acquiring the goods they sell, shall we?.",['stock_data.cogs']
+"So, let's talk about the ISM Non-Manufacturing Report On Business, what does it measure?",['economic_indicators.ism_non_mfg']
+Could you tell me the current value of the Consumer Discretionary Sector Index?.,['market_data.Consumer_Disc']
+I am curious about Walt Disney's financials. Do you know how much they allocate for research and development in comparison to their total operating income?.,['stock_data.research_and_development']
+What the hell is the difference between the S&P 500 Health Care Sector Index and the S&P 500 Consumer Discretionary Sector Index?.,"['market_data.Consumer_Disc', 'market_data.Health_Care']"
+Can you tell me any juicy rumors about possible mergers and acquisitions floating around in the market?,['external_data_source']
+Can you tell me about any recent news articles related to Bank of America?.,['news_data_source']
+"Can you tell me about IBM's EBITDA margin? Yeah, i see, you want to know about IBM and its EBITDA margin, right?.",['stock_data.ebitda']
+Umm... how has Intuit's return index been over the last year?.,['stock_data.total_return']
+Can you tell me the 12-month forward EPS and non-operating interest income for AMD?,"['stock_data.interest_income_not_banks', 'stock_data.eps_forward_12_month']"
+Can you tell me the highest stock price for JPMorgan Chase today and its trailing 12-month EPS?.,"['stock_data.price_intraday_high', 'stock_data.eps_trailing_12_month']"
+"Can you tell me more about Salesforce's financial performance? Specifically, how do their projected earnings per share for the next twelve months compare to their total assets?","['stock_data.eps_forward_12_month', 'stock_data.assets_total']"
+Can you please tell me the damn latest news about Costco?.,['news_data_source']
+Has there been any news about General Electric in the past month?.,['news_data_source']
+"Oh God, I'm not sure. How does the ISM manufacturing index and leading economic indicators, like, relate to each other?","['economic_indicators.conf_board_leading_indicators', 'economic_indicators.ism_mfg']"
+"Could you tell me the current assets of Bank of America, please?.",['stock_data.assets_short_term']
+"Hey buddy, what's the latest buzz about Johnson & Johnson in the news?",['news_data_source']
+How does the S&P Materials Sector relate to CPI?,"['economic_indicators.cpi', 'market_data.Materials']"
+Whats the daily return of the S&P Industrials?,['market_data.Industrials']
+How much more does McDonald's spend on R&D compared to their total current assets?,"['stock_data.research_and_development', 'stock_data.assets_short_term']"
+Could you help me find some current news pieces about how Brexit is affecting the economy of the United Kingdom?,['news_data_source']
+"Let's see, I think there might be some rumors about upcoming Apple products, what do you think?",['external_data_source']
+Could you tell me what ticker symbol is used for Cisco and what is the amount of their current liabilities?.,"['stock_data.liabilities_short_term', 'stock_data.ticker_symbol']"
+Do you know if there are any sort of talk or gossip about future product launches or collaborations that could possibly affect the stock value of Tesla?.,['external_data_source']
+Could you tell me how the communications sector is doing in comparison to the overall market?,"['market_data.Communications_services', 'market_data.S&P500']"
+"Oh God, I have no idea. What the heck is EBITDA and operating expenses? And what does it have to do with Tesla?","['stock_data.ebitda', 'stock_data.operating_expense']"
+What is the purpose of the ISM Non-Manufacturing Report On Business?,['economic_indicators.ism_non_mfg']
+"What is Home Depot's projected earnings per share for the next year buddy and how does it compare to their EBITDA, you know?.","['stock_data.ebitda', 'stock_data.eps_forward_12_month']"
+"Oh God, I don't know. Err... which company has like, a higher EPS, Apple or Broadcom?.","['stock_data.assets_short_term', 'stock_data.eps_trailing_12_month']"
+"I wonder, did the ISM manufacturing index actually go down or up last month?.",['economic_indicators.ism_mfg']
+"Which S&P sector had a better performance yesterday, information technology or materials?","['market_data.IT', 'market_data.Materials']"
+"Can you tell me the connection between GDP and the ISM Nonmanufacturing Survey Index, you know?.","['economic_indicators.gdp', 'economic_indicators.ism_non_mfg']"
+"I mean, seriously, why are people even talking about this? Are there any damn rumors about a company's upcoming product release?.",['external_data_source']
+"Seriously, I don't believe you don't know this, the value of the telecommunications sector was what?",['market_data.Communications_services']
+"You are curious about the performance last month? Well, it seems that communication services and industrials were the sectors in question. Which one do you want to know more about?.","['market_data.Industrials', 'market_data.Communications_services']"
+"Eh, I am not sure. What is the relationship between Apple's current assets and its total assets?","['stock_data.assets_short_term', 'stock_data.assets_total']"
+"So, what's the scoop on Tesla in yesterday's news? What were they talking about the most?.","['news_data_source', 'external_data_source']"
+"I was wondering, does Coca-Cola have a lot of debts or assets?.",['stock_data.liabilities_total']
+Can you tell me the GDP of the communications services sector? I'm curious to know about it.,"['economic_indicators.gdp', 'market_data.Communications_services']"
+I need to know how much money Verizon made per share over the past year and when was the last time they gave out dividends..,"['stock_data.date_ex_dividend', 'stock_data.eps_trailing_12_month']"
+Which company is all over the news today?,['news_data_source']
+Oh God oh gosh I am not sure buddy. What is the ratio of Costco's non-operating interest income to its price?.,"['stock_data.interest_income_not_banks', 'stock_data.price_close']"
+Does Philip Morris have a positive or negative operating income?.,['stock_data.operating_income']
+"Can you tell me about Oracle's net interest income? Specifically, what is the percentage of total shareholder's equity?.","['stock_data.shareholders_equity', 'stock_data.interest_income']"
+Can you tell me the difference between the S&P Energy index and the S&P Information Technology index in terms of value?.,"['market_data.IT', 'market_data.Energy']"
+Can you tell me the ISM manufacturing index for the previous month? ,['economic_indicators.ism_mfg']
+"What is the relationship between the S&P 500 information technology sector index and the federal funds rate, buddy?.","['economic_indicators.fed_funds_rate', 'market_data.IT']"
+"I don't know, maybe a few days? How long does Walmart usually keep their inventory before restocking?.",['stock_data.inventories_days_held']
+Can you help me understand where Mastercard's non-operating interest income comes from?,['stock_data.interest_income_not_banks']
+Oh gosh oh God I don't know. Can you tell me about something new about Walt Disney?.,['news_data_source']
+"Can you tell me the amount of money Salesforce makes after taking into account discounts, returns, and allowances?",['stock_data.sales_or_revenues']
+"I see, you are curious about Tesla, right? Well, have you heard any recent news about it, or do you want me to find some for you?",['news_data_source']
+I'm not even sure why we're comparing the S&P 500 Consumer Discretionary Sector Index to the ISM Manufacturing Index. They're completely different and not really comparable no?,"['market_data.Consumer_Disc', 'economic_indicators.ism_mfg']"
+Does Tesla's inventory days held even impact their enterprise value?.,"['stock_data.inventories_days_held', 'stock_data.enterprise_value']"
+Come on.. how does GDP compare to the Leading Economic Indicators?,"['economic_indicators.gdp', 'economic_indicators.conf_board_leading_indicators']"
+"Oh gosh, I am not sure. Which one has more assets, Apple or Microsoft?","['stock_data.assets_total', 'stock_data.company_name']"
+"Oh gosh, I am not sure. What kind of news articles are you looking for? Like, the latest updates and stuff on the oil industry?",['news_data_source']
+"I mean, does anyone really care about Bank of America's current liabilities or market capitalization? Come on, there are more interesting things to talk about.","['stock_data.liabilities_short_term', 'stock_data.market_capitalization']"
+Do you want to know if the ISM Nonmanufacturers Survey Index is being led by the Industrials Sector Index?.,"['market_data.Industrials', 'economic_indicators.ism_non_mfg']"
+"Could you tell me about Amazon's financials, specifically their EBITDA and the number of common shares they have outstanding?","['stock_data.ebitda', 'stock_data.common_shares_outstanding']"
+Are you kidding me? The ISM Purchasing Managers Index (MFG Survey) has a direct correlation with the GDP in the United States. How could you not know that?,"['economic_indicators.ism_mfg', 'economic_indicators.gdp']"
+What impact does the unemployment rate have on the real estate sector's performance?.,"['market_data.Real_Estate', 'economic_indicators.unemployment_rate']"
+Could you tell me the overall worth of Bank of America as a company?.,['stock_data.enterprise_value']
+Can you tell me the difference between Salesforce's cash and equivalents and its enterprise value?,"['stock_data.enterprise_value', 'stock_data.assets_short_term']"
+"I mean, come on, is there really a connection between the S&P General Industry Classification Information Technology Sector Index and the Consumer Confidence Index? It seems like a stretch to me..","['market_data.IT', 'economic_indicators.consumer_confidence']"
+I am not sure. Does Bank of America focus more on research and development or on paying out dividends?.,"['stock_data.dividend_yield', 'stock_data.research_and_development']"
+Do you know how much Cisco spends on the cost of goods sold in relation to their shareholder's equity?.,"['stock_data.shareholders_equity', 'stock_data.cogs']"
+"Ugh, I don't know man. Like, what are the earnings per share for Walmart in the next twelve months? And how much are they spending on like, selling and general stuff?.","['stock_data.operating_expense_sg&a', 'stock_data.eps_forward_12_month']"
+"Come on, let's be real here. What's the point of even asking about the PE ratio and current assets of Oracle? I mean, who cares?.","['stock_data.ratio_pe', 'stock_data.assets_short_term']"
+"Can you tell me the ticker symbol of the company that has the highest expenses in selling, general, and administrative?.","['stock_data.operating_expense_sg&a', 'stock_data.ticker_symbol']"
+I'm curious about Apple's dividend yield and inventory days held. Can you tell me how they compare?.,"['stock_data.inventories_days_held', 'stock_data.dividend_yield']"
+"Oh God, I don't know. Mmhm... T-Mobile US has some amount of long term debt, I think.",['stock_data.long_term_debt']
+"Did you hear any recent news about T-Mobile, pal?.",['news_data_source']
+"Let's see, I think we were talking about Intuit's price-earnings ratio compared to the industry average, yes? Would you like me to find that information for you?.",['stock_data.ratio_pe']
+Could you tell me the number of outstanding shares for Bank of America at the moment?.,['stock_data.common_shares_outstanding']
+Can you tell me more about Oracle?,['stock_data.company_name']
+"Uh, yeah I am not sure. When was the last time Microsoft had an ex-dividend date and do they make money from non-operating interest?","['stock_data.interest_income_not_banks', 'stock_data.date_ex_dividend']"
+Can you tell me about the ISM manufacturing index and leading index? I am interested in learning more about these economic indicators..,"['economic_indicators.ism_mfg', 'economic_indicators.conf_board_leading_indicators']"
+Can you please give me the latest articles related to Bank of America? I need to be updated on the current situation..,['news_data_source']
+"Which company is always in the news, you know, has the most coverage mate?.",['news_data_source']
+Do you happen to know the number of outstanding shares for Chevron during the day with the highest intraday high in the past 5 years?.,"['stock_data.common_shares_outstanding', 'stock_data.price_intraday_high']"
+"Oh God, I don't know. Mmhm... What is the performance of the utilities sector over the past 5 years?.",['market_data.Utilities']
+"Can you please, for the love of God, just tell me the damn top trending stocks on social media today?.",['external_data_source']
+Can you tell me the damn EPS for McDonald's for the next 12 months?.,['stock_data.eps_forward_12_month']
+"Hey, do you know if there is any correlation between the overall GDP of the US and the performance of the Real Estate sector index?","['economic_indicators.gdp', 'market_data.Real_Estate']"
+"Ugh, I don't know. Do you have any idea what the most recent news headline about inflation was?.",['news_data_source']
+Is the ISM manufacturing index higher than the S&P 500 real estate sector index? ,"['economic_indicators.ism_mfg', 'market_data.Real_Estate']"
+"Oh God, I have no idea. What the heck is the ISM Purchasing Managers Index (MFG Survey) and how do they even figure it out?.",['economic_indicators.ism_mfg']
+"Oh gosh I am not sure. What is, err... the discrepancy between the current liabilities of Chevron and their highest stock price of the day?.","['stock_data.liabilities_short_term', 'stock_data.price_intraday_high']"
+"Let's see, Pfizer... Well, Pfizer is a pharmaceutical company and its projected earnings per share for the next twelve months is not available.","['stock_data.general_industry_classification', 'stock_data.eps_forward_12_month']"
+"On the ex-dividend date, how many employees were working at Costco?","['stock_data.employees', 'stock_data.date_ex_dividend']"
+"Mate, which sector index do you reckon represents the consumer discretionary sector?.",['market_data.Consumer_Disc']
+"Let me check... Sure, so what are some well-known stocks that are being talked about on various social media platforms?.",['external_data_source']
+"Are you wondering about Mastercard's liabilities? I see, you want to know if they have a high amount, right? .",['stock_data.liabilities_total']
+Does Bank of America have any debt that takes a long time to pay off?.,['stock_data.long_term_debt']
+"Let's talk about Mastercard for a moment. So, does Mastercard make more money from interest income than it pays out in interest expenses?.",['stock_data.interest_income']
+Could you tell me which company has been getting the most attention in the news lately? I'm curious about it..,['news_data_source']
+"Which sector did better yesterday, Communication Services or Information Technology?","['market_data.Communications_services', 'market_data.IT']"
+Can you tell me about Cisco's cost of goods sold?.,['stock_data.cogs']
+Can you tell me what Verizon's market capitalization and net interest income are? I am not really familiar with that information..,"['stock_data.market_capitalization', 'stock_data.interest_income']"
+Do you know how much higher Comcast's net sales are compared to their current liabilities?.,"['stock_data.sales_or_revenues', 'stock_data.liabilities_short_term']"
+"I don't know, man. Does Exxon Mobil spend any money on research and development?.",['stock_data.research_and_development']
+"About the performance of Utilities and Communications Services sectors, which one do you think has performed better?","['market_data.Utilities', 'market_data.Communications_services']"
+I athe price to sales ratio for AMD?.,"['stock_data.sales_or_revenues', 'stock_data.price_close']"
+Can you tell me about the performance of the energy sector last year?,['market_data.Energy']
+"Which sector index has had a better performance, the Materials sector or the Consumer Staples sector?","['market_data.Materials', 'market_data.Consumer_Staples']"
+"I'm happy to help you with this question. So you want to know which company has more news coverage in the last month, Bank of America or JPMorgan Chase, is that right?",['news_data_source']
+"Oh gosh, I have no idea. How much money does IBM make?.",['stock_data.operating_income']
+Let's compare the performance of the Real Estate and Industrials sectors from yesterday. Which one do you think did better?.,"['market_data.Real_Estate', 'market_data.Industrials']"
+What sector is the S&P General Industry Classification Health Care Sector Index categorized under? And do you know which sector the S&P General Industry Classification Consumer Staples Sector Index falls under?.,"['market_data.Health_Care', 'market_data.Consumer_Staples']"
+"How much does Coca-Cola spend on their SG&A expenses, you know mate? .",['stock_data.operating_expense_sg&a']
+"I am curious about Tesla, can you tell me about any recent news articles that have been published about it?.",['news_data_source']
+Could you tell me about the pricing for Netflix in the Communication Services industry?.,"['stock_data.price_close', 'stock_data.general_industry_classification']"
+"Seriously, who doesn't know the current yield of the 10-year US Treasury Government Bond?.",['economic_indicators.10Y_ust_yield']
+"Can you tell me, how does the GDP compare to the performance of the S&P 500 in the information technology sector?","['economic_indicators.gdp', 'market_data.IT']"
+Could you tell me the dividend yield for Pfizer compared to its net sales?.,"['stock_data.sales_or_revenues', 'stock_data.dividend_yield']"
+"Oh gosh I am not sure. Hmm... the fed funds rate, I guess it has some impact on the real estate sector, but I am not really sure how it affects it.","['economic_indicators.fed_funds_rate', 'market_data.Real_Estate']"
+"Yesterday which sector performed better in the S&P 500, information technology or industrials?.","['market_data.IT', 'market_data.Industrials']"
+"Can you tell me which is greater for Salesforce, shareholder's equity or liabilities?.","['stock_data.shareholders_equity', 'stock_data.liabilities_total']"
+"Can you provide information on the growth of Bank of America's share value over a specific time frame, taking into account reinvested dividends?",['stock_data.total_return']
+How are the Utilities and Real Estate sectors comparing to one another in terms of performance?,"['market_data.Real_Estate', 'market_data.Utilities']"
+Could you tell me what kind of news articles you are looking for about Coca-Cola? There are so many out there..,['news_data_source']
+"I see you're interested in AMD. Well, let me check for the latest news on the company.",['news_data_source']
+I have no idea. What is the relationship between Salesforce's operating expenses and their number of common shares? Is there any correlation?,"['stock_data.operating_expense', 'stock_data.common_shares_outstanding']"
+"Let's look into Adobe, shall we? Oh yeah, their market cap is something we can check out, no problem.",['stock_data.market_capitalization']
+Can you tell me when the last ex-dividend date for Oracle was?.,['stock_data.date_ex_dividend']
+How much does General Electric spend on operating expenses?,['stock_data.operating_expense']
+"Hey buddy, can you give me the top 5 news about Apple? I'm really curious, you know!.",['news_data_source']
+"We can look into that for you. I believe you are asking if Coca-Cola makes money from investments that earn interest, is that right?.",['stock_data.interest_income_not_banks']
+What kind of news articles can we find on General Electric in the past month? Do you want me to search for any specific topics or just a general overview?.,['news_data_source']
+"Oh gosh, I am not sure. I mean, does Chevron make money from investments that have nothing to do with their regular business operations?.",['stock_data.interest_income_not_banks']
+Can you believe that Salesforce actually has more cash and equivalents than its enterprise value? How is that even possible?,"['stock_data.enterprise_value', 'stock_data.assets_short_term']"
+"I am assuming you want to know about Exxon Mobil's financial status. So, is the company's current liabilities greater than its earnings per share for the past year?.","['stock_data.eps_trailing_12_month', 'stock_data.liabilities_short_term']"
+"What is the total cost of operations for Nvidia? Tell me pal, do you know the answer?.",['stock_data.operating_expense']
+"Could you tell me more about Comcast? Specifically, which sector does the company belong to and how many days of inventory does it typically hold?","['stock_data.general_industry_classification', 'stock_data.inventories_days_held']"
+"I'm not entirely sure, but if I had to guess, I would say a good portion of Salesforce's operating expenses are allocated towards sales, general, and administrative expenses. However, I don't have the exact percentage.","['stock_data.operating_expense', 'stock_data.operating_expense_sg&a']"
+Can you give me an update on Amazon? I am curious about the latest news related to it.,['news_data_source']
+"Can you tell me the general industry classification for T-Mobile US and what is their P/E ratio, buddy?.","['stock_data.general_industry_classification', 'stock_data.ratio_pe']"
+Is Chevron's earnings per share for the past 12 months higher or lower than their price-earnings ratio?,"['stock_data.ratio_pe', 'stock_data.eps_trailing_12_month']"
+"Could you tell me about JPMorgan Chase's financials? Specifically, what are their earnings per share for the past year and total shareholders' equity?","['stock_data.eps_trailing_12_month', 'stock_data.shareholders_equity']"
+"Okay, let's check out what's new with Johnson & Johnson. Can you tell me what sort of news articles you're looking for?",['news_data_source']
+"Can you please tell me, what is the classification of Philip Morris' industry and how does their net interest income stack up against their total interest income?.","['stock_data.general_industry_classification', 'stock_data.interest_income']"
+How much damn debt does Verizon have now?.,['stock_data.liabilities_total']
+"Hey buddy, can you tell me the most recent news piece about the stock market?.",['news_data_source']
+"The ISM Non-Manufacturing Report On Business measures the growth of the service sector in the United States, including industries such as healthcare, retail, and finance.",['economic_indicators.ism_non_mfg']
+"Seriously, you don't know what expenses are included in Amazon's SG&A? It's damn obvious. It's called Selling, General, and Administrative Expenses for a reason.",['stock_data.operating_expense_sg&a']
+"Could you tell me about the news coverage for Costco compared to other companies? Just curious about how they compare in the media, you see?.",['news_data_source']
+Can you tell me how much money Microsoft spends on each employee for research and development?,"['stock_data.research_and_development', 'stock_data.employees']"
+Can you tell me what's going on in the stock market lately?.,['news_data_source']
+Can you tell me about the performance of the S&P 500 Composite index yesterday?.,['market_data.S&P500']
+"Seriously, is Proctor & Gamble's total assets even higher than Tesla's?.",['stock_data.assets_total']
+"I don't know, I mean, did the S&P Consumer Staples Sector Index do better than the S&P Utilities Sector Index?.","['market_data.Consumer_Staples', 'market_data.Utilities']"
+Do you want to know about any unique market insights or trends that are not usually covered by mainstream financial news outlets?,['external_data_source']
+Let's discuss the impact of the ISM Purchasing Managers Index on the Consumer Staples Sector Index. Sound good?.,"['economic_indicators.ism_mfg', 'market_data.Consumer_Staples']"
+Can you explain the distinction between total return index and intraday high for IBM?.,"['stock_data.price_intraday_high', 'stock_data.total_return']"
+"I can't believe you don't know this already, but the unemployment rate is constantly changing, so it's hard to give an exact number. But it's definitely not good, right?",['economic_indicators.unemployment_rate']
+Could you tell me about Verizon's non-operating interest income?,['stock_data.interest_income_not_banks']
+"Which one of these, Reuters or BBC, has more news about Coca-Cola?.",['news_data_source']
+Can you tell me when the ex-dividend date is for T-Mobile US?.,['stock_data.date_ex_dividend']
+"How much money does Boeing spend on SG&A compared to their market cap, mate?","['stock_data.operating_expense_sg&a', 'stock_data.market_capitalization']"
+"I mean, seriously, everyone knows that the S&P 500 is performing way better than the Consumer Staples Sector. What kind of question is this?.","['market_data.Consumer_Staples', 'market_data.S&P500']"
+Could you tell me the P/E ratio of Visa and the total number of common shares that are currently in circulation?.,"['stock_data.ratio_pe', 'stock_data.common_shares_outstanding']"
+"Could you tell me more about Tesla's financials? Specifically, what is their operating income?.",['stock_data.operating_income']
+Do you think that Netflix's net interest income affects the cost of goods sold?,"['stock_data.interest_income', 'stock_data.cogs']"
+"I see, you are looking for news articles about Bank of America? Right, let me see what I can find for you.",['news_data_source']
+Are you kidding me? Do you seriously not know that Nvidia puts a ton of money into research and development? It's common knowledge.,['stock_data.research_and_development']
+Can you please tell me the debt to market cap ratio for Johnson & Johnson? It's really important..,"['stock_data.market_capitalization', 'stock_data.long_term_debt']"
+The recent performance of the health care sector has been pretty terrible. How would you rate it?.,['market_data.Health_Care']
+How expensive is JPMorgan's EV/Sales ratio?.,"['stock_data.enterprise_value', 'stock_data.sales_or_revenues']"
+"Can you believe it, I actually don't know what the ticker for Philip Morris is. Also, do you know what their total assets are?.","['stock_data.ticker_symbol', 'stock_data.assets_total']"
+"Erm... I am not sure! Cost Of Goods Sold for T-Mobile US includes a variety of expenses such as materials, labor, and inventory costs..",['stock_data.cogs']
+Could you tell me about the comparison between the S&P Energy Sector and Consumer Confidence?,"['market_data.Energy', 'economic_indicators.consumer_confidence']"
+Hmm... I am not really sure. Maybe you could tell me how the S&P 500 Composite has been doing in the past year?,"['external_data_source', 'market_data.S&P500']"
+Could you tell me the difference between Intuit's operating income and its lowest stock price today?,"['stock_data.operating_income', 'stock_data.price_intraday_low']"
+"Check the source of Mastercard's non-operating interest income, yeah?.",['stock_data.interest_income_not_banks']
+"Can you please tell me what the heck is happening with inflation? Like, what is the most recent news headline?.",['news_data_source']
+"How do those two sectors, you know, Communication Services and Consumer Discretionary, compare friend?.","['market_data.Communications_services', 'market_data.Consumer_Disc']"
+Can you tell me about the performance of the S&P 500 Composite yesterday?.,['market_data.S&P500']
+Can you tell me the current federal funds target rate and GDP price index?,"['economic_indicators.personal_consumption_expenditure', 'economic_indicators.fed_funds_rate']"
+What is the company that has a higher amount of long term debt compared to the number of days its inventory is held?.,"['stock_data.inventories_days_held', 'stock_data.long_term_debt']"
+"Last week, which sector had a better performance, Energy or Consumer Discretionary?","['market_data.Energy', 'market_data.Consumer_Disc']"
+"Ok, so what is the shareholder's equity of Nvidia?.",['stock_data.shareholders_equity']
+what are the total liabilities for UnitedHealth?,['stock_data.liabilities_total']
+Can you tell me the latest update on inflation?,['news_data_source']
+"Can you tell me about Nvidia's overall expenses? Specifically, what is the total cost of their operations?.",['stock_data.operating_expense']
+"I am curious, is there a connection between the S&P General Industry Classification Information Technology Sector Index and the Consumer Confidence Index?.","['market_data.IT', 'economic_indicators.consumer_confidence']"
+I'm pretty sure everyone knows the current Consumer Price Index (CPI) for all urban areas. .,['economic_indicators.cpi']
+"Could you tell me, what was the non operating interest income for PepsiCo on the ex dividend date?.","['stock_data.interest_income_not_banks', 'stock_data.date_ex_dividend']"
+"Ugh, why does it even matter? Like, who cares about the news coverage of these companies in the last 3 months? But fine, if you really want to know, it's probably Apple. But seriously, who cares?.",['news_data_source']
+"You want to know about the performance of the sectors last week? Sure, did you want to know if Energy or Consumer Discretionary performed better?","['market_data.Energy', 'market_data.Consumer_Disc']"
+"Can you tell me the ticker symbol for Intuit and what their earnings per share were for the past 12 months? I need to know for my stock portfolio, you know buddy!.","['stock_data.eps_trailing_12_month', 'stock_data.ticker_symbol']"
+Can you tell me the market cap of Chevron and how it stacks up against its current liabilities?.,"['stock_data.market_capitalization', 'stock_data.liabilities_short_term']"
+What is the latest update on Apple?.,['news_data_source']
+"Let's see, for the latest news articles on the oil industry, maybe we can try searching for something like ""oil industry updates"" or ""recent developments in the oil industry"".",['news_data_source']
+"Hey mate, have you heard any juicy rumors or gossip on social media that could potentially affect a company's stock price? Just curious, you know.",['external_data_source']
+What do you know about the financial health of a company and how it could affect its stock price? Are there any rumors or insider information that you have heard?.,['external_data_source']
+Can you tell me more about the comparison between the ISM Non-Manufacturing Survey Index and the Industrial Production Index?.,"['economic_indicators.ism_non_mfg', 'economic_indicators.industrial_production']"
+"Erm, well, I am not sure. How does the Leading Economic Indicators compare to GDP?","['economic_indicators.gdp', 'economic_indicators.conf_board_leading_indicators']"
+Can you provide me with the earnings per share for Bank of America in the last 12 months?.,['stock_data.eps_trailing_12_month']
+"Yo mate, how does the 10-year US Treasury Government Bond stack up against the performance of the S&P General Industry Classification Consumer Discretionary Sector Index?","['economic_indicators.10Y_ust_yield', 'market_data.Consumer_Disc']"
+What is the most recent CPI measurement?.,['economic_indicators.cpi']
+Have you heard anything new about Amazon recently?.,['news_data_source']
+"I honestly don't think anyone really cares, but fine. What is the current yield of the USA 10-year Government Benchmark bond, and like, does anyone really know how it affects the S&P General Industry Classification Energy Sector Index? .","['market_data.Energy', 'economic_indicators.10Y_ust_yield']"
+"I am not sure, but I have heard some rumors about upcoming Apple products. Would you like me to share them with you?",['external_data_source']
+I see you are interested in the stock market. The S&P Utilities Sector Index is a stock market index that tracks the performance of utility companies in the United States. Is there anything specific you would like to know about it?.,['market_data.Utilities']
+Do you know what the current stock price for Intel is?,['stock_data.price_close']
+"Which industry has had a stronger performance, Industrials or Information Technology?.","['market_data.Industrials', 'market_data.IT']"
+Could you tell me when the most recent dividend payment for UnitedHealth is? I'd like to know the ex-dividend date..,['stock_data.date_ex_dividend']
+"Hey mate, which sector did better last month, Consumer Staples or Materials?","['market_data.Consumer_Staples', 'market_data.Materials']"
+Can you tell me when the last time Chevron made a cash income dividend payment?.,['stock_data.date_ex_dividend']
+Could you explain to me the disparity between Comcast's earnings per share for the next 12 months and its ex-dividend date?,"['stock_data.eps_forward_12_month', 'stock_data.date_ex_dividend']"
+"Oh gosh, I don't know. How is the media talking about Costco in comparison to other companies?",['news_data_source']
+Could you possibly find some recent articles discussing the effects of Brexit on the UK economy? I am interested in learning more about this topic.,['news_data_source']
+"You want to know about McDonald's? Right, does McDonald's mainly focus on investing in research and development or in its employees?.","['stock_data.research_and_development', 'stock_data.employees']"
+"Can you give me information on Walmart's projected earnings per share for the next twelve months and their selling, general, and administrative expenses?.","['stock_data.operating_expense_sg&a', 'stock_data.eps_forward_12_month']"
+Could you tell me the GDP of the United States?.,['economic_indicators.gdp']
+Could you tell me where Mastercard's non-operating interest income comes from?,['stock_data.interest_income_not_banks']
+Could you tell me about the correlation between the S&P 500 consumer discretionary sector index and the GDP price index? I'm curious about how these two metrics are related.,"['market_data.Consumer_Disc', 'economic_indicators.personal_consumption_expenditure']"
+"Ugh, sorry I forgot. It was the day when consumer confidence was at its lowest, what news was released?.","['economic_indicators.consumer_confidence', 'news_data_source']"
+Can you provide me with any recent articles about Philip Morris that have been published?.,['news_data_source']
+"There is no clear correlation between the GDP Price Index and Consumer Confidence. While some may argue that a higher GDP Price Index leads to increased consumer confidence, others argue that it may actually have a negative effect. Ultimately, the relationship between these two factors is complex and cannot be summarized by a simple correlation.","['economic_indicators.personal_consumption_expenditure', 'economic_indicators.consumer_confidence']"
+Can you tell me the relationship between Comcast's operating income and its total assets mate?.,"['stock_data.assets_total', 'stock_data.operating_income']"
+"Could you tell me the current level of the Industrial Production Index, please?",['economic_indicators.industrial_production']
+Oh God I don't know. What is the ticker symbol for Walmart?,['stock_data.ticker_symbol']
+"Oh gosh I am not sure, mate. Can you tell me what are some of the latest news about the oil industry?",['news_data_source']
+Can you tell me more about Tesla's future performance from social media? I am very interested in knowing any insights or predictions you may have.,['external_data_source']
+"I want to know about Walmart's shareholder's equity, how much is it exactly?.",['stock_data.shareholders_equity']
+Can you tell me which S&P sector is most closely tied to the CPI?,"['economic_indicators.cpi', 'market_data.Materials']"
+Verizon has a certain number of common shares outstanding. Can you tell me what that number is?.,['stock_data.common_shares_outstanding']
+Can you believe that Pfizer's market capitalization is actually what it is?.,['stock_data.market_capitalization']
+What are T-Mobile US's current assets and how much are they worth?.,['stock_data.assets_short_term']
+"Could you tell me the net interest income of JPMorgan? Sure, let me see... According to my research, JPMorgan's net interest income for the latest fiscal year was around $57 billion. Does that answer your question?",['stock_data.interest_income']
+What is the dividend yield for Visa in comparison to its market cap?.,"['stock_data.market_capitalization', 'stock_data.dividend_yield']"
+What are some possible reasons that could affect a company's stock price in the short run?.,['external_data_source']
+"I just realized, can you tell me how much JPMorgan's EV over Sales ratio is?.","['stock_data.enterprise_value', 'stock_data.sales_or_revenues']"
+"Ugh, I can't even think right now. When the hell is the ex-dividend date for Costco? And what the hell is their total current liabilities?.","['stock_data.date_ex_dividend', 'stock_data.liabilities_short_term']"
+Has there been any recent news coverage about General Electric in the last month?.,['news_data_source']
+I don't know mate. What is the percentage of Mastercard's operating expense compared to its intraday high?.,"['stock_data.price_intraday_high', 'stock_data.operating_expense']"
+"Can you provide me with more information on the Cost Of Goods Sold for T-Mobile US? Specifically, I am interested in knowing what expenses are included in this cost.",['stock_data.cogs']
+"I see, you want to know about Walt Disney? So, what industry is it part of and what is its dividend yield?.","['stock_data.dividend_yield', 'stock_data.general_industry_classification']"
+"I'm not sure, but you want to know if Philip Morris's current assets are higher or lower than its price-earnings ratio, right?","['stock_data.assets_short_term', 'stock_data.ratio_pe']"
+"Could you tell me the current stock value for Merck? Also, do you know the total equity for shareholders?","['stock_data.price_close', 'stock_data.shareholders_equity']"
+"Oh gosh, I don't know. I mean, in 2020, like, which one was better? Materials or Consumer Staples?","['market_data.Materials', 'market_data.Consumer_Staples']"
+What's the damn unemployment rate in the US?.,"['economic_indicators.unemployment_rate', 'market_data.IT']"
+"Can you provide some information on Philip Morris' financial performance? Specifically, how do their net sales or revenues compare to their discounts, returns, and allowances?.",['stock_data.sales_or_revenues']
+Can you tell me some things that may affect a company's stock price in the short run?.,['external_data_source']
+Can you tell me what news articles have been published recently about Costco?.,['news_data_source']
+Intuit's dividend yield is a percentage of its total assets. What is it?.,"['stock_data.assets_total', 'stock_data.dividend_yield']"
+"What's the buzz about Chevron these days, you know mate?.",['news_data_source']
+"which sector index did better in 2022, Consumer Discretionary or Consumer Staples?","['market_data.Consumer_Disc', 'market_data.Consumer_Staples']"
+"Hey, do you know if T-Mobile US's share value went up in 2022?",['stock_data.total_return']
+"Oh gosh, I don't know. Maybe something about JPMorgan Chase's value? Like, what goes into it?.",['stock_data.enterprise_value']
+Could you please tell me what Chevron's EPS is projected to be for the next 12 months?,['stock_data.eps_forward_12_month']
+"Do you think the S&P Real Estate Sector Index and the Conference Board Leading Economic Indicators Index have any connection, mate?.","['market_data.Real_Estate', 'economic_indicators.conf_board_leading_indicators']"
+Is Bank of America in debt for a long period of time?.,['stock_data.long_term_debt']
+Can you tell me about the most recent news stories regarding PepsiCo?.,['news_data_source']
+Can you provide me with the current stock price for Intel and their earnings per share for the last 12 months?.,"['stock_data.price_intraday_high', 'stock_data.eps_trailing_12_month']"
+"Do I really want to know about the latest news about AMD? Because it's a lot to keep up with, but if you insist...",['news_data_source']
+"I am not certain, but perhaps you are wondering about the distinction between the S&P 500 Consumer Discretionary Sector Index and the S&P 500 Health Care Sector Index?","['market_data.Consumer_Disc', 'market_data.Health_Care']"
+Do you know how much money IBM makes in operating income?.,['stock_data.operating_income']
+Could you tell me the P/E ratio of Amazon? I see that they have a negative net interest income.,"['stock_data.interest_income', 'stock_data.ratio_pe']"
+"Hey friend, can you tell me how the ISM manufacturing index has changed since last month?",['economic_indicators.ism_mfg']
+"Hey, friend, do you know how Mastercard's total shareholders' equity stacks up against other companies in the financial sector?",['stock_data.shareholders_equity']
+What is the ratio of AMD's earnings per share in the last 12 months to its cost of goods sold?.,"['stock_data.cogs', 'stock_data.eps_trailing_12_month']"
+Can you tell me the top five news stories about Tesla buddy?,['news_data_source']
+Could you tell me about Nvidia's industry and the lowest stock price it reached today?.,"['stock_data.general_industry_classification', 'stock_data.price_intraday_low']"
+"Oh God I mean, I don't know, I think people are talking about Tesla on social media and the internet, maybe?.",['external_data_source']
+How did the Utilities Sector perform in the last 5 years?.,['market_data.Utilities']
+What is Mastercard's earnings per share for the last year?.,['stock_data.eps_trailing_12_month']
+Could you tell me about Intel's inventory turnover rate and total shareholders' equity? I'm curious about that..,"['stock_data.inventories_days_held', 'stock_data.shareholders_equity']"
+Do you seriously not know what AMD's R&D spend was last year?.,['stock_data.research_and_development']
+What sector does that company with the ticker symbol XYZ belong to?.,"['market_data.Utilities', 'market_data.Real_Estate']"
+"I'm not sure if I can answer that accurately, but I believe Cisco spends a significant amount on general expenses. Would you like me to try and find a more specific answer for you?",['stock_data.operating_expense_sg&a']
+"Um, I am not sure. Like, how do Chevron's current liabilities compare to the lowest price achieved on the trading day, you know?.","['stock_data.price_intraday_low', 'stock_data.liabilities_short_term']"
+Who the hell do you think is the most talked about company in the last week?.,['news_data_source']
+"Hey friend, how does Walmart's number of employees compare to its price-earnings ratio? You know, it's an interesting question!.","['stock_data.ratio_pe', 'stock_data.employees']"
+"So, you want to know about the latest news on Chevron? Well, let me see... Right, it seems that there is some recent development regarding Chevron, alright?.",['news_data_source']
+Can you tell me the latest updates on Apple?.,['news_data_source']
+"Between Apple and Microsoft, which company has had more news coverage in the last 3 months?",['news_data_source']
+"According to the consumer confidence index, which month had the lowest score?.","['external_data_source', 'economic_indicators.consumer_confidence']"
+"Do you know how the Materials sector performed compared to the Utilities sector in 2022? I heard it had a higher return, mate!","['market_data.Materials', 'market_data.Utilities']"
+I am wondering about the total assets of Verizon compared to Home Depot? Let’s check that…,['stock_data.assets_total']
+"Can Philip Morris pay off its long-term debt with its current assets? You know, mate?.","['stock_data.assets_short_term', 'stock_data.long_term_debt']"
+"Hey mate, what is the enterprise value of Bank of America in the financials sector?","['stock_data.general_industry_classification', 'stock_data.enterprise_value']"
+Can you tell me about the relationship between the GDP price index and the 10 year treasury bond yield?.,"['economic_indicators.10Y_ust_yield', 'economic_indicators.personal_consumption_expenditure']"
+Which company has a lower price-to-earnings ratio and a higher intraday low?,"['stock_data.price_intraday_low', 'stock_data.eps_trailing_12_month']"
+"Could you tell me how many employees Netflix has and what their latest stock price is, you know?.","['stock_data.price_close', 'stock_data.employees']"
+"Honestly, I don't think there are any recent social media trends or online discussions that could have a major impact on the stock market. It's always been a volatile and unpredictable market.",['external_data_source']
+What is the recent news and public opinion surrounding Mastercard's competition?.,['news_data_source']
+Mmhm... I don't know man. Can you tell me what the Federal Reserve's index says about the current level of industrial production in the US?.,"['market_data.Financials', 'economic_indicators.industrial_production']"
+"Oh gosh, I have no idea. Mmhm... Can you tell me what the top news for today are?",['news_data_source']
+"Can you tell me about Tesla's financial performance last quarter? Specifically, what was their cost of goods sold?.",['stock_data.cogs']
+"Okay, let me think... How much money does Johnson & Johnson make from selling stuff and other stuff they do?.",['stock_data.sales_or_revenues']
+Can you tell me the leading economic index for the year 2016?.,['economic_indicators.conf_board_leading_indicators']
+Could you tell me about the most popular stocks on social media right now?.,['external_data_source']
+is Chevron's long-term debt higher than its damn earnings rate per share?.,"['stock_data.ratio_pe', 'stock_data.long_term_debt']"
+Could you tell me about Cisco's stock price on days when they had positive net interest income? I'm curious to know what their highest intraday price was.,"['stock_data.interest_income', 'stock_data.price_intraday_high']"
+Let's dig into Netflix's net interest income and how it may affect their cost of goods sold.,"['stock_data.interest_income', 'stock_data.cogs']"
+I think I can help you with that question. Are you looking for the news sources that are used to gather information about Intuit?.,['news_data_source']
+Could you tell me if there are any significant changes in regulations or government policies that could potentially affect the financial industry?.,['external_data_source']
+Could you provide information on the price to non-operating interest income ratio for Costco?.,"['stock_data.interest_income_not_banks', 'stock_data.price_close']"
+"Oh come on, who cares how many days Walmart holds its inventories? It's just a boring detail.",['stock_data.inventories_days_held']
+"Can you tell me about Costco's financials? Specifically, what is their ratio of price to non-operating interest income?.","['stock_data.interest_income_not_banks', 'stock_data.price_close']"
+What is the current yield on the 10 year US treasury bond?.,['economic_indicators.10Y_ust_yield']
+"I see, so you're wondering which sector had a better performance last week, right? Was it Energy or Consumer Discretionary?","['market_data.Energy', 'market_data.Consumer_Disc']"
+"Umm, I am not sure, but like, how is the communications sector doing in comparison to the market as a whole?","['market_data.Communications_services', 'market_data.S&P500']"
+"Could you tell me the top 3 recent news updates about Apple? Let's see, within the past week, what has been going on with Apple?.",['news_data_source']
+"I'm curious, have you heard anything about the recent merger between Disney and Fox?",['news_data_source']
+Can you tell me the amount of Johnson & Johnson's liabilities on the most recent ex-dividend date?.,"['stock_data.liabilities_short_term', 'stock_data.date_ex_dividend']"
+Can you tell me what Tesla's long term debt to total assets ratio is?,"['stock_data.assets_total', 'stock_data.long_term_debt']"
+"Hey mate, what's happening in the news today?",['news_data_source']
+"You know mate, what kind of impact do the changes in federal fund rates have on CPI?.","['economic_indicators.cpi', 'economic_indicators.fed_funds_rate']"
+"Seriously, I thought everybody would know the price-earnings ratio of Verizon. It's just basic information. But fine, it's fine. Okay. The price-earnings ratio of Verizon is...it's...it's...oh my god, I can't believe I'm saying this...it's just...just look it up yourself. It's not that hard.",['stock_data.ratio_pe']
+"CPI, what is it for and how is it calculated?.",['economic_indicators.cpi']
+I am not really keeping track but I think the current performance of the Information Technology sector is doing pretty well.,['market_data.IT']
+" Which company is, like, in the news the most?",['news_data_source']
+How does Cisco's projected earnings per share and net interest income affect its financial performance?,"['stock_data.eps_forward_12_month', 'stock_data.interest_income']"
+Can you tell me the relationship between the S&P Materials Sector and CPI?.,"['economic_indicators.cpi', 'market_data.Materials']"
+"I want to know about the relationship between CPI and the S&P GICS Energy Sector Index? Alright, let's see. How does CPI specifically affect the performance of the S&P GICS Energy Sector Index?","['market_data.Energy', 'economic_indicators.cpi']"
+Do you know what the Conference Board Leading Economic Indicators Index measures and how it's calculated friend?.,"['economic_indicators.conf_board_leading_indicators', 'economic_indicators.cpi']"
+What's the deal with Proctor and Gamble's EBITDA versus its lowest price during the day?,"['stock_data.ebitda', 'stock_data.price_intraday_low']"
+How does industrial production relate to GDP?.,"['economic_indicators.gdp', 'economic_indicators.industrial_production']"
+"Yo, which one do you think has been killin' it more, Financials or Industrials? .","['market_data.Financials', 'market_data.Industrials']"
+"Oh please, we all know that consumer confidence and the unemployment rate are obviously related. Come on, it's common knowledge..","['economic_indicators.consumer_confidence', 'economic_indicators.unemployment_rate']"
+"Can you even tell me, what the hell is going on with the energy sector in the stock market right now?.",['market_data.Energy']
+"Uh I mean, I don't know. The ISM Purchasing Managers Index is like a survey or something, and it is for manufacturing I think, and it is calculated based on something... sorry, I am not really sure.",['economic_indicators.ism_mfg']
+"Err... I am not sure, how the S&P General Industry Classification Energy Sector Index compares to the unemployment rate?","['market_data.Energy', 'economic_indicators.unemployment_rate']"
+"Could you tell me about JPMorgan Chase? Specifically, how long do they usually hold their inventories and what is their price-earnings ratio?","['stock_data.inventories_days_held', 'stock_data.ratio_pe']"
+Could you give me updates on Apple?,['news_data_source']
+Does Nike have a higher total shareholders' equity compared to its operating income?.,"['stock_data.operating_income', 'stock_data.shareholders_equity']"
+"Err... I am not sure, but I think Apple has some new stuff coming out or something.",['news_data_source']
+Could you help me understand the difference between Philip Morris' EBITDA and the lowest stock price of today?.,"['stock_data.price_intraday_low', 'stock_data.ebitda']"
+I am interested in learning about the effects of tariffs on the automotive sector. Have there been any recent news articles discussing this topic?.,['news_data_source']
+"Heck man, what is Walmart's dividend yield compared to its selling, general, and administrative expenses?","['stock_data.dividend_yield', 'stock_data.operating_expense_sg&a']"
+Can you tell me how Adobe's operating income and the lowest trading price for the day are connected?.,"['stock_data.operating_income', 'stock_data.price_intraday_low']"
+"What is the amount of money Walt Disney made from non-operating interest, you know, pal?.",['stock_data.interest_income_not_banks']
+Can you provide me with the legal name of the company?,['stock_data.company_name']
+"Can you tell me the earnings per share for Intel in the past year friend, and divide that by their current assets?","['stock_data.eps_trailing_12_month', 'stock_data.assets_short_term']"
+"Oh shoot, I don't know that one. Um... what's the operating income of Tesla?",['stock_data.operating_income']
+Can you give me some information about the latest news item in the data warehouse? I believe it would be relevant to know the associated keywords.,['news_data_source']
+Err... I am not sure. What is the dividend yield at Costco compared to the stock price today?,"['stock_data.price_intraday_low', 'stock_data.dividend_yield']"
+Salesforce's revenue generation is influenced by their cost of goods sold. How exactly does this impact their performance?.,['stock_data.cogs']
+Could you tell me the current highest stock price for JPMorgan Chase and its trailing 12-month EPS?,"['stock_data.price_intraday_high', 'stock_data.eps_trailing_12_month']"
+"What's the deal with the fed funds rate and the real estate market, bro? Like, is there a connection or what?","['economic_indicators.fed_funds_rate', 'market_data.Real_Estate']"
+Can you please tell me the latest gossip about Apple?.,['news_data_source']
+Can you tell me the dividend yield and book value per share for Intuit?.,"['stock_data.dividend_yield', 'stock_data.bps_book_value_per_share']"
+What's the Cost Of Goods Sold for Home Depot?.,['stock_data.cogs']
+Do you have any idea what the stock price of Berkshire Hathaway is divided by its total operating expenses?.,"['stock_data.price_close', 'stock_data.operating_expense']"
+"I was wondering, pal, what Berkshire Hathaway's current asset is, you know!.",['stock_data.assets_short_term']
+How well is the communications sector doing compared to the rest of the market?.,"['market_data.Communications_services', 'market_data.S&P500']"
+Hmm... I am not sure. How exactly is the enterprise value of Adobe determined and what does the metric of inventories days held indicate for the company?.,"['stock_data.enterprise_value', 'stock_data.inventories_days_held']"
+Could you tell me the earnings per share for AMD for the past 12 months? And also the cost of goods sold? I would like to know the ratio between the two..,"['stock_data.cogs', 'stock_data.eps_trailing_12_month']"
+"Uh, I'm sorry I don't know. Err... What do you think about Apple's stock price? Is it like, too high or too low based on how much money they make per share?",['stock_data.ratio_pe']
+"Can you tell me the total liabilities of Proctor & Gamble, buddy?.",['stock_data.liabilities_total']
+Can you tell me about the S&P General Industry Classification Energy Sector Index and the unemployment rate? I am curious to see how they relate to each other..,"['market_data.Energy', 'economic_indicators.unemployment_rate']"
+I don't know...Which company had the most buzz over the past week?.,['news_data_source']
+I want to know about T-Mobile US's current assets?,['stock_data.assets_short_term']
+"Hey mate, do you know what's the latest news about Chevron?",['news_data_source']
+Can you tell me about the dividend yield for Visa on its ex-dividend date?,"['stock_data.date_ex_dividend', 'stock_data.dividend_yield']"
+Could you tell me if there has been any news about Intuit acquiring another company recently?.,['news_data_source']
+How is the energy sector currently doing in the stock market?.,['market_data.Energy']
+Can you explain the variance between Proctor and Gamble's EBITDA and its intraday low stock price?.,"['stock_data.ebitda', 'stock_data.price_intraday_low']"
+Could you tell me more about Mastercard's financials? How do their earnings per share compare to their total liabilities?.,"['stock_data.eps_trailing_12_month', 'stock_data.liabilities_total']"
+Are you kidding me? How could you not know that IBM's current assets are way higher than its current liabilities?,"['stock_data.liabilities_short_term', 'stock_data.assets_short_term']"
+"Can you tell me how much time it takes for Adobe to sell its inventory on average? And, just curious, what is the total amount of their current liabilities?.","['stock_data.inventories_days_held', 'stock_data.liabilities_short_term']"
+"Hey friend, do you know if Apple or Tesla was in the news more often in 2020?",['news_data_source']
+"I am not sure. How does the total liabilities of Costco compare to their dividend yield, you know?.","['stock_data.dividend_yield', 'stock_data.liabilities_total']"
+Could you please tell me the company's legal name?.,['stock_data.company_name']
+Do you know the current market value of Boeing?.,['stock_data.market_capitalization']
+Can you tell me about the S&P General Industry Classification Materials Sector Index? What industry does it represent?.,['market_data.Materials']
+How does the S&P General Industry Classification Energy Sector Index relate to the unemployment rate?,"['market_data.Energy', 'economic_indicators.unemployment_rate']"
+Could you tell me the difference between Costco's total liabilities and their dividend yield?.,"['stock_data.dividend_yield', 'stock_data.liabilities_total']"
+"What is the industry that Nvidia operates in, and what is the lowest price of its stock today?.","['stock_data.general_industry_classification', 'stock_data.price_intraday_low']"
+Could you tell me more about the effects of Brexit on the economy in the UK? Maybe some recent news articles or information?,['news_data_source']
+Could you tell me when Disney's ex-dividend date is and what the forward 12-month EPS is?,"['stock_data.date_ex_dividend', 'stock_data.eps_forward_12_month']"
+Can you believe that the company is not included in either the S&P Financials Sector Index or the S&P Energy Sector Index?.,"['market_data.Financials', 'market_data.Energy']"
+"Uh, I don't know about that. Can you tell me how much Chevron's market cap is compared to its current liabilities?.","['stock_data.market_capitalization', 'stock_data.liabilities_short_term']"
+"I mean, it's pretty obvious, but for those who don't know, the difference between Bank of America's book value per share and enterprise value is just basic finance knowledge.","['stock_data.bps_book_value_per_share', 'stock_data.enterprise_value']"
+"Let's see... You're asking about Salesforce's current stock price and how much of it is made up of their operating expenses, right?","['stock_data.operating_expense', 'stock_data.price_close']"
+Can you tell me the total asset of JPMorgan?.,['stock_data.assets_total']
+"I'm not sure, but perhaps we can find out how much Nike spends on operating expenses per year?.",['stock_data.operating_expense']
+I am curious about any recent updates or news regarding Tesla. Have you come across any?.,['news_data_source']
+I am curious about Tesla. Have any recent news articles been published about the company?.,['news_data_source']
+How is the unemployment rate in the real estate sector compared to the overall unemployment rate?,"['economic_indicators.unemployment_rate', 'market_data.Real_Estate']"
+"Oh please, like you don't know how to calculate Adobe's enterprise value. And do you really want me to explain what the inventories days held metric represents? It's pretty basic.","['stock_data.enterprise_value', 'stock_data.inventories_days_held']"
+"Hey friend, I was wondering, how are the Utilities and Real Estate sectors doing compared to each other?","['market_data.Real_Estate', 'market_data.Utilities']"
+Could you tell me about Mastercard's operating expense as a percentage of its intraday high? I'm interested in learning more about it..,"['stock_data.price_intraday_high', 'stock_data.operating_expense']"
+I want to figure out the damn difference between General Electric's operating income and EPS for the past 12 months? ,"['stock_data.operating_income', 'stock_data.eps_trailing_12_month']"
+Is T-Mobile US really going to see an increase in their share value in 2022?,['stock_data.total_return']
+Can you please tell me the EV/Debt ratio for Oracle? ,"['stock_data.long_term_debt', 'stock_data.enterprise_value']"
+Huh? Err... I don't know. What is Cisco's EPS for the past twelve months?.,['stock_data.eps_trailing_12_month']
+"What was the performance of the S&P 500 Composite yesterday, mate?.",['market_data.S&P500']
+Do you want to know which economic indicator is most closely related to the leading index?,['economic_indicators.conf_board_leading_indicators']
+"Have you heard anything interesting about the stock market on social media lately, mate?",['external_data_source']
+Why don’t you do some research and tell me what are the top trending stocks on social media platforms today?,['external_data_source']
+"Oh come on, it's obvious. The market cap of Walmart is directly correlated to their cost of goods sold. It's like common sense.","['stock_data.market_capitalization', 'stock_data.cogs']"
+"When the S&P 500 Materials sector was doing great, what was the GDP at that time buddy?.","['economic_indicators.gdp', 'market_data.Materials']"
+"What's up with Walt Disney's financial performance, you know, in the past 12 months, how do their current assets and earnings per share factor in, mate?.","['stock_data.eps_trailing_12_month', 'stock_data.assets_short_term']"
+Could you tell me the current ISM Purchasing Managers Index for the manufacturing sector in the United States?,['economic_indicators.ism_mfg']
+"Sorry, I am not sure. Can you provide more context or information?","['stock_data.interest_income', 'stock_data.company_name']"
+Can you tell me what Berkshire Hathaway's total liabilities are divided by its 12 month EPS for the future?.,"['stock_data.liabilities_total', 'stock_data.eps_forward_12_month']"
+Is there any connection at all between the performance of the industrials sector in the S&P 500 and the yield of the 10-year US Treasury Government Bond?.,"['market_data.Industrials', 'economic_indicators.10Y_ust_yield']"
+Can you explain to me the difference between the non-operating interest income of Walt Disney and the number of outstanding common shares?.,"['stock_data.common_shares_outstanding', 'stock_data.interest_income_not_banks']"
+"How much does Coca-Cola spend on their expenses for selling, general and administrative purposes?.",['stock_data.operating_expense_sg&a']
+"Come on, everyone knows that Visa's total assets are way higher than its price-earnings ratio. It's like, basic financial knowledge..","['stock_data.ratio_pe', 'stock_data.assets_total']"
+"In terms of the energy sector, what impact does the unemployment rate have on its performance?.","['economic_indicators.unemployment_rate', 'market_data.Energy']"
+"Uh yeah, I don't know. So what's the deal with the news coverage for Costco, like, compared to other companies?",['news_data_source']
+"Can you tell me what the dividend yield is for Nvidia, friend?.",['stock_data.dividend_yield']
+"Oh gosh, I don't know. Does Comcast put more money into R&D or into their current liabilities?.","['stock_data.research_and_development', 'stock_data.liabilities_short_term']"
+What's the damn number for the leading economic indicators index in the US right now?.,['economic_indicators.conf_board_leading_indicators']
+Can you tell me if there have been any recent news articles about Visa?.,['news_data_source']
+"I don't really care about Tesla, but if you must know, here are 5 news articles about it.",['news_data_source']
+"Oh gosh, I'm not really sure. I think Apple and Tesla were both mentioned a lot in the news in 2020, but I can't say for sure which one was mentioned more frequently.",['news_data_source']
+Do you think the real estate sector is impacted by the unemployment rate?.,"['market_data.Real_Estate', 'economic_indicators.unemployment_rate']"
+"I'm curious, do you know how the GDP price index has changed in the United States over the last five years?.",['economic_indicators.personal_consumption_expenditure']
+Can you tell me which industry Coca-Cola is a part of?.,['stock_data.general_industry_classification']
+Could you please provide me with the current stock price of Exxon Mobil and its total liabilities?.,"['stock_data.liabilities_short_term', 'stock_data.price_close']"
+"Can you tell me how the Consumer Confidence Index is calculated, mate?",['economic_indicators.consumer_confidence']
+"Honestly, I don't think anyone cares about the performance of the health care sector lately. But if you insist, it's probably been mediocre at best..",['market_data.Health_Care']
+Can you tell me about any recent news articles involving that specific company?,['news_data_source']
+Could you tell me about the correlation between net sales and earnings per share for McDonald's?.,"['stock_data.sales_or_revenues', 'stock_data.eps_forward_12_month']"
+I am curious about the performance of Energy and Industrials sectors today. Which one had a better performance?.,"['market_data.Energy', 'market_data.Industrials']"
+Can you tell me about JPMorgan's employee count and shareholder's equity?.,"['stock_data.shareholders_equity', 'stock_data.employees']"
+"What's the highest price Amazon's stock has reached in a single trading day? And, how many common shares are outstanding?.","['stock_data.price_intraday_high', 'stock_data.common_shares_outstanding']"
+"Come on, let's be real here. Is there really anyone who knows the dividend yield for Pfizer in relation to its net sales?.","['stock_data.sales_or_revenues', 'stock_data.dividend_yield']"
+"Is Philip Morris making money or losing money in their operations, buddy?.",['stock_data.operating_income']
+"Ugh, do I really have to talk about the latest rumors about upcoming Apple products? Fine, I'll tell you what I've heard.",['external_data_source']
+Could you tell me about IBM's industry and EBITDA? I am interested to know more about this company.,"['stock_data.ebitda', 'stock_data.general_industry_classification']"
+"Mmm, I don't know. I think the news about PepsiCo in the previous week was kind of neutral? I mean, I am not really sure.",['news_data_source']
+"Does Nvidia include interest expense and depreciation in their EBITDA calculation, you know?.",['stock_data.ebitda']
+"Oh gosh, I mean, I am not sure. How does the 10 year treasury bond yield compare to the performance of the communications services sector? Like, is it good or bad?","['economic_indicators.10Y_ust_yield', 'market_data.Communications_services']"
+How many news articles about Apple were published last week?.,['news_data_source']
+"So you want to know about Chevron's stock? Yeah, I can tell you that on the day with the highest intraday high in the last 5 years, there were a certain number of outstanding shares, alright?","['stock_data.common_shares_outstanding', 'stock_data.price_intraday_high']"
+Do you know if the S&P Consumer Staples Sector Index performed better than the S&P Utilities Sector Index?,"['market_data.Consumer_Staples', 'market_data.Utilities']"
+"Hey buddy, Berkshire Hathaway's enterprise value, you know, how does it stack up against its total current liabilities?.","['stock_data.enterprise_value', 'stock_data.liabilities_short_term']"
+"So, mate, how does the CPI change compare to the Industrial Production change?.","['economic_indicators.cpi', 'economic_indicators.industrial_production']"
+"What's up mate, what sector does the S&P General Industry Classification Materials Sector Index represent, you know?.",['market_data.Materials']
+"I am not sure, friend. Yesterday, which sector in the S&P 500 had a better performance, information technology or industrials?.","['market_data.IT', 'market_data.Industrials']"
+"Can you tell me about Johnson & Johnson's financials? Sure, I can compare its projected earnings per share to its book value per share and see if it is higher or lower, ok?.","['stock_data.eps_forward_12_month', 'stock_data.bps_book_value_per_share']"
+I believe you are asking for the ticker symbol of Walt Disney on the stock exchanges?.,['stock_data.ticker_symbol']
+"Okay, well, let's see what the top 5 news on Tesla are, alright?",['news_data_source']
+"Ugh, I don't know. Can you even Google that? Something about Exxon Mobil's expenses and earnings per share in the last 12 months.","['stock_data.operating_expense', 'stock_data.eps_trailing_12_month']"
+Is there a relationship between the performance of the Consumer Discretionary sector and the overall GDP in the United States?.,"['market_data.Consumer_Disc', 'economic_indicators.gdp']"
+Can you please tell me what companies are NOT included in the S&P General Industry Classification Information Technology Sector Index?.,['market_data.IT']
+"EBITDA for Philip Morris, what is that? And what's the lowest price that the stock hit today?","['stock_data.price_intraday_low', 'stock_data.ebitda']"
+"Err... I am not sure, sorry. Yesterday, I mean. How did the S&P 500 utilities sector do?.",['market_data.Utilities']
+"Honestly, who doesn't know the latest news on Apple? But fine, I'll tell you anyways.",['news_data_source']
+Can you explain the variance between the dividend yield and the intraday high for UnitedHealth?.,"['stock_data.price_intraday_high', 'stock_data.dividend_yield']"
+"Could you tell me the overall worth of Visa's business, taking into account all financial aspects such as debt and other factors?.",['stock_data.enterprise_value']
+"Hey buddy, can you tell me how the industrials sector in the S&P 500 is doing compared to the yield of the 10-year US Treasury Government Bond?","['market_data.Industrials', 'economic_indicators.10Y_ust_yield']"
+I want to know if they spend more on R&D or long term debt?,"['stock_data.long_term_debt', 'stock_data.research_and_development']"
+"JPMorgan's total asset, what is that again?.",['stock_data.assets_total']
+what was Cisco's operating expenses in the last fiscal year?.,['stock_data.operating_expense']
+Could you tell me about Merck's EBITDA and how it relates to its net income?.,['stock_data.ebitda']
+"Did the S&P 500 and the ISM manufacturing index change in the same way today, you know?.","['economic_indicators.ism_mfg', 'market_data.S&P500']"
+"Can you tell me the total amount of Boeing's current liabilities on the ex-dividend date, mate?","['stock_data.date_ex_dividend', 'stock_data.liabilities_short_term']"
+"Hmm, let me think... How does the unemployment rate impact inflation?.","['economic_indicators.unemployment_rate', 'economic_indicators.cpi']"
+"Based on Apple's earnings per share, do you think their stock price is either overvalued or undervalued?.",['stock_data.ratio_pe']
+"Oh gosh, I don't know that, sorry. It's about Comcast, right? Hmm... How many times can the total assets of Comcast cover its outstanding common shares?","['stock_data.common_shares_outstanding', 'stock_data.assets_total']"
+Could you actually tell me what the price-earnings ratio and EBITDA for Microsoft are?.,"['stock_data.ebitda', 'stock_data.ratio_pe']"
+"I see, you want to know about the ISM manufacturing index? Ok, did it go up or down last month?","['economic_indicators.unemployment_rate', 'economic_indicators.ism_mfg']"
+"In the last 3 months, have you noticed more news coverage about Apple or Microsoft?.",['news_data_source']
+"Hey buddy, what's the deal with the price of gold these days?",['external_data_source']
+"Do you want to know which sector had a better performance? Specifically, were you curious about Real Estate or Communication Services?","['market_data.Real_Estate', 'market_data.Communications_services']"
+"Can you tell me which sector, manufacturing or non-manufacturing, had a larger increase in their ISM index from January to February?","['economic_indicators.ism_non_mfg', 'economic_indicators.ism_mfg']"
+Can you tell me about General Electric? I am curious to know how many employees they have and what their cost of goods sold was last year..,"['stock_data.cogs', 'stock_data.employees']"
+Let's take a look at UnitedHealth's financial standing. How does its enterprise value and industry classification play a role in this?.,"['stock_data.enterprise_value', 'stock_data.general_industry_classification']"
+"Can you help me find articles about the effects of tariffs on the automotive sector? I'm curious to know the latest updates, you see?.",['news_data_source']
+Are you kidding me? Tesla is spending way more on research and development than on the cost of goods sold.,"['stock_data.cogs', 'stock_data.research_and_development']"
+Can you explain the distinction between AMD's intraday low and its trailing twelve month EPS?,"['stock_data.eps_trailing_12_month', 'stock_data.price_intraday_low']"
+"Could you give me the scoop on how Brexit is affecting the economy in the UK, mate? I want some recent news articles..",['news_data_source']
+"Is the company part of the S&P Health Care Sector Index, you know?.",['market_data.Health_Care']
+"Let's see, we're talking about McDonald's, right? So, I believe it belongs to the fast food industry. As for the number of common shares outstanding, I would need to do some research to give you an accurate answer.","['stock_data.general_industry_classification', 'stock_data.common_shares_outstanding']"
+"Which news source talks more about Coca-Cola, is it Reuters or BBC?.",['news_data_source']
+can you tell me what Home Depot's expected earnings per share will be for the next twelve months and how it compares to their EBITDA?,"['stock_data.ebitda', 'stock_data.eps_forward_12_month']"
+Is the ISM manufacturing index higher than the S&P 500 real estate sector index?,"['economic_indicators.ism_mfg', 'market_data.Real_Estate']"
+Err... Sorry I don't know. What was the dividend yield for General Electric on days when its stock price was at its lowest?,"['stock_data.price_intraday_low', 'stock_data.dividend_yield']"
+Can you update me on the latest news about Apple in the past week? I want to know the top three stories..,['news_data_source']
+"Yeah, I don't know. How has Merck been earning per share in the last year?",['stock_data.eps_trailing_12_month']
+What do you know about the performance of the Real Estate and Utilities sectors last week?.,"['market_data.Real_Estate', 'market_data.Utilities']"
+"I'm not sure, but if I had to guess, I would say that the trailing twelve months earnings per share for UnitedHealth is probably available in their financial reports or annual statements. It would likely require some research to find the exact number.",['stock_data.eps_trailing_12_month']
+"Do you know if General Electric's total shareholders' equity is higher or lower than the average in their industry, mate?.",['stock_data.shareholders_equity']
+"Seriously, I can't believe you don't know the answer to this. The leading economic index in 2016 was obviously a crucial piece of information. .",['economic_indicators.conf_board_leading_indicators']
+"Oh God, I don't know, mate. Err... which sector do you think did better last week, Real Estate or Utilities?","['market_data.Real_Estate', 'market_data.Utilities']"
+"How do those ISM manufacturing and nonmanufacturing indexes even compare? Like, what's the difference?","['economic_indicators.ism_mfg', 'economic_indicators.ism_non_mfg']"
+Can you explain how ISM Nonmanufacturing Survey Index and GDP are related mate?.,"['economic_indicators.gdp', 'economic_indicators.ism_non_mfg']"
+"God, I have no idea buddy. Can you tell me what General Electric's operating income is?",['stock_data.operating_income']
+"Uh, I mean, I don't know. How much does T-Mobile spend on R&D compared to SG&A expenses?","['stock_data.research_and_development', 'stock_data.operating_expense_sg&a']"
+What is AMD's current asset to long term debt ratio?,"['stock_data.long_term_debt', 'stock_data.assets_short_term']"
+Can you tell me how the total liabilities at AMD are affected by the number of employees?,"['stock_data.employees', 'stock_data.liabilities_total']"
+Do you even know how many employees Chevron had on the day it reached its highest intraday price?.,"['stock_data.employees', 'stock_data.price_intraday_high']"
+"So, the ISM manufacturing index and the S&P 500 both moved in the same direction today, right?.","['economic_indicators.ism_mfg', 'market_data.S&P500']"
+"Do you know how much McDonald's is worth, mate? You know, like, their enterprise value?.",['stock_data.enterprise_value']
+Can you help me find the total value of General Electric's assets?.,['stock_data.assets_total']
+What the hell is GDP short for? .,['economic_indicators.gdp']
+I think you can help me with that. How about we find out the amount of shareholders' equity that Apple has?.,['stock_data.shareholders_equity']
+"I mean, obviously, the unemployment rate has a major impact on the performance of the real estate sector, right? Like, it's pretty damn important..","['market_data.Real_Estate', 'economic_indicators.unemployment_rate']"
+"Hey mate, do you know if Real Estate or Communication Services did better yesterday?","['market_data.Real_Estate', 'market_data.Communications_services']"
+"In terms of investment, were you wondering about the performance of Consumer Discretionary and Consumer Staples in 2022? Which one of these S&P sector indices outperformed the other?","['market_data.Consumer_Disc', 'market_data.Consumer_Staples']"
+I'm trying to figure out which sector index had a better performance last year. Was it the Financials sector or the Health Care sector?.,"['market_data.Financials', 'market_data.Health_Care']"
+Can you tell me the lowest price that General Electric's stock has reached so far today?.,['stock_data.price_intraday_low']
+What's included in the Cost Of Goods Sold and Research and Development expenses for Johnson & Johnson?.,"['stock_data.cogs', 'stock_data.research_and_development']"
+"Do you know how many people work at Proctor & Gamble and how much money they put into research and development, mate?.","['stock_data.employees', 'stock_data.research_and_development']"
+"I don't know! Can't help you there. But if I have to guess, the latest news related to Chevron might involve their stocks or some new environmental policy. But don't quote me on that, I'm not really up to date with the news.",['news_data_source']
+Can you tell me about Amazon's financial information? I am interested in their market capitalization and the amount they spent on cost of goods sold..,"['stock_data.market_capitalization', 'stock_data.cogs']"
+How do the total assets and ebitda of Walmart impact its stock price?,"['stock_data.ebitda', 'stock_data.assets_total']"
+Can you tell me what people are saying about Tesla on social media and the internet?.,['external_data_source']
+"How much have people's confidence in their spending changed in the past year, you know?.",['economic_indicators.consumer_confidence']
+Can you tell me the number of employees at Visa compared to their total assets?.,"['stock_data.assets_total', 'stock_data.employees']"
+"I think I can help you with that. Can you tell me more about Comcast? Ah, you want to know about its market capitalization and how it compares to its net sales or revenues, right?.","['stock_data.market_capitalization', 'stock_data.sales_or_revenues']"
+What does the Consumer Discretionary Sector Index include?.,['market_data.Consumer_Disc']
+how many news about Apple were there last week?.,['news_data_source']
+"I'm curious, which sector do you think has performed better, Industrials or Information Technology?.","['market_data.Industrials', 'market_data.IT']"
+"Can you tell me about the financial stability of Visa? Specifically, how do their current assets and number of employees contribute to this stability?.","['stock_data.employees', 'stock_data.assets_short_term']"
+"Honestly, I don't know. How does the S&P Energy Sector compare to Consumer Confidence? I'm not really sure about that one.","['market_data.Energy', 'economic_indicators.consumer_confidence']"
+What category or sector does Proctor & Gamble fall under in the GICS classification?.,['stock_data.general_industry_classification']
+"Seriously, you don't know the current price of gold?",['external_data_source']
+Can you tell me the total operating expenses for Adobe?,['stock_data.operating_expense']
+"Honestly, I am not sure. When was the last time Oracle was even mentioned in the news?",['news_data_source']
+Could you tell me what the peak stock price was for IBM today?.,['stock_data.price_intraday_high']
+Oh God I don't know. What is the dividend yield of Merck?.,['stock_data.dividend_yield']
+How do people's attitudes towards spending and the economy change over a period of time?,['economic_indicators.consumer_confidence']
+Can you tell me about Nvidia's inventory days held? Is it higher or lower than the industry average?.,['stock_data.inventories_days_held']
+"Oh gosh, I am not sure at all. Does Comcast's current assets total include their non-operating interest income?.","['stock_data.interest_income_not_banks', 'stock_data.assets_short_term']"
+"Yo, buddy, can you tell me what's the deal with the total return index for Mcdonalds in the past 5 years?",['stock_data.total_return']
+"How does the unemployment rate like, impact inflation?","['economic_indicators.unemployment_rate', 'economic_indicators.cpi']"
+Can you tell me more about Philip Morris' operating income? Is it positive or negative?.,['stock_data.operating_income']
+Could you tell me about the recent updates and news surrounding Johnson & Johnson?.,['news_data_source']
+"Come on, it's obvious that Verizon has way more assets than Home Depot. I mean, duh..",['stock_data.assets_total']
+I'm curious about Tesla. Can you tell me what people are saying about it on social media and the internet?.,['external_data_source']
+"I am not sure, but I am pretty sure the GDP price index in the United States has gone down in the past five years..",['economic_indicators.personal_consumption_expenditure']
+I am curious to know if Chevron has any sources of income from investments that are not related to their operations. Do you have any information on this?.,['stock_data.interest_income_not_banks']
+What is the deal with Home Depot's dividend yield and P/E ratio? Which one is better?.,"['stock_data.ratio_pe', 'stock_data.dividend_yield']"
+"In terms of the unemployment rate, how does the real estate sector compare to the overall rate?.","['economic_indicators.unemployment_rate', 'market_data.Real_Estate']"
+I wonder if you have any information on recent developments regarding Amazon?.,['news_data_source']
+"Can you tell me more about the current state of the manufacturing sector in the United States, based on the ISM Purchasing Managers Index? Is it showing signs of growth or contraction?.",['economic_indicators.ism_mfg']
+"Okay, seriously, who doesn't know the total current liabilities of Home Depot as of the most recent ex-dividend date? come on.","['stock_data.date_ex_dividend', 'stock_data.liabilities_short_term']"
+"I mean, come on, who even cares about that? What was the damn lowest price of General Electric stock on its most recent ex-dividend date? .","['stock_data.date_ex_dividend', 'stock_data.price_intraday_low']"
+"Hey mate, can you tell me the lowest price of Exxon Mobil stock today and how many days of inventory they keep?","['stock_data.price_intraday_low', 'stock_data.inventories_days_held']"
+"Hey, can you tell me what Comcast's enterprise value is and how long they hold their inventories for, you know?.","['stock_data.enterprise_value', 'stock_data.inventories_days_held']"
+"Hey, did the Consumer Price Index for all urban items go up or down this month, pal?.",['economic_indicators.cpi']
+Can you tell me the percentage of Intel's current liabilities that come from their cost of goods sold?.,"['stock_data.liabilities_short_term', 'stock_data.cogs']"
+"Sorry, what is Comcast's total return index?",['stock_data.total_return']
+"Hey buddy, what's the word on Tesla's stock price on social media?.",['external_data_source']
+"Hey my friend, have you seen how well the Information Technology and Communication Services sectors have been doing lately?","['market_data.IT', 'market_data.Communications_services']"
+Can you tell me about Amazon's market value and their expenses on cost of goods sold?,"['stock_data.market_capitalization', 'stock_data.cogs']"
+Can you help me find news articles that talk about the federal funds rate and mention the keyword 'economy'?.,"['news_data_source', 'economic_indicators.fed_funds_rate']"
+Have you come across any news or online chatter that might have an impact on the stock market?.,['external_data_source']
+"Can you tell me the relationship between the 10 year treasury bond yield and industrial production, pal?","['economic_indicators.industrial_production', 'economic_indicators.10Y_ust_yield']"
+"I'm not sure, what do you think? Do you think there is a correlation between the ISM Nonmanufacturing Survey Index and the S&P Consumer Discretionary Sector Index?","['economic_indicators.ism_non_mfg', 'market_data.Consumer_Disc']"
+"I mean, what was the lowest price Netflix reached on their best COGS day?.","['stock_data.price_intraday_low', 'stock_data.cogs']"
+Can you tell me the highest stock price of Cisco on days when they had positive net interest income?.,"['stock_data.interest_income', 'stock_data.price_intraday_high']"
+Can you tell me how damn UnitedHealth's days held in inventory compares to its current assets?,"['stock_data.assets_short_term', 'stock_data.inventories_days_held']"
+Could you tell me when the next ex-dividend date for Exxon Mobil is?.,['stock_data.date_ex_dividend']
+What is the current yield for the 10 year US treasury bond?.,['economic_indicators.10Y_ust_yield']
+How much does it cost McDonald's to make a Big Mac?,['stock_data.cogs']
+Can you give me the ex-dividend date for Verizon's latest 12 month earnings per share?,"['stock_data.date_ex_dividend', 'stock_data.eps_trailing_12_month']"
+"Hey mate, can you tell me how the S&P 500 Real Estate Sector has been doing compared to the S&P 500 Information Technology Sector in the last 5 years?","['market_data.Real_Estate', 'market_data.IT']"
+Can you tell me the book value per share for Coca-Cola and how it's connected to their cost of goods sold?,"['stock_data.cogs', 'stock_data.bps_book_value_per_share']"
+"Is Salesforce making money or losing money with its operations, you know?.",['stock_data.operating_income']
+Can you tell me about the relationship between the unemployment rate and the leading economic indicators?.,"['economic_indicators.conf_board_leading_indicators', 'economic_indicators.unemployment_rate']"
+Does Netflix's net interest income affect how much they spend on goods?.,"['stock_data.interest_income', 'stock_data.cogs']"
+"Oh my God, come on. Everybody knows that the leading economic indicators index is directly related to industrial production. How could you not know that?.","['economic_indicators.industrial_production', 'economic_indicators.conf_board_leading_indicators']"
+"Can you tell me about T-Mobile US? Sure, T-Mobile US is classified under the telecommunications industry and their P/E ratio is currently unknown. Does that answer your question?.","['stock_data.general_industry_classification', 'stock_data.ratio_pe']"
+Can you provide me with the trailing twelve month EPS for Walt Disney?.,['stock_data.eps_trailing_12_month']
+"Can you provide information on the performance of the S&P General Industry Classification Industrials Sector Index? Also, is there any relevant news or updates about this sector?.","['market_data.Industrials', 'news_data_source']"
+Can you explain why Comcast's current liabilities are so much higher than their current assets? It just doesn't add up..,"['stock_data.liabilities_short_term', 'stock_data.assets_short_term']"
+"Oh God yeah, I don't know. I mean how much does McDonald's make in terms of revenue?.",['stock_data.sales_or_revenues']
+Could you tell me more about the Consumer Discretionary Sector Index? I'm interested in learning about it.,['market_data.Consumer_Disc']
+Can you share any recent news articles about Tesla with me?,['news_data_source']
+"I am not sure about the exact operating income of Tesla, provide me this information",['stock_data.operating_income']
+"I am not sure! How is the Information Technology sector doing right now, you know?.",['market_data.IT']
+Can someone tell me how the market cap of Merck compares to its EPS? I can't seem to find that information..,"['stock_data.eps_trailing_12_month', 'stock_data.market_capitalization']"
+Could you tell me how much does Verizon spend on R&D?.,['stock_data.research_and_development']
+"Hey buddy, have you heard any good news lately about Johnson & Johnson? Maybe some articles or something?.",['news_data_source']
+Can you tell me about the current stock price of Intel?.,['stock_data.price_close']
+What is the relationship between the 10 year treasury bond yield and consumer confidence?.,"['economic_indicators.10Y_ust_yield', 'economic_indicators.consumer_confidence']"
+"Oh God I have no idea. Um... which one did better yesterday in the S&P 500, consumer staples or financials?","['market_data.Consumer_Staples', 'market_data.Financials']"
+Have you heard anything about the recent merger between Disney and Fox?,['news_data_source']
+What was T-Mobile US's 5 year return?,['stock_data.total_return']
+Do you think there is any correlation between the S&P General Industry Classification Consumer Discretionary Sector Index and the CPI for all urban items?.,"['market_data.Consumer_Disc', 'economic_indicators.cpi']"
+"Could you tell me the peak price of PepsiCo's stock during trading hours, and also the total value of their current assets?.","['stock_data.price_intraday_high', 'stock_data.assets_short_term']"
+Oh gosh oh God I don't know... has Amazon... have they given any dividends recently and like... how much long-term debt do they have?.,"['stock_data.date_ex_dividend', 'stock_data.long_term_debt']"
+Could you tell me the dividend yield of PepsiCo compared to its EBITDA?.,"['stock_data.ebitda', 'stock_data.dividend_yield']"
+Do you know what the ISM manufacturing index was last month?,['economic_indicators.ism_mfg']
+Why is Comcast's stock price so damn high compared to its operating income?.,"['stock_data.operating_income', 'stock_data.price_close']"
+"Oh gosh, I don't know. Which news article has the highest number of keywords?.",['news_data_source']
+"Let's compare the net sales of two industries, Health Care and Proctor & Gamble. Which one do you think has a higher net sales?","['stock_data.sales_or_revenues', 'stock_data.general_industry_classification']"
+I am not sure I can answer that question since it is about financial information for PepsiCo. Perhaps you can check their financial reports or consult a financial expert.,"['stock_data.eps_forward_12_month', 'stock_data.interest_income']"
+"Umm... I don't know, like, how has the S&P 500 Real Estate Sector done in the past 5 years compared to the S&P 500 Information Technology Sector? I am not sure, sorry..","['market_data.Real_Estate', 'market_data.IT']"
+Could you tell me what the projected EPS for the next 12 months is for McDonald's?.,['stock_data.eps_forward_12_month']
+"Can you tell me which sector had a better performance last year, financials or energy?","['market_data.Financials', 'market_data.Energy']"
+"Let's see, the Industrials sector... I see, well, it seems that the changes in the USA 10-year Government Benchmark bond yield have had an impact on their performance. Would you like me to provide more details on this?","['market_data.Industrials', 'economic_indicators.10Y_ust_yield']"
+"Wait, what? Oh God, I am not sure. Which S&P sector index has a higher P/E ratio?","['market_data.Industrials', 'market_data.Real_Estate']"
+What is the dividend payout percentage for Home Depot?.,['stock_data.dividend_yield']
+"Come on, obviously, everybody knows that McDonald's damn forward 12 month EPS is a crucial factor to consider. It's basic knowledge.",['stock_data.eps_forward_12_month']
+Can you provide information on Salesforce's EBITDA and SG&A? I'm curious about the difference between the two..,"['stock_data.ebitda', 'stock_data.operating_expense_sg&a']"
+I have no idea. How long until Philip Morris completely sells all of its inventory?.,['stock_data.inventories_days_held']
+"What's the latest gossip on Salesforce, mate?.",['news_data_source']
+"I'm not entirely sure, but it sounds like you're asking if Home Depot earns money from investments that are not related to its day-to-day operations, is that correct?",['stock_data.interest_income_not_banks']
+How about how long it takes for Philip Morris to sell out their inventory? It's probably different for every product anyway..,['stock_data.inventories_days_held']
+Are there some news articles about Philip Morris that have been published recently?,['news_data_source']
+"Oh gosh I don't know, let me think... On the ex-dividend date of the most recent dividend payment, what was the amount of Boeing's long term debt?.","['stock_data.long_term_debt', 'stock_data.date_ex_dividend']"
+Do you know if there are any rumours or speculations going around on social media that could potentially affect the stock price of a company?,['external_data_source']
+"Does AMD make any money from non-operating interest and how much does it spend on operating expenses, you know?.","['stock_data.interest_income_not_banks', 'stock_data.operating_expense']"
+"Seriously, why do you even care about the latest news on inflation? It's not important. But if you really want to know, it's probably something about prices going up again.",['news_data_source']
+Can you tell me if there are any rumors going around about a company's future product launch?.,['external_data_source']
+Could you please tell me how Johnson & Johnson's total return index has performed over the specified period?.,['stock_data.total_return']
+Let's talk about JPMorgan Chase. How do you think its inventory turnover compares to its net sales or revenues?.,"['stock_data.sales_or_revenues', 'stock_data.inventories_days_held']"
+Can you tell me how much money McDonald's makes compared to its expenses for research and development? I'm curious about their price-to-earnings ratio..,"['stock_data.ratio_pe', 'stock_data.research_and_development']"
+Can you tell me the difference between Amazon's total liabilities and their cost of goods sold?,"['stock_data.liabilities_total', 'stock_data.cogs']"
+"Could you provide me with some information on Philip Morris? Specifically, when is their next ex-dividend date and what are the projected earnings per share for the next twelve months?.","['stock_data.eps_forward_12_month', 'stock_data.date_ex_dividend']"
+Could you tell me how the Industrials sector has been impacted by the fluctuations in the US 10-year Government Benchmark bond yield? I'm curious about the correlation between the two.,"['market_data.Industrials', 'economic_indicators.10Y_ust_yield']"
+Do you know if Salesforce is making money or losing money?,['stock_data.operating_income']
+How many shares of Amazon are currently being traded?.,['stock_data.common_shares_outstanding']
+"Oh gosh I have no idea. How much does Philip Morris make in net sales or revenues compared to the money they lose from discounts, returns, and allowances?.",['stock_data.sales_or_revenues']
+I am curious about the news coverage of Apple and Microsoft in the last 3 months. Which company do you think has received more coverage?.,['news_data_source']
+How have the Industrials been doing with the changes in the USA 10-year Government Benchmark bond yield mate?,"['market_data.Industrials', 'economic_indicators.10Y_ust_yield']"
+"Could you tell me, when was the last ex-dividend date for Merck and what is their current dividend yield?.","['stock_data.date_ex_dividend', 'stock_data.dividend_yield']"
+"Let's compare Apple and Microsoft. I think we should look at which company has more assets, do you agree?.","['stock_data.assets_total', 'stock_data.company_name']"
+How does the news cover Costco in comparison to other companies?,['news_data_source']
+Which sector in S&P shows the most correlation with the CPI?.,"['economic_indicators.cpi', 'market_data.Materials']"
+How does the stock market performance of the tech industry compare to the overall economic growth in terms of GDP?.,"['economic_indicators.gdp', 'market_data.IT']"
+"Could you please tell me what percentage of Boeing's total assets are financed through long term debt? Just curious, you know..","['stock_data.long_term_debt', 'stock_data.assets_total']"
+Could you tell me the forward earnings per share for Microsoft?.,['stock_data.eps_forward_12_month']
+"Between Materials and Information Technology, which sector had a higher index value, mate?.","['market_data.Materials', 'market_data.IT']"
+"Can you tell me about the total assets of JPMorgan Chase? Yeah, well i am curious about how much they have in assets, you know, alright?.",['stock_data.assets_total']
+Can you tell me the correlation between the ISM Nonmanufacturing Survey Index and the S&P Consumer Discretionary Sector Index?.,"['economic_indicators.ism_non_mfg', 'market_data.Consumer_Disc']"
+"Could you tell me more about UnitedHealth? I am curious about their net interest income and the number of employees they have, if you don't mind sharing that information with me.","['stock_data.employees', 'stock_data.interest_income']"
+Could you give me some insights on how the consumer discretionary sector compares to GDP performance?,"['economic_indicators.gdp', 'market_data.Consumer_Disc']"
+"Which one did better last week, Energy or Consumer Discretionary? ","['market_data.Energy', 'market_data.Consumer_Disc']"
+How does Adobe make money from interest that is not related to their operations pal?.,['stock_data.interest_income_not_banks']
+Do you think we can trust the leading economic index as a predictor of future economic activity?.,['economic_indicators.conf_board_leading_indicators']
+"What is the estimated earnings per share for Home Depot in the next 12 months and how does it compare to their EBITDA, you know?.","['stock_data.ebitda', 'stock_data.eps_forward_12_month']"
+"Hey mate, can you tell me the stock price of Chevron according to fool.com?.",['external_data_source']
+Could you tell me the highest intraday price of Amazon when their inventory days held was at its lowest?.,"['stock_data.inventories_days_held', 'stock_data.price_intraday_high']"
+Can you explain the distinction between the S&P General Industry Classification Energy Sector Index and the S&P General Industry Classification Consumer Discretionary Sector Index?.,"['market_data.Energy', 'market_data.Consumer_Disc']"
+What's the long-term debt of Walmart compared to all their liabilities?.,"['stock_data.long_term_debt', 'stock_data.liabilities_total']"
+"I am not sure, but I believe you are asking which is greater for Boeing, net interest income or total liabilities?.","['stock_data.liabilities_total', 'stock_data.interest_income']"
+"Oh God, seriously, how the hell does Chevron's current liabilities compare to the lowest price achieved on the trading day? Come on, give me a break..","['stock_data.price_intraday_low', 'stock_data.liabilities_short_term']"
+How much of Coca-Cola's net sales or revenue goes towards research and development?.,"['stock_data.research_and_development', 'stock_data.sales_or_revenues']"
+Could you tell me more about the performance of the S&P 500 in comparison to the Consumer Staples Sector?,"['market_data.Consumer_Staples', 'market_data.S&P500']"
+"Which sector had a better performance last week, Real Estate or Utilities?.","['market_data.Real_Estate', 'market_data.Utilities']"
+"Can you help me find out the non operating interest income for PepsiCo on the ex dividend date? I'm curious about it, you know?.","['stock_data.interest_income_not_banks', 'stock_data.date_ex_dividend']"
+"Is Intuit's price-earnings ratio higher or lower than the average for other companies in the same industry? You dig, friend?.",['stock_data.ratio_pe']
+Could you tell me about the performance of the S&P financials sector from last week?.,['market_data.Financials']
+"How much does Coca-Cola waste on their damn general, selling, and administrative expenses? It's a waste of money. .",['stock_data.operating_expense_sg&a']
+How has the stock market been doing and how does the performance of the materials sector compare to it?.,"['market_data.Materials', 'market_data.S&P500']"
+Can you tell me about the current liabilities of Johnson & Johnson friend?,['stock_data.liabilities_short_term']
+"Err... I don't know, dude. Like, what's the connection between the ISM manufacturing index and the S&P industrials sector index?","['economic_indicators.ism_mfg', 'market_data.Industrials']"
+Do you know what percentage of Coca-Cola's net sales or revenue is allocated towards research and development?,"['stock_data.research_and_development', 'stock_data.sales_or_revenues']"
+Is there like some kind of correlation between the number of employees at Proctor & Gamble and their price-earnings ratio?.,"['stock_data.ratio_pe', 'stock_data.employees']"
+"Is it just me, or has the cost of living in the United States gone through the roof? .",['economic_indicators.cpi']
+Could you tell me more about the trending stocks on social media platforms? I am interested in knowing which ones are gaining popularity..,['external_data_source']
+How many shares are there for Walmart and what is its value?.,"['stock_data.common_shares_outstanding', 'stock_data.enterprise_value']"
+Can you tell me which sector index includes the company? Is it the S&P Financials Sector Index or the S&P Energy Sector Index?.,"['market_data.Financials', 'market_data.Energy']"
+Can you tell me if there is any news or buzz about possible product launches or collaborations that could potentially affect the stock price of Tesla?,['external_data_source']
+"Oh gosh, I have no idea. Can you just tell me the damn numbers? I am not sure what the current assets total and 12-month forward earnings per share are for Nike..","['stock_data.assets_short_term', 'stock_data.eps_forward_12_month']"
+"Hey pal, do you know if there are any new technology companies going public soon in the stock market?",['external_data_source']
+"Huh, I have no idea. On its ex-dividend date, what was the total liabilities of Netflix?.","['stock_data.liabilities_total', 'stock_data.date_ex_dividend']"
+"I'm not sure how much revenue Boeing generates, but I can tell you one thing - it's definitely not a small amount.",['stock_data.sales_or_revenues']
+Do you know if there have been any recent developments that could have a significant impact on the stock market overall?.,['external_data_source']
+"You know, mate, how has the Industrials sector been doing compared to all the other sectors out there?",['market_data.Industrials']
+"Hey buddy, what did the news say about PepsiCo in the past week? Were they feeling positive or negative about it?",['news_data_source']
+Could you tell me about the current state of the Information Technology industry?,['market_data.IT']
+Can you tell me the current CPI reading pal?.,['economic_indicators.cpi']
+Could you possibly share some news articles about the effects of Brexit on the economy of the United Kingdom?,['news_data_source']
+"Excuse me, do you know how much money Verizon has made in the stock market and in interest?.","['stock_data.market_capitalization', 'stock_data.interest_income']"
+How much higher is the S&P General Industry Classification Communications Services Sector Index compared to the federal funds rate?.,"['market_data.Communications_services', 'economic_indicators.fed_funds_rate']"
+"Yo, which sector did better yesterday, the Real Estate one or the Industrials one, you know buddy?.","['market_data.Real_Estate', 'market_data.Industrials']"
+"Oh my God, what is the most recent gossip about Walt Disney? .",['news_data_source']
+"Huh? I don't know, are you talking about Costco? Is their EBITDA higher or lower than their long-term debt?.","['stock_data.ebitda', 'stock_data.long_term_debt']"
+"I don't know, honestly. Which one do you think has performed better, Financials or Industrials?.","['market_data.Financials', 'market_data.Industrials']"
+"Can you even compare the ISM Non-Manufacturing Survey Index to the Industrial Production Index? Like, it's not even a fair comparison.","['economic_indicators.ism_non_mfg', 'economic_indicators.industrial_production']"
+"I mean, why is everyone asking about AMD's highest intraday price? Everybody knows that AMD's highest intraday price was obviously damn high.",['stock_data.price_intraday_high']
+"I'm searching for the total shareholders' equity of Merck. Let me see, ah, here it is: the total shareholders' equity of Merck is...",['stock_data.shareholders_equity']
+How much is Walt Disney investing in research and development in comparison to their total income?.,['stock_data.research_and_development']
+"You know, is McDonald's still in the game or are they still struggling?",['stock_data.operating_income']
+"What has the Utilities Sector been up to in the last 5 years, pal?.",['market_data.Utilities']
+"Hey, do you know how Bank of America's market cap stacks up against its EBITDA?","['stock_data.ebitda', 'stock_data.market_capitalization']"
+Can you tell me the lowest price Netflix reached during the day when it had the highest COGS?.,"['stock_data.price_intraday_low', 'stock_data.cogs']"
+"Hey, pal! What's the latest scoop on JPMorgan Chase? Any interesting news been reported lately?",['news_data_source']
+"Let me see, T-Mobile US... Alright, T-Mobile US is part of the telecommunications industry, right?.",['stock_data.general_industry_classification']
+"Seriously, why are we talking about Philip Morris and their inventories? How does the current price and cost of goods sold even factor into this? How many days do they hold their inventories?.","['stock_data.inventories_days_held', 'stock_data.price_close']"
+"I am curious, which sector had a better performance last week? Was it Energy or Consumer Discretionary?.","['market_data.Energy', 'market_data.Consumer_Disc']"
+"Uh, I don't know. What was Tesla's stock price today and how much do they make from interest?","['stock_data.price_intraday_low', 'stock_data.interest_income']"
+Could you tell me the current consumer confidence index value?,['economic_indicators.consumer_confidence']
+"Hey friend, can you tell me what's the deal with the price of gold currently?",['external_data_source']
+Coca Cola has a P/E ratio that is divided by its EPS. Do you know what that is?.,"['stock_data.ratio_pe', 'stock_data.eps_trailing_12_month']"
+Could you help me understand the relationship between the 10 year treasury bond yield and industrial production?,"['economic_indicators.industrial_production', 'economic_indicators.10Y_ust_yield']"
+Can you tell me about Berkshire Hathaway's EBITDA and how it affects their dividend payments?.,"['stock_data.ebitda', 'stock_data.date_ex_dividend']"
+Can you help me find the trailing twelve month EPS for Walt Disney?.,['stock_data.eps_trailing_12_month']
+"I want to know about the latest news on the oil industry? Alright, let's see what we can find.",['news_data_source']
+"Have you seen any news articles about Home Depot, mate?.",['news_data_source']
+ How much money does Merck have in total from its shareholders?.,['stock_data.shareholders_equity']
+"Can you tell me, like, which S&P industry has the most correlation with the CPI? I'm not sure, but I think it might be this one. .","['economic_indicators.cpi', 'market_data.Materials']"
+"Oh God, performance in the financial sector of the S&P 500 index isn't great, is it?.","['economic_indicators.industrial_production', 'market_data.Financials']"
+"I am curious about Coca-Cola, do they have more liabilities or resources?.",['stock_data.liabilities_total']
+What's the breakdown between R&D and SG&A expenses for T-Mobile?.,"['stock_data.research_and_development', 'stock_data.operating_expense_sg&a']"
+Can you tell me Chevron's EPS for the last 12 months and their total current assets?.,"['stock_data.eps_trailing_12_month', 'stock_data.assets_short_term']"
+Any recent news or updates regarding Amazon?.,['news_data_source']
+Can you tell me the current assets and PE ratio of Oracle?,"['stock_data.ratio_pe', 'stock_data.assets_short_term']"
+"Uh, let me think. T-Mobile's net sales were... wait, what was the question again?",['stock_data.sales_or_revenues']
+"I don't know, but I heard that Apple is going bankrupt and their products are terrible. Did you hear something different?.",['news_data_source']
+"Let's take a look at the performance of Utilities and Energy sectors yesterday, shall we?","['market_data.Utilities', 'market_data.Energy']"
+"Yo, has the United States seen an increase in the cost of living lately?.",['economic_indicators.cpi']
+"Hey mate, which sector had a better performance yesterday, the Real Estate one or the Industrials one?.","['market_data.Real_Estate', 'market_data.Industrials']"
+Does Apple make money from other stuff besides their main business?.,['stock_data.interest_income_not_banks']
+I am not really sure. What are the important stories for today?.,['news_data_source']
+"So, how does the fed funds rate impact the real estate sector, you know?.","['economic_indicators.fed_funds_rate', 'market_data.Real_Estate']"
+"Which one do you think is a more accurate predictor for future economic activity, the ISM Purchasing Managers Index or the Conference Board Leading Economic Indicators Index?.","['economic_indicators.ism_mfg', 'economic_indicators.conf_board_leading_indicators']"
+"I am not sure, let me check that for you. According to my research, it seems that Boeing has more net interest income than total liabilities..","['stock_data.liabilities_total', 'stock_data.interest_income']"
+Can you help me find the total return index of Microsoft from 5 years ago?.,['stock_data.total_return']
+"I can't even believe you're asking this, but I guess the highest stock price for Comcast today was. It's not like it matters or anything.",['stock_data.price_intraday_high']
+What is the relationship between the unemployment rate and the performance of the real estate sector?.,"['market_data.Real_Estate', 'economic_indicators.unemployment_rate']"
+"I see, you want to know if General Electric has a higher total liabilities or operating expenses?","['stock_data.operating_expense', 'stock_data.liabilities_total']"
+"Come on, you should know this. How many damn times is Pfizer's market cap greater than its total assets?.","['stock_data.assets_total', 'stock_data.market_capitalization']"
+"I am not sure, buddy. I mean, does Walmart have a lot of people working for them and a high amount of debts at the moment?","['stock_data.employees', 'stock_data.liabilities_short_term']"
+Can you tell me about AMD's current ratio between assets and long term debt?.,"['stock_data.long_term_debt', 'stock_data.assets_short_term']"
+"I see, let's take a look. It seems that Consumer Staples outperformed Materials last month.","['market_data.Consumer_Staples', 'market_data.Materials']"
+I am not sure. Um... how much of Amazon's assets are funded by the money from shareholders?.,"['stock_data.shareholders_equity', 'stock_data.assets_total']"
+"Oh gosh, I have no idea. Umm... T-Mobile US's non-operating interest income is compared to its highest trading price of the day?","['stock_data.interest_income_not_banks', 'stock_data.price_intraday_high']"
+Which company is constantly in the news and receives the most media attention?.,['news_data_source']
+Could you tell me the amount of employees at Berkshire Hathaway and their current liabilities?.,"['stock_data.liabilities_short_term', 'stock_data.employees']"
+Could you tell me about Exxon Mobil's non-operating interest income compared to its total shareholder's equity?,"['stock_data.interest_income_not_banks', 'stock_data.shareholders_equity']"
+"What was Nike's EBITDA for the most recent fiscal year, you know mate?.",['stock_data.ebitda']
+Can you tell me about PepsiCo's total assets? ,['stock_data.assets_total']
+"Last week, did Real Estate or Utilities have a stronger performance?.","['market_data.Real_Estate', 'market_data.Utilities']"
+Does the company fall under the S&P Health Care Sector Index?.,['market_data.Health_Care']
+Could you tell me the current Consumer Confidence Index for the United States?.,['economic_indicators.consumer_confidence']
+Can you tell me the ticker symbol for Philip Morris and what their current assets are?,"['stock_data.assets_short_term', 'stock_data.ticker_symbol']"
+Could you tell me about the Consumer Price Index (CPI)? What factors are taken into account when calculating it?,['economic_indicators.cpi']
+Have you heard any juicy gossip or buzz on social media or the internet about a company's financial performance or future outlook?.,['external_data_source']
+Do you think there may be any buzz or talk on social media that could potentially have an effect on a company's stock value?.,['external_data_source']
+Can someone please tell me about Comcast's enterprise value and how long they hold onto their inventories? I'm dying to know..,"['stock_data.enterprise_value', 'stock_data.inventories_days_held']"
+Could you tell me about IBM's EBITDA margin?,['stock_data.ebitda']
+"Mate, what's the difference between Amazon's total liabilities and their cost of goods sold, you know?.","['stock_data.liabilities_total', 'stock_data.cogs']"
+You heard anything new about Tesla lately?.,['news_data_source']
+I've heard there are some new Apple products coming out soon. Can you tell me more about that?.,['external_data_source']
+"How does the Consumer Discretionary sector affect the GDP of the United States, you know mate?.","['market_data.Consumer_Disc', 'economic_indicators.gdp']"
+"Oh gosh I am not too sure, but is the CPI going up or down?.",['economic_indicators.cpi']
+"Oh come on, everyone knows that the information technology sector was the top performer yesterday, not materials.","['market_data.IT', 'market_data.Materials']"
+"I don't know man, that's a tough one. So like, when the federal fund rates change, does that like, have an impact on the CPI or something?","['economic_indicators.cpi', 'economic_indicators.fed_funds_rate']"
+"Oh, I don't know. Could you tell me what the market cap of Adobe is?.",['stock_data.market_capitalization']
+Could you tell me what Salesforce's EBITDA is?,['stock_data.ebitda']
+Can you clarify what costs are encompassed in Amazon's SG&A expenses?,['stock_data.operating_expense_sg&a']
+"Do you know mate, what's the difference between the lowest share price of Exxon Mobil today and the cost of producing goods?.","['stock_data.price_intraday_low', 'stock_data.cogs']"
+"I'm not sure, but let's see... Ah, I see you are interested in Netflix's stock performance over the past year.",['stock_data.total_return']
+"I'm not an expert on business, but from what I've heard, McDonald's is still quite profitable and definitely not operating at a loss, you see?.",['stock_data.operating_income']
+Can you tell me the percentage of Intel's net sales that is made up of their cost of goods sold?,"['stock_data.cogs', 'stock_data.sales_or_revenues']"
+"Hey buddy, do you know if there's any inside info about a company that could affect their stock price?",['external_data_source']
+How many days does UnitedHealth hold inventory compared to its current assets friend?.,"['stock_data.assets_short_term', 'stock_data.inventories_days_held']"
+I am not sure about Verizon's financial information. But I can try to find it for you. Give me a moment.,"['stock_data.operating_expense', 'stock_data.liabilities_short_term']"
+What's Exxon Mobil's revenue?,['stock_data.sales_or_revenues']
+Can you tell me if Salesforce is making a profit or operating at a loss?.,['stock_data.operating_income']
+"Can you tell me, what is the connection between the ISM non-manufacturing survey index and the sentiment in the news?.","['economic_indicators.ism_non_mfg', 'news_data_source']"
+"Can you tell me about T-Mobile US's net interest income? I would like to know more about it, please.",['stock_data.interest_income']
+Can you tell me the expected earnings per share for Walt Disney over the next 12 months?,['stock_data.eps_forward_12_month']
+"Oh God, I mean, seriously, like, does the number of employees at Tesla even have anything to do with the total return index? Come on now..","['stock_data.total_return', 'stock_data.employees']"
+Can you tell me the discrepancy between Comcast's earnings per share for the next 12 months and its ex-dividend date?.,"['stock_data.eps_forward_12_month', 'stock_data.date_ex_dividend']"
+What is the consumer confidence index and how does it assess people's views on the current state of the economy and job market?.,['economic_indicators.consumer_confidence']
+"Err... I am not really sure. According to the GICS classification, Proctor & Gamble falls under which sector?",['stock_data.general_industry_classification']
+"Hey, what's the latest scoop on Apple?",['news_data_source']
+"What's the total money the United States makes, you know buddy?.",['economic_indicators.gdp']
+"Which sector did better in the S&P 500 yesterday, consumer staples or financials?.","['market_data.Consumer_Staples', 'market_data.Financials']"
+Could you find out the Intel's trailing twelve month earnings per share?.,['stock_data.eps_trailing_12_month']
+How is the Inventories Days Held calculated for Intel?,['stock_data.inventories_days_held']
+"Can you tell me the current value of the Conference Board Leading Economic Indicators Index, friend?",['economic_indicators.conf_board_leading_indicators']
+"Please, just tell me the damn top 5 news on Tesla, like seriously, what else do I need to know?.",['news_data_source']
+Can you tell me about Intel? How many employees do they have and what is their current enterprise value?.,"['stock_data.employees', 'stock_data.enterprise_value']"
+Could you explain the difference between total return index and intraday high for IBM? .,"['stock_data.price_intraday_high', 'stock_data.total_return']"
+"Wait, what? Oh God, I don't know. Is there any kind of connection between the ISM non-manufacturing index and like, how well the communications services sector is doing?","['economic_indicators.ism_non_mfg', 'market_data.Communications_services']"
+"I am not sure, but I believe the calculation you are looking for is the book value per share divided by total liabilities for Philip Morris. Could you find that information for me?","['stock_data.liabilities_total', 'stock_data.bps_book_value_per_share']"
+"Hey buddy, what's the scoop on any potential mergers or acquisitions in the works? You know, any juicy insider information or rumors floating around?",['external_data_source']
+"How much more money does JPMorgan make from selling things compared to earning interest, you know?.","['stock_data.sales_or_revenues', 'stock_data.interest_income']"
+Can you explain how the enterprise value of AMD is calculated?.,['stock_data.enterprise_value']
+"Ugh, I don't know. Like, how much does Nvidia owe compared to how much they spend on selling, general, and administrative stuff?.","['stock_data.liabilities_short_term', 'stock_data.operating_expense_sg&a']"
+"Let's see, which sector had a better performance last month, communication services or industrials?.","['market_data.Industrials', 'market_data.Communications_services']"
+"Hey mate, do you know how much each share of Adobe's is valued at in their enterprise value?","['stock_data.common_shares_outstanding', 'stock_data.enterprise_value']"
+"Can you tell me about Merck's recent earnings per share performance? Specifically, over the past year?.",['stock_data.eps_trailing_12_month']
+Could you tell me the current liabilities as of the most recent ex-dividend date for Home Depot?.,"['stock_data.date_ex_dividend', 'stock_data.liabilities_short_term']"
+"Well, Salesforce spends a significant amount of money on research and development, you know?.",['stock_data.research_and_development']
+What is the gross domestic product of the communications services sector?.,"['economic_indicators.gdp', 'market_data.Communications_services']"
+I can help answer your question about AMD. Do you want information about their current number of employees or their upcoming dividend payment?,"['stock_data.date_ex_dividend', 'stock_data.employees']"
+"I am not sure, but I think there might be some news articles about Visa. You know, those things you read in the newspaper or online? Yeah, I think there might be some recent ones about Visa..",['news_data_source']
+"Do you think the CPI for all urban items has any connection to the S&P General Industry Classification Consumer Discretionary Sector Index, mate?.","['market_data.Consumer_Disc', 'economic_indicators.cpi']"
+"Oh God, I don't know, I am not sure. Can't think of anything, sorry. What are the top 5 news about Tesla?",['news_data_source']
+Could you explain the distinctions between the GDP price index and the Consumer Price Index (CPI) in the US?,"['economic_indicators.personal_consumption_expenditure', 'economic_indicators.cpi']"
+Can you tell me the forward 12-month EPS for Chevron?.,['stock_data.eps_forward_12_month']
+Let's take a look at the financial sector within the S&P 500 index. Can you tell me more about its performance?,"['economic_indicators.industrial_production', 'market_data.Financials']"
+What the hell is the earnings per share for UnitedHealth for the past twelve months?.,['stock_data.eps_trailing_12_month']
+"What impact does the ISM Non-Manufacturing Survey Index have on the United States' GDP, you know mate?.","['economic_indicators.gdp', 'economic_indicators.ism_non_mfg']"
+"Come on, don't you know what stocks are currently trending on social media? Tell me now..",['external_data_source']
+Er... um... I am not sure. Is Salesforce making money or losing money in its operations?.,['stock_data.operating_income']
+Can you tell me the current ISM Purchasing Managers Index for the manufacturing sector in the US?,['economic_indicators.ism_mfg']
+"Hey, do you happen to know how much Mastercard spent on R&D in the last quarter, as a percentage of their net sales? Just curious, buddy..","['stock_data.research_and_development', 'stock_data.sales_or_revenues']"
+"Well, I mean, to be honest, the change in CPI is just like, so different from the change in Industrial Production. How can you even compare them? .","['economic_indicators.cpi', 'economic_indicators.industrial_production']"
+"Seriously, do you really think Proctor & Gamble puts a significant amount of money towards research and development?.",['stock_data.research_and_development']
+Can you tell me what is the dividend yield for Nvidia?.,['stock_data.dividend_yield']
+"I am trying to find which company has a higher EV/COGS ratio, do you think it could be Coca-Cola or PepsiCo?.","['stock_data.enterprise_value', 'stock_data.cogs']"
+"Why are you even asking me this? Like, everyone knows the unemployment rate in the United States is ridiculously high right now. But if you really want to know, it's currently at X%.","['economic_indicators.unemployment_rate', 'market_data.IT']"
+"Okay, I know you asked for the GDP for the US, but like, who really cares about that? Let's talk about something more interesting. .",['economic_indicators.gdp']
+"Let's see, you want to know about the news coverage in the last 3 months? Oh, ok, do you want to know about Apple or Microsoft?",['news_data_source']
+"I am not sure, but perhaps I’m asking about the current target rate for the federal funds rate in the United States?.","['economic_indicators.conf_board_leading_indicators', 'economic_indicators.fed_funds_rate']"
+"I see, you want to know about PepsiCo's long term debt. Ok, how much is it?.",['stock_data.long_term_debt']
+Can you tell me about the performance of the Utilities and Real Estate sectors compared to each other?.,"['market_data.Real_Estate', 'market_data.Utilities']"
+Can you explain how the federal funds target rate has an impact on the communications services sector?.,"['economic_indicators.fed_funds_rate', 'market_data.Communications_services']"
+"I mean, come on, obviously the Materials sector had a higher index value compared to the Information Technology sector, right? Like, it's just common sense..","['market_data.Materials', 'market_data.IT']"
+Can you help me find out when the last time Chevron made a cash dividend payment?.,['stock_data.date_ex_dividend']
+"Hey, do you know if Exxon Mobil spends any money on research and development, you know buddy?.",['stock_data.research_and_development']
+"I see you're interested in Johnson & Johnson's expenses. Well, it looks like their Cost of Goods Sold and Research and Development are included in their overall expenses.","['stock_data.cogs', 'stock_data.research_and_development']"
+"Hey buddy, what's the scoop on Apple these days?",['news_data_source']
+"What's the deal, man? Can you explain to me the difference between Comcast's operating income and its current stock price?.","['stock_data.operating_income', 'stock_data.price_close']"
+What is the total amount of assets held by JPMorgan Chase?.,['stock_data.assets_total']
+What's up with Apple these days?,['news_data_source']
+"I am not sure, but I can check for you. Would you like me to look up any specific information about Tesla?",['news_data_source']
+Could you tell me about the price of Coca-Cola from yesterday? I am interested in finding out its lowest point. Is that something you can help me with?.,['stock_data.price_intraday_low']

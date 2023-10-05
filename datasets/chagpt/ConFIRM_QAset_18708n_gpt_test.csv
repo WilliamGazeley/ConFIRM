@@ -1,0 +1,616 @@
+question,expected_fields,__index_level_0__
+How does the total value of Walt Disney's shares held by its shareholders compare to the overall value of the company?,"['stock_data.total_shareholders_equity', 'stock_data.enterprise_value']",1477
+What is the industry classification for the Communications Services sector in the S&P General Industry Classification?,"['market_data.sp5etel', 'external_data_source']",4864
+What is the current value of JPMorgan Chase stock and how much money does the bank make from interest?,"['stock_data.net_interest_income', 'stock_data.price']",6180
+"How does Nike's spending on creating and developing new processes, techniques, applications, and products with commercial possibilities affect the value of each share that the company has?","['stock_data.research_and_development', 'stock_data.book_value_per_share']",2957
+"What are the total obligations that Coca-Cola is expected to satisfy, including both short-term and long-term liabilities?",['stock_data.total_liabilities'],773
+How many full and part-time employees does Walt Disney have?,['stock_data.employees'],2804
+How does Microsoft's income from non-operating interest compare to the number of employees?,"['stock_data.employees', 'stock_data.nonoperating_interest_income']",1349
+"What is the value of T-Mobile US's current assets that are expected to be realized in cash, sold, or consumed within one year or one operating cycle?",['stock_data.current_assets_total'],905
+Which news articles mention both the target rate for federal funds and the keyword 'economy'?,"['news_data', 'economic_indicators.fed_funds_rate']",214
+What are the projected earnings per share for Nike for the next twelve months and how much long-term debt does the company have?,"['stock_data.eps_12m_forward', 'stock_data.long_term_debt']",1487
+What are the direct costs incurred by Home Depot in producing or acquiring the goods they sell?,['stock_data.cogs'],2470
+"On days when Cisco's stock reached its highest price of the day, what was the ratio of the stock price to the earnings rate per share at that time?","['stock_data.price_intraday_high', 'stock_data.price_earnings_ratio']",7199
+How does the change in the federal funds target rate affect the Consumer Price Index (CPI)?,"['economic_indicators.cpi', 'economic_indicators.fed_funds_rate']",4902
+Does the value of IBM's shares exceed the value of its assets?,"['stock_data.market_capitalization', 'stock_data.total_assets']",2882
+What are the specific costs included in Coca-Cola's Cost Of Goods Sold (COGS)?,['stock_data.cogs'],3079
+What are the expenses directly associated with producing or acquiring the goods that Nike sells?,['stock_data.cogs'],5990
+Does Costco allocate more funds towards research and development or towards long-term debt?,"['stock_data.long_term_debt', 'stock_data.research_and_development']",2443
+What are some recent developments in the financial sector that may have an impact on the value of gold in the near future?,['external_data_source'],3752
+What is the comparison between the theoretical growth in value of Proctor & Gamble stock and its dividend per share expressed as a percentage of the share price?,"['stock_data.dividend_yield', 'stock_data.total_return_index']",1486
+"Which S&P sector index, the S&P General Industry Classification Consumer Discretionary Sector Index or the S&P General Industry Classification Consumer Staples Sector Index, had a higher performance in 2022 according to the market data?","['market_data.sp5ecod', 'market_data.sp5ecst']",8024
+"How much is the value of all the assets owned by Intel, including current assets, long term receivables, investments in unconsolidated subsidiaries, other investments, net property plant and equipment, and other assets?",['stock_data.total_assets'],749
+"Is the current trend of the stock market benchmark index, STANDARD & POORS 500 COMPOSITE, going up or down?",['market_data.s&pcomp'],417
+How does the performance of the communications sector (represented by the S&P General Industry Classification COMMUNICATIONS SERVICES SECTOR Index) compare to the overall stock market (represented by the STANDARD & POORS 500 COMPOSITE -stock market benchmark index)?,"['market_data.sp5etel', 'market_data.s&pcomp']",2090
+Is Johnson & Johnson's projected earnings per share higher or lower than its book value per share at the end of the last calendar quarter?,"['stock_data.eps_12m_forward', 'stock_data.book_value_per_share']",2790
+"What is the difference between Chevron's total interest income and total interest expense, and how does it compare to their overall obligations?","['stock_data.net_interest_income', 'stock_data.total_liabilities']",9338
+How can I calculate the enterprise value of my farm using the given formula?,['stock_data.enterprise_value'],2426
+When will Microsoft pay its dividend and what is its overall value?,"['stock_data.date_ex_dividend', 'stock_data.enterprise_value']",7477
+How does T-Mobile US's market value compare to its operating income?,"['stock_data.operating_income', 'stock_data.market_capitalization']",3096
+Are there any tools or resources available that can help me identify stocks that are currently popular or widely discussed on social media platforms?,['external_data_source'],5014
+What percentage of AMD's revenue is spent on research and development?,"['stock_data.cogs', 'stock_data.research_and_development']",5773
+What factors should I consider when deciding whether to invest in Bitcoin?,['external_data_source'],4995
+Are there any available tools or resources that can provide me with information about potential events or news that could affect a company's stock price?,['external_data_source'],1857
+What are the five most important updates about Tesla in terms of its business and financial performance?,['news_data'],339
+"Which sector, according to the S&P General Industry Classification, has performed better: the Financials sector or the Industrials sector?","['market_data.sp5efin', 'market_data.sp5eind']",93
+When was the last time Chevron made a payment for cash income dividends?,['stock_data.date_ex_dividend'],1363
+Does Mastercard have a large amount of obligations that need to be paid within a year?,['stock_data.total_liabilities'],2843
+What percentage of the revenue generated by Philip Morris comes from the direct costs incurred in producing or acquiring the goods they sell?,['stock_data.cogs'],6986
+Which company's long term debt is greater than the value of its inventory?,"['stock_data.inventories_days_held', 'stock_data.long_term_debt']",4162
+What were the direct costs incurred in producing or acquiring the goods that Tesla sold last quarter?,['stock_data.cogs'],853
+What is the lowest price of Nvidia's stock achieved today and what industry does Nvidia operate in?,"['stock_data.general_industry_classification', 'stock_data.price_intraday_low']",6100
+Is there any recent information about Amazon's entry into different industries or sectors?,['news_data'],3835
+What are the latest 5 updates about Tesla?,['news_data'],1569
+"What are the earnings per share for Walt Disney in the last 12 months, based on their actual financial results?",['stock_data.eps_12m_trailing'],7210
+Which sector index represents the utilities sector?,"['market_data.sp5ecod', 'market_data.sp5eutl']",58
+"How does the ISM Purchasing Managers Index (MFG Survey) impact the performance of companies in the Information Technology sector, as represented by the S&P General Industry Classification Information Technology Sector Index (sp5eint)?","['economic_indicators.ism_mfg', 'market_data.sp5eint']",41
+Has the CPI for all urban items experienced any fluctuations this month?,['economic_indicators.cpi_1'],8202
+What is the most recent ISM Manufacturing Index for the month in the United States?,['economic_indicators.ism_mfg'],532
+What is the anticipated annual dividend per share of Cisco and how does it compare to the current share price?,"['stock_data.nonoperating_interest_income', 'stock_data.dividend_yield']",8901
+Are there any buzz or buzzwords about a possible market crash or economic downturn circulating in the finance world?,['external_data_source'],635
+"Which sector had a higher performance yesterday, the index for the Real Estate sector or the index for the Communication Services sector?","['market_data.sp5er11', 'market_data.sp5etel']",8016
+What is the ratio of Oracle's price to its earnings per share relative to its operating income?,"['stock_data.operating_income', 'stock_data.price_earnings_ratio']",3928
+Are there any user-friendly tools that can show me which stocks are popular on social media right now?,['external_data_source'],1896
+How does UnitedHealth's earnings per share compare to their research and development expenses?,"['stock_data.eps_12m_trailing', 'stock_data.research_and_development']",977
+What is the percentage of Mastercard's non-operating interest income in relation to its current stock price?,"['stock_data.price', 'stock_data.nonoperating_interest_income']",886
+How does the ISM purchasing managers index for manufacturing compare to last month?,['economic_indicators.ism_mfg'],1833
+What is the latest buzz in the tech community regarding the performance of S&P 500 and the Financials Sector Index?,['external_data_source'],8418
+"What were the main financial topics discussed in the news about Tesla yesterday, excluding information from the general internet and social media?","['news_data', 'external_data_source']",589
+Have there been any online conversations or discussions on social media platforms about a company's recent launch of a new product?,['external_data_source'],6550
+What sources are available to get updates and information about Intuit that are easy to understand and don't use complicated financial language?,['news_data'],2269
+"Which sector had a higher performance last month, the one related to consumer goods or the one related to raw materials?","['market_data.sp5ecst', 'market_data.sp5emat']",247
+What was the consumer confidence index in 1985 and how is it calculated?,['economic_indicators.consumer_confidence'],1712
+What are the projected earnings for Home Depot in the next twelve months and what is its market value?,"['stock_data.eps_12m_forward', 'stock_data.market_capitalization']",3038
+"What are the expenses related to the creation and development of new processes, techniques, applications, and products with commercial possibilities for Adobe, and what are the direct costs incurred in producing or acquiring the goods that Adobe sells to generate revenue?","['stock_data.research_and_development', 'stock_data.cogs']",1480
+Are there any upcoming mergers or acquisitions in the finance industry that are being talked about on the internet or social media?,['external_data_source'],1890
+What's the distinction between T-Mobile US's cost of producing or acquiring goods and the net income earned from interest?,"['stock_data.cogs', 'stock_data.net_interest_income']",1005
+How do the S&P 500 Consumer Discretionary Sector Index and the ISM Manufacturing Index compare to each other?,"['market_data.sp5ecod', 'economic_indicators.ism_mfg']",4868
+How does the ISM manufacturing index correlate with the performance of the consumer discretionary sector?,"['economic_indicators.ism_mfg', 'market_data.sp5ecod']",3256
+Which company's long term debt is greater than the value obtained by dividing 365 by the Cost of Goods Sold (excluding Depreciation) divided by the average of last year's and current year's inventories?,"['stock_data.inventories_days_held', 'stock_data.long_term_debt']",2603
+How does the performance of the Real Estate sector index relate to the overall Gross Domestic Product (GDP) of the United States?,"['economic_indicators.gdp_1', 'market_data.sp5er11']",85
+How does the number of employees at AMD affect its total obligations that need to be paid off by the company?,"['stock_data.employees', 'stock_data.total_liabilities']",3006
+Can you give me any recent articles from reliable sources about Apple?,['news_data'],5409
+How does the performance of the communications services sector compare to the overall stock market represented by the S&P 500 Composite index?,"['market_data.sp5etel', 'market_data.s&pcomp']",193
+What was Cisco's price-to-earnings ratio when its stock reached its highest price of the day?,"['stock_data.price_intraday_high', 'stock_data.price_earnings_ratio']",2522
+"Which company has a higher ratio of Enterprise Value to Cost of Goods Sold, Coca-Cola or PepsiCo?","['stock_data.enterprise_value', 'stock_data.cogs']",1139
+How does Home Depot's inventory management compare to that of other companies in terms of how long they hold their inventories?,['stock_data.inventories_days_held'],1018
+"What is the theoretical growth in value of Bank of America shares over a specified period, assuming dividends are reinvested?",['stock_data.total_return_index'],7016
+How does IBM's SG&A expenses compare to its average inventories value over the past year?,"['stock_data.inventories_days_held', 'stock_data.selling_general_and_administrative_expenses']",874
+How does Home Depot's debt compare to its expenses in producing or acquiring goods?,"['stock_data.total_liabilities', 'stock_data.cogs']",9127
+What articles have come out recently about Home Depot in the news?,['news_data'],6915
+How does the cash and other assets that Boeing reasonably expects to be realized in cash within one year or one operating cycle compare to the highest price it achieved on the trading day?,"['stock_data.current_assets_total', 'stock_data.price_intraday_high']",4203
+How does the Conference Board Leading Economic Indicators Index correlate with the Institute for Supply Management Purchasing Managers Index for manufacturing?,"['economic_indicators.leading_index', 'economic_indicators.ism_mfg']",286
+What is the difference between Philip Morris' EBITDA and the lowest price the stock reached today?,"['stock_data.price_intraday_low', 'stock_data.ebitda']",1030
+What was the peak trading price of Intel's stock today and what is their earnings per share for the past year?,"['stock_data.price_intraday_high', 'stock_data.eps_12m_trailing']",4368
+"How does the Consumer Confidence Index, based on consumers' perceptions of current business and employment conditions, measure their expectations for future business conditions, employment, and income?",['economic_indicators.consumer_confidence'],432
+"What is the proportion of Salesforce's expenses that are not directly related to production but instead are associated with selling, general, and administrative functions?","['stock_data.operating_expenses_total', 'stock_data.selling_general_and_administrative_expenses']",1102
+What are some tools or platforms that can provide insights on social media trends and discussions about trending stocks?,['external_data_source'],3434
+"How much money did General Electric make from its operations in the past 12 months, and how much did it earn per share during that time?","['stock_data.operating_income', 'stock_data.eps_12m_trailing']",7313
+What is the percentage of the dividend per share in relation to the share price for Merck?,['stock_data.dividend_yield'],993
+What are the current trends in the stock market and financial sector that could affect my retirement savings?,['external_data_source'],6547
+How does the S&P 500 Consumer Discretionary Sector Index compare to the ISM Manufacturing Index in terms of the current month's changes compared to the previous month?,"['market_data.sp5ecod', 'economic_indicators.ism_mfg']",191
+"Do the financial reports of Exxon Mobil indicate any expenses related to the creation and development of new processes, techniques, applications, and products with commercial possibilities?",['stock_data.research_and_development'],9343
+What is the ex-dividend date for AMD's next cash income dividend payment and how many employees does AMD have?,"['stock_data.date_ex_dividend', 'stock_data.employees']",5688
+How much money does JPMorgan have invested in its business and how many people work for the company?,"['stock_data.total_shareholders_equity', 'stock_data.employees']",5705
+"What is the sentiment towards Tesla in online discussions and social media regarding its impact on the financial market, specifically in relation to the S&P 500 and the Financials Sector Index?",['external_data_source'],3221
+What is the current market value of Nvidia and their total sales/revenues?,"['stock_data.market_capitalization', 'stock_data.net_sales_or_revenues']",9215
+"What is the difference between the earnings of Costco before interest, taxes, depreciation, and amortization (EBITDA) and the difference between sales and total operating expenses (operating income)?","['stock_data.ebitda', 'stock_data.operating_income']",6070
+How much did Tesla spend on producing or acquiring the goods they sold last quarter?,['stock_data.cogs'],7089
+What is the percentage return on dividends for each share of Netflix?,['stock_data.dividend_yield'],2721
+What is the percentage of the S&P 500 that is made up of the information technology sector?,"['market_data.sp5eint', 'market_data.s&pcomp']",1777
+How many employees did Chevron have on the day it reached its highest trading price?,"['stock_data.employees', 'stock_data.price_intraday_high']",2326
+What was the intraday low price of Salesforce today?,['stock_data.price_intraday_low'],3950
+"What is the amount of T-Mobile US's long-term debt, which includes all interest-bearing financial obligations that are due in more than a year?",['stock_data.long_term_debt'],7065
+"How does the performance of the industrials sector in the S&P 500 correlate with the yield of the 10-year US Treasury Government Bond? 
+
+Can we determine if there is a relationship between the S&P General Industry Classification Industrials Sector Index and the yield of the 10-year US Treasury Government Bond?","['market_data.sp5eind', 'economic_indicators.trus10t']",7908
+How does Amazon's cost of goods sold compare to its dividend yield in terms of the direct costs incurred in producing or acquiring goods and the percentage of the dividend per share in relation to the share price?,"['stock_data.cogs', 'stock_data.dividend_yield']",4058
+How does Nike's dividend yield compare to the total value of the company that belongs to the shareholders?,"['stock_data.dividend_yield', 'stock_data.total_shareholders_equity']",2324
+Is Intuit's price divided by its earnings rate per share higher or lower than the average price divided by earnings rate per share in the industry?,['stock_data.price_earnings_ratio'],6017
+What proportion of Intel's total revenue is accounted for by the cost of goods sold?,"['stock_data.cogs', 'stock_data.net_sales_or_revenues']",947
+What was the purchasing managers index for manufacturing last month?,['economic_indicators.ism_mfg'],574
+What is the total amount of money that Walmart's shareholders own in the company?,['stock_data.total_shareholders_equity'],2330
+"Which low-priced stocks are currently gaining popularity in the market, excluding data from external sources like the internet and social media, as well as information from the S&P 500 and the Financials Sector Index?",['external_data_source'],8123
+What types of goods and services are included in the Consumer Price Index (CPI)?,['economic_indicators.cpi_1'],1678
+Does Salesforce spend more on research and development or earn more from investments that are not related to their primary business operations?,"['stock_data.research_and_development', 'stock_data.nonoperating_interest_income']",7135
+"What is the projected earnings per share for AMD over the next 12 months, and how much non-operating interest income is expected?","['stock_data.nonoperating_interest_income', 'stock_data.eps_12m_forward']",955
+What was General Electric's net interest income on the most recent date they paid out a cash dividend?,"['stock_data.date_ex_dividend', 'stock_data.net_interest_income']",7357
+How does JPMorgan Chase calculate the number of days it holds its inventories and what is its price-earnings ratio?,"['stock_data.inventories_days_held', 'stock_data.price_earnings_ratio']",7611
+What is the number of days Amazon holds its inventory in relation to their current stock price?,"['stock_data.inventories_days_held', 'stock_data.price']",4153
+"How much cash and other assets does Bank of America expect to realize in cash, sell, or consume within one year or one operating cycle?",['stock_data.current_assets_total'],7006
+How does the ISM Nonmanufacturing Survey Index relate to the S&P Consumer Discretionary Sector Index in terms of the direction and extent of change in the non-manufacturing economy?,"['economic_indicators.ism_nonmfg', 'market_data.sp5ecod']",233
+Is there any recent news in the refinitive database or reuters news warehouse about how tariffs are impacting the automotive industry?,['news_data'],3410
+What are some reliable tools or resources available outside of traditional financial databases and news outlets like Refinitiv or Reuters that can help manage my business's finances effectively?,['external_data_source'],664
+What is the daily performance or rate of return for the S&P General Industry Classification Utilities Sector Index?,['market_data.sp5eutl'],132
+How does T-Mobile US's operating income compare to its market value in terms of its share price and the number of ordinary shares in issue?,"['stock_data.operating_income', 'stock_data.market_capitalization']",1537
+What was the overall reaction or tone of the news regarding PepsiCo in the past week?,['news_data'],8480
+What is the ticker symbol for Walt Disney and what is the total value of their assets that are expected to be realized in cash within one year or one operating cycle?,"['stock_data.ticker_symbol', 'stock_data.current_assets_total']",8977
+Are there any user-friendly tools available to help farmers manage their finances effectively?,['external_data_source'],1867
+Which news articles have been released discussing the recent consolidation between Company A and Company B?,['news_data'],3170
+How much money does AMD spend on research and development compared to the cost of producing or acquiring goods?,"['stock_data.cogs', 'stock_data.research_and_development']",7332
+What is the amount of expenses related to operations and expenses not directly related to production for Coca-Cola?,"['stock_data.operating_expenses_total', 'stock_data.selling_general_and_administrative_expenses']",7461
+How does UnitedHealth's SG&A compare to the value of its assets per share?,"['stock_data.selling_general_and_administrative_expenses', 'stock_data.book_value_per_share']",812
+Are there any tools or resources available online that can provide information on potential news or rumors on social media that could impact the stock prices of specific companies?,['external_data_source'],5320
+How much income does Walt Disney generate from interest bearing investments that are not related to its main business activities?,['stock_data.nonoperating_interest_income'],7768
+What information or updates were reported about Oracle in the news last week?,['news_data'],5369
+Which news articles have been released regarding Bank of America's recent activities and financial performance?,['news_data'],3831
+How many people are employed by Intel and what is their total financial value?,"['stock_data.employees', 'stock_data.enterprise_value']",7431
+"Are there any recent changes in regulations or government policies that could have an impact on the financial industry, such as the S&P 500 or the Financials Sector Index?",['external_data_source'],299
+"According to the General Industry Classification Standard (GICS), which sector does Proctor & Gamble belong to?",['stock_data.general_industry_classification'],7225
+How does the confidence level of consumers relate to the rate of unemployment?,"['economic_indicators.consumer_confidence', 'economic_indicators.unemployment_rate']",2108
+"What are some reliable tools or resources available online that can provide insights or predictions on Tesla's future performance, excluding social media and general internet sources?",['external_data_source'],5344
+Does AMD have more money coming in from interest than going out in interest?,['stock_data.net_interest_income'],2673
+Is there any buzz or speculation regarding a potential market crash or economic downturn based on external data sources such as the internet and social media?,['external_data_source'],3753
+"Does Home Depot have a significant amount of assets that can be turned into cash, sold, or used up within one year?",['stock_data.current_assets_total'],2883
+How does Pfizer's market value compare to its total assets?,"['stock_data.total_assets', 'stock_data.market_capitalization']",920
+"In terms of inventory management, what is the timeframe in which Philip Morris sells its inventory?",['stock_data.inventories_days_held'],4282
+Is there any buzz in the financial community about a potential new product release from a specific company?,['external_data_source'],3431
+Are there any discussions on social media that might affect the value of a company's stock?,['external_data_source'],2201
+"On the most recent ex-dividend date, what was the difference between General Electric's total interest income and total interest expense?","['stock_data.date_ex_dividend', 'stock_data.net_interest_income']",2680
+"How does Mastercard's earnings per share compare to its total liabilities over the past 12 months, based on published accounts of net income?","['stock_data.eps_12m_trailing', 'stock_data.total_liabilities']",823
+Are there any recent news articles about the health care sector as reported in the S&P General Industry Classification Health Care Sector Index?,"['news_data', 'market_data.sp5ehcr']",75
+What is the relationship between the highest price achieved during the trading day for Visa stock and the number of days the company holds its inventories?,"['stock_data.price_intraday_high', 'stock_data.inventories_days_held']",804
+"Which sector had a higher performance yesterday, the Real Estate sector or the Communications Services sector, as indicated by the S&P General Industry Classification index for each?","['market_data.sp5er11', 'market_data.sp5etel']",559
+"What does the term ""EBITDA margin"" mean for IBM?",['stock_data.ebitda'],2662
+What symbol do they use to identify Walmart on the stock exchanges?,['stock_data.ticker_symbol'],7435
+What is the most recent update regarding Chevron as reported in the news?,['news_data'],5309
+"How much is Home Depot's long-term debt, which includes all interest-bearing financial obligations that are due in more than one year and is shown net of premium or discount?",['stock_data.long_term_debt'],2744
+Are there any new rules or policies from the government that could affect the financial industry?,['external_data_source'],2196
+What is the ratio of Chevron's research and development expenses to its current stock price?,"['stock_data.price', 'stock_data.research_and_development']",941
+Does Coca-Cola have more obligations expected to be satisfied by the company or interest bearing financial obligations?,['stock_data.total_liabilities'],4632
+How does the unemployment rate impact the overall cost of goods and services?,"['economic_indicators.unemployment_rate', 'economic_indicators.cpi_1']",154
+How does T-Mobile US's operating income compare to the value of its shares in the market?,"['stock_data.operating_income', 'stock_data.market_capitalization']",6214
+How does the S&P General Industry Classification Energy Sector Index correlate with the unemployment rate in terms of their trends and patterns?,"['market_data.sp5eene', 'economic_indicators.unemployment_rate']",170
+What does the ISM Non-Manufacturing Report On Business measure in terms of the direction and scope of change in the non-manufacturing economy?,['economic_indicators.ism_nonmfg'],259
+Which company's ticker symbol represents a higher non-operating interest income compared to Berkshire Hathaway?,"['stock_data.nonoperating_interest_income', 'stock_data.ticker_symbol']",2476
+"As of the most recent dividend payment date, how many employees does Chevron have?","['stock_data.date_ex_dividend', 'stock_data.employees']",1058
+What was the highest price reached by T-Mobile US during the day of trading?,['stock_data.price_intraday_high'],3072
+What is the proportion of Amazon's total expenses related to operations to its total cash and other assets that can be realized in cash within one year?,"['stock_data.operating_expenses_total', 'stock_data.current_assets_total']",1017
+"Is the STANDARD & POORS 500 COMPOSITE, which is the stock market benchmark index, currently showing an upward or downward trend?",['market_data.s&pcomp'],79
+What were people saying about PepsiCo in the news last week?,['news_data'],685
+How does Bank of America's market value compare to its income generated from non-operating interest investments?,"['stock_data.market_capitalization', 'stock_data.nonoperating_interest_income']",809
+What are the recent articles discussing the updates and developments of Johnson & Johnson?,['news_data'],359
+Has Amazon recently entered into any new industries or markets?,['news_data'],2300
+How does Coca-Cola's net interest income contribute to its overall financial performance in terms of its interest income and interest expense?,['stock_data.net_interest_income'],4472
+"What does the CPI measure and include in its calculations?
+
+The CPI measures the average change in prices over time for goods and services that people buy for day-to-day living. It includes all taxes directly associated with the purchase and use of these items. The CPI uses economic theory, sampling, and statistical techniques, and data from several surveys to produce a timely and precise measure of average price change for the consumption sector of the American economy.",['economic_indicators.cpi_1'],1636
+Is the Consumer Price Index (CPI) for all urban consumers and all items increasing or decreasing?,"['economic_indicators.cpi', 'economic_indicators.cpi_1']",3714
+"Which sector index performed better in 2022, the one related to consumer discretionary or consumer staples?","['market_data.sp5ecod', 'market_data.sp5ecst']",1788
+What is the current index for personal consumption expenditure in the United States?,"['market_data.sp5etel', 'economic_indicators.gdp_price_index']",111
+"Are there any indications of potential illegal trading activities occurring within the financial sector, specifically related to the S&P 500 and Financials Sector Index?",['external_data_source'],3778
+What is the dividend yield of Johnson & Johnson compared to its market value?,"['stock_data.dividend_yield', 'stock_data.market_capitalization']",990
+In what ways does the change in federal fund rates impact the Consumer Price Index (CPI)?,"['economic_indicators.cpi', 'economic_indicators.fed_funds_rate']",225
+"Which sector index performed better in 2022, Consumer Discretionary or Consumer Staples, according to the S&P General Industry Classification?","['market_data.sp5ecod', 'market_data.sp5ecst']",567
+What is the highest price Amazon's stock has reached in a single trading day and how many outstanding shares are currently available?,"['stock_data.price_intraday_high', 'stock_data.common_shares_outstanding']",1542
+What does the GDP (Gross Domestic Product) measure and how is it calculated?,['economic_indicators.gdp_price_index'],1646
+What is the total return index of T-Mobile US over the past 5 years?,['stock_data.total_return_index'],8755
+How does the GDP relate to industrial production in the United States?,"['economic_indicators.gdp_1', 'economic_indicators.industrial_production']",2121
+What is the current performance of the Utilities sector today according to the S&P General Industry Classification Utilities Sector Index?,['market_data.sp5eutl'],1805
+What are the five most recent updates on Tesla's business activities and financial performance?,['news_data'],1
+"What is the EPS for the past 12 months for Cisco, based on their published net income?",['stock_data.eps_12m_trailing'],8625
+"What is the amount of Amazon's EBITDA (Earnings Before Interest, Taxes, Depreciation & Amortization) and how many common shares are outstanding?","['stock_data.ebitda', 'stock_data.common_shares_outstanding']",4367
+Which company has a longer time period for repaying its long-term debt compared to the average number of days its inventory is held?,"['stock_data.inventories_days_held', 'stock_data.long_term_debt']",5721
+How does the cost of producing or acquiring goods impact the amount of money Salesforce makes from selling those goods?,['stock_data.cogs'],7531
+How does the performance of the Consumer Discretionary sector in the stock market relate to the overall economic growth of the United States?,"['market_data.sp5ecod', 'economic_indicators.gdp_1']",4803
+"What is the amount of short and long term obligations expected to be satisfied by Comcast, as reported in the 10-K for U.S. companies?","['stock_data.total_liabilities', 'stock_data.company_name']",4489
+How does the consumer confidence index measure what consumers think about current economic conditions and job opportunities?,['economic_indicators.consumer_confidence'],1653
+"Are there any recent updates or information about the stock market that can be found outside of Refinitiv or Reuters, such as on the internet or social media?",['external_data_source'],8114
+How much higher is Philip Morris' EBITDA compared to the lowest price the stock reached today?,"['stock_data.price_intraday_low', 'stock_data.ebitda']",5707
+How does T-Mobile US's non-operating interest income compare to the highest trading price it reached during the day?,"['stock_data.nonoperating_interest_income', 'stock_data.price_intraday_high']",9074
+"How does the performance of the S&P 500 consumer discretionary sector compare to the real estate sector, as indicated by the market_data.sp5ecod and market_data.sp5er11 indices?","['market_data.sp5er11', 'market_data.sp5ecod']",8077
+How many days does Philip Morris hold its inventories based on the current price and the cost of goods sold? (Rephrased: How long does Philip Morris keep its inventories based on the current price and the cost of goods sold?),"['stock_data.inventories_days_held', 'stock_data.price']",1529
+How does the price to earning ratio of JNJ compare to its cost of goods sold?,"['stock_data.price_earnings_ratio', 'stock_data.cogs']",984
+Has there been any recent buzz or updates about the stock market in terms of external data sources like the general internet and social media?,['external_data_source'],8452
+"What are some buzzworthy rumors circulating in the finance industry regarding potential mergers or acquisitions, considering the information available in external data sources?",['external_data_source'],8126
+Are there any buzz or whispers on the grapevine of social media that could potentially have an impact on the stock prices of specific companies?,['external_data_source'],305
+What does the S&P Utilities Sector Index represent in terms of the S&P General Industry Classification?,['market_data.sp5eutl'],50
+What is the difference between JPMorgan's R&D spending and its shareholders' equity?,"['stock_data.research_and_development', 'stock_data.total_shareholders_equity']",8939
+What is the ratio of current assets to employees at Microsoft?,"['stock_data.employees', 'stock_data.current_assets_total']",1070
+What is the percentage of Visa's dividend payout based on the share price on its ex-dividend date?,"['stock_data.date_ex_dividend', 'stock_data.dividend_yield']",7051
+Is Walt Disney's total expenses related to operations higher than its current stock price?,"['stock_data.operating_expenses_total', 'stock_data.price']",2859
+Are there any online resources or platforms that provide reliable information and analysis on how social media and internet news can potentially impact the stock market?,['external_data_source'],4977
+"What is the EBITDA to total assets ratio for JPMorgan Chase? In other words, what is the ratio between JPMorgan Chase's earnings before interest, taxes, depreciation, and amortization (EBITDA) and its total assets?","['stock_data.ebitda', 'stock_data.total_assets']",9114
+What was the ratio of Microsoft's R&D spending last year to their earnings per share for the past 12 months?,"['stock_data.research_and_development', 'stock_data.eps_12m_trailing']",8955
+What proportion of Apple's current price is allocated towards covering all expenses related to operations?,"['stock_data.price', 'stock_data.operating_expenses_total']",802
+What is the highest price that Apple stock reached today and when is the ex-dividend date for the most recent cash income dividend payment?,"['stock_data.price_intraday_high', 'stock_data.date_ex_dividend']",1414
+What are the latest finance-related articles about Bank of America?,['news_data'],3838
+How has the S&P General Industry Classification Industrials Sector Index been performing lately and is there any recent news regarding this sector?,"['market_data.sp5eind', 'news_data']",6335
+What is the difference in performance between the S&P Industrials Sector Index and the S&P Materials Sector Index?,"['market_data.sp5eind', 'market_data.sp5emat']",152
+How many employees are currently working at Berkshire Hathaway and what is the total amount of debt or other obligations that the company expects to satisfy within one year?,"['stock_data.current_liabilities_total', 'stock_data.employees']",8663
+Did General Electric get any media attention in the past month?,['news_data'],715
+"Can the leading economic index accurately predict future economic activity based on the composite average of various indicators such as average weekly hours, initial claims for unemployment insurance, manufacturers' new orders, and others?",['economic_indicators.leading_index'],463
+How does General Electric's current price compare to its book value per share at the end of the last calendar quarter?,"['stock_data.book_value_per_share', 'stock_data.price']",8797
+What are the latest social media discussions on the potential impact of government regulations on the pharmaceutical industry according to external data sources?,['external_data_source'],8103
+"What costs are associated with the creation and development of new processes, techniques, applications, and products that could be commercially viable for Apple?",['stock_data.research_and_development'],1317
+How has the Consumer Confidence Index changed over the past year?,['economic_indicators.consumer_confidence'],3320
+What is the amount of Visa's gross sales and any interest-bearing financial obligations that are due beyond one year?,"['stock_data.net_sales_or_revenues', 'stock_data.long_term_debt']",2776
+"What does the ISM Non-Manufacturing Report On Business measure?
+
+What does the ISM Non-Manufacturing Report On Business assess?",['economic_indicators.ism_nonmfg'],4936
+How did the S&P General Industry Classification Utilities Sector Index and the S&P General Industry Classification Energy Sector Index perform yesterday?,"['market_data.sp5eutl', 'market_data.sp5eene']",163
+"What is Comcast's general industry classification according to the General Industry Classification Standard (GICS)? Additionally, what is the average number of days that Comcast holds its inventories?","['stock_data.general_industry_classification', 'stock_data.inventories_days_held']",1137
+How does the cost of goods sold for Johnson & Johnson compare to the number of employees it has?,"['stock_data.cogs', 'stock_data.employees']",1278
+How effectively does Microsoft manage its inventory in relation to its cost of goods sold and average inventory levels?,"['stock_data.total_assets', 'stock_data.inventories_days_held']",6045
+Can you provide any recent news articles on how the UK economy has been affected by Brexit?,['news_data'],5308
+Is McDonald's making more money from sales than it is spending on operating expenses?,['stock_data.operating_income'],2823
+Do the total liabilities of General Electric exceed its total operating expenses?,"['stock_data.operating_expenses_total', 'stock_data.total_liabilities']",5555
+What recent information has been published about Philip Morris in news articles?,['news_data'],5402
+"What is the sum of all expenses incurred by Bank of America for its operations, excluding selling, general, and administrative expenses?",['stock_data.operating_expenses_total'],1400
+How does the amount of money Walmart has and the earnings it generates before taxes and other expenses affect the price of its stock?,"['stock_data.ebitda', 'stock_data.total_assets']",7189
+What is the employee count of Intel and how much is their enterprise value?,"['stock_data.employees', 'stock_data.enterprise_value']",8990
+"What are the expenses incurred by Adobe in creating and developing new processes, techniques, applications, and products with commercial possibilities, as well as the direct costs associated with producing or acquiring the goods they sell?","['stock_data.research_and_development', 'stock_data.cogs']",9275
+Do General Electric's total liabilities exceed their operating expenses in terms of financial obligations and operational costs?,"['stock_data.operating_expenses_total', 'stock_data.total_liabilities']",878
+What is the significance of Intuit's operating expenses total in relation to its overall operations?,['stock_data.operating_expenses_total'],4466
+What are some of the most popular low-priced stocks being traded currently that can potentially yield substantial returns?,['external_data_source'],3446
+Does Proctor & Gamble generate income from the interest earned on their investments?,['stock_data.net_interest_income'],7645
+How does the S&P General Industry Classification REAL ESTATE SECTOR Index relate to the Conference Board Leading Economic Indicators Index?,"['market_data.sp5er11', 'economic_indicators.leading_index']",139
+"What is the total amount of obligations, both short and long term, that Walt Disney is expected to satisfy?",['stock_data.total_liabilities'],3053
+Does General Electric make more money from interest income than it spends on interest expenses?,['stock_data.net_interest_income'],1460
+What are some recent developments or updates in the world of cryptocurrencies that could potentially impact the safety and stability of my retirement savings?,['external_data_source'],6885
+What is the most recent ISM Manufacturing Index?,['economic_indicators.ism_mfg'],1753
+Can Comcast's total assets cover its outstanding shares?,"['stock_data.common_shares_outstanding', 'stock_data.total_assets']",7285
+What is the current market value of Boeing's shares?,['stock_data.market_capitalization'],2866
+"Are there any new trends or insights in the finance industry that are not commonly covered by mainstream financial news outlets and are not available in the Refinitiv database or Reuters news warehouse, including the general internet and social media?",['external_data_source'],320
+Are there any updates on the expansion of Amazon in different markets?,['news_data'],717
+Is Netflix earning more money from their interest bearing investments than from their main business activities?,['stock_data.nonoperating_interest_income'],5815
+What is the cumulative cost of all operational expenses incurred by General Electric?,['stock_data.operating_expenses_total'],8589
+What are some of the trending stocks in the financial sector that are being discussed on social media platforms outside of the S&P 500 and the Financials Sector Index?,['external_data_source'],323
+How is the performance of the Real Estate sector compared to the Utilities sector based on the S&P General Industry Classification Index?,"['market_data.sp5er11', 'market_data.sp5eutl']",6520
+What reliable tools are available to help me save for my children's college education in a practical and financially secure way without relying on gimmicks or risky investments?,['external_data_source'],4780
+"How did the performance of the energy sector, as represented by the S&P General Industry Classification Energy Sector Index, fare last year?",['market_data.sp5eene'],434
+"On the ex-dividend date, what are the total obligations that Netflix is expected to satisfy?","['stock_data.total_liabilities', 'stock_data.date_ex_dividend']",7004
+Has the average price of everyday consumer items increased or decreased this month?,['economic_indicators.cpi_1'],1966
+How does Amazon's cost of goods sold relate to the percentage of its dividend per share in comparison to its share price?,"['stock_data.cogs', 'stock_data.dividend_yield']",940
+How can I calculate Verizon's price-earnings ratio using the stock's price and earnings rate per share?,['stock_data.price_earnings_ratio'],2736
+"What are some of the most trending stocks being discussed on social media platforms in the financial sector, excluding the stocks listed in the S&P 500 or the Financials Sector Index?",['external_data_source'],8118
+"How does the number of Johnson & Johnson employees compare to the total amount of cash, receivables, inventories, prepaid expenses, and other current assets that the company has?","['stock_data.employees', 'stock_data.current_assets_total']",1433
+"What are the components that make up JPMorgan Chase's enterprise value calculation, including the market capitalization at the fiscal year end date, preferred stock, minority interest, total debt, and cash?",['stock_data.enterprise_value'],1256
+What is the difference between the revenue generated from Costco's sales and the direct costs associated with producing or acquiring the goods sold?,"['stock_data.cogs', 'stock_data.net_sales_or_revenues']",8650
+"What is the EBITDA for the latest fiscal year, excluding non-operating interest income and net interest income?",['stock_data.ebitda'],1267
+What is the dividend yield of Nike?,"['stock_data.ticker_symbol', 'stock_data.dividend_yield']",2903
+Is there any information available on social media or the internet regarding a company's financial performance or future prospects that is not included in the refinitive database or reuters news warehouse?,['external_data_source'],3421
+What are the recent articles discussing the latest updates on PepsiCo?,['news_data'],5379
+Has there been any recent news about Philip Morris in the refinitive database or reuters news warehouse?,['news_data'],6937
+What portion of Salesforce's current stock price is used to cover its total operating expenses?,"['stock_data.operating_expenses_total', 'stock_data.price']",2606
+Has the cost of living in the United States changed recently?,['economic_indicators.cpi_1'],6292
+"What is the EBITDA of Salesforce, a measure of their earnings before interest, taxes, depreciation, and amortization?",['stock_data.ebitda'],8870
+What is the S&P General Industry Classification for the Communications Services Sector according to the market_data.sp5etel index?,"['market_data.sp5etel', 'external_data_source']",187
+How much of McDonald's current assets are allocated towards research and development expenses?,"['stock_data.research_and_development', 'stock_data.current_assets_total']",3874
+Have there been any recent news articles about Coca-Cola in the past few days?,['news_data'],6942
+What is the most recent finance-related news article about The Walt Disney Company?,['news_data'],3840
+Does Tesla spend more money on research and development expenses than on the direct costs associated with producing or acquiring the goods they sell?,"['stock_data.cogs', 'stock_data.research_and_development']",6109
+What are some sources or platforms I can use to gather information about potential mergers and acquisitions in the financial sector?,['external_data_source'],335
+"When is Philip Morris's next ex-dividend date and what is the projected earnings per share for the next twelve months?
+
+In simpler terms, when is the next date that Philip Morris will be paying out dividends to its shareholders, and what is the estimated earnings per share for the company in the next twelve months?","['stock_data.eps_12m_forward', 'stock_data.date_ex_dividend']",9347
+"What is the current price of Merck's stock, and what is the combined value of preferred stock and common shareholders' equity?","['stock_data.price', 'stock_data.total_shareholders_equity']",1117
+"What is the total amount of money Amazon has made from sales and other revenue, and how much money do the shareholders own in the company?","['stock_data.net_sales_or_revenues', 'stock_data.total_shareholders_equity']",6042
+"What is the total value of Costco's assets that can be converted into cash, sold, or used up within one year or one operating cycle?",['stock_data.current_assets_total'],4583
+How does Tesla's projected earnings per share (EPS) for the next twelve months relate to their research and development (R&D) expenses?,"['stock_data.eps_12m_forward', 'stock_data.research_and_development']",2431
+What are some lesser-known insights or trends in the financial industry that are not commonly discussed by mainstream financial news outlets?,['external_data_source'],6556
+"How has the price index for personal consumption expenditure in the United States changed over time, based on the chaining of indexes and the calculation of Fisher ideal price indices using the weights of adjacent years?",['economic_indicators.gdp_price_index'],399
+What are some buzz in the market regarding potential mergers and acquisitions that cannot be found in the external data source or the S&P 500 and Financials Sector Index?,['external_data_source'],8460
+Is the overall Non-Manufacturing economy expanding or declining based on the Non-Manufacturing ISM Survey Index?,"['economic_indicators.ism_nonmfg', 'market_data.sp5eutl']",54
+What are the latest articles about a particular company in the finance industry?,['news_data'],3585
+Is Walt Disney currently paying a dividend and what is the dividend yield?,['stock_data.dividend_yield'],4625
+What is the sum of all expenses related to operations incurred by Bank of America?,['stock_data.operating_expenses_total'],4518
+How long does Philip Morris typically hold its inventories based on the current price and the cost of goods sold?,"['stock_data.inventories_days_held', 'stock_data.price']",7765
+Can you provide me with any recent news articles about General Electric in the past month from the news_data source?,['news_data'],5386
+What is the total amount of expenses incurred by Bank of America for its day-to-day business operations?,['stock_data.operating_expenses_total'],2959
+"What was the reading of the ISM non-manufacturing survey index in January 2020, indicating the direction of change and scope of change in the non-manufacturing economy?",['economic_indicators.ism_nonmfg'],3366
+Is the price-earnings ratio of Chevron higher or lower than their earnings per share for the past 12 months?,"['stock_data.price_earnings_ratio', 'stock_data.eps_12m_trailing']",1444
+How does Berkshire Hathaway's spending on research and development compare to its gross sales and other operating revenue?,"['stock_data.net_sales_or_revenues', 'stock_data.research_and_development']",1045
+What is the latest information about the S&P500 communications services sector?,"['market_data.sp5etel', 'news_data']",5259
+What is the percentage return on investment from Home Depot's dividends?,['stock_data.dividend_yield'],4420
+What is the value of Adobe's enterprise per outstanding share?,"['stock_data.common_shares_outstanding', 'stock_data.enterprise_value']",903
+What was the GDP when the Materials sector of the S&P 500 performed the best?,"['economic_indicators.gdp_1', 'market_data.sp5emat']",2160
+"Which company in the stock market has a higher value for each share in terms of the equity recorded in the last quarter compared to the total obligations it owes, Comcast or Charter Communications?","['stock_data.book_value_per_share', 'stock_data.total_liabilities']",907
+How much did Tesla spend on the production or acquisition of goods that they sold to generate revenue last quarter?,['stock_data.cogs'],5530
+How does Walt Disney's spending on research and development compare to their total income from operations?,['stock_data.research_and_development'],1515
+"Does Exxon Mobil spend any money on creating and developing new processes, techniques, applications, and products with commercial possibilities?",['stock_data.research_and_development'],3107
+What factors are considered when calculating the GDP?,['economic_indicators.gdp_price_index'],87
+"How has the total return index for Johnson & Johnson's stock performed during the specified time period, taking into account the reinvestment of dividends?",['stock_data.total_return_index'],1173
+What is the projected earnings per share for Philip Morris for the next twelve months and when is their next ex-dividend date?,"['stock_data.eps_12m_forward', 'stock_data.date_ex_dividend']",4670
+"Which company, Bank of America or JPMorgan Chase, has been mentioned more frequently in news articles in the last month according to the news_data?",['news_data'],6950
+What is the latest news update regarding the rise in prices of goods and services?,['news_data'],4
+What did the recent news report about how much money Nvidia made during their latest meeting where they discussed their financial results and outlook?,['news_data'],2258
+How does the total assets and ebitda of Walmart impact its stock price?,"['stock_data.ebitda', 'stock_data.total_assets']",2512
+What is the origin of Mastercard's income generated from interest-bearing investments that are not part of the company's operational activities?,['stock_data.nonoperating_interest_income'],8989
+Has there been any recent financial news about Amazon's expansion into new markets?,['news_data'],3859
+What was the peak trading price reached by Comcast today?,['stock_data.price_intraday_high'],814
+How does the S&P Energy index compare to the S&P Information Technology index?,"['market_data.sp5eint', 'market_data.sp5eene']",5179
+What are the top 5 updates in the Tesla world?,['news_data'],348
+"According to the information provided, which legal name is associated with the ticker symbol NFLX?",['stock_data.company_name'],3980
+How much money is made from the production of goods and services in the United States?,['economic_indicators.gdp_1'],395
+What is Johnson & Johnson's ratio of long-term debt to its market value?,"['stock_data.market_capitalization', 'stock_data.long_term_debt']",7379
+What industry is Netflix categorized in and what is the highest price its stocks reached today?,"['stock_data.general_industry_classification', 'stock_data.price_intraday_high']",793
+"How has the value of my investment in Intuit stock grown over the past year, assuming that I reinvested any dividends received to purchase more shares?",['stock_data.total_return_index'],6204
+What's the latest information available about Salesforce that I can find in the news data?,['news_data'],2288
+"What are the expenses related to selling, general, and administrative functions for Cisco? What is the percentage of dividend per share in relation to the share price for Cisco?","['stock_data.selling_general_and_administrative_expenses', 'stock_data.dividend_yield']",1198
+What does the S&P 500 index represent in the stock market?,['market_data.s&pcomp'],472
+Have there been any news articles written about the recent merger of Company A and Company B that I can access through the news_data?,['news_data'],1611
+"What are the latest updates and trends in the financial sector, specifically related to the S&P 500 and the Financials Sector Index?",['external_data_source'],285
+"What are the total debts or obligations that T-Mobile US expects to pay within one year, and what are their gross sales or total operating revenue?","['stock_data.current_liabilities_total', 'stock_data.net_sales_or_revenues']",3104
+Has there been any information about the recent combination of Disney and Fox in the news?,['news_data'],6869
+How much money does Verizon spend on developing new products and technologies?,['stock_data.research_and_development'],7055
+Can you give me any recent news articles that discuss how Brexit is affecting the UK economy?,['news_data'],293
+What are people saying about Apple on social media?,['external_data_source'],2162
+How does the performance of the Consumer Discretionary sector index correlate with the overall GDP in the United States?,"['market_data.sp5ecod', 'economic_indicators.gdp_1']",126
+What does the Consumer Price Index (CPI) measure and take into account when calculating average price changes over time for consumer items?,['economic_indicators.cpi_1'],6651
+How does JPMorgan Chase's income from investments unrelated to their core business activities compare to their long-term financial obligations?,"['stock_data.nonoperating_interest_income', 'stock_data.long_term_debt']",2996
+How much long-term debt does Walmart owe compared to all of its obligations?,"['stock_data.long_term_debt', 'stock_data.total_liabilities']",2873
+"What is the current stock price of Chevron, based on external data sources such as the general internet and social media?",['external_data_source'],473
+Has there been any recent updates or developments regarding Intuit's purchase of another company?,['news_data'],743
+How does Intel's EBITDA compare to the amount of money they spend on interest and depreciation?,['stock_data.ebitda'],7623
+"How have consumers' perceptions of current business and employment conditions, as well as their expectations for the next six months, been trending?",['economic_indicators.consumer_confidence'],6433
+Are there any updates on Amazon's plans to enter new markets?,['news_data'],741
+Is there any chatter or buzz on social media platforms that could potentially affect the stock price of a specific company?,['external_data_source'],3422
+"How much money does Chevron make from interest, and how does that compare to the amount of money they owe?","['stock_data.net_interest_income', 'stock_data.total_liabilities']",7779
+How does the yield of the 10-year government bond compare to consumer confidence?,"['economic_indicators.trus10t', 'economic_indicators.consumer_confidence']",1785
+How much gross sales and other operating revenue does Boeing generate?,['stock_data.net_sales_or_revenues'],898
+How much news about Apple was reported last week?,['news_data'],6926
+"Which sector had a better performance yesterday in the S&P 500, the consumer staples sector or the financials sector?","['market_data.sp5ecst', 'market_data.sp5efin']",2178
+"Yo, bro! Any updates on what's going down with Amazon lately?",['news_data'],731
+What percentage of Philip Morris' revenue is accounted for by the cost of producing or acquiring goods?,['stock_data.cogs'],750
+"Are there any updates or news about the stock market that I should be aware of, aside from the information available from official financial sources like the S&P 500 and Financials Sector Index?",['external_data_source'],6874
+What is the abbreviation used to identify the company on the stock exchanges where it is listed and has the least amount of current debts that need to be repaid within a year?,"['stock_data.ticker_symbol', 'stock_data.current_liabilities_total']",916
+Is there a correlation between the total return index of Bank of America and its total operating expenses?,"['stock_data.operating_expenses_total', 'stock_data.total_return_index']",4514
+"Which news outlet provides more coverage on Coca-Cola, Reuters or BBC, based on the news_data available in the refinitive database or reuters news warehouse?",['news_data'],8481
+What are the most recent updates regarding Apple's activities and developments in the tech industry?,['news_data'],7795
+How does the S&P General Industry Classification Communications Services Sector Index compare to the current federal funds rate?,"['market_data.sp5etel', 'economic_indicators.fed_funds_rate']",593
+What is the difference between the dividend yield of Nvidia and its lowest price today?,"['stock_data.price_intraday_low', 'stock_data.dividend_yield']",5761
+Are there any popular discussions on social media regarding practical tools for saving for college education?,['external_data_source'],5011
+What is the most recent ex-dividend date for Bank of America?,['stock_data.date_ex_dividend'],2895
+"Which company has a higher earnings per share (EPS) in the past 12 months, Apple or Broadcom?","['stock_data.current_assets_total', 'stock_data.eps_12m_trailing']",841
+"Can the leading economic index, which is a composite average of various indicators such as average weekly hours in manufacturing, average weekly initial claims for unemployment insurance, and stock prices, reliably predict future economic activity?",['economic_indicators.leading_index'],7920
+What is the most recent information on Advanced Micro Devices (AMD)?,['news_data'],8471
+Are there any rumors or speculations circulating online or on social media that could potentially influence the prices of cryptocurrencies?,['external_data_source'],8445
+How do I calculate the Inventories Days Held for my business in Chicago using the formula: Inventories Days Held = 365 / (Cost of Goods Sold (excluding Depreciation) / (Average of Last Year's and Current Year's Inventories))?,['stock_data.inventories_days_held'],1219
+"What is the amount of money spent by Coca-Cola on expenses not directly related to the production process, but instead on functions such as selling, general, and administrative activities?",['stock_data.selling_general_and_administrative_expenses'],4307
+Has there been any recent news about General Electric in the last month from reliable sources like news websites or newspapers?,['news_data'],6975
+What percentage of my business's current liabilities are accounted for by the Cost of Goods Sold (COGS)?,"['stock_data.current_liabilities_total', 'stock_data.cogs']",842
+"Does Exxon Mobil have a higher amount of expenses related to selling, general, and administrative functions or debt and other obligations that the company expects to satisfy within one year?","['stock_data.selling_general_and_administrative_expenses', 'stock_data.current_liabilities_total']",7458
+How does the ISM non-manufacturing survey index relate to the stock market based on the available data?,"['news_data', 'economic_indicators.ism_nonmfg']",4948
+How does the market value of Bank of America compare to its total obligations that are expected to be satisfied by the company?,"['stock_data.market_capitalization', 'stock_data.total_liabilities']",1153
+What are some lesser-known sources or platforms where I can find information and insights about emerging trends or market developments that are not commonly reported by mainstream financial news outlets?,['external_data_source'],4997
+How does PepsiCo's dividend payout compare to its current debts?,"['stock_data.dividend_yield', 'stock_data.current_liabilities_total']",2542
+When is the next date that I can receive cash income dividends from Exxon Mobil?,['stock_data.date_ex_dividend'],3071
+"In simple terms, how much is Cisco worth in terms of its overall value in the local currency?",['stock_data.market_capitalization'],7454
+What does Tesla's EBITDA measure?,['stock_data.ebitda'],4429
+"How much money does UnitedHealth owe in total liabilities, including both short-term and long-term obligations that they are expected to pay off?",['stock_data.total_liabilities'],2853
+"What is the total amount of money Coca-Cola spent on running its operations, and how much did they spend on non-production expenses like selling and administrative functions?","['stock_data.operating_expenses_total', 'stock_data.selling_general_and_administrative_expenses']",2784
+Has Amazon recently paid out any dividends and how much long-term debt does Amazon currently have?,"['stock_data.date_ex_dividend', 'stock_data.long_term_debt']",4658
+Is there any recent news about General Electric in the past month that can be found in the news_data?,['news_data'],8534
+What is the market value of Comcast and how does it compare to its gross sales or revenues?,"['stock_data.market_capitalization', 'stock_data.net_sales_or_revenues']",1379
+Has there been any recent news articles that have mentioned Boeing?,['news_data'],711
+Does Comcast have more expenses related to research and development or short-term debts and other obligations that they expect to satisfy within one year?,"['stock_data.research_and_development', 'stock_data.current_liabilities_total']",1107
+"What is the lowest price at which Exxon Mobil stock is currently trading, and how many days' worth of inventory does the company hold?","['stock_data.price_intraday_low', 'stock_data.inventories_days_held']",1416
+Are there any reliable sources or tools available outside of the refinitive database or reuters news warehouse that can provide information on potential factors that could affect a company's stock price?,['external_data_source'],5313
+What does the CPI measure and include in its calculations for the average change in the prices of goods and services that people buy for day-to-day living?,['economic_indicators.cpi_1'],5092
+"What is the S&P 500 index, and how does it relate to the stock market?",['market_data.s&pcomp'],1693
+How has the personal consumption expenditure price index in the United States changed over the years?,['economic_indicators.gdp_price_index'],61
+How has the performance of the S&P 500 Real Estate Sector Index compared to the S&P 500 Information Technology Sector Index over the past 5 years?,"['market_data.sp5er11', 'market_data.sp5eint']",249
+How much profit has Intel made in the past year based on their net income?,['stock_data.eps_12m_trailing'],7592
+"What were Intuit's earnings per share in the past year, and what is its ticker symbol?","['stock_data.eps_12m_trailing', 'stock_data.ticker_symbol']",3010
+How does Home Depot compare to its peers in terms of efficiency in managing its inventory?,['stock_data.inventories_days_held'],4136
+"Which company has a higher dividend yield and more current assets, T-Mobile US or another company?","['stock_data.current_assets_total', 'stock_data.dividend_yield']",760
+"Which industry has higher net sales, the health care industry or the Proctor & Gamble company?","['stock_data.net_sales_or_revenues', 'stock_data.general_industry_classification']",4268
+What is the total value of Bank of America's shares in the market and what are their current debts and obligations?,"['stock_data.current_liabilities_total', 'stock_data.market_capitalization']",3092
+What is the relationship between the ISM non-manufacturing survey index and news sentiment in terms of managing my business's finances?,"['economic_indicators.ism_nonmfg', 'news_data']",174
+What is the most recent data about industrial production in the United States?,"['economic_indicators.industrial_production', 'news_data']",6743
+What is the most recent CPI reading for all urban consumer items?,['economic_indicators.cpi_1'],8269
+How can I find out the current value of gold without using any stock market or financial data sources?,['external_data_source'],6898
+What is the amount of common equity per share for Berkshire Hathaway at the end of the last quarter?,['stock_data.book_value_per_share'],2780
+What is the number of employees at Coca-Cola and what was the lowest trading price of its stock during the day?,"['stock_data.employees', 'stock_data.price_intraday_low']",1429
+"How does EBITDA help in determining a company's earnings before interest, taxes, depreciation, and amortization?",['stock_data.ebitda'],5988
+What did the latest news report say about how Nvidia's finances are doing?,['news_data'],2246
+"How has the S&P 500 Composite performed in the past year compared to other sector indices such as Financials, Industrials, Materials, and Consumer Staples?","['external_data_source', 'market_data.s&pcomp']",5045
+What are some potential implications or forecasts on Tesla's future performance based on social media discussions and online platforms?,['external_data_source'],3785
+"What are the three most recent updates on Apple's performance in the past week, according to the news_data?",['news_data'],11
+"What is the total revenue earned by Walt Disney, after subtracting discounts, returns, and allowances?",['stock_data.net_sales_or_revenues'],2484
+"How many days, on average, does T-Mobile US hold its inventory before selling it, based on the cost of goods sold and the average inventories from the previous year and the current year?",['stock_data.inventories_days_held'],8941
+Which company has a higher earnings per share for the past 12 months and a lower lowest price achieved on the trading day?,"['stock_data.price_intraday_low', 'stock_data.eps_12m_trailing']",4213
+What recent news articles have been published about Tesla's financial performance and management?,['news_data'],358
+What is the latest headline regarding the rise in consumer prices?,['news_data'],3469
+Which sector in the S&P has the highest correlation with the Consumer Price Index (CPI)?,"['economic_indicators.cpi_1', 'market_data.sp5emat']",6473
+"Which sector, information technology or materials, had a higher performance yesterday based on the S&P General Industry Classification indexes?","['market_data.sp5eint', 'market_data.sp5emat']",1782
+"How has the perception of consumers regarding current business and employment conditions, as well as their expectations for the next six months, changed over the past year based on the Consumer Confidence Index?",['economic_indicators.consumer_confidence'],8335
+Does AMD earn any income from investments that are not related to its main business activities? And what is the total amount of expenses incurred in the company's operations?,"['stock_data.nonoperating_interest_income', 'stock_data.operating_expenses_total']",1439
+"What recent online discussions or blog posts can provide insights into the future outlook of a specific technology company, considering information from sources other than stock/finance data or the S&P 500 and Financials Sector Index?",['external_data_source'],8102
+What is the meaning of GDP?,['economic_indicators.gdp_1'],616
+What is the current market value of Bank of America and how much debt or other obligations does the company expect to satisfy within one year?,"['stock_data.current_liabilities_total', 'stock_data.market_capitalization']",9328
+What is the definition of Tesla's EBITDA?,['stock_data.ebitda'],9106
+"What are the potential drawbacks of solely relying on Refinitiv and Reuters data for analyzing the stock market, without considering external sources like the internet and social media?",['external_data_source'],332
+Is Philip Morris making a profit or a loss from its operations?,['stock_data.operating_income'],1353
+"What is the enterprise value of McDonald's, taking into account its market capitalization, preferred stock, minority interest, total debt, and cash?",['stock_data.enterprise_value'],867
+How many employees did Costco have on the date when the cash income dividend payment was made?,"['stock_data.employees', 'stock_data.date_ex_dividend']",5834
+What are some safe and stable investment options for my retirement savings?,['external_data_source'],6552
+Is there a relationship between the S&P Real Estate Sector Index and the Conference Board Leading Economic Indicators Index?,"['market_data.sp5er11', 'economic_indicators.leading_index']",34
+What are the latest financial updates or developments that may impact my student loans and wealth-building efforts?,['news_data'],3326
+Are there any buzz or talk on social media platforms about a company's financial well-being?,['external_data_source'],309
+"What are the current debts or other obligations that Johnson & Johnson expects to pay off within the next year, as of the most recent ex-dividend date?","['stock_data.current_liabilities_total', 'stock_data.date_ex_dividend']",2415
+What is the operating income of the company with the ticker symbol KO?,"['stock_data.ticker_symbol', 'stock_data.operating_income']",1088
+Are there any recent articles in the news that talk about how tariffs are affecting the car industry?,['news_data'],2189
+How much is the total value of Costco's shares in the market?,['stock_data.market_capitalization'],1516
+What is the relationship between the target federal funds rate and the ISM non-manufacturing survey index?,"['economic_indicators.fed_funds_rate', 'economic_indicators.ism_nonmfg']",2044
+Are there any buzz or speculation about an upcoming product release from a particular company that may impact its stock performance?,['external_data_source'],313
+Are there any reliable sources outside of Refinitiv and Reuters that provide information on potential market rumors or insider trading that could impact a company's stock price?,['external_data_source'],4998
+What are the opinions of financial experts and analysts regarding the stability and safety of Tesla's stock price in relation to the S&P 500 and Financials Sector Index?,['external_data_source'],6910
+"What percentage of the labor force is unemployed in the United States, based on the Current Population Survey conducted by the U.S. Bureau of Labor Statistics?",['economic_indicators.unemployment_rate'],478
+Has there been any recent information or updates about Intuit's purchase of another company that I can find in the news_data?,['news_data'],719
+What is the unique symbol used to identify the company on the stock exchanges?,['stock_data.ticker_symbol'],797
+"How much money does Boeing owe, and how does that compare to the amount of money they have available in cash and other assets that can be quickly turned into cash within the next year?","['stock_data.current_assets_total', 'stock_data.total_liabilities']",5975
+Are there any simple and user-friendly tools available online or on social media that can help me manage my farm's finances?,['external_data_source'],1859
+Are there any unofficial sources or online platforms where I can find information or rumors about a company that may potentially impact its stock price?,['external_data_source'],3777
+"What is the ISM Purchasing Managers Index (MFG Survey) and how is it calculated?
+
+The ISM Purchasing Managers Index (MFG Survey) is a monthly report that provides information on the state of the manufacturing industry in the United States. It is calculated based on data collected from purchasing and supply executives across the country. The survey measures various indicators such as new orders, backlog of orders, production, supplier deliveries, inventories, employment, and prices. The report shows the percentage of respondents reporting positive or negative changes in each indicator, as well as the net difference between the two. The diffusion index is also calculated, which includes the percent of positive responses plus half of those responding the same.",['economic_indicators.ism_mfg'],1627
+Does T-Mobile US generate income from investments not related to its operations? And how long does T-Mobile US hold its inventory on average?,"['stock_data.nonoperating_interest_income', 'stock_data.inventories_days_held']",4372
+What articles about Bank of America have been published in the news?,['news_data'],5390
+What is the latest update regarding T-Mobile in terms of recent events or developments?,['news_data'],8488
+Is the S&P General Industry Classification Health Care Sector Index included in the healthcare sector?,['market_data.sp5ehcr'],1963
+What is the market value of the company that reached the lowest price during the trading day?,"['stock_data.price_intraday_low', 'stock_data.market_capitalization']",3904
+Does Nike earn any income from investments that are not directly related to their operating activities?,['stock_data.nonoperating_interest_income'],5995
+Does Coca-Cola earn money from investments that generate interest income unrelated to its core operations?,['stock_data.nonoperating_interest_income'],4629
+Are the total expenses related to the operations of Costco increasing or decreasing?,['stock_data.operating_expenses_total'],1370
+"What is the projected earnings per share for Home Depot for the next twelve months based on forward projections, and how does it compare to their EBITDA, which represents their earnings before interest, taxes, depreciation, and amortization?","['stock_data.ebitda', 'stock_data.eps_12m_forward']",9018
+Is Salesforce's cost of producing or acquiring goods for sale increasing or decreasing?,['stock_data.cogs'],4231
+Does Coca-Cola have more assets that can be realized in cash within one year than its total obligations that need to be satisfied by the company?,"['stock_data.total_liabilities', 'stock_data.current_assets_total']",1539
+How does Pfizer's total return index compare to its earnings per share for the past 12 months?,"['stock_data.eps_12m_trailing', 'stock_data.total_return_index']",1051
+What recent news article can provide information about tools that can help me save for my children's college education?,['news_data'],4748
+Does Apple earn money from investments that are not part of its main business activities?,['stock_data.nonoperating_interest_income'],5939
+"What is the total worth of Visa's business, taking into account debt and other financial factors?",['stock_data.enterprise_value'],2735
+"In which industry is IBM classified according to the General Industry Classification Standard (GICS), and what is its EBITDA?","['stock_data.ebitda', 'stock_data.general_industry_classification']",8707
+What industry is Walmart classified in and what is its total value?,"['stock_data.general_industry_classification', 'stock_data.enterprise_value']",2452
+How does the federal funds rate affect the performance of the real estate sector?,"['economic_indicators.fed_funds_rate', 'market_data.sp5er11']",3722
+What are the latest updates or important information about Apple that I should know?,['news_data'],6780
+How has the S&P General Industry Classification Industrials Sector Index performed in comparison to other sectors?,['market_data.sp5eind'],130
+What is the comparative performance of Proctor & Gamble stock in terms of its total return index and dividend yield?,"['stock_data.dividend_yield', 'stock_data.total_return_index']",9281
+"Which company, Tesla or Salesforce, has a higher total of current assets?","['stock_data.company_name', 'stock_data.current_assets_total']",932
+"What are the recent developments and updates in the S&P500 communications services sector, specifically related to the telecommunications industry?","['market_data.sp5etel', 'news_data']",8377
+What is the estimated earnings per share for UnitedHealth in the next twelve months and what is the highest price the stock has reached during the trading day?,"['stock_data.eps_12m_forward', 'stock_data.price_intraday_high']",1369
+What is the price-earnings ratio of PepsiCo based on its net sales?,"['stock_data.net_sales_or_revenues', 'stock_data.price_earnings_ratio']",5748
+"What were the key points discussed in Nvidia's most recent earnings call, as reported in the news?",['news_data'],3805
+What is the EBITDA of Salesforce and how is it calculated?,['stock_data.ebitda'],1075
+What is the total amount of Microsoft's short and long term obligations that they need to pay off?,['stock_data.total_liabilities'],6019
+"What is Microsoft's book value per share and how does it compare to its selling, general, and administrative expenses? In other words, how much is each share of Microsoft's common equity worth and how does that compare to the expenses they incur for selling, general, and administrative functions?","['stock_data.selling_general_and_administrative_expenses', 'stock_data.book_value_per_share']",7470
+How does Exxon Mobil's total shareholders' equity compare to the size of their workforce in terms of employees?,"['stock_data.employees', 'stock_data.total_shareholders_equity']",9091
+What are some non-traditional indicators or sources of information that can provide insight into the stock market's unusual trading activity today?,['external_data_source'],3451
+What is the earnings per share for the past 12 months and general industry classification of Berkshire Hathaway?,"['stock_data.eps_12m_trailing', 'stock_data.general_industry_classification']",4521
+Is there any buzz in the tech community about a company's upcoming product release that could potentially impact the performance of the S&P 500 or the Financials Sector Index?,['external_data_source'],8108
+What is the symbol used to identify Pfizer on the stock exchanges and what is the difference between their sales and total operating expenses?,"['stock_data.ticker_symbol', 'stock_data.operating_income']",1376
+How does the GDP price index reflect changes in the overall price level of personal consumption expenditures in the United States over time?,"['economic_indicators.fed_funds_rate', 'economic_indicators.gdp_price_index']",168
+Which month had the lowest level of confidence among consumers in the United States?,"['external_data_source', 'economic_indicators.consumer_confidence']",1820
+What was the total amount of expenses related to operations that Cisco incurred in the last fiscal year?,['stock_data.operating_expenses_total'],4607
+Which sector had a higher performance today: Energy or Industrials?,"['market_data.sp5eene', 'market_data.sp5eind']",181
+What's the most recent update on JPMorgan reported in the news_data?,['news_data'],683
+How much trading activity occurs each day for the S&P Energy Index?,['market_data.sp5eene'],2165
+What are the recent news articles discussing PepsiCo's latest developments and updates?,['news_data'],5403
+"Does Costco's long-term debt cover expenses related to selling, general, and administrative functions?","['stock_data.selling_general_and_administrative_expenses', 'stock_data.long_term_debt']",961
+How does the ratio of employees to $1M of long term debt for PepsiCo compare to other companies?,"['stock_data.long_term_debt', 'stock_data.employees']",1036
+What is the current stock price of Chevron according to a user-friendly online tool or website?,['external_data_source'],2032
+"In the past month, has there been more news coverage about Bank of America or JPMorgan Chase?",['news_data'],2297
+What does Mastercard's non-operating interest income come from?,['stock_data.nonoperating_interest_income'],2753
+Is there a relationship between the ISM non-manufacturing survey index and news sentiment?,"['economic_indicators.ism_nonmfg', 'news_data']",5189
+Which company has the longest average time it takes to sell its inventory?,['stock_data.inventories_days_held'],1079
+How long does Amazon hold their inventory in days based on their current price?,"['stock_data.inventories_days_held', 'stock_data.price']",1035
+What is the total number of shares currently held by shareholders for Microsoft?,['stock_data.common_shares_outstanding'],826
+Are there any online discussions or social media trends that suggest potential rumors or insider information about a company's financial health that could impact its stock price?,['external_data_source'],8112
+How does Comcast's average holding period for inventory compare to the total obligations it has to satisfy?,"['stock_data.inventories_days_held', 'stock_data.total_liabilities']",1446
+What is the Consumer Price Index (CPI) used to measure?,['economic_indicators.cpi'],4837
+What is the most recent information about the company named Apple?,['news_data'],2286
+"Which sector, Communication Services or Real Estate, has a higher return based on the S&P General Industry Classification Index?","['market_data.sp5etel', 'market_data.sp5er11']",199
+"What is the market value of all the goods and services produced by labor and property in the United States, regardless of nationality?",['economic_indicators.gdp_1'],57
+How did the Utilities and Energy sectors do yesterday?,"['market_data.sp5eutl', 'market_data.sp5eene']",2060
+How does the ISM Purchasing Managers Index (MFG Survey) relate to the Gross Domestic Product (GDP) in the United States?,"['economic_indicators.ism_mfg', 'economic_indicators.gdp_1']",3562
+What is the official name of the company that provides stock data for Salesforce?,['stock_data.company_name'],2832
+"What is the most recent date that Berkshire Hathaway paid a cash dividend and what are their earnings before interest, taxes, depreciation, and amortization (EBITDA)?","['stock_data.date_ex_dividend', 'stock_data.ebitda']",2997
+What is the latest trade price or closing value of Bank of America's stock?,['stock_data.price'],781
+How does the S&P Energy Sector Index compare to the unemployment rate in terms of their performance or changes over time?,"['market_data.sp5eene', 'economic_indicators.unemployment_rate']",5185
+How do the S&P General Industry Classification COMMUNICATIONS SERVICES SECTOR Index and the S&P General Industry Classification Consumer Discretionary Sector Index compare in terms of market data?,"['market_data.sp5etel', 'market_data.sp5ecod']",8331
+What is the proportion of debts that are due in the long term compared to the total value of assets owned by Amazon?,"['stock_data.long_term_debt', 'stock_data.total_assets']",1242
+"Based on the market data, which sector had a stronger performance last year, the financials sector or the energy sector?","['market_data.sp5efin', 'market_data.sp5eene']",3615
+How much money did Cisco spend on all its business operations in the last fiscal year?,['stock_data.operating_expenses_total'],1489
+How has the ISM manufacturing index changed compared to the previous month?,['economic_indicators.ism_mfg'],8069
+What is the Gross Domestic Product (GDP) based on?,['economic_indicators.gdp_price_index'],4764
+What is the impact of changes in the federal funds rate on the performance of the real estate sector?,"['economic_indicators.fed_funds_rate', 'market_data.sp5er11']",266
+"Which sector, Consumer Staples or Utilities, had a higher performance according to the S&P General Industry Classification Index?","['market_data.sp5ecst', 'market_data.sp5eutl']",5085
+What is the ticker symbol for Cisco and how much does it owe in current liabilities?,"['stock_data.current_liabilities_total', 'stock_data.ticker_symbol']",2517
+Does Costco have more or less long-term debt than its EBITDA?,"['stock_data.ebitda', 'stock_data.long_term_debt']",7619
+"Are there any peculiar trends in the stock market today that are being discussed on social media, excluding any information from external data sources such as the general internet and social media, as well as the S&P 500 and Financials Sector Index?",['external_data_source'],8129
+Was Apple or Tesla talked about more often in the news in 2020?,['news_data'],1911
+"How many employees does Intel have and what is their total value in terms of assets, debts, and capital?","['stock_data.employees', 'stock_data.enterprise_value']",2754
+Do you have any news articles about helpful tools for managing farm finances?,['news_data'],2275
+Does Proctor & Gamble's operating income exceed or fall short of its price-earnings ratio?,"['stock_data.price_earnings_ratio', 'stock_data.operating_income']",4542
+How does Oracle's non-operating interest income contribute to its overall financial performance and what is its book value per share?,"['stock_data.book_value_per_share', 'stock_data.nonoperating_interest_income']",6196
+"What is the total amount of money that Philip Morris has made from its sales and other operating revenue, after accounting for discounts, returns, and allowances?",['stock_data.net_sales_or_revenues'],5704
+Are there any recent developments or news outside of the refinitive database or reuters news warehouse that could have an impact on the price of gold?,['external_data_source'],3424
+Are there any hot tips or buzz going around the market that might have an impact on a company's stock price?,['external_data_source'],321
+"In technical terms, the Consumer Price Index (CPI) measures the average price change over time for consumer items, including goods and services that people typically purchase for their day-to-day living. The CPI takes into account the quantity and quality of these items, ensuring that only price changes are considered. Additionally, it includes all taxes directly associated with the purchase and use of these items. The CPI is a complex construct that incorporates economic theory, sampling, and statistical techniques, using data from various surveys to provide an accurate and timely measure of average price change in the consumption sector of the American economy. The U.S. Bureau of Labor Statistics releases updated relative importances of components in the CPI every December.",['economic_indicators.cpi_1'],8210
+How much did Amazon spend on the direct costs of producing or acquiring the goods they sell?,"['stock_data.market_capitalization', 'stock_data.cogs']",7777
+What is the latest article about the Walt Disney company that is available in the news_data?,['news_data'],2305
+"Is the amount of cash and other assets that Tesla has in the next year higher in proportion to their selling, general, and administrative expenses compared to other companies in the same industry?","['stock_data.current_assets_total', 'stock_data.selling_general_and_administrative_expenses']",6147
+How many times can the value of Comcast's total assets cover its common shares outstanding?,"['stock_data.common_shares_outstanding', 'stock_data.total_assets']",4167
+Are there any recent online discussions or social media trends that could impact the performance of cryptocurrencies?,['external_data_source'],8105
+Did the S&P Consumer Staples Sector Index perform better than the S&P Utilities Sector Index?,"['market_data.sp5ecst', 'market_data.sp5eutl']",70
+How does Home Depot's dividend yield compare to its P/E ratio in terms of the percentage of the dividend per share in relation to the share price and the price divided by the earnings rate per share?,"['stock_data.price_earnings_ratio', 'stock_data.dividend_yield']",7269
+What was the highest price that Tesla achieved on the trading day when it had the highest net interest income?,"['stock_data.net_interest_income', 'stock_data.price_intraday_high']",999
+"What are the earnings per share for Intuit based on the net income from the past 12 months, and what is the ticker symbol for the company?","['stock_data.eps_12m_trailing', 'stock_data.ticker_symbol']",7687
+"How does Philip Morris' total sales or revenue compare to the amount of discounts, returns, and allowances that they have given out?",['stock_data.net_sales_or_revenues'],3067
+What is the composition of Bank of America's current assets?,['stock_data.current_assets_total'],3888
+How does Oracle's total shareholders' equity compare to its cost of goods sold?,"['stock_data.total_shareholders_equity', 'stock_data.cogs']",4594
+What is the difference between the income earned by Walt Disney from non-operating interest and the total number of shares that are available for trading?,"['stock_data.common_shares_outstanding', 'stock_data.nonoperating_interest_income']",968
+"Are there any tools or resources available that can provide information on unusual trading activity in the stock market today, other than the S&P 500 or Financials Sector Index?",['external_data_source'],5010
+What is the difference between the current price of General Electric's stock and its book value per share at the end of the last calendar quarter?,"['stock_data.book_value_per_share', 'stock_data.price']",1002
+"What is the dividend yield for Intuit and is its net interest income positive or negative? (The dividend yield shows the dividend per share as a percentage of the share price, while the net interest income represents the difference between total interest income and total interest expense.)","['stock_data.dividend_yield', 'stock_data.net_interest_income']",2726
+What is the current price of gold according to the general internet and social media?,['external_data_source'],1883
+"Which sector had better performance in 2020, the Materials sector or the Consumer Staples sector based on the S&P General Industry Classification indexes?","['market_data.sp5emat', 'market_data.sp5ecst']",2114
+Are there any reliable and easy-to-understand tools or resources that can help me keep track of upcoming mergers and acquisitions in the financial sector that are not available through traditional databases or news sources like Reuters?,['external_data_source'],2232
+What are the differences in performance between the S&P General Industry Classification Energy Sector Index and the S&P General Industry Classification Consumer Discretionary Sector Index?,"['market_data.sp5eene', 'market_data.sp5ecod']",137
+What is the total value of Cisco's current assets and how much income did they earn from their non-operating interest investments?,"['stock_data.current_assets_total', 'stock_data.nonoperating_interest_income']",1504
+What is the ticker symbol for Home Depot and how much debt does it have that is not due within one year?,"['stock_data.ticker_symbol', 'stock_data.long_term_debt']",7075
+What are Chevron's earnings per share for the past 12 months and the total value of their current assets?,"['stock_data.eps_12m_trailing', 'stock_data.current_assets_total']",2906
+Are there any buzz or hearsay on social media platforms that might have an impact on a company's stock value?,['external_data_source'],304
+When was the most recent mention of Oracle in the news according to the news_data?,['news_data'],684
+Did the Consumer Staples sector have a higher performance than the S&P 500 index yesterday?,"['market_data.sp5ecst', 'economic_indicators.cpi']",3684
+Are there any rumors or insider information circulating on the internet or social media that could potentially impact the financial health of a company and consequently affect its stock price?,['external_data_source'],8450
+"Are there any non-official sources or public discussions that provide information about a company's financial health, which could affect its stock price?",['external_data_source'],1876
+How much money did Intuit spend on purchasing or producing the goods they sell to make money?,['stock_data.cogs'],2847
+"How much gross sales and other operating revenue does Johnson & Johnson generate, after deducting discounts, returns, and allowances?",['stock_data.net_sales_or_revenues'],9273
+Does McDonald's allocate more resources towards research and development or towards its workforce?,"['stock_data.research_and_development', 'stock_data.employees']",4459
+"How much money did Intuit spend on raw materials, labor, and manufacturing overhead to produce or acquire the goods they sold for revenue?",['stock_data.cogs'],5965
+"Is there any information from external sources, such as the internet or social media, suggesting potential rumors or insider knowledge about a company's financial condition that could impact its stock price?",['external_data_source'],3773
+What is the latest news about the rise in prices for everyday things?,['news_data'],6240
+"What components make up Amazon's total shareholders' equity, including both preferred stock and common shareholders' equity?",['stock_data.total_shareholders_equity'],1224
+What is the 52 week range for the S&P General Industry Classification Materials Sector Index?,['market_data.sp5emat'],8375
+What is the difference between the total value of UnitedHealth's shares in the market and the highest price reached by those shares during the trading day?,"['stock_data.market_capitalization', 'stock_data.price_intraday_high']",888
+Has there been any recent updates or information about Tesla?,['news_data'],1915
+Are there any recent regulatory changes or government policies that could potentially impact the financial industry?,['external_data_source'],3755
+In which general industry classification does T-Mobile US belong according to the General Industry Classification Standard (GICS)?,['stock_data.general_industry_classification'],1092
+What is the combined value of all the different types of assets owned by General Electric?,['stock_data.total_assets'],2633
+What is the relationship between Comcast's enterprise value and the average number of days its inventories are held?,"['stock_data.enterprise_value', 'stock_data.inventories_days_held']",4287
+Are there any social media discussions or online buzz surrounding a particular company that could potentially impact its stock price?,['external_data_source'],8099
+What are some recent online discussions about the financial impact of government regulations on the pharmaceutical industry?,['external_data_source'],646
+What is the amount of T-Mobile US's current liabilities and what is their total revenue from sales?,"['stock_data.current_liabilities_total', 'stock_data.net_sales_or_revenues']",9340
+Is General Electric's total sum of preferred stock and common shareholders' equity higher or lower than the average sum of preferred stock and common shareholders' equity for companies in the industry?,['stock_data.total_shareholders_equity'],7466
+How many shares of Tesla do investors currently hold?,['stock_data.common_shares_outstanding'],2814
+"Is there any recent news or information from external sources that could indicate any significant regulatory changes or government policies that might impact the financial industry, such as cryptocurrencies or digital coins?",['external_data_source'],8432
+Can you provide any recent news articles about the latest advancements and innovations in Apple's technology and products?,['news_data'],8503
+"What is the net interest income of Exxon Mobil, which is the difference between the total interest income and total interest expense of the company?",['stock_data.net_interest_income'],1408
+Does the total return index of Bank of America reflect the impact of its operating expenses?,"['stock_data.operating_expenses_total', 'stock_data.total_return_index']",2955
+Do you have any recent articles about Apple that I can read?,['news_data'],6968
+What was the number of employees at Chevron on the day it reached its highest intraday price?,"['stock_data.employees', 'stock_data.price_intraday_high']",8562
+Are there any rumors or speculations going around that could potentially affect the stock market?,['external_data_source'],6548
+"What are some recent happenings or developments that could have an impact on the value of gold in the near future, considering the available external data sources such as the S&P 500 and the Financials Sector Index?",['external_data_source'],296
+Who is the sole owner of Philip Morris?,"['stock_data.total_shareholders_equity', 'stock_data.company_name']",1010
+How does the number of employees at AMD impact its total financial obligations?,"['stock_data.employees', 'stock_data.total_liabilities']",1447
+What is the most recent information available about Apple from reliable news sources?,['news_data'],5404
+"Are there any hot tips or word on the street that could potentially impact a company's stock price, but are not available in the official financial databases or news outlets?",['external_data_source'],659
+What is the difference between the total current liabilities of Chevron and the highest price the stock reached during the trading day?,"['stock_data.current_liabilities_total', 'stock_data.price_intraday_high']",1116
+How does the total return index for Proctor & Gamble stock compare to its dividend yield?,"['stock_data.dividend_yield', 'stock_data.total_return_index']",3045
+How does Bank of America generate profits from the interest it earns and the interest it pays on its loans?,['stock_data.net_interest_income'],2571
+How does the total value of Berkshire Hathaway's business compare to its current financial obligations?,"['stock_data.enterprise_value', 'stock_data.current_liabilities_total']",1180
+Does Bank of America have any outstanding debts that are not due within the next year?,['stock_data.long_term_debt'],7341
+What was the latest report on the ISM Manufacturing Index?,['economic_indicators.ism_mfg'],5251
+How long does it typically take for Salesforce to sell its inventory?,['stock_data.inventories_days_held'],2710
+"Which company has received more media attention in the past 3 months, Apple or Microsoft, based on the news_data available?",['news_data'],346
+How does the net interest income of Comcast relate to the number of days it holds its inventories?,"['stock_data.net_interest_income', 'stock_data.inventories_days_held']",1304
+What is the difference between the money McDonald's makes from selling its products and the money it makes after subtracting all its expenses?,"['stock_data.operating_income', 'stock_data.net_sales_or_revenues']",2639
+"Which company, Tesla or Nvidia, has a higher ratio of current liabilities to total return index?","['stock_data.total_return_index', 'stock_data.current_liabilities_total']",822
+Is the cost of producing or acquiring the goods that Salesforce sells to generate revenue increasing or decreasing?,['stock_data.cogs'],1113
+Do Exxon Mobil's debts that need to be paid within one year exceed its earnings per share for the past 12 months?,"['stock_data.eps_12m_trailing', 'stock_data.current_liabilities_total']",1200
+"In the past month, based on the news data available in the refinitive database or reuters news warehouse, which company, Bank of America or JPMorgan Chase, has received more news coverage?",['news_data'],3832
+What is the employee-to-earnings ratio for Berkshire Hathaway based on trailing 12-month earnings per share?,"['stock_data.employees', 'stock_data.eps_12m_trailing']",4166
+"How much higher was the return of the Materials sector compared to the Utilities sector in 2022, based on the S&P General Industry Classification Materials Sector Index and the S&P General Industry Classification Utilities Sector Index?","['market_data.sp5emat', 'market_data.sp5eutl']",2101
+"What is the latest trade price of Merck's stock and how much revenue have they generated after deducting discounts, returns, and allowances?","['stock_data.price', 'stock_data.net_sales_or_revenues']",1385
+What is the total amount of money that Oracle's shareholders have invested compared to the cost of producing or acquiring the goods that Oracle sells?,"['stock_data.total_shareholders_equity', 'stock_data.cogs']",3035
+What is the current yield of the 10-year US Treasury Government Bond based on the USA 10-year Government Benchmark bond yield?,['economic_indicators.trus10t'],45
+"What are Walmart's projected earnings per share for the next twelve months and their expenses related to selling, general, and administrative functions?","['stock_data.selling_general_and_administrative_expenses', 'stock_data.eps_12m_forward']",1320
+What was the GDP when the S&P 500 Materials sector had the highest performance?,"['economic_indicators.gdp_1', 'market_data.sp5emat']",263
+Has the average price of goods and services that people buy for day-to-day living increased in the United States?,['economic_indicators.cpi'],1622
+Does Walt Disney provide a regular payout to its shareholders in the form of a dividend?,['stock_data.dividend_yield'],7743
+How many employees does AMD currently have and when is their most recent dividend ex-dividend date?,"['stock_data.date_ex_dividend', 'stock_data.employees']",8806
+What is the current GDP price index in the United States and how does it compare to the index five years ago?,['economic_indicators.gdp_price_index'],8211
+How does Exxon Mobil's lowest trading day price compare to the total value of its assets that can be realized in cash within one year?,"['stock_data.price_intraday_low', 'stock_data.current_assets_total']",1435
+What is the projected earnings per share for Salesforce for the next year based on their projected net income over the next twelve months?,['stock_data.eps_12m_forward'],5472

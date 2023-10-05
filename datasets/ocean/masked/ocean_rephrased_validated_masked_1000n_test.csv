@@ -1,0 +1,1001 @@
+question,expected_fields
+"Oh gosh, I am not sure. Can you give me some news articles about Apple, preferably recent ones?.",['aaj']
+What's going on with Apple?.,['aaj']
+Can you tell me if there have been any recent news articles about Visa?.,['aaj']
+Do you know how long it takes for Salesforce to sell their inventory?,['v']
+"Hey mate, do you know how much money Nike owes right now and how many shares they have out in the open?","['o', 'k']"
+Can you tell me about Comcast's inventory holding period in relation to its total liabilities?.,"['v', 'ag']"
+"Do you think the CPI for all urban items has any connection to the S&P General Industry Classification Consumer Discretionary Sector Index, mate?.","['am', 'aw']"
+Can you believe that Home Depot has more debt than its cost of goods sold? How irresponsible..,"['ag', 'm']"
+"So, in the past month, which company had more news coverage, Bank of America or JPMorgan Chase?.",['aaj']
+"Which sector does the Health Care index belong to in the S&P General Industry Classification? Also, what about the Consumer Staples index, which sector does it belong to?","['ao', 'an']"
+"Seriously, you don't know the ticker symbol for the company with the lowest current liabilities? Get with the program..","['ae', 'o']"
+Can you tell me more about GDP and the Leading Economic Indicators? It seems like they might be related in some way..,"['ax', 'aag']"
+"Look, I don't really care about this, but can you tell me how Merck's EPS compares to its market cap?.","['t', 'h']"
+What's up with Apple these days?,['aaj']
+"Oh gosh, I am not sure. Like, what's the link between the S&P General Industry Classification REAL ESTATE SECTOR Index and the Conference Board Leading Economic Indicators Index?","['ak', 'aag']"
+What are the trends in consumer confidence over time?.,['aad']
+"Can you tell me the P/E ratio of Amazon? I heard their net interest income is negative, mate.","['x', 'f']"
+Do you want to know if there is a connection between the S&P General Industry Classification Information Technology Sector Index and the Consumer Confidence Index?.,"['al', 'aad']"
+Could you tell me about Verizon's non-operating interest income?,['z']
+What was the non-operating interest income for Verizon?.,['z']
+Can you explain how the Consumer Confidence Index is calculated?,['aad']
+Do you happen to know how much Nike spends on operating expenses annually?.,['ab']
+Can you tell me about the composite index? What economic indicators are taken into consideration?.,['aag']
+I am curious about the relationship between the Consumer Discretionary sector and the overall GDP in the United States. Can you provide any insights?.,"['am', 'ax']"
+Could you please tell me the earnings per share for UnitedHealth in the past twelve months?.,['t']
+I'm interested in the recent merger between Disney and Fox. Have you heard any updates about it?.,['aaj']
+"I'm curious, do you know how the GDP price index has changed in the United States over the last five years?.",['aaa']
+Can you give me the ex-dividend date for Verizon's latest 12 month earnings per share?,"['b', 't']"
+"Does Costco have enough long term debt to cover their SG&A expenses, you know?.","['ad', 'w']"
+What's the breakdown between R&D and SG&A expenses for T-Mobile?.,"['ac', 'ad']"
+"Seriously, why are you even asking about Johnson & Johnson's current liabilities as of the most recent ex-dividend date? It's not relevant.","['o', 'b']"
+"Did you hear any recent news about T-Mobile, pal?.",['aaj']
+"Oh God, do I really have to explain this? The ISM Purchasing Managers Index (MFG Survey) is a number that tells you something about manufacturing. And it's calculated by, like, some formula or whatever.",['az']
+"Yeah, oh gosh I am not sure. I mean, how much money does Microsoft make from investments that aren't related to their main business?.",['z']
+Can you tell me the amount of Johnson & Johnson's liabilities on the most recent ex-dividend date?.,"['o', 'b']"
+Can you tell me about unusual trading activity in the stock market today?,['aai']
+"Can you tell me about Intel? Specifically, I'm curious about their number of employees and their enterprise value..","['p', 'r']"
+"Can you help me out pal, what is the market cap of Visa divided by its EBITDA?","['h', 'q']"
+"You're asking about the short term fluctuations of a company's stock price? Sure, there are plenty of factors that could play a role, such as market trends, economic conditions, and company news, right?.",['aai']
+"I was looking at some information on Apple, and I noticed that their dividend yield and inventory days held are related. Would you like to discuss that?.","['v', 'I']"
+"I'm not really sure, but maybe you could search for recent news articles about Apple online? Sorry, I don't have any specific articles to share..",['aaj']
+"I am not sure, err... what is the CPI measuring?.",['aae']
+"Could you tell me about JPMorgan Chase's financials? Specifically, what are their earnings per share for the past year and total shareholders' equity?","['t', 'ah']"
+"When is AMD's next ex-dividend date, mate? Also, how much is their operating income, you know buddy?.","['b', 'aa']"
+Could you tell me how much Nike owes in total liabilities?.,['ag']
+"Hey pal, can you tell me how much Bank of America's shares have grown over a certain time period if we assume that dividends were reinvested?",['c']
+"I just realized, can you tell me how much JPMorgan's EV over Sales ratio is?.","['r', 'y']"
+"I don't know why you would even ask this, but the market value of Salesforce is obviously much higher than its current assets.","['n', 'h']"
+"I'm curious, which company has the largest investment in research and development compared to their dividend yield?.","['I', 'ac']"
+Can you tell me about the GDP and what it is based on?.,['aaa']
+"What the heck is the EBITDA to total assets ratio for JPMorgan Chase? Like, what even is that? Can someone please explain it to me?.","['q', 'af']"
+Could you tell me the difference between JPMorgan's R&D spending and its shareholder's equity?.,"['ac', 'ah']"
+Can you believe that Exxon Mobil's non-operating interest income is way higher than its total shareholder's equity?.,"['z', 'ah']"
+"I'm not sure, but let's see... According to my research, the company is not classified under the S&P Health Care Sector Index, okay?.",['ao']
+"Err... I don't know, maybe something like, what's the buzz about Tesla on social media and online?.",['aai']
+Could you tell me about the comparison between the S&P Energy Sector and Consumer Confidence?,"['aj', 'aad']"
+Could you tell me the P/E ratio of Visa and the total number of common shares that are currently in circulation?.,"['f', 'k']"
+"I'm not entirely sure, but it sounds like you're asking if Home Depot earns money from investments that are not related to its day-to-day operations, is that correct?",['z']
+Could you provide an overview of the performance of the S&P General Industry Classification Industrials Sector Index and any relevant news pertaining to this sector?,"['as', 'aaj']"
+Is CPI for all urban items is correlated with the S&P General Industry Classification Consumer Discretionary Sector Index?,"['am', 'aw']"
+Could you tell me what the current value of Bitcoin is?.,['aai']
+"How does the number of employees at AMD relate to their total liabilities, mate?.","['p', 'ag']"
+"I mean, why is everyone asking about AMD's highest intraday price? Everybody knows that AMD's highest intraday price was obviously damn high.",['e']
+"Which index had a higher value, the S&P Health Care Sector or the S&P Financials Sector?.","['ao', 'aq']"
+Why does everyone think the S&P Energy Sector is better than Consumer Confidence? I don't understand.,"['aj', 'aad']"
+Can you tell me the percentage of AMD's SG&A compared to their trailing twelve month EPS?.,"['t', 'ad']"
+"Could you tell me about Exxon Mobil's net interest income? I understand, you would like to know more about that aspect of the company, right?.",['x']
+Do you happen to know the number of employees at Walt Disney?,['p']
+Can you provide me with Philip Morris's stock ticker and their projected earnings per share for the next 12 months?.,"['ae', 's']"
+What is the purpose of the consumer confidence index and how does it gather information about consumers' views on business and employment conditions?.,['aad']
+Could you tell me about UnitedHealth's current assets and their relationship to the company's days held in inventory?,"['n', 'v']"
+"Can you provide some information on Philip Morris' financial performance? Specifically, how do their net sales or revenues compare to their discounts, returns, and allowances?.",['y']
+"Hey, let's look into this question about Bank of America. Do you think the total return index is connected to their operating expenses?.","['ab', 'c']"
+"Is Apple's market value higher or lower than Costco's market value, you know?.",['h']
+"Have you heard any recent news about Costco, my friend?.",['aaj']
+"Oh God, I don't know. What about the performance of the utilities sector in the S&P 500 yesterday?.",['ar']
+Can you tell me about Comcast's P/E ratio compared to their COGS?.,"['m', 'f']"
+Can you tell me about the relationship between the ISM Nonmanufacturing Survey Index and the S&P Consumer Discretionary Sector Index?.,"['aac', 'am']"
+"Seriously, who doesn't know what the damn daily return of the S&P Industrials is? .",['as']
+"Err... Sorry, I don't know. What is Oracle's EV/Debt ratio?","['w', 'r']"
+"Err... I don't know, I'm just gonna say something. Does the unemployment rate in the real estate sector like, match up with the overall unemployment rate?","['aab', 'ak']"
+"Let's catch up on the latest news, shall we? What are some of the top stories for today?.",['aaj']
+"Ugh, I can't even think right now. When the hell is the ex-dividend date for Costco? And what the hell is their total current liabilities?.","['b', 'o']"
+"I have no clue, but I guess the GDP was high when the S&P 500 Materials sector had their best performance?.","['ax', 'ap']"
+Can you tell me about any potential mergers or acquisitions that are being rumored in the market?,['aai']
+"I'm curious, which company seems to be making headlines today?.",['aaj']
+"Let's compare the net sales of two industries, Health Care and Proctor & Gamble. Which one do you think has a higher net sales?","['y', 'u']"
+Have you heard any gossip about a company's product release in the near future?.,['aai']
+Do you think there are any potential stock price changes for certain companies due to news and rumors on social media?.,['aai']
+Can we really trust the leading economic index to accurately forecast future economic activity?.,['aag']
+"How much debt does Salesforce have in the long term, you know?.",['w']
+Can you tell me about the recent news on PepsiCo? What was the general sentiment surrounding the company in the past week?.,['aaj']
+Do you know the legal name of the company?,['l']
+Can you tell me which S&P sector is most closely tied to the CPI?,"['aw', 'ap']"
+"I see you're interested in Apple. Well, let me see, it seems that the latest news about Apple is...",['aaj']
+Can you tell me the connection between the ISM Nonmanufacturing Survey Index and the Consumer Price Index?.,"['aae', 'aac']"
+Is Apple's stock price fairly priced based on its earnings per share rate? Or is it either overvalued or undervalued?.,['f']
+What are people saying about Apple on social media mate?.,['aai']
+What is the performance of the communications sector compared to the overall market?,"['at', 'au']"
+"I mean, obviously, basically, everybody knows that BAC stands for what company?.",['l']
+Could you explain the contrast between T-Mobile US's cost of goods sold and net interest income?,"['m', 'x']"
+Uh... I'm not sure. What's the price of PepsiCo's stock right now?.,['g']
+"Hey pal, what's the buzz about Johnson & Johnson in the news lately? .",['aaj']
+"What's the deal with consumer confidence in the good ol' USA? How does it stack up against GDP growth rate, you know?.","['aad', 'ax']"
+Can you tell me how many shares of AMD are currently available?,['k']
+"Hey mate, do you know how Netflix's stock has been doing in the past year?",['c']
+Do you know McDonald's ticker symbol and how much they owe right now? .,"['ae', 'o']"
+Can you tell me what's going on with the Real Estate sector index? Is it going up or down?,['ak']
+Uh... I don't know. Can you tell me about any weird stuff happening in the stock market today?,['aai']
+Can you tell me about the relationship between the 10 year treasury bond yield and consumer confidence?.,"['aah', 'aad']"
+Can you tell me the lowest price Netflix reached during the day when it had the highest COGS?.,"['d', 'm']"
+What is the impact of the federal funds target rate on the communications services sector?.,"['ay', 'at']"
+Can you tell me about Intel and what industry it is classified under in the GICS?,['u']
+"Oh gosh yeah, I don't know. How does the financial sector in the S&P 500 index perform?","['aaf', 'aq']"
+"Let's see, last month, did the ISM manufacturing index go up or down?","['aab', 'az']"
+"Let's see, i'm wondering if Coca-Cola's total current assets are more than their total liabilities, do you know?.","['ag', 'n']"
+"Oh gosh I am not sure! Which sector did better today, Energy or Industrials?.","['aj', 'as']"
+What's Mastercard's shareholders' equity compared to other companies in the financial sector?,['ah']
+Can you provide me with the trailing twelve month earnings per share for Intel?.,['t']
+"Have you heard any updates on Tesla lately, mate?.",['aaj']
+"Basically, what is the name of the index that shows the consumer discretionary sector?.","['am', 'ar']"
+Oh gosh I am not sure. How did the energy sector do last year?.,['aj']
+"Which sector had a better performance last year, financials or energy?.","['aq', 'aj']"
+"Ugh, can someone tell me the damn yield of the USA 10-year Government Benchmark bond and how it's going to impact the S&P General Industry Classification Energy Sector Index?","['aj', 'aah']"
+"Seriously, do I really need to explain this? The 5 year performance of the Utilities Sector is obviously what you are asking for. Come on..",['ar']
+"Seriously, do you not already know the freaking latest news on the damn stock market?",['aai']
+what about Pfizer's current liabilities compared to their shareholder's equity?.,"['o', 'ah']"
+"Hey bro, what's the latest buzz on Salesforce? Tell me all about it man! .",['aaj']
+Could you tell me what is Exxon Mobil's total operating expenses?.,['ab']
+How does JNJ's price to earnings ratio stack up against its cost of goods sold?.,"['f', 'm']"
+Can you provide me with information about Mastercard's number of employees and their total liabilities?.,"['ag', 'p']"
+"Let's see, how does the ISM Purchasing Managers Index (MFG Survey) impact the Information Technology sector?.","['az', 'al']"
+"Which sector index has outperformed, the Materials sector or the Consumer Staples sector, you know?.","['ap', 'an']"
+Any potential market factors that could affect stock prices?,['aai']
+Could you possibly give me an estimate of Home Depot's earnings per share for the next twelve months? How does it stack up against their EBITDA?.,"['q', 's']"
+"How much does JPMorgan Chase owe in both short and long term obligations, you know?.",['ag']
+Can you explain the difference between Bank of America's SG&A expenses and book value per share in simpler terms?.,"['ad', 'j']"
+Can you tell me which penny stocks are currently being traded the most?,['aai']
+"I don't know, sorry. Which company had more news coverage in the last 3 months, Apple or Microsoft?.",['aaj']
+Could you tell me more about the impact of the ISM Purchasing Managers Index (MFG Survey) on the Information Technology sector?,"['az', 'al']"
+Oh gosh I am not sure. Mmhm... What all is included in Amazon's SG&A expenses?.,['ad']
+Do you think that the performance of the utilities sector is affected by consumer confidence in the United States?.,"['ar', 'aad']"
+"Which company was the talk of the town in the past week, mate?.",['aaj']
+Could you tell me how much it costs Costco to produce or purchase their goods compared to the number of shares they have outstanding?,"['k', 'm']"
+"In terms of the ISM Nonmanufacturers Survey Index, how does it impact the performance of the S&P General Industry Classification Health Care Sector Index?","['ao', 'aac']"
+"Hey pal, what's the deal with the GDP and the S&P 500 information technology sector? How do they stack up against each other?","['ax', 'al']"
+Could you tell me the number of employees per outstanding share at General Electric?,"['p', 'k']"
+"Can you tell me how many Apple news were there last week, buddy?.",['aaj']
+Can you explain to me how the enterprise value of AMD is calculated?,['r']
+"Oh God, I have no idea what the current liabilities of Johnson & Johnson are. Can you please tell me?.",['o']
+"What are the main differences between the GDP price index and the Consumer Price Index (CPI) in the US, you know?.","['aaa', 'aae']"
+Let's take a look at the correlation between the ISM manufacturing index and the S&P industrials sector index. How do these two factors relate to each other?.,"['az', 'as']"
+Can you tell me the cost of goods sold and total current liabilities for Johnson & Johnson? I would be interested in knowing that information.,"['m', 'o']"
+"Oh gosh, I don't know. Maybe something about JPMorgan Chase's value? Like, what goes into it?.",['r']
+Can you tell me if it is part of the S&P Financials Sector Index or the S&P Energy Sector Index?,"['aq', 'aj']"
+"Do you know how many people work at Proctor & Gamble and how much money they put into research and development, mate?.","['p', 'ac']"
+"it's a well-known fact that Proctor & Gamble doesn't really invest that much money into research and development, right?.",['ac']
+Can you provide any updates or information that may affect the current value of gold?.,['aai']
+"Could you please tell me the earnings per share for the past 12 months of Berkshire Hathaway? Also, what is its general industry classification?.","['t', 'u']"
+"Oh gosh, I don't know. Mmhm... I think there have been some articles about Coca-Cola in the news recently, but I can't remember where I saw them.",['aaj']
+"I'm not familiar with Bank of America, but I can tell you that it operates in the banking industry..",['u']
+Can you please tell me the EV/Debt ratio for Oracle? ,"['w', 'r']"
+"In terms of EBITDA, how does Comcast's total assets stack up?.","['af', 'q']"
+How many days does UnitedHealth hold inventory compared to its current assets friend?.,"['n', 'v']"
+Does Netflix's net interest income have any effect on the cost of goods sold?,"['x', 'm']"
+"I'm not sure, but maybe you should just search for the oil industry news yourself. I don't have time to keep up with that stuff.",['aaj']
+What is the cost of Costco's goods compared to the number of shares they have?.,"['k', 'm']"
+"Last week, there were a bunch of Apple news, you know, friend! How many were there though?",['aaj']
+Can you tell me about the impact of changes in the USA 10-year Government Benchmark bond yield on the performance of the Industrials sector?.,"['as', 'aah']"
+Could you tell me about Microsoft's inventory days? I am curious about how long they hold inventory for..,['v']
+"So, what does the CPI measure and how frequently is it updated, you know mate?.",['aw']
+I'm curious about Apple's dividend yield and inventory days held. Can you tell me how they compare?.,"['v', 'I']"
+what's the yield for the 10-year US Treasury Government Bond at the moment?,['aah']
+Can you tell me how Disney's total return index has changed in the past 5 years in comparison to its operating expenses?,"['ab', 'c']"
+Can you even tell me what the heck the current ISM Purchasing Managers Index is for the United States manufacturing sector? I bet you can't..,['az']
+Could you tell me about Exxon Mobil's non-operating interest income compared to its total shareholder's equity?,"['z', 'ah']"
+"I mean, what is the relationship between ISM Nonmanufacturing Survey Index and GDP?","['ax', 'aac']"
+"Can you give me some updates on Johnson & Johnson? You know, the company, what are some recent news articles about them?.",['aaj']
+"Hey mate, how's the economy doing based on the USA 10-year Government Benchmark bond yield and the total index of industrial production?","['aah', 'aaf']"
+"You want to know about the relationship between the 10 year treasury bond yield and industrial production? Yeah, sure, I can explain that to you, okay?.","['aaf', 'aah']"
+"Seriously, why would anyone want to know the daily return of the S&P General Industry Classification Utilities Sector Index? That's just boring..",['ar']
+Can you tell me some things that may affect a company's stock price in the short run?.,['aai']
+"Are you kidding me, is Nike's total shareholders' equity higher than its operating income? I mean, come on..","['aa', 'ah']"
+"I understand, you want to know about the performance of the overall economy using the USA 10-year Government Benchmark bond yield and the total index of industrial production, right?","['aah', 'aaf']"
+"Can you tell me the difference between Pfizer's market cap and its total assets, in terms of value?.","['af', 'h']"
+Is Pfizer's market value higher than its enterprise value?.,"['r', 'h']"
+When is the last time Microsoft paid out dividends and do they make money from interest that's not related to their operations?.,"['z', 'b']"
+Can you tell me how Adobe's operating income and the lowest trading price for the day are connected?.,"['aa', 'd']"
+"Do you know of any juicy news or updates that could potentially affect the value of gold, my friend?.",['aai']
+"I mean, really, is there even any connection between these two indices? Like, come on, the S&P Real Estate Sector Index and the Conference Board Leading Economic Indicators Index are totally unrelated.","['ak', 'aag']"
+How much money did Costco spend on research and development on the day that their stock price reached its maximum point?.,"['e', 'ac']"
+What's up with Berkshire Hathaway's EBITDA buddy? And does it have any connection to their dividend payment?,"['q', 'b']"
+"On the ex-dividend date, how many employees were working at Costco?","['p', 'b']"
+Can you tell me Bank of America's current assets?.,['n']
+What is the company name used by Johnson & Johnson buddy?.,['l']
+"Let's be real, the leading economic index is not a reliable predictor of future economic activity. It's just a bunch of numbers and statistics that may or may not be accurate.",['aag']
+"I see, so you're wondering which sector had a better performance last week, right? Was it Energy or Consumer Discretionary?","['aj', 'am']"
+Could you tell me about Philip Morris' revenue breakdown? I'm curious about the percentage that comes from COGS..,['m']
+Can you help me find some recent news articles about a specific company? I am looking to stay updated on their latest developments.,['aaj']
+"Ugh, I am not sure. Could you tell me what Nike's expected earnings per share are in the next year and how much debt they have? .","['s', 'w']"
+Oh God oh gosh I don't know. Mmhm... What's going on with Chevron lately?.,['aaj']
+"Uhh... I don't know, maybe something about Nvidia's earnings? It was on the news.",['aaj']
+Can you tell me the difference between Salesforce's EBITDA and SG&A?.,"['q', 'ad']"
+"So mate, you know, what all does CPI include and measure in its calculations?.",['aw']
+"Hey buddy, tell me about the industrial production index and how it connects to the S&P 500 Composite, you know..","['aaf', 'au']"
+"Hey, buddy, can you tell me the top 5 news about Tesla?",['aaj']
+Can you update me on the current state of industrial production?,"['aaf', 'aaj']"
+"Hey buddy, can you tell me the current price of the COMMUNICATIONS SERVICES SECTOR Index?.",['at']
+"Hey buddy, what's the deal with the GDP price index and the 10 year treasury bond yield? How do they stack up against each other?.","['aah', 'aaa']"
+Could you tell me the difference between UnitedHealth's net interest income and its intraday high?.,"['e', 'x']"
+Can you tell me about Walt Disney's income sources? Does it earn more from its operations or from interest?,"['x', 'aa']"
+"Can you tell me about the economic output of the United States? Yeah, I'm curious about the total value of goods and services produced in the country.",['ax']
+"In the last 3 months, have you noticed more news coverage about Apple or Microsoft?.",['aaj']
+"Uh, I don't know. IBM is a company, but I am not sure what their name is.",['l']
+"I don't know, operating income and net sales for Mcdonalds? What's the difference?","['aa', 'y']"
+Can you tell me about the trend of Salesforce's cost of goods sold? Is it on the rise or declining?,['m']
+"Hey friend, have you heard the latest news on Pfizer?",['aaj']
+I can help answer your question about AMD. Do you want information about their current number of employees or their upcoming dividend payment?,"['b', 'p']"
+"Oh God yeah, I don't know. Which company is the most talked about in the news?.",['aaj']
+How does the federal funds rate affect the S&P 500 information technology sector index?.,"['ay', 'al']"
+"Out of all the news articles, which one has the highest number of keywords?.",['aaj']
+Can you tell me which sector has a higher CPI?,"['aw', 'at']"
+Can you tell me more about Amazon's cost of goods sold?.,['m']
+What is the relationship between the GDP price index and the federal funds rate?,"['ay', 'aaa']"
+Could you tell me more about the relationship between the federal funds rate and the S&P 500 information technology sector index?.,"['ay', 'al']"
+Have you heard any rumors or speculations about potential product releases or partnerships that could potentially affect the stock price of Tesla in the future?.,['aai']
+"Oh come on, everyone knows that the information technology sector was the top performer yesterday, not materials.","['al', 'ap']"
+How much does Netflix owe on its ex-dividend date?,"['ag', 'b']"
+Can we trust the leading economic index to accurately forecast future economic activity?.,['aag']
+I don't give a damn about Tesla. Have there been any recent news about it?.,['aaj']
+"How does the unemployment rate like, impact inflation?","['aab', 'aw']"
+Which month had the worst consumer confidence index? .,"['aai', 'aad']"
+"Oh God mmhm... I don't know. The GDP is based on some stuff, I think.",['aaa']
+Did the Consumer Staples sector did better than the S&P 500 yesterday?,"['an', 'aae']"
+"I think I can help you with that. Can you tell me more about Comcast? Ah, you want to know about its market capitalization and how it compares to its net sales or revenues, right?.","['h', 'y']"
+What is the EV/Sales ratio for JPMorgan?,"['r', 'y']"
+Which company is getting the most attention in the news?,['aaj']
+"Yo, what's the difference between JPMorgan's net sales and net interest in terms of revenue, mate?","['y', 'x']"
+"I don't know, I mean... how many days of inventory does Amazon hold compared to their current price?","['v', 'g']"
+Can you tell me the difference between the net sales and cost of goods sold at Costco?,"['m', 'y']"
+"You want to know about General Electric, right? Ok, let's see what news articles have been published about them in the past month, alright?.",['aaj']
+"Ugh, I mean, who even cares about Apple news from the past week? But fine, here are the top 3 stories about them.",['aaj']
+"Can you tell me about T-Mobile US's financial situation? Specifically, how much long term debt do they have?.",['w']
+What is the ratio of Chevron's R&D spending to its current stock price?,"['g', 'ac']"
+What is the correlation between the 10 year treasury bond yield and the performance of the communications services sector?.,"['aah', 'at']"
+"Oh God, I don't know. Mmhm... Which sector has the biggest total return index, I mean?.","['u', 'c']"
+"Can you tell me if Costco's long term debt is enough to cover their SG&A expenses? Sure, I'll look into it for you..","['ad', 'w']"
+Could you tell me more about the components of the Consumer Price Index (CPI)?.,['aw']
+Do you know of any juicy gossip or insider details about a company's financial state that might affect its stock value?.,['aai']
+"Ugh, do I really have to talk about the latest rumors about upcoming Apple products? Fine, I'll tell you what I've heard.",['aai']
+"Hey mate, do you know how much stock Amazon holds compared to their current share price?","['v', 'g']"
+"Err... Could you repeat that? On the trading day, what is the lowest price that Coca-Cola's stock has hit and how many people work at Coca-Cola?.","['d', 'p']"
+"How long does Walmart usually keep their inventories before restocking, you know buddy?",['v']
+Oh gosh I am not sure. Is the total of current assets in Walt Disney higher than its dividend yield?.,"['I', 'n']"
+So what's the latest gossip about a possible crash in the market or a downturn in the economy?,['aai']
+Can you give me an update on the recent news surrounding JPMorgan Chase?.,['aaj']
+"Could you tell me about T-Mobile US's revenue after factoring in discounts, returns, and allowances?.",['y']
+Do you know the current value of the S&P 500 Composite?.,['au']
+"Oh, I don't know. Could you tell me what the market cap of Adobe is?.",['h']
+"Could you tell me the daily trading volume for S&P Energy? I see, you want to know more about the daily trading volume for S&P Energy, right?.",['aj']
+"Last month, did Materials or Consumer Staples have a better performance?.","['an', 'ap']"
+"What makes up JPMorgan Chase's enterprise value calculation, mate?.",['r']
+"Like, is Proctor & Gamble even in the same league as Tesla? I mean, obviously they have way more assets.",['af']
+Can you please tell me what is included in the Cost Of Goods Sold for T-Mobile US?,['m']
+"Let's see, Pfizer... Well, Pfizer is a pharmaceutical company and its projected earnings per share for the next twelve months is not available.","['u', 's']"
+"Which company has been the talk of the town this past week, mate?.",['aaj']
+"Oh God actually, is Costco's operating expenses decreasing or increasing?.",['ab']
+Can you tell me which stocks are currently trending on social media? I'm looking for the most popular ones that people are talking about..,['aai']
+Can you tell me about the relationship between the S&P General Industry Classification REAL ESTATE SECTOR Index and the Conference Board Leading Economic Indicators Index?.,"['ak', 'aag']"
+Do you know what the EBITDA for Nike was in their last fiscal year?.,['q']
+Does Netflix's net interest income affect how much they spend on goods?.,"['x', 'm']"
+"Obviously, the performance of the Industrials sector has been greatly impacted by the fluctuations in the USA 10-year Government Benchmark bond yield. What a surprise..","['as', 'aah']"
+Have you heard any recent updates about Tesla?,['aaj']
+"Could you tell me what are the most recent updates on Apple in the past week, perhaps the top 3?.",['aaj']
+Could you tell me about the ISM non-manufacturing survey index in January 2020?.,['aac']
+"I don't know, like who is getting the most news attention today?.",['aaj']
+"I see, so I want to know if consumer confidence increased or decreased between December 2022 and January 2023, right?.",['aad']
+Could you tell me the difference between Cisco's total liabilities and its 12 month trailing EPS?.,"['ag', 't']"
+Could you tell me the number of days Visa holds their inventories and the total amount of equity owned by shareholders mate?,"['v', 'ah']"
+"Which sector has been rocking lately, the financials or the information technology sector?.","['aq', 'al']"
+I am not sure about Verizon's financial information. But I can try to find it for you. Give me a moment.,"['ab', 'o']"
+Can you tell me about General Electric? I am curious to know how many employees they have and what their cost of goods sold was last year..,"['m', 'p']"
+Have you been following the stock market lately? I'm curious to know what people are saying about it on social media.,['aai']
+"Have you seen any news articles about Home Depot, mate?.",['aaj']
+"Hey pal, which sector had a higher index value, was it Materials or Information Technology?.","['ap', 'al']"
+"Yo mate, what was the highest price T-Mobile US reached during the trading day?.",['e']
+"Excuse me, but could you tell me the exact value of the goods and services produced in the United States? I'm not sure what it is.",['ax']
+"Come on, nobody knows anything about any potential product releases from this company. It's just a bunch of rumors and speculation.",['aai']
+"Can you please tell me what the heck is happening with inflation? Like, what is the most recent news headline?.",['aaj']
+What's the current state of the economy with the USA 10-year Government Benchmark bond yield and the total index of industrial production as indicators?,"['aah', 'aaf']"
+"Can you tell me about Walt Disney's financial performance in the past year? Specifically, I am interested in their current assets and earnings per share.","['t', 'n']"
+What's the deal with industrial production in the United States right now?,['aaf']
+"Oh gosh, I am not really sure. Can you specify the period and give more details? I am not really familiar with the stock market and dividends.",['c']
+"Could you tell me about the consumer confidence index in 1985? Sure, I can provide some information on that. The consumer confidence index in 1985 was...",['aad']
+Have you heard any updates on Costco lately?,['aaj']
+I am not sure... does IBM have a higher amount of liabilities compared to their assets?.,['ag']
+"Oh God, I mean, it's so obvious, Costco's operating expenses are obviously decreasing, right? Like, come on.",['ab']
+"Is Salesforce making money or losing money with its operations, you know?.",['aa']
+Can you tell me about the performance of the Utilities and Real Estate sectors in comparison to each other?.,"['ak', 'ar']"
+"Oh come on, it's obvious. The market cap of Walmart is directly correlated to their cost of goods sold. It's like common sense.","['h', 'm']"
+What industry does Bank of America operate in?.,['u']
+What is the impact of the United States GDP on inflation?.,"['ax', 'aae']"
+What the hell is the correlation between the S&P Consumer Discretionary Sector Index and the ISM Nonmanufacturing Survey Index?.,"['aac', 'am']"
+Can you tell me the current highest stock price for Bank of America and how does their non-operating interest income factor into their overall earnings?.,"['e', 'z']"
+"Oh God, I am not sure. Can you tell me what the book value per share is for Oracle and how their non-operating interest income affects their finances?","['j', 'z']"
+"Hey, have you heard anything new about Costco lately?.",['aaj']
+Has there been any recent news coverage on General Electric in the past month?.,['aaj']
+Can you help me with this question? I need to know the total liabilities for Johnson & Johnson..,['ag']
+I am curious about Costco's financials. Do you happen to know if their EBITDA is greater or less than their long-term debt?.,"['q', 'w']"
+"Can you provide me with some information about McDonald's? Like, how many employees do they have, and what is the total value of their current assets?.","['n', 'p']"
+Do you think there might be any rumors or speculations on social media that could potentially affect a company's stock price?.,['aai']
+"Hey buddy, what's the market value of IBM and how much is their dividend payout?.","['h', 'I']"
+Can you give me more information about the Non-Manufacturing economy? I am curious if it is currently experiencing growth or decline.,"['aac', 'ar']"
+"I see, let's take a look. It seems that Consumer Staples outperformed Materials last month.","['an', 'ap']"
+Could you give me updates on Apple?,['aaj']
+"Does anyone even know how much long-term debt McDonald's has? It's crazy, like nobody knows.",['w']
+"Can you tell me the P/E ratio of Amazon? I heard that its net interest income is negative, so I'm curious..","['x', 'f']"
+"Can you tell me more about Apple? I'm interested in the latest news and updates, you see?.",['aaj']
+Berkshire Hathaway's earnings per share in the last 12 months and its general industry classification are what?.,"['t', 'u']"
+Oh gosh I don't know. Can you tell me the difference between Bank of America's net interest income and the lowest price today?.,"['x', 'd']"
+"What is the ticker symbol for Philip Morris and what is its projected earnings per share for the next 12 months, mate?","['ae', 's']"
+Could you tell me about Walmart's cost of goods sold?.,['m']
+"Hey buddy, I was wondering, how does Microsoft handle its inventory compared to its total assets, you know?","['af', 'v']"
+"Could you please tell me what percentage of Boeing's total assets are financed through long term debt? Just curious, you know..","['w', 'af']"
+"I wonder, by how much does Amazon's total liabilities exceed their cost of goods sold?.","['ag', 'm']"
+Explain to me the ISM Purchasing Managers Index for the manufacturing sector and how it is determined..,['az']
+I wonder what the general consensus is on Tesla's stock price. Let's check social media to see what people are saying about it..,['aai']
+Can you tell me the number of employees at the company with the highest book value per share?.,"['j', 'p']"
+"Come on, it's obvious that there is a correlation between Adobe's operating income and the lowest price achieved during the trading day. Can't you see it?","['aa', 'd']"
+Can you tell me what the heck was the highest price for AMD during one day?.,['e']
+"Can you tell me Nvidia's net sales and revenues? Also, what is their market capitalization? .","['h', 'y']"
+"Honestly, I don't know. How does the S&P Energy Sector compare to Consumer Confidence? I'm not really sure about that one.","['aj', 'aad']"
+Could you tell me about the difference between Chevron's current liabilities and their highest stock price for the day?.,"['o', 'e']"
+"What is the sector of Comcast and what is the estimate for their forward 12 month EPS, you know mate?.","['s', 'u']"
+"Let's see, I think there might be some rumors about upcoming Apple products, what do you think?",['aai']
+"Seriously, who doesn't know what expenses are covered under Amazon's SG&A? It's like everyone should know that SG&A includes selling, general, and administrative expenses. Duh..",['ad']
+Can you tell me the ISM manufacturing index for last month?.,['az']
+Do you think there could be a connection between the S&P Real Estate Sector Index and the Conference Board Leading Economic Indicators Index?.,"['ak', 'aag']"
+"Like, seriously, does anyone really care about how Adobe makes money from non-operating interest? I mean, come on. .",['z']
+"Hey bud, do you know if the United States has seen an increase in cost of living lately?",['aae']
+"Can you tell me how JPMorgan Chase's inventory turnover compares to its net sales or revenues, buddy?.","['y', 'v']"
+"I mean, I have no idea. Home Depot... what is that, like a company or something? I don't know, maybe they have some sort of industry classification but I don't know what it is. And a ticker symbol? What does that even mean? Sorry, I'm not very knowledgeable about this stuff..","['u', 'ae']"
+Could you tell me how much all of Costco's assets are worth that can be converted into cash or sold within one year or operating cycle?.,['n']
+"Can you tell me, like, what is the damn PE ratio of Oracle compared to its operating income?.","['aa', 'f']"
+Have you heard anything about Boeing in the news lately buddy?.,['aaj']
+"Can you tell me about Chevron's financials? Specifically, I am interested in their net interest income and how it relates to their total liabilities.","['x', 'ag']"
+Do you know if the S&P Consumer Staples Sector Index performed better than the S&P Utilities Sector Index?,"['an', 'ar']"
+"Hey, you know, on the ex-dividend date, how many employees did Costco have?.","['p', 'b']"
+What are the things that make up leading economic indicators?,['aag']
+"I mean, don't you know the freaking current CPI for all urban areas? .",['aw']
+"Uhm, I am not sure. Can you tell me what was the highest trading price for T-Mobile US?.",['e']
+Can you tell me about the relationship between GDP and industrial production?.,"['ax', 'aaf']"
+Could you tell me about the relationship between the leading economic index and inflation?,"['aae', 'aag']"
+"Can you tell me more about the composite index? Specifically, what economic indicators are taken into consideration?.",['aag']
+"I'm not sure, but perhaps you could tell me more about the relationship between the S&P General Industry Classification Consumer Staples Sector Index and the federal funds rate.","['an', 'ay']"
+"Uh, I don't know, that's a tough one. How does Intuit's book value per share compare to their cost of goods sold?","['j', 'm']"
+"Can you tell me, mate, how many employees there are for each outstanding share at General Electric?.","['p', 'k']"
+"How does the federal funds target rate impact the communications services sector, mate?.","['ay', 'at']"
+Do you know if Salesforce is making money or losing money?,['aa']
+Let's take a look at Walmart. I wonder how their non-operating interest income and number of employees affect their financial performance?.,"['z', 'p']"
+"Oh my God, I am not sure. Which one is more accurate in predicting future economic activity, the ISM Purchasing Managers Index or the Conference Board Leading Economic Indicators Index?.","['az', 'aag']"
+"I don't know, man. How much is PepsiCo's dividend yield compared to its EBITDA?","['q', 'I']"
+"I'm not sure, but it seems like McDonald's may invest more in research and development rather than in its employees. What do you think?.","['ac', 'p']"
+"Have you noticed the cost of living going up in the United States, mate?.",['aae']
+"I don't know, sorry. What is the damn connection between how long Visa is held and the highest price it reached during the day?","['e', 'v']"
+I am interested in learning about the correlation between the Real Estate sector index performance and the Gross Domestic Product of the United States. Can you provide any insights into this topic?.,"['ax', 'ak']"
+"I mean, come on, obviously consumer confidence decreased from December 2022 to January 2023, right? Like, duh.","['ax', 'aad']"
+I'm not even sure why we're comparing the S&P 500 Consumer Discretionary Sector Index to the ISM Manufacturing Index. They're completely different and not really comparable no?,"['am', 'az']"
+"I'm not sure, let me see. On the trading day, what was the lowest price of AMD stocks?.",['d']
+Has there been any recent news coverage about General Electric in the last month?.,['aaj']
+Can you tell me how much money Nike has in the bank and how much they are projected to earn in the next 12 months per share?.,"['n', 's']"
+"Let's take a look at the performance of Materials and Consumer Staples in 2020. Based on my analysis, it seems that Consumer Staples had a better performance than Materials, don't you agree?.","['ap', 'an']"
+Can you tell me about Berkshire Hathaway's EBITDA and how it affects their dividend payments?.,"['q', 'b']"
+What is the EPS for Walt Disney over the last twelve months?.,['t']
+Is there any buzz or talk on social media about the financial stability of a particular company?.,['aai']
+"Hey, do you want to know more about Salesforce? Well, let me tell you the latest news, okay?",['aaj']
+Can you tell me about the S&P General Industry Classification Materials Sector Index? What industry does it represent?.,['ap']
+Do you have any information about the value of the telecommunications sector?,['at']
+"I am not sure, but let me see... According to my data, Microsoft's net interest income is not greater than its operating expenses.","['ab', 'x']"
+How is the Industrials sector doing with all the changes in the USA 10-year Government Benchmark bond yield?.,"['as', 'aah']"
+"In the last year, how have people's beliefs and attitudes about the economy and their purchasing power changed?.",['aad']
+Could you tell me about Nvidia's industry and the lowest stock price it reached today?.,"['u', 'd']"
+I would like to know more about Nvidia. Could you tell me the total assets of the company?.,['af']
+Can you tell me more about Oracle?,['l']
+"Oh gosh, I am not sure. What industry is Netflix in and what was its highest stock price today?","['u', 'e']"
+"I am not sure, but I think the Consumer Price Index in the United States may have changed recently. Do you know the answer to this question?",['aw']
+Is the manufacturing sector in the US expanding or shrinking based on the ISM Purchasing Managers Index?,['az']
+How many workers does General Electric have for each outstanding share?.,"['p', 'k']"
+"Can you provide information about Visa's financial stability? Specifically, I am interested in their current assets and number of employees.","['p', 'n']"
+"Do you know mate, what's the difference between the lowest share price of Exxon Mobil today and the cost of producing goods?.","['d', 'm']"
+Could you provide me with information on Home Depot's projected earnings for the next twelve months and its market capitalization?,"['s', 'h']"
+Could you tell me if there has been any news about Intuit acquiring another company recently?.,['aaj']
+What was the performance of the utilities sector in the S&P 500 yesterday?.,['ar']
+"Hey, have you heard any juicy news or gossip on social media or the internet that could possibly impact the stock market? Just curious, you know!.",['aai']
+"What is the company name that has the ticker NFLX, you know friend?.",['l']
+Could you tell me about the CPI and how often it is updated?.,['aw']
+Could you tell me the GDP of the United States?,['ax']
+Can you give me the latest updates on the telecommunications sector of S&P500?,"['at', 'aaj']"
+Could you tell me about the current state of consumer confidence in the United States and how it relates to the GDP growth rate?,"['aad', 'ax']"
+How much does Microsoft spend on R&D per employee?,"['ac', 'p']"
+"Is T-Mobile US making money from its current assets and revenues, pal?.","['n', 'y']"
+"Oh God yeah, I am not sure. Does Nike make any money from interest that isn't related to their operations?.",['z']
+"Hey, mate, I was wondering if Costco's SG&A expenses are covered by their long term debt, you know?.","['ad', 'w']"
+"Oh God, give me the latest news on the stock market. I need to know what's going on right now..",['aaj']
+Could you provide information on the price to non-operating interest income ratio for Costco?.,"['z', 'g']"
+"Ok, so we want to know the difference between PepsiCo's current assets and their book value per share, right?","['j', 'n']"
+Can you tell me if Salesforce is making a profit or operating at a loss?.,['aa']
+Can you tell me about Nvidia's inventory days held? Is it higher or lower than the industry average?.,['v']
+"Do you know pal, what information has been released about Home Depot in the news?.",['aaj']
+Can you tell me the book value per share of McDonald's compared to the lowest price it reached during the trading day?.,"['j', 'd']"
+You heard anything new about Tesla lately?.,['aaj']
+Can you believe I have to ask this? When the hell is the ex-dividend date for General Electric?.,['b']
+What has been the performance of the S&P 500 Composite in the previous year?,"['aai', 'au']"
+"Hey, let's see if we can find any recent news articles about the health care sector, alright?.",['aaj']
+I was wondering if there are any potential risks to a company's financial stability that could potentially affect its stock price?.,['aai']
+I am wondering if there is any insider trading going on in the stock market. Do you have any information about this?,['aai']
+"Let's see, you want to know about the performance of two stock indexes? Okay, well, it looks like the S&P Consumer Staples Sector Index has outperformed the S&P Utilities Sector Index, right?.","['an', 'ar']"
+"Could you tell me about AMD's operations? Specifically, how many employees do they have and when is their next dividend payment scheduled?.","['b', 'p']"
+"I'm not sure, but let's take a look... According to my research, it seems that Mcdonalds' operating expenses do not include non-operating interest income. Is there anything else you would like to know about their financial details?","['z', 'ab']"
+"Okay, let me think... How much money does Johnson & Johnson make from selling stuff and other stuff they do?.",['y']
+"I'm not sure, but perhaps we can compare GDP to the Leading Economic Indicators to get a better understanding of the overall economic situation. What do you think?","['ax', 'aag']"
+"So, you are interested in consumer confidence over time? Right, let's take a look at how it changes.",['aad']
+"Could you tell me how many employees Netflix has and what their latest stock price is, you know?.","['g', 'p']"
+What is the amount of money that Cisco owes?.,['ag']
+"Can you tell me how profitable Home Depot is compared to its financial obligations? Specifically, how does its earnings per share compare to its total liabilities?.","['t', 'ag']"
+"Well, umm... I am not sure. Could you repeat that? Oh wait, let me try... What percentage of Comcast's overall return comes from interest income that is not directly related to its primary business?.","['c', 'z']"
+"I don't know. I mean, I guess the Utilities and Real Estate sectors are doing something with each other? I have no idea.","['ak', 'ar']"
+"Which index do you think is a better indicator of future economic activity, the ISM Purchasing Managers Index or the Conference Board Leading Economic Indicators Index?.","['az', 'aag']"
+"Clearly, everybody knows that the information technology sector has been doing better lately compared to the financials sector..","['aq', 'al']"
+"Could you tell me the current level of the Industrial Production Index, please?",['aaf']
+"I see, you're wondering if Disney spends more on operating expenses or has more in total assets, right?.","['af', 'ab']"
+Can you tell me about the current trend in industrial production in the United States?,['aaf']
+"Mate, what's the scoop on the oil industry, you know? What are the newest articles about it?.",['aaj']
+How is the performance of the Consumer Discretionary Sector Index at the moment? Is it doing well or poorly?,['am']
+"How do ISM manufacturing index and leading economic indicators relate to each other, you know buddy?.","['aag', 'az']"
+I believe you are asking about the value of the telecommunications sector.,['at']
+Can you tell me about Home Depot's net interest income and how it relates to their inventory management?,"['x', 'v']"
+"I see, I want to know if there is any recent news about Amazon?",['aaj']
+Um... I don't know. What recent news articles are there about Tesla?.,['aaj']
+Can you tell me which sector the S&P General Industry Classification Health Care Sector Index and the S&P General Industry Classification Consumer Staples Sector Index belong to?.,"['ao', 'an']"
+Let's take a look at UnitedHealth. Do you want to know if it has a high price-earnings ratio in comparison to its current liabilities?.,"['f', 'o']"
+Can you tell me about the relationship between the unemployment rate and the leading economic indicators?.,"['aag', 'aab']"
+Which one had the higher value? The S&P General Industry Classification Health Care Sector Index or the S&P General Industry Classification Financials Sector Index?,"['ao', 'aq']"
+"In the S&P 500, which sector did damn better yesterday, information technology or industrials? .","['al', 'as']"
+Is the S&P 500 real estate sector index lower than the ISM manufacturing index?.,"['az', 'ak']"
+How much money has Bank of America spent on its operations in total?.,['ab']
+I want to know if there are any juicy rumors or speculations on social media that could possibly affect the stock price of a company..,['aai']
+"Could you tell me more about Salesforce's operating expenses? Specifically, I am interested in the percentage that is attributed to SG&A. Can you help me out with that?.","['ab', 'ad']"
+"Oh, the federal funds rate and the ISM non-manufacturing survey index? Well, they have a relationship, you know, like they affect each other, you know buddy?","['ay', 'aac']"
+Can you tell me the production cost of JPMorgan's products and how does it compare to their current selling price?,"['m', 'g']"
+How much does Berkshire Hathaway spend on operating expenses for every share of their stock? What is the current stock price?.,"['g', 'ab']"
+"Can you tell me which company spends more on research and development, Proctor & Gamble or Tesla?",['ac']
+Can you tell me how many shares of AMD are currently in circulation?.,['k']
+"Last week, did Real Estate or Utilities have a stronger performance?.","['ak', 'ar']"
+How much is Netflix's total liabilities on its ex-dividend date?,"['ag', 'b']"
+Could you provide me with information about Merck's long term debt and net sales/revenues?.,"['y', 'w']"
+Could you tell me what the current value is for the leading economic indicators index in the United States?.,['aag']
+"I am not sure, but perhaps I’m asking about the current target rate for the federal funds rate in the United States?.","['aag', 'ay']"
+"Hey buddy, how did the energy sector do last year, you know?.",['aj']
+"I mean, come on, you should know that the GDP for the communications services sector is","['ax', 'at']"
+"Oh come on, who doesn't know what's going on with Amazon? Give me a break. .",['aaj']
+"Last year, which sector index performed better, the Financials sector or the Health Care sector?.","['aq', 'ao']"
+Can you tell me the number of employees per $1 of trailing earnings at Berkshire Hathaway?,"['p', 't']"
+Can you tell me about PepsiCo's total assets? ,['af']
+"How much more did the Materials sector return in 2022 compared to the Utilities sector, huh?.","['ap', 'ar']"
+Could you tell me about JPMorgan Chase's enterprise value calculation? What components are involved in it?.,['r']
+Could you tell me the earnings per share for the past year and the total shareholders' equity of JPMorgan Chase?.,"['t', 'ah']"
+I heard there might be some mergers or acquisitions happening in the finance industry. Can you tell me more about them?,['aai']
+Can you tell me how much damn shareholders' equity Merck has?.,['ah']
+Could you tell me what the ISM manufacturing index was last month?.,['az']
+Let's talk about the impact of the federal funds target rate on the communications services sector. How do you think it affects this sector?.,"['ay', 'at']"
+Is there any buzz or gossip going around on social media or the internet about a company's financial status or potential future success?.,['aai']
+"I can't believe you actually want to know how much money Johnson & Johnson is making from all their sales and stuff. Like, who cares? But fine, they probably make a ton of damn revenue from that.",['y']
+"I mean, the consumer discretionary sector, like, how does it do compared to GDP?","['ax', 'am']"
+Is there any recent news about Costco?.,['aaj']
+Can you tell me the dividend yield of Intuit compared to its total assets?.,"['af', 'I']"
+I don't know mate. What is the percentage of Mastercard's operating expense compared to its intraday high?.,"['e', 'ab']"
+"Can you tell me how the ISM Nonmanufacturing Survey Index and GDP are related, friend?","['ax', 'aac']"
+I'm curious about the S&P 500. How do the consumer discretionary and real estate sectors compare?.,"['ak', 'am']"
+Do you want to know about any unique market insights or trends that are not usually covered by mainstream financial news outlets?,['aai']
+"You want to know about the performance of the sectors last week? Sure, did you want to know if Energy or Consumer Discretionary performed better?","['aj', 'am']"
+How expensive is JPMorgan's EV/Sales ratio?.,"['r', 'y']"
+Can you tell me about any recent news regarding JPMorgan Chase?.,['aaj']
+"According to the Bureau of Labor Statistics, what is the current unemployment rate in the United States?.",['aab']
+"So, mate, what's the deal with this ISM non-manufacturing survey index and the stock market, you know?","['aaj', 'aac']"
+Could you tell me about the changes in the GDP price index in the United States over the past five years?,['aaa']
+Can you provide me with the expected earnings per share for General Electric in the next twelve months and also tell me about the performance of the total return index for the company?.,"['s', 'c']"
+How is the Consumer Discretionary Sector Index doing? Is it doing good or bad?,['am']
+"Excuse me, do you know the lowest price Salesforce hit today?.",['d']
+"Can you tell me how the GDP price index has fluctuated in the United States within the last five years, friend?.",['aaa']
+I am curious about Proctor & Gamble. Do you happen to know how many employees they have and how much they invest in research and development?.,"['p', 'ac']"
+Could you tell me how much long-term debt Home Depot has?,['w']
+"Oh God... I don't know. I mean, I am not sure what news was released on the day when consumer confidence was at its lowest..","['aad', 'aaj']"
+"What's the scoop on gold prices in the future, pal? Have you heard of any news or events that might affect it?.",['aai']
+Could you tell me about the most popular stocks on social media right now?.,['aai']
+Let's take a look at Comcast's financials. How do the number of days in their inventory holding period compare to their total liabilities?,"['v', 'ag']"
+Could you tell me when the latest ex-dividend date is for Bank of America?.,['b']
+"Oh God, I have no idea. Like, what's the price of JPMorgan Chase stock right now and, like, is the bank making money?","['x', 'g']"
+"Seriously, you don't know? The ratio of Visa's SG&A to COGS is what everyone talks about. Come on, keep up..","['m', 'ad']"
+Can you tell me what the GDP is based on mate?.,['aaa']
+Let's compare the ISM Non-Manufacturing Survey Index and the Industrial Production Index. How do they measure up?.,"['aac', 'aaf']"
+Could you tell me the overall worth of Bank of America as a company?.,['r']
+What is the debt to EV ratio of Walmart?.,"['w', 'r']"
+"Can you tell me about Walmart's financial performance? I am interested in their projected earnings per share for the next twelve months and their selling, general, and administrative expenses.","['ad', 's']"
+"Like, how is the financial sector doing in the S&P 500 index?.","['aaf', 'aq']"
+"What is the buzz about Apple on social media, mate?.",['aai']
+"Yeah, oh gosh I don't know. Mmhm... I am not sure. How many shares of Philip Morris are available for trading?",['k']
+Do you know how many shares of Bank of America are out there right now?.,['k']
+Could you tell me about Exxon Mobil's lowest intraday price and its total current assets? I'm curious to know how they compare.,"['d', 'n']"
+"Eh, I don't know, based on the news data, what's the connection between the ISM non-manufacturing survey index and the stock market?","['aaj', 'aac']"
+"What the heck does GDP mean, buddy?.",['ax']
+"Oh God, seriously, how the hell does Chevron's current liabilities compare to the lowest price achieved on the trading day? Come on, give me a break..","['d', 'o']"
+Could you fill me in on the latest news about inflation?.,['aaj']
+"You want to know about the impact of Brexit on the UK economy? Sure, let me see if I can find any recent news articles for you, alright?.",['aaj']
+Can you provide me with some recent articles discussing the future outlook of a particular company in the technology industry?.,['aai']
+"Oh gosh, I have no clue. I mean, I don't know what the heck Verizon's non-operating interest income was.",['z']
+Let's take a look at Home Depot's performance in 2022. Did they do well or not?,['c']
+Can you tell me what the highest price of Chevron was today?.,['e']
+"Oh gosh I don't know, let me think... On the ex-dividend date of the most recent dividend payment, what was the amount of Boeing's long term debt?.","['w', 'b']"
+how many news about Apple were there last week?.,['aaj']
+How do Adobe's SG&A expenses impact the total return index of its shares?,"['c', 'ad']"
+"Can you tell me, when is the next ex-dividend date for Intel?.",['b']
+"Oh God, I don't know. Which month was it? Oh, I think it was the one with the lowest consumer confidence index, but I can't remember the name. Sorry..",['aad']
+Can you tell me how much higher the S&P General Industry Classification Communications Services Sector Index is compared to the federal funds rate?.,"['at', 'ay']"
+I am not sure! Is the SG&A of Johnson & Johnson going up or down?.,['ad']
+"Can you tell me the relationship between GDP and industrial production, mate?","['ax', 'aaf']"
+"Basically, I'm not sure, but has there been any changes in the Consumer Price Index (CPI) in the United States lately? .",['aw']
+Could you tell me when the ex-dividend date for Disney is and what the forward 12-month EPS is?.,"['b', 's']"
+"Hey pal, do you know what was the highest stock price of Comcast today? .",['e']
+"Can you tell me what's been happening with Philip Morris in the news lately, friend?.",['aaj']
+How much is Walt Disney investing in research and development in comparison to their total income?.,['ac']
+Can you help me find some information? I am curious about the GDP when the S&P 500 Materials sector had its best performance. Do you have any insights on that?.,"['ax', 'ap']"
+Verizon has a certain number of common shares outstanding. Can you tell me what that number is?.,['k']
+What is the total value of Proctor & Gamble's assets?.,['af']
+Do you know what was Cisco's lowest stock price during the day pal?.,['d']
+Do you want me to answer that? I am not sure but the latest news about Chevron is..,['aaj']
+"Oh gosh, I don't know. Can you tell me what separates Bank of America's operating income from their EBITDA?.","['aa', 'q']"
+Let's take a look at consumer confidence from December 2022 to January 2023. Did it increase or decrease during that time period?,"['ax', 'aad']"
+You want to know about Verizon? How much do they usually spend on research and development?,['ac']
+Do you know what percentage of the S&P 500 is made up of the information technology sector?,"['al', 'au']"
+"I have no idea, man. What is the dividend yield of Johnson & Johnson compared to its market cap?.","['I', 'h']"
+"I see, you're wondering about Netflix. Well, they have a lot of employees, and their latest stock price is quite high, you see?.","['g', 'p']"
+Are there any new updates or current events that may affect the value of gold?.,['aai']
+I'm curious about General Electric's financial situation. Do they make more money from interest income than they pay out in interest expenses?.,['x']
+"Do you think the S&P General Industry Classification Consumer Discretionary Sector Index and the CPI for all urban items are related, buddy?.","['am', 'aw']"
+"I'm not sure, but perhaps we can find out by comparing Comcast's operating income to its total assets.","['aa', 'af']"
+"What industry does Netflix operate in and what was the highest value of their stocks today, mate? .","['u', 'e']"
+I want to figure out the damn difference between General Electric's operating income and EPS for the past 12 months? ,"['aa', 't']"
+"I mean, seriously, does anyone even know how the unemployment rate in the real estate sector compares to the overall unemployment rate? I doubt it.","['aab', 'ak']"
+Can you update me on the current happenings with Apple?.,['aaj']
+"In terms of performance, how does the communications sector compare to the overall market?","['at', 'au']"
+How much money did Bank of America spend on their operations in total?.,['ab']
+Could you please tell me about any news articles discussing the negative effects of tariffs on the automotive sector in the past few months?.,['aaj']
+Can you tell me the ticker symbol of the company with a higher non-operating interest income than Berkshire Hathaway?.,"['z', 'ae']"
+"I am not sure, but like, does the ISM Purchasing Managers Index for manufacturing like, impact the Consumer Staples Sector Index in any way? I don't know.","['az', 'an']"
+Could you find any recent news articles about Costco for me?.,['aaj']
+Can you tell me how the ISM Non-Manufacturing Survey Index and the Industrial Production Index are related?.,"['aac', 'aaf']"
+"Can you tell me about the financial standing of Philip Morris? Specifically, I am looking for information on their long-term debt and how it relates to their cost of goods sold..","['w', 'm']"
+"Which sector performed better in the S&P 500 yesterday, information technology or industrials?.","['al', 'as']"
+I'm curious about the GDP price index in the United States over the last five years. Have you seen any changes?.,['aaa']
+Oh gosh I don't know. Can you tell me what the current price is for Home Depot?.,['g']
+Could you give me some updates on JPMorgan Chase? I am interested to know what news has been reported about the company recently.,['aaj']
+"I'm not sure, but let me look it up for you. It seems that Verizon is in the telecommunications sector and its lowest trading price today was X amount.","['u', 'd']"
+I want to know about T-Mobile US's current assets?,['n']
+Let's take a look at the performance of Materials and Consumer Staples in 2020. Which one do you think did better?,"['ap', 'an']"
+I want to know about AMD's net interest income?,['x']
+Oh God oh gosh I have no idea. Can you tell me what the book value per share of Nike was in the last quarter?.,['j']
+What is the difference between the change in CPI and the change in Industrial Production?.,"['aae', 'aaf']"
+"I am not sure, but you can check fool.com to find Chevron's stock price. Sorry, I am not very knowledgeable in stock prices..",['aai']
+Can you tell me if there are any current trends or online discussions that may have an impact on the stock market?.,['aai']
+"Oh God, I have no idea. What was the consumer confidence index in 1985? I am not very conscientious about keeping track of that kind of information.",['aad']
+Do you have any knowledge about insider trading rumors or information that could potentially impact a company's stock price in the market?.,['aai']
+"Oh God, yeah, I don't know. What is the most recent ISM Manufacturing Index? Is it available for the most recent month?",['az']
+What is Pfizer's operating income?.,['aa']
+"Hey buddy, I was curious, do you know how much money Nvidia makes?",['y']
+"What is the relationship between the S&P General Industry Classification Consumer Staples Sector Index and the federal funds rate, pal?","['an', 'ay']"
+Can you explain to me the difference between the S&P General Industry Classification Energy Sector Index and the S&P General Industry Classification Consumer Discretionary Sector Index? I want to make sure I understand the distinction between these two indexes..,"['aj', 'am']"
+Can you show me any recent news articles about Philip Morris?.,['aaj']
+"What is the market cap of Visa divided by its EBITDA, mate?.","['h', 'q']"
+What companies are in the S&P GICS Information Technology Sector Index?.,['al']
+Do you know if Salesforce earns more from non-operating interest income or spends more on R&D?.,"['ac', 'z']"
+"Hey mate, can you tell me how confident are consumers in the US right now and how does it affect the growth rate of the GDP?","['aad', 'ax']"
+Could you please tell me how Johnson & Johnson's total return index has performed over the specified period?.,['c']
+What news articles have been published about Bank of America?,['aaj']
+"Oh God, I don't know. What was the lowest intraday stock price for Chevron on the day when they made the most interest income from non-operating activities?.","['d', 'z']"
+What is the most recent CPI measurement?.,['aw']
+Could you help me to look up the news coverage for Costco compared to other companies?,['aaj']
+How does the ISM Non-Manufacturing Survey Index and the Industrial Production Index compare?.,"['aac', 'aaf']"
+"Let's see what's happening with Tesla. Hmm, I think I can find the top 5 news on Tesla for you, alright?.",['aaj']
+How does Adobe make money from interest that is not related to their operations pal?.,['z']
+Do you know if there have been any recent developments that could have a significant impact on the stock market overall?.,['aai']
+"Seriously, do you really think Proctor & Gamble puts a significant amount of money towards research and development?.",['ac']
+Can you tell me how the S&P Health Care Sector has been doing?,['ao']
+Can you please give me some recent news articles about that specific company?,['aaj']
+"Do you know if General Electric's total shareholders' equity is higher or lower than the average in their industry, mate?.",['ah']
+"Out of the S&P General Industry Classification Health Care Sector Index and the S&P General Industry Classification Financials Sector Index, which one had a greater value?.","['ao', 'aq']"
+"The Real Estate sector is definitely affected by the yield of the 10-year US Treasury Government Bond, right?.","['ak', 'aah']"
+I am interested in finding out more about JPMorgan Chase. Can you tell me how long they usually hold onto their inventories and what their price-earnings ratio is?.,"['v', 'f']"
+"Oh gosh I don't know mate. Err... Can you tell me what is Microsoft's EBITDA, like minus their SG&A expenses?.","['q', 'ad']"
+"Can you tell me mate, what are the current assets of Bank of America?.",['n']
+"Seriously, who doesn't know about the recent news involving T-Mobile? Can you even be more out of the loop?",['aaj']
+Is General Electric making a profit on their interest income compared to their interest expenses?.,['x']
+"Oh God yeah, I am not sure mate. I mean, I don't know which company has the longest inventory days.",['v']
+"Let’s see which company was mentioned more frequently in the news in 2020, Apple or Tesla?",['aaj']
+Can you tell me about the recent news regarding PepsiCo? What was the overall sentiment surrounding the company in the past week?,['aaj']
+Can you just tell me when the hell the ex-dividend date was for Walt Disney was and what the book value per share is? I don't have time for this..,"['b', 'j']"
+I'm looking at yesterday's performance. Can you tell me if Communication Services or Information Technology had a stronger showing?.,"['at', 'al']"
+"Uh, I don't know, man. Who spends more on research and development, Intuit or Tesla?.",['ac']
+Can you tell me the high price of General Electric today?.,['e']
+"Oh God, oh gosh... I don't know. Can you tell me about any recent news or events that might, you know, like, affect the price of gold in the, um, near future?.",['aaj']
+"Can you tell me the R&D spend of Mastercard in the last quarter, as a percentage of their net sales?.","['ac', 'y']"
+"Oh gosh, I am not sure. Like, what are the estimated earnings per share for Nike in the next year, and also how much debt do they have in the long term?","['s', 'w']"
+"The information technology sector in the S&P 500, what's the weight of that, like, in the index?.","['al', 'au']"
+"Oh gosh I am not sure. Hmm... the fed funds rate, I guess it has some impact on the real estate sector, but I am not really sure how it affects it.","['ay', 'ak']"
+"Oh God I don't know, maybe? Does Coca-Cola make money from investments that earn interest?.",['z']
+"Uh... what was the damn highest price of Intel's stock today and their earnings per share for like, the past year?.","['e', 't']"
+Can you help me find some news articles that talk about both the federal funds rate and mention the economy?.,"['aaj', 'ay']"
+Have there been any recent news articles about General Electric in the past month?,['aaj']
+"Let's see, I'm curious about Exxon Mobil. Well, according to my research, it seems like their total shareholders' equity is larger than the number of employees they have.","['p', 'ah']"
+Can you tell me about the recent performance of the Information Technology and Communication Services sectors?.,"['al', 'at']"
+"Umm, I don't know. How do the GDP price index and the federal funds rate relate to each other?","['ay', 'aaa']"
+"I am not sure, but can you tell me more about Apple's research and development costs? What expenses are included in there?.",['ac']
+"Are you kidding me? It's obvious that IBM's total assets are greater than its market capitalization. I mean, come on, do your research..","['h', 'af']"
+"Can you tell me the ticker for Chevron on the New York Stock Exchange? Also, what is their 12 month trailing EPS?.","['t', 'ae']"
+Could you please provide me with the current stock price of Exxon Mobil and its total liabilities?.,"['o', 'g']"
+"I'm not quite sure, let me see... Ah, on the ex-dividend date, Chevron's operating income was... Hmm, it looks like I don't have that information, sorry about that.","['b', 'aa']"
+Can you tell me the GDP of the communications services sector? I'm curious to know about it.,"['ax', 'at']"
+Umm... I am not sure. Has there been any news about General Electric in the past month?,['aaj']
+"Which one of these, Reuters or BBC, has more news about Coca-Cola?.",['aaj']
+"Oh God, I don't know. Has there been any recent updates on Tesla?",['aaj']
+Can you explain the difference between the total interest income and total interest expense for Comcast?,['x']
+Could you tell me about any recent news articles that have been released regarding Coca-Cola?.,['aaj']
+"Can you tell me about the economic output of the United States? Specifically, what is the value of goods and services produced?.",['ax']
+Did you hear about Nvidia's latest earnings call in the news? I'm curious to know what the reports said about it.,['aaj']
+Can you tell me the GDP for the US?,['ax']
+When was the last time Berkshire Hathaway paid out dividends and what is their EBITDA like?.,"['b', 'q']"
+Can you provide me with some current news articles about PepsiCo?.,['aaj']
+"I have no idea. Ugh, let me see... which company was talked about the most in the past week?.",['aaj']
+Can you tell me about Johnson & Johnson's current liabilities on their ex-dividend date? I am curious to know the amount..,"['o', 'b']"
+"How does consumer confidence compare to the 10 year treasury bond yield, mate?.","['aah', 'aad']"
+"Yo! How does Bank of America's market cap compare to its non-operating interest income, huh?","['h', 'z']"
+"I see... You want to know about the relationship between the CPI and the S&P General Industry Classification Energy Sector Index. Sure, let's take a look.","['aj', 'aw']"
+"Can you tell me about the financial performance of Exxon Mobil? Specifically, how do their operating expenses stack up against their earnings per share over the past year?.","['ab', 't']"
+Oh God I am not sure. What is the link between the S&P 500 Financials Sector Index and the Leading Economic Indicator?.,"['aag', 'aq']"
+Can you tell me AMD's price to sales ratio?.,"['y', 'g']"
+I am not sure. Err... Could you tell me what is the percentage of AMD's SG&A compared to their trailing twelve month EPS?.,"['t', 'ad']"
+How does IBM's SG&A expenses compare to the number of days they hold inventory?.,"['v', 'ad']"
+Err... I am not sure. What are the top 5 news stories about that company Apple?.,['aaj']
+What is IBM's long term debt divided by its trailing twelve month eps?.,"['w', 't']"
+"I see, you want to know about the S&P General Industry Classification and if the healthcare sector is included in it? Is that right?.",['ao']
+"I wonder, did the ISM manufacturing index actually go down or up last month?.",['az']
+What is the connection between the total liabilities of AMD and the number of employees they have?.,"['p', 'ag']"
+Can you tell me the ratio of Mastercard's current assets to their number of employees?.,"['p', 'n']"
+What are the top 5 articles or stories about Apple that are currently being talked about?,['aaj']
+Can you tell me how the energy sector is doing in the stock market right now?.,['aj']
+"What's in the composite index? Like, mate, what economic indicators make it up?.",['aag']
+"Oh God, I can't believe you don't know this. Obviously, the S&P General Industry Classification for Communications Services is a very important thing and you should know it.","['at', 'aai']"
+What's Microsoft's inventory days held?,['v']
+Could you tell me what is listed in Amazon's current assets?.,['n']
+"Let's discuss how Adobe's SG&A expenses may impact the total return index of their shares, shall we?.","['c', 'ad']"
+"Oh God, I don't know. Can you tell me the latest news about Apple?",['aaj']
+Do you have any updates on AMD news mate?.,['aaj']
+How does the news coverage for Costco compare to other companies?.,['aaj']
+"Is the operating expenses of Costco increasing or decreasing, you know mate?.",['ab']
+Can you just tell me how much IBM makes from operating income?.,['aa']
+Is Pfizer's total current liabilities decreasing or increasing?,['o']
+Could you give me the top 3 recent news about Apple? It would be great if you could limit it to the last week.,['aaj']
+Can you tell me about Walmart? I'd like to know which industry they are in and what their enterprise value is..,"['u', 'r']"
+"Hey friend, can you tell me how the Utilities and Energy sectors did yesterday? I'm really curious, you know..","['ar', 'aj']"
+"Oh gosh I am not sure mate. Which one did better yesterday in the S&P 500, information technology or industrials?.","['al', 'as']"
+"Seriously, who even cares about the revenue of T-Mobile US after taking into account all those discounts, returns, and allowances? Can we talk about something more interesting? .",['y']
+Did the ISM manufacturing index and the S&P 500 both move up or down today?.,"['az', 'au']"
+"I'm not familiar with Bank of America's finances, but I can look up the difference between their SG&A expenses and book value per share for you. Give me a moment to gather that information for you.","['ad', 'j']"
+"What is the estimated earnings per share for Walt Disney over the next 12 months, mate?.",['s']
+What is the net interest income for T-Mobile US?.,['x']
+"How does the Materials sector perform in comparison to the Communications Services sector in the S&P index, buddy?.","['ap', 'at']"
+"Oh gosh I don't know, mate. I mean, PepsiCo's projected earnings per share... how does that compare to their net interest income?","['s', 'x']"
+Can you provide information on General Electric's EBITDA?.,['q']
+Do you know if General Electric has higher total liabilities or operating expenses?,"['ab', 'ag']"
+"I see, you want to know about Home Depot and their research and development spending, right?.",['ac']
+Can you tell me about any recent news articles on Philip Morris?.,['aaj']
+Do you know how they calculate the Consumer Confidence Index?,['aad']
+Can you tell me about T-Mobile US's financial performance compared to its market value?.,"['aa', 'h']"
+"Hey buddy, can you tell me which news article has the most keywords?.",['aaj']
+Could you tell me what articles have been written about the merger of Company A and Company B?.,['aaj']
+Can someone tell me the amount of long term debt Merck has and also its net sales or revenues? I don't have all day..,"['y', 'w']"
+I am not sure. Oh God... which news article has the most damn keywords?.,['aaj']
+"Ugh, I don't know. How much money does Bank of America make?",['aa']
+Could you tell me the number of days that Visa holds their inventories for and the total amount of shareholders' equity they have?.,"['v', 'ah']"
+"Can you help me understand the difference between the cost of goods sold and net interest income for T-Mobile US, friend?","['m', 'x']"
+"Oh my God, I can't believe you don't know this already, but what is the freaking non-operating interest income for Walt Disney?.",['z']
+"Can you tell me about AMD? Specifically, when is their next ex-dividend date and what is their current operating income?","['b', 'aa']"
+Could you tell me the current price of Bitcoin?.,['aai']
+I want to know the latest stats on Intel. What was the highest stock price for today and what is their earnings per share for the past year?.,"['e', 't']"
+Let's talk about JPMorgan Chase. How do you think its inventory turnover compares to its net sales or revenues?.,"['y', 'v']"
+"Have you heard anything about General Electric in the last month, mate?.",['aaj']
+What sets apart the S&P 500 Consumer Discretionary Sector Index from the S&P 500 Health Care Sector Index?,"['am', 'ao']"
+Could you tell me what the GDP is for the US?.,['ax']
+Can you tell me about the unemployment rate in the real estate industry compared to the overall rate?,"['aab', 'ak']"
+"How's the 10 year treasury bond yield looking compared to consumer confidence, you know?.","['aah', 'aad']"
+Do you want to know when Oracle was last mentioned in the news?,['aaj']
+Coca Cola has a P/E ratio that is divided by its EPS. Do you know what that is?.,"['f', 't']"
+Can you tell me which company has the highest R&D spending compared to their dividend yield?,"['I', 'ac']"
+"What is the market capitalization of Costco in terms of its worth, you know?.",['h']
+Do you know how long Mastercard holds their inventories on average?.,['v']
+Have you heard anything about Intuit buying another company?,['aaj']
+"I am not sure, let me think. What is the difference between the highest price Verizon reached during the day and their cost of goods sold?","['e', 'm']"
+"Can you tell me, what were Cisco's current liabilities at the time of its most recent dividend payment? I believe this would be on the ex-dividend date..","['b', 'o']"
+Oh gosh I don't know. Could you tell me about the connection between the ISM Nonmanufacturing Survey Index and GDP?.,"['ax', 'aac']"
+"Could you tell me what Nike's EBITDA is for the latest fiscal year, mate? You know, just curious!.",['q']
+"Which index had a better performance in the previous year, the S&P 500 or the S&P General Industry Classification Real Estate Sector Index?.","['au', 'ak']"
+Do you think there is a connection between the S&P General Industry Classification Information Technology Sector Index and the Consumer Confidence Index?.,"['al', 'aad']"
+"Can Philip Morris pay off its long-term debt with its current assets? You know, mate?.","['n', 'w']"
+Could you tell me when Disney's ex-dividend date is and what the forward 12-month EPS is?,"['b', 's']"
+Let's talk about the damn composite index. What kind of economic indicators are even included in it?.,['aag']
+"Come on, everybody knows that the cost of living has definitely increased in the United States.",['aae']
+What's up with Apple these days?,['aaj']
+"Oh God, I don't know about that one. Let me think... Is it about Boeing? Does Boeing have more net interest income or total liabilities? Sorry, I am not sure.","['ag', 'x']"
+"Hey mate, do you know which index had a better performance last year between the S&P 500 and the S&P General Industry Classification Real Estate Sector Index?","['au', 'ak']"
+Can you tell me what news articles have been published recently about Costco?.,['aaj']
+Is it really true that the health care sector is not included in the S&P General Industry Classification?.,['ao']
+"Hey, have you heard about the Consumer Price Index (CPI) in the United States? Has it changed recently, mate?",['aw']
+"I honestly don't care about the stock market, but I guess if you really want to know, there's probably some boring news about it somewhere.",['aai']
+"Oh God I don't know, mate. Mmhm... Is Home Depot's earnings per share higher or lower than its total liabilities?","['t', 'ag']"
+Do you think the real estate sector is impacted by the unemployment rate?.,"['ak', 'aab']"
+Can you tell me the earnings per share for Intel in the last twelve months?.,['t']
+Does Mastercard prioritize investing in research and development for new products and technologies?.,['ac']
+"Hm, I don't know. What are the total assets of Intel?.",['af']
+"Oh God, could you please tell me the damn current value of the S&P 500 Composite?.",['au']
+What is the ratio of Amazon shares to earnings?.,"['f', 'k']"
+Could you find the newest article about the stock market for me?.,['aaj']
+How much damn debt does Verizon have now?.,['ag']
+"Hey, have you heard about Intuit buying another company lately?.",['aaj']
+"Which sector was like, better yesterday, Real Estate or Communication Services?","['ak', 'at']"
+"You know, pal, how does Walmart's market cap relate to their cost of goods sold?","['h', 'm']"
+Does anyone know if there are any secret whispers or inside knowledge about a company's financial stability that might affect its stock price? .,['aai']
+"Hey, are you seeing any changes in the Real Estate sector index? Is it going up or down, you know?.",['ak']
+"Yo, buddy, did consumer confidence go up or down from December 2022 to January 2023?.","['ax', 'aad']"
+"Oh God, I mean, I don't know, buddy. How many assets does Walmart have in total?.",['af']
+"Which one has a higher value, the S&P General Industry Classification Health Care Sector Index or the S&P General Industry Classification Financials Sector Index, you know friend?.","['ao', 'aq']"
+What is the current value of the S&P 500 Composite?,['au']
+Could you tell me about the current state of industrial production in the United States?.,['aaf']
+"Hey, can you tell me when is the ex-dividend date for Disney? Also, do you know what the forward 12-month EPS is?.","['b', 's']"
+How long does Procter & Gamble usually keep their inventory before selling it?.,['v']
+Can you provide me with the 12-month forward EPS and non-operating interest income for AMD?,"['z', 's']"
+"Hey mate, what's the latest news about General Electric in the past month?",['aaj']
+The total operating expenses for Intuit represent what exactly?.,['ab']
+"I don't even know what the unemployment rate is. Like, who cares anyways?.",['aab']
+"Are you kidding me? Of course the CPI affects the consumer staples sector, it's common knowledge..","['aw', 'an']"
+"Could you tell me about Walmart? I believe it operates in the retail sector and I am interested in its EV, if you don't mind.","['u', 'r']"
+What are Philip Morris's ticker and total assets?,"['ae', 'af']"
+"Hey buddy, do you know what's the percentage of Intel's net sales that comes from cost of goods sold? Just curious, you know.","['m', 'y']"
+Could you tell me the damn current stock price for Exxon Mobil and also their total liabilities that they're dealing with right now?.,"['o', 'g']"
+"What is the name of the company that goes with the NFLX ticker, you know buddy?.",['l']
+What is the market cap of Johnson & Johnson compared to its dividend yield?.,"['I', 'h']"
+Do you know how UnitedHealth's EPS compares to their R&D expenses?,"['t', 'ac']"
+"So, the ISM manufacturing index and the S&P 500 both moved in the same direction today, right?.","['az', 'au']"
+Umm... I am not sure. Can you tell me the market value and dividend percentage for IBM?.,"['h', 'I']"
+Can you tell me the highest stock price of Cisco on days when they had positive net interest income?.,"['x', 'e']"
+"Oh gosh, I have no idea. Can you tell me what the price of gold is right now?.",['aai']
+"So, what's the scoop on Tesla in yesterday's news? What were they talking about the most?.","['aaj', 'aai']"
+Can you tell me about the comparison between the yield of the 10-year US Treasury Government Bond and the performance of the S&P General Industry Classification Consumer Discretionary Sector Index?.,"['aah', 'am']"
+"What's the highest price that Walmart's stock reached today and how well has the total return index performed over the specified time period, you know buddy?","['e', 'c']"
+"Can you tell me the P/E ratio of Visa and the number of common shares outstanding, buddy?.","['f', 'k']"
+"Hey buddy, do you think there's a connection between the performance of the Real Estate sector index and the overall GDP of the United States?","['ax', 'ak']"
+"How does the federal funds rate affect the S&P 500 information technology sector index, you know?.","['ay', 'al']"
+Can you explain to me the difference between EBITDA and operating income for Costco?.,"['q', 'aa']"
+Which company was the talk of the town last week with the most news coverage?.,['aaj']
+"Tell me about Intuit, what's their ticker symbol and how do they make money through net interest income, my friend?.","['x', 'ae']"
+"Which company was the talk of the town more in 2020, was it Apple or Tesla, you know buddy?",['aaj']
+Do you really think there is anything newsworthy or eventful happening that could have a significant effect on the stock market in its entirety?.,['aai']
+"So, we're talking about Proctor & Gamble here, right? Ok, well, do they make any money from interest income?",['x']
+What is the yield of the USA 10-year Government Benchmark bond right now and how does it impact the S&P General Industry Classification Energy Sector Index?,"['aj', 'aah']"
+I am not sure. Mmhm... What is the total return over the past 5 years for investing in Oracle? .,['c']
+"Uhm, could you give me some latest news articles about how Brexit is affecting the economy of the UK?.",['aaj']
+Can you please tell me the debt to market cap ratio for Johnson & Johnson? It's really important..,"['h', 'w']"
+"Yeah, oh gosh I am not sure. How does Walt Disney's financial performance look like in the past 12 months based on their current assets and earnings per share?.","['t', 'n']"
+"Oh gosh, I don't know. Does Chevron make money from investments that have nothing to do with their operations and earn interest?.",['z']
+What the hell is the Consumer Confidence Index for the United States right now?.,['aad']
+"Uh, yeah I am not sure. Can you repeat the question again? I have no clue what the total return index of Bank of America is..",['c']
+"Let's compare two industries, Health Care and Proctor & Gamble, and see which one has higher net sales.","['y', 'u']"
+"Oh God, I don't even know. Um... have you heard anything about T-Mobile lately?.",['aaj']
+Oh gosh oh God I don't know. Can you tell me about something new about Walt Disney?.,['aaj']
+What the hell is the most recent damn news article about the stock market?.,['aaj']
+Can you tell me about Nike's current lowest price and SG&A expenses?,"['d', 'ad']"
+Could you please tell me the total liabilities of Oracle?.,['ag']
+"Like, does AMD even make any money from interest stuff that is not related to operations? And how much do they spend on operating expenses?.","['z', 'ab']"
+"Based on the current trend, can we trust the leading economic index as a reliable predictor for future economic activity?.",['aag']
+Are there any recent updates or happenings that could potentially affect the stock market as a whole?.,['aai']
+"Yo, which one do you think has been killin' it more, Financials or Industrials? .","['aq', 'as']"
+I am curious about Oracle's operating expenses. Can you tell me how they compare to the total return index?.,"['c', 'ab']"
+Have there been any recent news articles discussing the state of the health care sector?.,"['aaj', 'ao']"
+"Do you want to know about the GDP price index? Yeah, ok, it is a measurement of the average prices of goods and services in a country, you see?.",['aaa']
+Can you tell me about the current liabilities of Johnson & Johnson friend?,['o']
+"How does the fed funds rate impact the real estate industry, you know, mate?.","['ay', 'ak']"
+How did the Utilities and Energy sectors do yesterday?,"['ar', 'aj']"
+Oh God I am not sure. How do the sectors of Communication Services and Consumer Discretionary stack up against each other?.,"['at', 'am']"
+"Which sector had a better performance last year, the financials or real estate? I need to know, you know!.","['aq', 'ak']"
+Can you provide me with the latest ex-dividend date for Merck and the current dividend yield for the company?.,"['b', 'I']"
+Can you tell me the current stock price for Bank of America?.,['g']
+"Oh gosh, I am not quite sure. The consumer confidence index is like, a measure of how people feel about business and employment conditions right now, I think.",['aad']
+Oh gosh oh God I don't know... has Amazon... have they given any dividends recently and like... how much long-term debt do they have?.,"['b', 'w']"
+Could you tell me which industry Home Depot operates in and what is the current value of its stocks?.,"['g', 'u']"
+Can you tell me which company has received the most news coverage?,['aaj']
+Could you tell me more about the merger between Disney and Fox? I'm interested in any updates or news you may have.,['aaj']
+"Is Pfizer worth more in market value than the amount of money it owes, you know?.","['r', 'h']"
+Can you tell me more about the relationship between the S&P 500 Financials Sector Index and the Leading Economic Indicator?,"['aag', 'aq']"
+Could you tell me what the correlation is between the leading economic index and inflation?.,"['aae', 'aag']"
+What is the total amount of assets held by JPMorgan Chase?.,['af']
+I'm curious about what people are saying about Tesla's stock price on social media. Could you tell me more?.,['aai']
+ has Amazon paid out any dividends recently and do you want to know the amount of long-term debt they have?,"['b', 'w']"
+Can you tell me the total amount of debt that Microsoft currently has?.,['ag']
+"Seriously, it's like everyone doesn't know but, what is the deal with Amazon lately?",['aaj']
+Can you tell me about the performance of the consumer discretionary sector compared to GDP?.,"['ax', 'am']"
+Intuit's dividend yield is a percentage of its total assets. What is it?.,"['af', 'I']"
+I'm interested in the unemployment rate.,['aab']
+"Can you tell me about Oracle's net interest income? Specifically, what is the percentage of total shareholder's equity?.","['ah', 'x']"
+Oh gosh I am not sure. Can you tell me the top 5 news stories about Apple?.,['aaj']
+"Oh God I have no idea. Can you repeat that? I mean, I am not familiar with Cisco's projected earnings per share and net interest income and how it affects their financial performance.","['s', 'x']"
+"Oh gosh, I don't know that, sorry. It's about Comcast, right? Hmm... How many times can the total assets of Comcast cover its outstanding common shares?","['k', 'af']"
+Can you tell me by how much the Materials sector outperformed the Utilities sector in 2022?.,"['ap', 'ar']"
+ How's the Consumer Discretionary Sector Index doing? Is it good or bad? ,['am']
+"Okay, like, how has the price index for personal consumption expenditure in the United States changed over time?",['aaa']
+"Yo, what's the current consumer confidence index value, mate?.",['aad']
+Can you tell me what was the maximum intraday value reached by AMD?.,['e']
+"I see you are interested in the stock market. Did you know, in 2022, the Consumer Discretionary sector actually outperformed the Consumer Staples sector in the S&P index?","['am', 'an']"
+"For JPMorgan, Which one do you think is higher, their total assets or book value per share?","['j', 'af']"
+"Hey mate, do you know what's the latest news about Chevron?",['aaj']
+What is the connection between the yield of the 10-year US Treasury Government Bond and the Real Estate sector? Is it even relevant?.,"['ak', 'aah']"
+"In terms of performance, how does the S&P 500 measure up against the Consumer Staples Sector?.","['an', 'au']"
+How much does Verizon spend on research and development?.,['ac']
+What is the relationship between the 10 year treasury bond yield and consumer confidence?.,"['aah', 'aad']"
+"Uhh... I'm not sure, I mean, I don't really know. What articles have been written about the merger between Company A and Company B?",['aaj']
+"Oh God oh gosh I have no idea. Umm... I think it was either consumer staples or financials in the S&P 500, I can't remember.","['an', 'aq']"
+I highly doubt there is any significant correlation between the 10 year treasury bond yield and industrial production.,"['aaf', 'aah']"
+"You're asking about the relationship between the federal funds target rate and the communications services sector? I understand, the federal funds target rate can have an impact on the performance of companies in the communications services industry. Does that answer your question?.","['ay', 'at']"
+Can you provide me with the legal name of the company?,['l']
+"Can you tell me about Microsoft's financials for last year? Specifically, I'm curious about their R&D spending compared to their earnings.","['ac', 't']"
+"I mean, obviously, the unemployment rate has a major impact on the performance of the real estate sector, right? Like, it's pretty damn important..","['ak', 'aab']"
+"What is the estimated earnings per share for Home Depot in the next 12 months and how does it compare to their EBITDA, you know?.","['q', 's']"
+"I see, you want to know about Comcast's financial situation? Okay, how many times can Comcast's total assets cover its common shares outstanding?","['k', 'af']"
+"I don't know, maybe like, how much is Nvidia worth? What is their total asset number?.",['af']
+"Oh God, I am not really sure. Err... What happened with Apple in the past week? Can you give me like, the top 3 things that went down?",['aaj']
+"Oh God I am not sure, err... I don't know. What is the amount of time that Boeing holds onto their inventories for?.",['v']
+"Oh, mate, I was just wondering, is Costco's market value higher or lower than Apple's market value? I mean, it's a pretty interesting question, don't you think?",['h']
+"Come on, of course Walt Disney's stock price is lower than its operating expenses. It's basic knowledge.","['ab', 'g']"
+Does the company fall under the S&P Health Care Sector Index?.,['ao']
+What's in the news about Tesla lately?,['aaj']
+What's the lowest intraday price of Mastercard on the day with the highest shares outstanding?.,"['d', 'k']"
+How the hell are Tesla's EPS and R&D related to each other?,"['s', 'ac']"
+Can you tell me about any recent updates or developments from Apple?,['aaj']
+"I want to know about Walmart's shareholder's equity, how much is it exactly?.",['ah']
+"Oh gosh, I have no idea! What is the sum of all of JPMorgan Chase's liabilities, including both short and long term obligations?",['ag']
+Can you tell me about the shift in consumer confidence in the last year?,['aad']
+"Yeah, I am not really sure mate. Is Boeing's total liabilities less than or equal to its Enterprise Value?.","['r', 'ag']"
+"Can you tell me about General Electric? Well, I am not sure about the exact numbers, but I believe they have a significant operating income. Would like to find out more specifics?",['aa']
+Are you looking for some recent news articles about Apple? I'd be happy to help you find some.,['aaj']
+How much money did Intuit spend on making or buying stuff to make money?.,['m']
+"Which one did better last week, Energy or Consumer Discretionary?.","['aj', 'am']"
+"Let's take a look at Proctor & Gamble. According to the GICS classification, what sector does it belong to?.",['u']
+Could you tell me the dividend yield of General Electric and how it is connected to their total assets?.,"['I', 'af']"
+"You want to know more about Apple's research and development costs? Ok, let me see, what all is included in their expenses for research and development? .",['ac']
+"So, what's new with PepsiCo? Can you tell me about the latest news articles related to the company?.",['aaj']
+"Uh, I don't know about that. Like, is Home Depot making more money than it owes?","['t', 'ag']"
+"Oh God mmhm... I don't know. Err... I think you are talking about dividend yield and net interest income for Walmart, but I am not sure what the comparison would be.","['I', 'x']"
+Can you tell me about Tesla's EBITDA?.,['q']
+Umm I am not sure at all. Could you possibly tell me what Berkshire Hathaway's current asset is?,['n']
+"Let's see, Intuit... I think they spent a considerable amount of money on producing or acquiring goods in order to generate revenue, don't you agree?.",['m']
+"Did the ISM manufacturing index and the S&P 500 move in the same direction today, you know?.","['az', 'au']"
+Could you tell me about the Oracle investment returns over the past 5 years?.,['c']
+"Oh God oh gosh I don't know man. Well, I am not sure but last time I checked, Netflix has a damn lot of employees and their stock price is like, high or something. You can Google it, I am not your personal assistant.","['g', 'p']"
+"Can you tell me about Oracle's financials? Specifically, I'm interested in their shareholders' equity compared to their cost of goods sold.","['ah', 'm']"
+Are there any potential stock market impacts from social media news or rumors about certain companies?.,['aai']
+"Hey friend, can you tell me how much more Pfizer owes compared to what their shareholders own?","['o', 'ah']"
+"Is there any chatter on social media about unique trends in the stock market today, mate?.",['aai']
+Let's discuss the relationship between the United States' GDP and inflation. How do you think they are connected?.,"['ax', 'aae']"
+"Oh gosh, I don't really know. How much is Visa's enterprise value compared to the number of days they hold inventories?.","['r', 'v']"
+"which sector index did better in 2022, Consumer Discretionary or Consumer Staples?","['am', 'an']"
+Can you tell me what Berkshire Hathaway's total liabilities are divided by its 12 forward month EPS?,"['ag', 's']"
+"Oh gosh I am not sure mate, I have no idea. How does the ISM Nonmanufacturing Survey Index relate to the S&P Consumer Discretionary Sector Index?","['aac', 'am']"
+Could you tell me more about Home Depot and its peers? How do they stack up in terms of inventory management?.,['v']
+"It's so obvious, like, everybody knows that the Information Technology sector has performed better, not the Industrials sector. Come on..","['as', 'al']"
+"What's the percentage of like, the net sales of Intel that comes from the cost of goods sold?","['m', 'y']"
+"You want to know about McDonald's? Right, does McDonald's mainly focus on investing in research and development or in its employees?.","['ac', 'p']"
+"Could you provide me with some information on Philip Morris? Specifically, when is their next ex-dividend date and what are the projected earnings per share for the next twelve months?.","['s', 'b']"
+How many people work for the company with the highest book value per share?,"['j', 'p']"
+"PepsiCo's net interest income is probably not even close to its projected earnings per share, right? I mean, let's be real here..","['s', 'x']"
+"Let's look into General Electric's financials. I see, well, is their total shareholders' equity higher or lower than the industry average?.",['ah']
+"Let's compare Communication Services and Real Estate and see which sector has a higher return, shall we?.","['at', 'ak']"
+Could you tell me the latest ISM Purchasing Managers Index for the manufacturing sector in the US?.,['az']
+What the heck is the S&P Utilities Sector Index?.,['ar']
+Can you tell me the most recent updates about Chevron?.,['aaj']
+Can you tell me about Boeing's current liabilities? How much are they right now?.,['o']
+Err... I don't know. How does the performance of the S&P Industrials compare to the Materials sectors?.,"['as', 'ap']"
+"I'm curious, what sector does IBM operate in and what is their EBITDA?.","['q', 'u']"
+Which damn company has the longest inventory days held?.,['v']
+"On the day it reached its peak intraday price, how many employees did Chevron have?.","['p', 'e']"
+I athe price to sales ratio for AMD?.,"['y', 'g']"
+"I mean, who really cares how much Nike spends on operating expenses every year? It's probably a ridiculous amount anyway..",['ab']
+"So, what is the official name of the company, you know?.",['l']
+"Everybody knows that the cost of goods sold for Salesforce has a major impact on its revenue generation. So, what do you think about it?.",['m']
+"I'm sorry, I can't really understand this question. Could you rephrase it or provide more context?","['s', 'ac']"
+"Hey, what's the latest news about inflation, you know?",['aaj']
+"Do you happen to know the ticker symbol for the company with a whopping $116,229,000,000 in current assets?","['n', 'ae']"
+"How much of Proctor & Gamble's expenses are allocated towards operating costs compared to its current liabilities, you know pal?.","['ab', 'o']"
+Can you tell me about the daily trading volume for S&P Energy?,['aj']
+"Let's see, is it right that Salesforce earns more from non-operating interest income or do they spend more on R&D?","['ac', 'z']"
+Huh? Err... I don't know. What is Cisco's EPS for the past twelve months?.,['t']
+What is the number of employees at Mastercard and what is the company's total liabilities?,"['ag', 'p']"
+"Oh gosh, I don't know, let me check. What's the latest headline about inflation?.",['aaj']
+Which sector has a higher Consumer Price Index?,"['aw', 'at']"
+"Can you tell me what Comcast's enterprise value is and how it stacks up against the number of days its inventories are held for, pal?.","['r', 'v']"
+Could you explain to me the distinction between Walt Disney's total shareholder's equity and operating expenses?.,"['ah', 'ab']"
+"Err... I am not really sure. According to the GICS classification, Proctor & Gamble falls under which sector?",['u']
+I'm curious about the relationship between ISM Nonmanufacturing Survey Index and GDP? ,"['ax', 'aac']"
+"Which sector had a better performance last month, communication services or industrials?.","['as', 'at']"
+"I see you are curious about the relationship between ex-dividend date and net interest income. Yes, there is definitely a connection between these two factors, would you like to know more?.","['b', 'x']"
+"I'm not sure, let me check. Well, it looks like in the last 3 months, Apple has had more news coverage than Microsoft.",['aaj']
+"Let me check, you are asking about UnitedHealth's EPS compared to their R&D? Alright, yeah, I can help you with that.","['t', 'ac']"
+What's the latest news on industrial production?.,"['aaf', 'aaj']"
+"Can you tell me the damn dividend yield for Costco? Like, as a percentage of the current low stock price.","['d', 'I']"
+"Can you believe it, General Electric has like, a damn high number of employees per outstanding share.","['p', 'k']"
+Let's compare the performance of the Real Estate and Industrials sectors from yesterday. Which one do you think did better?.,"['ak', 'as']"
+Which news source has more coverage on Coca-Cola? Is it Reuters or BBC?.,['aaj']
+"Can you tell me the weight of the information technology sector in the S&P 500, friend?","['al', 'au']"
+"Oh boy, I don't know. According to fool.com, Chevron's stock price is, uh, I don't know, I can't even think about it right now.",['aai']
+"Can you help me find some information on Tesla? Specifically, I am looking for their cost of goods sold from last quarter..",['m']
+Could you tell me about Microsoft's R&D spending compared to their earnings for last year?,"['ac', 't']"
+"Can you tell me the ratio between Amazon's operating expenses and their current assets? I would like to know more about that, okay?.","['ab', 'n']"
+What is the difference between the GDP price index and the 10 year treasury bond yield?.,"['aah', 'aaa']"
+"Oh gosh, I am not sure. Err... What is the proportion of Salesforce's total worth compared to its existing resources?","['n', 'h']"
+"What is Home Depot's projected earnings per share for the next year buddy and how does it compare to their EBITDA, you know?.","['q', 's']"
+I am interested in the correlation between the S&P General Industry Classification Consumer Discretionary Sector Index and the CPI for all urban items. Can you provide any insights on this?.,"['am', 'aw']"
+What is the relationship between CPI and the S&P Materials Sector?.,"['aw', 'ap']"
+Can you tell me about the connection between the federal funds rate and the ISM non-manufacturing survey index?.,"['ay', 'aac']"
+"I am not sure, but I believe the total operating expenses for Adobe is what you're asking for..",['ab']
+"What's the deal with Proctor and Gamble's EBITDA and its intraday low price? Like, what's the difference, you know?.","['q', 'd']"
+Is there any chatter on social media about unusual movements in the stock market today?,['aai']
+"Can you tell me about the average inventory holding time for T-Mobile US? I see, and how long would that be?.",['v']
+I am not really sure about that... err... does Chevron make any money from investments that aren't related to their operations? Hmm... I'm not sure.,['z']
+Can you please provide me with any news articles discussing the recent merger between Company A and Company B? It would be greatly appreciated.,['aaj']
+What is the difference between the S&P General Industry Classification Communications Services Sector Index and the federal funds rate friend?.,"['at', 'ay']"
+"You know buddy, how does Chevron's current liabilities compare to the lowest price it achieved on the trading day?.","['d', 'o']"
+"Oh God, I don't know. Err... What kind of business does McDonald's do and how many people work there?.","['p', 'u']"
+"Err... I am not sure, how the S&P General Industry Classification Energy Sector Index compares to the unemployment rate?","['aj', 'aab']"
+What's the deal with Microsoft's stock price right now and how many people are working for them?.,"['g', 'p']"
+"Can you tell me the dividend yield of Netflix, please?.",['I']
+"Umm yeah, I am not sure. So what is the ticker symbol and general industry classification for Home Depot and what’s their ticker symbol?","['u', 'ae']"
+Any juicy gossip or chatter online about a company's financial performance or what they might have in store for the future?,['aai']
+"Can you help me find articles about the effects of tariffs on the automotive sector? I'm curious to know the latest updates, you see?.",['aaj']
+"Can you tell me about the financial performance of Costco? Specifically, what is the difference between their net sales and cost of goods sold?.","['m', 'y']"
+"Like, who is doing better, the finance guys or the tech guys?","['aq', 'al']"
+Oh God oh gosh I am so sorry but I can't answer that. I'm not really familiar with economics or finances..,['aaa']
+Any articles about tariffs and how they're affecting the car industry recently?.,['aaj']
+"I am not so sure, but does Comcast's cost of goods sold outweigh the amount of debt it has?.","['w', 'm']"
+"Can you tell me about Merck's recent earnings per share performance? Specifically, over the past year?.",['t']
+Can you provide the total operating expenses of Home Depot?.,['ab']
+"Which company has been in the news more in the past month, Bank of America or JPMorgan Chase buddy?.",['aaj']
+Can you tell me more about the current updates on Pfizer?.,['aaj']
+WWhat are Microsoft's forward earnings per share?.,['s']
+Who has more current assets between Tesla and Salesforce?.,"['l', 'n']"
+"How many shares of Amazon are there for every dollar of earnings? I don't know, sorry.","['f', 'k']"
+"I see you are interested in stocks, have you checked out the most talked about stocks on social media today?",['aai']
+"Hey mate, which sector do you think did better in 2020, Materials or Consumer Staples?","['ap', 'an']"
+Could you tell me the long term debt to total assets ratio for Tesla?,"['af', 'w']"
+Can you tell me what EBITDA stands for and how it affects a company like Costco?.,['q']
+I want to know about Amazon's EBITDA and the number of common shares outstanding?,"['q', 'k']"
+Can you tell me the difference between General Electric's operating income and EPS in the last 12 months?.,"['aa', 't']"
+"What's the deal with this consumer confidence index and how does it measure people's thoughts on current business and employment situations, you know?.",['aad']
+"Does T-Mobile US make money from investments that are not part of its main operations, you know mate? Also, on average, how many days does T-Mobile US hold its inventory?","['z', 'v']"
+"Hey buddy, do you know what the lowest price for General Electric's stock was today?",['d']
+Can you tell me about Mastercard's employee count and total liabilities?.,"['ag', 'p']"
+"I am not really sure, but which company has the most news coverage today?.",['aaj']
+What sector is the company with the ticker symbol XYZ in?.,"['ar', 'ak']"
+Let's take a look at Exxon Mobil's financial information. How does their total shareholders' equity compare to the number of employees they have?,"['p', 'ah']"
+"Yo, has the United States seen an increase in the cost of living lately?.",['aae']
+"Oh God, performance in the financial sector of the S&P 500 index isn't great, is it?.","['aaf', 'aq']"
+"I am not sure, I think it is some kind of calculation based on consumer spending habits and economic indicators. But don't quote me on that, I am not very conscientious about these things.",['aad']
+"Exxon Mobil is a company, but what is it’s official name?",['l']
+"Uh, I don't know. Last week, I think there might have been something about Oracle, but I can't remember what it was. Sorry.",['aaj']
+Let's find out the enterprise value of McDonald's. Would you like me to search for that information for you?.,['r']
+Can you tell me the P/E ratio of Mcdonald's and divide it by the number of common shares outstanding?,"['f', 'k']"
+"Wait, what? Oh God, I don't know. Is there any kind of connection between the ISM non-manufacturing index and like, how well the communications services sector is doing?","['aac', 'at']"
+Can you please explain the relationship between the S&P 500 information technology sector index and the federal funds rate?,"['ay', 'al']"
+"I can't believe you don't know this, but basically, what's Netflix's stock like over the past year?",['c']
+"Did you want to know which sector had a better performance last year, the financials or the real estate?","['aq', 'ak']"
+Can you tell me about the industrial production trend in the United States right now?.,['aaf']
+"How long does Proctor & Gamble usually keep their inventories before selling them, you know buddy?.",['v']
+"Oh God, I am not sure. Could you tell me the total amount of current liabilities for Nike and how many common shares are currently outstanding?","['o', 'k']"
+Can you tell me the highest stock price for JPMorgan Chase today and its trailing 12-month EPS?.,"['e', 't']"
+"What were the biggest happenings for Apple in the past week, you know mate?.",['aaj']
+How long does Philip Morris hold their damn inventories for? We need to know based on the current price and cost of goods sold.,"['v', 'g']"
+"Which sector had a stronger performance in the previous year, financials or energy?.","['aq', 'aj']"
+Can you tell me Chevron's EPS for the last 12 months and their total current assets?.,"['t', 'n']"
+Could you tell me if there are any significant changes in regulations or government policies that could potentially affect the financial industry?.,['aai']
+"Can you tell me which is higher for General Electric, total liabilities or operating expenses?","['ab', 'ag']"
+"Let's take a look at the relationship between the leading economic index and inflation, shall we?.","['aae', 'aag']"
+Could you tell me about Intel's financial performance in the past year? I'm curious about how profitable they have been.,['t']
+"Oh God I don't know, is there any updates on that Disney and Fox thingy?.",['aaj']
+"Umm... I am not sure, let me think. The S&P General Industry Classification Information Technology Sector Index, I am guessing it belongs to some kind of index sector? Sorry, I am not very knowledgeable about this topic.","['al', 'ak']"

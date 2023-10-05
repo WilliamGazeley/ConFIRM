@@ -1,4 +1,4 @@
-python scripts/llama_2_lora_tune.py \
+python scripts/finetune/llama_2_lora_tune.py \
  --model_path $MODEL_PATH \
  --save_path $SAVE_PATH \
  --r 8 \
