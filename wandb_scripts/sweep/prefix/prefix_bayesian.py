@@ -11,8 +11,8 @@ import wandb
 import os
 
 sweep_config = {
-    'name': 'prefix_sweep',
-    'method': 'random'
+    'name': 'prefix_sweep_bayesian',
+    'method': 'bayes'
     }
 
 metric = {
@@ -24,16 +24,13 @@ sweep_config['metric'] = metric
 
 parameters_dict = {
     'num_virtual_tokens': {
-        'values': [20, 30, 40]
+        'values': [15, 30, 60]
         },
     'batch_size': {
         'values': [4, 6, 8]
         },
-    # 'epochs': {
-    #     'values': [30, 40, 50, 60]
-    #     },
     'lr': {
-        'values': [3e-1, 1e-1, 3e-2, 1e-2, 3e-3, 1e-3, 3e-4, 1e-4]
+        'values': [3e-2, 1e-2, 3e-3, 1e-3, 3e-4, 1e-4]
     }
 }
 
@@ -47,7 +44,7 @@ parameters_dict.update(
         'dataset_path': {'value': os.environ.get('DS_PATH')}
     }
 )
-device = "cuda"
+device = "cuda:1"
 
 sweep_config['parameters'] = parameters_dict
 
@@ -256,4 +253,4 @@ def train(config=None):
         print("saved")
 
 if __name__ == "__main__":
-    wandb.agent(sweep_id, train, count=20)
+    wandb.agent(sweep_id, train, count=10)

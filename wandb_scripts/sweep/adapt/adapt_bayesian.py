@@ -1,18 +1,18 @@
 from transformers import LlamaForCausalLM, LlamaTokenizer
-from peft import get_peft_model, LoraConfig, TaskType, PeftType
+from peft import get_peft_model, TaskType, AdaptionPromptConfig
 import torch
 from datasets import load_dataset, Dataset
 from torch.utils.data import DataLoader
 from transformers import default_data_collator, get_linear_schedule_with_warmup
 from tqdm import tqdm
+import os
 import json
 import csv
 import wandb
-import os
 
 sweep_config = {
-    'name': 'lora_sweep',
-    'method': 'random'
+    'name': 'adapt_sweep_bayesian',
+    'method': 'bayes'
     }
 
 metric = {
@@ -22,37 +22,30 @@ metric = {
 
 sweep_config['metric'] = metric
 
+# model adapter = 32 : adapter_layers must be =< 32
 parameters_dict = {
-    'r': {
-        'values': [6, 8, 10]
-    },
-    'lora_dropout': {
-        'values': [0.01, 0.05, 0.1]
-    },
-    'lora_alpha': {
-        'values': [26, 32, 38]
-    },
+    'adapter_len': {
+        'values': [5, 10, 20]
+        },
+    'adapter_layers': {
+        'values': [8, 16, 32]
+        },
     'batch_size': {
         'values': [4, 6, 8]
-    },
-    # 'epochs': {
-    #     'values': [30, 40, 50, 60]
-    #     },
+        },
     'lr': {
-        'values': [3e-1, 1e-1, 3e-2, 1e-2, 3e-3, 1e-3, 3e-4, 1e-4]
+        'values': [3e-2, 1e-2, 3e-3, 1e-3, 3e-4, 1e-4]
     }
 }
 
 parameters_dict.update(
     {
         # comment epochs to start a real sweep
-        'epochs': {'value': 50},
+        'epochs': {'value': 30},
         'max_length': {'value': 128},
         'model_path': {'value': os.environ.get('MODEL_PATH')},
         'save_path': {'value': os.environ.get('SAVE_PATH')},
         'dataset_path': {'value': os.environ.get('DS_PATH')}
-        'target_modules': {'value': ["q_proj", "v_proj"]},
-        'bias': {'value': "none"}
     }
 )
 device = "cuda"
@@ -65,18 +58,14 @@ sweep_id = wandb.sweep(sweep_config, project="llama-2-7b-peft")
 def train(config=None):
     with wandb.init(config=config):
         config=wandb.config
-        peft_model_id = f"lora_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_dp{config.lora_dropout}_al{config.lora_alpha}_r{config.r}"
+        peft_model_id = f"adapt_b{config.batch_size}_e{config.epochs}_lr{str(config.lr)}_maxl{config.max_length}_alen{config.adapter_len}_alay{config.adapter_layers}"
         print(peft_model_id)
         model_name_or_path = config.model_path
 
-        peft_config = LoraConfig(
-            task_type=TaskType.CAUSAL_LM, 
-            inference_mode=False, 
-            r=config.r, 
-            lora_alpha=config.lora_alpha, 
-            lora_dropout=config.lora_dropout,
-            target_modules=config.target_modules,
-            bias=config.bias
+        peft_config = AdaptionPromptConfig(
+            task_type=TaskType.CAUSAL_LM,
+            adapter_layers=config.adapter_layers,
+            adapter_len=config.adapter_len,
         )
         text_column = "question"
         label_column = "expected_fields"
@@ -204,7 +193,7 @@ def train(config=None):
 
         # training and evaluation
         model = model.to(device)
-
+        model.register
         for epoch in range(num_epochs):
             model.train()
             total_loss = 0
@@ -271,4 +260,4 @@ def train(config=None):
         print("saved")
 
 if __name__ == "__main__":
-    wandb.agent(sweep_id, train, count=20)
+    wandb.agent(sweep_id, train, count=10)
