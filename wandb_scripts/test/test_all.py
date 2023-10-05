@@ -15,33 +15,32 @@ import wandb
 
 testing_targets = {
     "adapt" : {
-        "99" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_99n_ep27",
-        "198" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_198n_ep20",
-        "495" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_495n_ep25",
-        "1485" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_1485n_ep32",
-        "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_2970n_ep33",
+        "100" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_100n_ep27",
+        "200" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_200n_ep20",
+        "500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_500n_ep25",
+        "1500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_1500n_ep32",
+        "3000" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_3000n_ep33",
     },
     "lora" : {
-        "99" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_99n_ep4",
-        "198" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_198n_ep4",
-        "495" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_495n_ep14",
-        "1485" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_1485n_ep1",
-        "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_2970n_ep26",
+        "100" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_100n_ep4",
+        "200" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_200n_ep4",
+        "500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_500n_ep14",
+        "1500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_1500n_ep1",
+        "3000" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_3000n_ep26",
     },
     "prefix" : {
-        "99" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_99n_ep12",
-        "198" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_198n_ep29",
-        "495" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_495n_ep25",
-        "1485" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_1485n_ep29",
-        # "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_2970n_ep23",
-        "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_2970n_ep30",
+        "100" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_100n_ep12",
+        "200" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_200n_ep29",
+        "500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_500n_ep25",
+        "1500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_1500n_ep29",
+        "3000" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_3000n_ep30",
     },
     "ptune" : {
-        "99" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_99n_ep9",
-        "198" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_198n_ep14",
-        "495" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_495n_ep14",
-        "1485" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_1485n_ep34",
-        "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_2970n_ep9",
+        "100" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_100n_ep9",
+        "200" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_200n_ep14",
+        "500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_500n_ep14",
+        "1500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_1500n_ep34",
+        "3000" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_3000n_ep9",
     }
 }
 
@@ -58,7 +57,7 @@ metric = {
 sweep_config['metric'] = metric
 parameters_dict = {
     "method" : {"values": ["adapt", "lora", "prefix", "ptune"]},
-    "training_size": {"values": ["99", "198", "495", "1485", "2970"]},
+    "training_size": {"values": ["100", "200", "500", "1500", "3000"]},
     'peft_model_path_prefix': {'value': os.environ.get('SAVE_PATH')},
     'llama_model_path': {'value': os.environ.get('MODEL_PATH')},
     "testset_path": {"value": "datasets/ocean/descriptive/ocean_rephrased_validated_descriptive_1000n_test.csv"}
@@ -99,7 +98,7 @@ def success_function_single(
     # If the external_data categorisation is wrong, fail immediately
     if ("external_data" in expected_output_str and "external_data" not in retrieved_fields) or \
         ("external_data" not in expected_output_str and "external_data" in retrieved_fields):
-        return False, 0
+        return False, 2 # HARD fail
 
     # Calculate intersection and union
     intersection = len([f for f in retrieved_fields if f in expected_output])

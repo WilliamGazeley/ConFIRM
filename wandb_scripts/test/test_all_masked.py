@@ -15,32 +15,32 @@ import wandb
 
 testing_targets = {
     "adapt" : {
-        "99" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_99n_ep6",
-        "198" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_198n_ep14",
-        "495" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_495n_ep10",
-        "1485" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_1485n_ep21",
-        "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_2970n_ep38",
+        "100" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_100n_ep6",
+        "200" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_200n_ep14",
+        "500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_500n_ep10",
+        "1500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_1500n_ep21",
+        "3000" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_adapt_b4_e50_lr0.01_maxl128_alen10_alay8_3000n_ep38",
     },
     "lora" : {
-        "99" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_99n_ep4",
-        "198" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_198n_ep4",
-        "495" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_495n_ep6",
-        "1485" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_1485n_ep12",
-        "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_2970n_ep24",
+        "100" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_100n_ep4",
+        "200" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_200n_ep4",
+        "500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_500n_ep6",
+        "500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_1500n_ep12",
+        "3000" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_3000n_ep24",
     },
     "prefix" : {
-        "99" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_prefix_b4_e50_lr0.001_maxl128_nvt30_99n_ep12",
-        "198" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_prefix_b4_e50_lr0.001_maxl128_nvt30_198n_ep15",
-        "495" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_prefix_b4_e50_lr0.001_maxl128_nvt30_495n_ep9",
-        "1485" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_prefix_b4_e50_lr0.001_maxl128_nvt30_1485n_ep16",
-        "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_prefix_b4_e50_lr0.001_maxl128_nvt30_2970n_ep19",
+        "100" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_prefix_b4_e50_lr0.001_maxl128_nvt30_100n_ep12",
+        "200" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_prefix_b4_e50_lr0.001_maxl128_nvt30_200n_ep15",
+        "500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_prefix_b4_e50_lr0.001_maxl128_nvt30_500n_ep9",
+        "1500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_prefix_b4_e50_lr0.001_maxl128_nvt30_1500n_ep16",
+        "3000" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_prefix_b4_e50_lr0.001_maxl128_nvt30_3000n_ep19",
     },
     "ptune" : {
-        "99" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_99n_ep10",
-        "198" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_198n_ep15",
-        "495" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_495n_ep10",
-        "1485" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_1485n_ep21",
-        "2970" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_2970n_ep34",
+        "100" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_100n_ep10",
+        "198" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_200n_ep15",
+        "500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_500n_ep10",
+        "1500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_1500n_ep21",
+        "3000" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_masked_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_3000n_ep34",
     }
 }
 
@@ -57,7 +57,7 @@ metric = {
 sweep_config['metric'] = metric
 parameters_dict = {
     "method" : {"values": ["adapt", "lora", "prefix", "ptune"]},
-    "training_size": {"values": ["99", "198", "495", "1485", "2970"]},
+    "training_size": {"values": ["100", "200", "500", "1500", "3000"]},
     'peft_model_path_prefix': {'value': os.environ.get('SAVE_PATH')},
     'llama_model_path': {'value': os.environ.get('MODEL_PATH')},
     "testset_path": {"value": "datasets/ocean/masked/ocean_rephrased_validated_masked_1000n_test.csv"}
@@ -98,7 +98,7 @@ def success_function_single(
     # If the external_data categorisation is wrong, fail immediately
     if ("external_data" in expected_output_str and "external_data" not in retrieved_fields) or \
         ("external_data" not in expected_output_str and "external_data" in retrieved_fields):
-        return False, 0
+        return False, 2 # HARD fail
 
     # Calculate intersection and union
     intersection = len([f for f in retrieved_fields if f in expected_output])
