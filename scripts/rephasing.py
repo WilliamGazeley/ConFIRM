@@ -9,9 +9,7 @@ from langchain.llms import OpenAI
 from lora_confirm import rephrase
 from lora_confirm import filters
 import warnings
-from dotenv import load_dotenv
 
-load_dotenv()
 
 # Instantiate the parser
 parser = argparse.ArgumentParser(description=\
@@ -20,9 +18,9 @@ parser = argparse.ArgumentParser(description=\
 # Required arguments
 
 parser.add_argument('--question_path', type=str, required=True,
-                    help='Path to the question to be repahse. csv file is required. i.e.: ./datsets/ConFIRM_QAset.csv')
+                    help='Path to the questions to be rephrased. csv file is required. i.e.: ./datsets/ConFIRM_QAset.csv')
 parser.add_argument('--save_path', type=str, required=True,
-                    help='save path of the rephased question generated. i.e.: ./datsets/')
+                    help='Save path of the rephased question generated. i.e.: ./datsets/')
 parser.add_argument('--rephase_llm', type=str, required=True,
                     help='LLM used to rephase the question. i.e.: "gpt-3.5-turbo-instruct", "chat-openai".')
 parser.add_argument('--openai_api_key', type=str, required=False,
