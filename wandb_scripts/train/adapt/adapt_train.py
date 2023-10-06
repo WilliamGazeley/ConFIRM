@@ -37,7 +37,6 @@ parameters_dict = {
 
 parameters_dict.update(
     {
-        # comment epochs to start a real sweep
         'adapter_len': {'value': 10},
         'adapter_layers': {'value': 8},
         'batch_size': {'value': 4},

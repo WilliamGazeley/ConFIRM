@@ -28,19 +28,12 @@ testing_targets = {
         "1500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_1500n_ep1",
         "3000" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_lora_b8_e50_lr0.0003_maxl128_dp0.001_al64_r4_3000n_ep26",
     },
-    "prefix" : {
-        "100" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_100n_ep12",
-        "200" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_200n_ep29",
-        "500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_500n_ep25",
-        "1500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_1500n_ep29",
-        "3000" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_prefix_b4_e50_lr0.001_maxl128_nvt30_3000n_ep30",
-    },
     "ptune" : {
-        "100" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_100n_ep9",
-        "200" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_200n_ep14",
-        "500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_500n_ep14",
-        "1500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_1500n_ep34",
-        "3000" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs64_3000n_ep9",
+        "100" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs128_100n_ep10",
+        "200" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs128_200n_ep10",
+        "500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs128_500n_ep12",
+        "1500" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs128_1500n_ep12",
+        "3000" : "asklora_ml_models/peft/llama_2_7b/tuned/ocean_ptune_b3_e50_lr0.003_maxl128_nvt15_ehs128_3000n_ep34",
     }
 }
 
@@ -51,12 +44,12 @@ sweep_config = {
 
 metric = {
     'name': 'accuracy',
-    'goal': 'minimize'   
+    'goal': 'maximize'   
 }
 
 sweep_config['metric'] = metric
 parameters_dict = {
-    "method" : {"values": ["adapt", "lora", "prefix", "ptune"]},
+    "method" : {"values": ["adapt", "lora", "ptune"]},
     "training_size": {"values": ["100", "200", "500", "1500", "3000"]},
     'peft_model_path_prefix': {'value': os.environ.get('SAVE_PATH')},
     'llama_model_path': {'value': os.environ.get('MODEL_PATH')},
@@ -94,6 +87,10 @@ def success_function_single(
             expected_output = []
 
     expected_output_str = ' '.join(expected_output)
+    
+    if not (type(retrieved_fields) == list and type(expected_output) == list):
+        print(f"type evluated for expected = {type(expected_output)}, retreived = {type(retrieved_fields)} \nReturning (False, 1)")
+        return False, 1
     
     # If the external_data categorisation is wrong, fail immediately
     if ("external_data" in expected_output_str and "external_data" not in retrieved_fields) or \
