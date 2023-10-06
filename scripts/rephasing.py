@@ -19,7 +19,7 @@ parser = argparse.ArgumentParser(description=\
 parser.add_argument('--question_path', type=str, required=True,
                     help='File path to the questions to be rephrased. csv file is required. e.g.: ./datsets/ConFIRM_QAset.csv')
 parser.add_argument('--save_path', type=str, required=True,
-                    help='Save path of the rephased question generated. i.e.: ./datsets/')
+                    help='Save path (directory) of the rephased question generated. i.e.: ./datsets/')
 parser.add_argument('--rephase_llm', type=str, required=True,
                     help='LLM used to rephase the question. i.e.: "gpt-3.5-turbo-instruct", "chat-openai".')
 parser.add_argument('--openai_api_key', type=str, required=False,
@@ -96,7 +96,10 @@ def main(**kwargs):
     df = filters.rouge_l(df=df, columns=['rephrase', 'expected_fields_with_descriptions'], axis=1, threshold=0.3)
     df['question'] = df['rephrase']
     df.drop(columns=['rephrase', 'quality', 'prompts', 'expected_fields_with_descriptions'], inplace=True, errors='ignore')
-    df.to_csv(f"{output_dir}/{kwargs['question_path']}_ocean_rephrased.csv", index=False)
+    
+    # Save file
+    q_filename = kwargs['question_path'].split('/')[-1]
+    df.to_csv(f"{output_dir}/{q_filename.replace('.csv', '_ocean_rephrased.csv')}", index=False)
 
     # Clean up the batch files
     for filename in all_files:
