@@ -139,7 +139,7 @@ def select_samples(sample_method: str, n: int = 10) -> pd.DataFrame:
         return ptype_set.sample(n=n)
 
     elif sample_method == 'all':
-        return ptype_set.sample(n=n)
+        return personage.sample(n=n)
 
     else:
         raise ValueError(f"Invalid sample_method: {sample_method}")
