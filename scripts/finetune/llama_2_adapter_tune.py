@@ -93,8 +93,8 @@ def main(**kwargs):
 
         dataset = Dataset.from_list(successful)
     
-    # TODO: change to a separate test data set
-    dataset = dataset.train_test_split(test_size=0.1)
+    # Makes for prettier splits
+    dataset = dataset.train_test_split(train_size=round(len(dataset) / 1.1))
     
     print(dataset)
 
