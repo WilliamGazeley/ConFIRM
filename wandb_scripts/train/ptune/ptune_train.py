@@ -39,7 +39,7 @@ parameters_dict.update(
     {
         'lr': {'value': 3e-3},
         'batch_size': {'value': 3},
-        'encoder_hidden_size': {'value': 64},
+        'encoder_hidden_size': {'value': 128},
         'num_virtual_tokens': {'value': 15},
         'epochs': {'value': 50},
         'max_length': {'value': 128},

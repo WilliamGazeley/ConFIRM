@@ -69,13 +69,6 @@ def main(**kwargs):
             for obj in all_data:
                 if type(obj[label_column]) == list:
                     obj[label_column] = str(obj[label_column])
-                    
-                # handling for old dataset with quality column
-                if "quality" in obj:
-                    if obj["quality"] == "1" or obj["quality"] == "2":
-                        successful.append(obj)
-                        
-                # new dataset without quality column
                 else:
                     successful.append(obj)
             return successful
