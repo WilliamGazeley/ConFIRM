@@ -5,7 +5,7 @@ with open('requirements.txt') as f:
 
 setup(
     name='lora_confirm',
-    version='0.0.1',
+    version='0.1.0',
     packages=find_packages(),
     install_requires=requirements,
     description='Code used to produce the results in the ConFIRM paper, and follow up works.',
