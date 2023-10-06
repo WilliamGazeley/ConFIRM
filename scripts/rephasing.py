@@ -6,8 +6,7 @@ import re
 import glob
 import pandas as pd
 from langchain.llms import OpenAI
-from lora_confirm import rephrase
-from lora_confirm import filters
+from lora_confirm import rephrase, filters
 import warnings
 
 
@@ -18,7 +17,7 @@ parser = argparse.ArgumentParser(description=\
 # Required arguments
 
 parser.add_argument('--question_path', type=str, required=True,
-                    help='Path to the questions to be rephrased. csv file is required. i.e.: ./datsets/ConFIRM_QAset.csv')
+                    help='File path to the questions to be rephrased. csv file is required. e.g.: ./datsets/ConFIRM_QAset.csv')
 parser.add_argument('--save_path', type=str, required=True,
                     help='Save path of the rephased question generated. i.e.: ./datsets/')
 parser.add_argument('--rephase_llm', type=str, required=True,
@@ -29,12 +28,12 @@ parser.add_argument('--openai_api_key', type=str, required=False,
 parser.add_argument('--google_credential_path', type=str, required=False,
                     default="gcp-service-account.json",
                     help='Path to the gcp-service-account.json. It is required if you use the palm model')
+parser.add_argument('--n', type=int, required=False,
+                    default=6, help='Number of rephrases to be generated for each question.')
 
 
 def main(**kwargs):
-    """Rephase the questions.
-    
-    """     
+    """Rephase the questions."""     
     if kwargs['rephase_llm'] == "gpt-3.5-turbo-instruct":
         assert kwargs['openai_api_key'] != 'None', "OpenAI API KEY is required if you use the model provided by OpenAI."
         os.environ['OPENAI_API_KEY'] = kwargs['openai_api_key']
@@ -55,8 +54,10 @@ def main(**kwargs):
     assert os.path.exists(kwargs['question_path']), f"Invalid question data path {kwargs['question_path']}"  
     df = pd.read_csv(kwargs['question_path'])
     
-    assert 'quality' in df.columns, "quality column is missing. You should lable the question quality. 2 for good, 1 for hard question, 0 for bad"
-    df = df[df['quality'] == 2]
+    if 'quality' in df.columns:
+        df = df[df['quality'] == 2]
+    else:
+        warnings.warn("Quality column is missing. All questions will be rephrased.", UserWarning)
 
     # If previous batches exist, start from there instead of from scratch
     files = glob.glob('ocean_rephrased_*.csv')
@@ -74,7 +75,7 @@ def main(**kwargs):
     # Start the outer loop from the highest batch number + 1
     start_batch = highest_batch_num + 1
 
-    for i in range(start_batch, 6): # 6x the current dataset
+    for i in range(start_batch, kwargs["n"]):
         # Break the dataset into batches of 50 questions (checkpointing)
         for j in range(0, len(df), 50):
             batch = df.iloc[j:j+50]
@@ -88,20 +89,18 @@ def main(**kwargs):
     for filename in all_files:
         all_dfs.append(pd.read_csv(filename))
     df = pd.concat(all_dfs)
-        
-    df.to_csv(f"{output_dir}/ConFIRM_QAset_ocean_rephrased.csv", index=False)
+
+    # Filters
+    df = df[df['rephrase'].notna()]
+    df = filters.rouge_l(df=df, columns=['rephrase'], threshold=0.7)
+    df = filters.rouge_l(df=df, columns=['rephrase', 'expected_fields_with_descriptions'], axis=1, threshold=0.3)
+    df['question'] = df['rephrase']
+    df.drop(columns=['rephrase', 'quality', 'prompts', 'expected_fields_with_descriptions'], inplace=True, errors='ignore')
+    df.to_csv(f"{output_dir}/{kwargs['question_path']}_ocean_rephrased.csv", index=False)
 
     # Clean up the batch files
     for filename in all_files:
         if os.path.exists(filename): os.remove(filename)
-
-    # filter the empty rephrase
-    df = df[df['rephrase'].notna()]
-    df = filters.rouge_l(df=df, columns=['rephrase'], threshold=0.7)
-    df = filters.rouge_l(df=df, columns=['rephrase', 'expected_fields'], axis=1, threshold=0.3)
-    df['question'] = df['rephrase']
-    df.drop(columns=['rephrase', 'quality', 'prompts'], inplace=True)
-    df.to_csv(f"{output_dir}/ConFIRM_QAset_ocean_rephrased_filtered.csv", index=False)
 
 
 if __name__=="__main__":
