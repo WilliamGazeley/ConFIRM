@@ -9,7 +9,7 @@ from langchain.chat_models import ChatVertexAI, ChatOpenAI
 from lora_confirm import filters
 from lora_confirm import question_generator as qgen
 from reference_files import seeds
-from reference_files.stock_fields import metadata, external_fields
+from reference_files import schema
 
 # Instantiate the parser
 parser = argparse.ArgumentParser(description=\
@@ -18,13 +18,13 @@ parser = argparse.ArgumentParser(description=\
 # Required arguments
 
 parser.add_argument('--save_path', type=str, required=True,
-                    help='Save path for the question generated. i.e.: ./datsets/')
+                    help='Save path (directory) for the generated questions.')
 
 parser.add_argument('--n', type=int, required=True,
                     help='Number of questions to be generated')
 
 parser.add_argument('--llm', type=str, required=True,
-                    help='LLM to generate questions. ONLY "gpt" and "palm" are available now. Select one from them.')
+                    help='LLM to generate questions. ONLY "gpt" and "palm" are implemented for this script.')
 
 parser.add_argument('--google_credential_path', type=str, required=False,
                     default="gcp-service-account.json",
@@ -36,10 +36,10 @@ parser.add_argument('--openai_api_key', type=str, required=False,
 
 parser.add_argument('--company_name', type=str, required=False,
                     default='None',
-                    help='company names to generate questions. Input with semicolon separated')
+                    help='Company names to generate questions. Input with semicolon separated')
 
 parser.add_argument('--fields', type=str, nargs='+',
-                    help='fields to generate questions. ONLY "all", "external" and "stock" are available now. Select one or more from them. Input with space separated')
+                    help='Fields to generate questions. ONLY "all", "external" and "stock" are available now. Select one or more from them. Input with space separated')
 
 
 def main(**kwargs):
@@ -53,7 +53,7 @@ def main(**kwargs):
     companies = companies.split(';')
     companies = [x.strip() for x in companies]
     n = kwargs['n']
-    save_path = kwargs['save_path']
+    save_path = kwargs['save_path'] if kwargs['save_path'].endswith('/') else kwargs['save_path'] + '/'
     for field in kwargs['fields']:
         assert field in ['all', 'external', 'stock'], f'Invalid field {field}.ONLY "all", "external" and "stock" are available now. Select one or more from them.'
 
@@ -70,7 +70,7 @@ def main(**kwargs):
     llm = ChatOpenAI(temperature=0.7) if kwargs['llm'] == 'gpt' else ChatVertexAI(temperature=0.7)
     
     def _parse_expected_fields(x):
-        """Auxiliary function to remove descriptions from expected fields"""
+        """Auxiliary function to remove descriptions from expected fields and return a list of fields"""
         # Check if x is a string and looks like a stringified list
         if isinstance(x, str) and x.startswith('[') and x.endswith(']'):
             # Parse the stringified list
@@ -129,7 +129,8 @@ def main(**kwargs):
         print(f"Generated {len(questions)} questions")
         
         # Clean up
-        questions['expected_fields'] = questions['expected_fields'].apply(_parse_expected_fields)
+        questions['expected_fields_with_descriptions'] = questions['expected_fields'] # This is a string
+        questions['expected_fields'] = questions['expected_fields'].apply(_parse_expected_fields) # This is a list
         questions.to_csv(filename, index=False)
         os.remove(raw_file)
         os.remove(filtered_file)
@@ -137,14 +138,13 @@ def main(**kwargs):
     
     for field in kwargs['fields']:
         if field == 'stock':
-            temp_fields = [f"stock_data.{field} - {metadata.tables['stock_data'].columns[field].comment}" for field in metadata.tables['stock_data'].columns.keys() if field != "id"]
+            temp_fields = schema.stock_data
             temp_seeds = seeds.ALL_SEEDS
         elif field == 'external':
-            temp_fields = external_fields
+            temp_fields = schema.external_data_source
             temp_seeds = seeds.EXTERNAL_DATA
         elif field == 'all':
-            all_fields = [f"{table}.{field} - {metadata.tables[table].columns[field].comment}" for table in metadata.tables.keys() for field in metadata.tables[table].columns.keys() if field != "id"]
-            temp_fields = all_fields + external_fields
+            temp_fields = schema.all_fields
             temp_seeds = seeds.ALL_SEEDS
         
         gen_questions(llm=llm,
