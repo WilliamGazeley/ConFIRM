@@ -115,7 +115,7 @@ def train(config=None):
 
             dataset = Dataset.from_list(successful)
 
-        dataset = dataset.train_test_split(test_size=0.1)
+        dataset = dataset.train_test_split(train_size=round(len(dataset) / 1.1))
         train_size = len(dataset['train'])
         print(dataset)
 
