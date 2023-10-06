@@ -27,7 +27,7 @@ TEMPLATE = (
 
 
 def ocean(llm: BaseLLM, df: pd.DataFrame, column: str = 'question', n=10,
-          sample_method: Literal['specific', 'diverse'] = 'specific'):
+          sample_method: Literal['specific', 'diverse', 'all'] = 'specific'):
     """
     Uses the OCEAN personality model to perform text-to-text generation.
     NOTE: This requires the PERSONAGE dataset, which can be downloaded from
@@ -111,11 +111,11 @@ def select_samples(sample_method: str, n: int = 10) -> pd.DataFrame:
             "https://nlds.soe.ucsc.edu/stylistic-variation-nlg and extract the "
             ".csv files to datasets/personage-nlg/")
     personage = pd.read_csv("datasets/personage-nlg/personage-nlg-train.csv")
-    ptype_set = personage[personage['personality'] == choice(PERSONALITIES)]
 
     if sample_method == 'diverse':
         # TODO: Refactor this, it's terribly memory inefficient
         # Paper doesn't specificy size of initial sample, just says "large"
+        ptype_set = personage[personage['personality'] == choice(PERSONALITIES)]
         ptype_set = ptype_set.sample(n=1000)
         scorer = get_bleurt()
 
@@ -135,10 +135,11 @@ def select_samples(sample_method: str, n: int = 10) -> pd.DataFrame:
         return samples
 
     elif sample_method == 'specific':
+        ptype_set = personage[personage['personality'] == choice(PERSONALITIES)]
         return ptype_set.sample(n=n)
 
     elif sample_method == 'all':
-        raise NotImplementedError("Not yet implemented")
+        return ptype_set.sample(n=n)
 
     else:
         raise ValueError(f"Invalid sample_method: {sample_method}")
